@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Guidebook End User Support</title>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+h2 { padding-top: 30px; }
+h3 { padding-top: 20px; }
+
+.copy-left {
+  display: inline-block;
+  text-align: right;
+  margin: 0;
+ -moz-transform: scaleX(-1);
+ -o-transform: scaleX(-1);
+ -webkit-transform: scaleX(-1);
+ transform: scaleX(-1);
+ filter: FlipH;
+ -ms-filter: "FlipH";
+ }
+
+</style>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="outline" class="container">
+
+<h2><a id="top" href="https://its-services.case.edu/ITS-internal/lookup/">User Lookup Tool</a></h2>
+
+
+<p class="lead">The user lookup tool is used to get information about a user's account. </p>
+<p>The state of a user's account, Google status, password, Active Directory account and a number of other pieces of information useful in diagnosing problems can be found through the use of the tool. Note that searches are NOT case-sensitive.</p>
+
+<br>
+<div id="search-overview" class="row">
+<div class="col-md-4 col-sm-4">
+<strong>Search Options</strong><br>
+<ul>
+	<li>Network ID</li>
+	<li>Last Name</li>
+	<li>Full Name</li>
+	<li>Email (first.last)</li>
+	<li>Mail Alias</li>
+	<li>Forward</li>
+</ul>
+</div>
+<div class="col-md-4 col-sm-4">
+<strong>Comparison Options</strong><br>
+<ul>
+	<li>equals</li>
+	<li>starts with</li>
+	<li>contains</li>
+	<li>ends with</li>
+</ul>
+</div>
+<div class="col-md-4 col-sm-4">
+</div>
+</div>
+
+<div id="wildcard" class="row">
+<div class="col-md-12 col-sm-12">
+<br>
+<strong>Wildcard Search Values</strong>
+
+<p>Standard wildcard characters may be used in searches. Searches that return a large number records (e.g., <code>Network ID equals *</code>) will take a long time to complete and may cause the browser to time out.</p>
+<p>Wildcard searches are most useful when you do not know if a name has an unusual spelling, pronunciation, or is long and may have been shortened in some records (for example Shannon Huntington Smythe-Whitely => Shannon Huntington). A search like <code>Full name equals Shannon *huntington*</code> would reduce the selection set considerably but still produce useful results.</p><br>
+</div>
+</div>
+
+<div id="heading-1" class="row">
+<div class="col-md-12 col-sm-12">
+<h3>Lookup Tool Key</h3>
+</div>
+</div>
+
+<div id="key" class="row">
+<div class="col-md-4 col-sm-4">
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><strong>Codes</strong></div>
+<table class="table table-striped">
+<tbody>
+<tr>
+	<td style="background-color: #808080;">&not;</td>
+	<td>
+	Never (affiliations)</br>
+	FALSE (<abbr title="Access Control List">ACL</abbr> bit)</br>
+	Disabled (account)</td>
+</tr>
+<tr>
+	<td style="background-color: #FFFF00;">&tilde;</td>
+	<td>Former (affiliations)<br>
+	Pending Reg. (account)</td>
+</tr>
+<tr>
+	<td style="background-color: #008000;">&bull;</td>
+	<td>Active (affiliations, account)<br>
+	TRUE (<abbr title="Access Control List">ACL</abbr> bit)</td>
+</tr>
+<tr>
+	<td style="background-color: #00FFFF;">&#x262f;</td>
+	<td>Grace Period, some services reduced (affiliations)</td>
+</tr>
+<tr>
+	<td style="background-color: #FAAFBA;">&#x262f;</td>
+	<td>New Hire</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<br>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><strong>Forwarding Color Key</strong></div>
+<table class="table table-striped">
+<tbody>
+<tr>
+	<td style="background-color: #008000;">&nbsp;</td>
+	<td>Keep in Inbox</td>
+</tr>
+<tr>
+	<td style="background-color: #000000;">&nbsp;</td>
+	<td>Keep in Inbox, but mark read</td>
+</tr>
+<tr>
+	<td style="background-color: #0000FF;">&nbsp;</td>
+	<td>Archive to "All Mail" folder only</td>
+</tr>
+<tr>
+	<td style="background-color: #FFA500;">&nbsp;</td>
+	<td>Delete from Google</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-4">
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><strong>Affiliations</strong></div>
+<table class="table table-striped">
+<tbody>
+<tr>
+	<td>F</td>
+	<td>Case Faculty</td>
+</tr>
+<tr>
+	<td>S</td>
+	<td>Case Staff</td>
+</tr>
+<tr>
+	<td>T</td>
+	<td>Case Student</td>
+</tr>
+<tr>
+	<td>P</td>
+	<td>Case Pre-admitted Student</td>
+</tr>
+<tr>
+	<td>E</td>
+	<td>Case Emeritus</td>
+</tr>
+<tr>
+	<td>A</td>
+	<td>Case Alum</td>
+</tr>
+<tr>
+	<td>f</td>
+	<td>Affiliate Faculty (e.g., CIM)</td>
+</tr>
+<tr>
+	<td>s</td>
+	<td>Affiliate Staff</td>
+</tr>
+<tr>
+	<td>t</td>
+	<td>Affiliate Student</td>
+</tr>
+<tr>
+	<td>o</td>
+	<td>Affiliate Other (e.g., Kelly Services Temp)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-4">
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><strong>Active Directory Codes</strong></div>
+<table class="table table-striped">
+<tbody>
+<tr>
+	<td style="background-color: #808080;">&not;</td>
+	<td>Not authorized for <abbr title="Active Directory">AD</abbr> account</td>
+</tr>
+<tr>
+	<td style="background-color: #008000;">&bull;</td>
+	<td>Authorized for <abbr title="Active Directory">AD</abbr>, account is ready to be used</td>
+</tr>
+<tr>
+	<td style="background-color: #FF0000;">S</td>
+	<td>Error occurred searching <abbr title="Active Directory">AD</abbr> for user</td>
+</tr>
+<tr>
+	<td style="background-color: #00FFFF;">&hellip;</td>
+	<td><abbr title="Active Directory">AD</abbr> account pending creation (user not found)</td>
+</tr>
+<tr>
+	<td style="background-color: #FFA500;">D</td>
+	<td>Authorized for <abbr title="Active Directory">AD</abbr>, account not yet active (disabled)</td>
+</tr>
+<tr>
+	<td style="background-color: #FFA500;">L</td>
+	<td><abbr title="Active Directory">AD</abbr> account locked (probably too many bad logins - will automatically unlock)</td>
+</tr>
+<tr>
+	<td style="background-color: #FFFF00;">P</td>
+	<td><abbr title="Single Sign-On">SSO</abbr> and <abbr title="Active Directory">AD</abbr> passwords not in sync</td>
+</tr>
+<tr>
+	<td style="background-color: #FFFF00;">N</td>
+	<td><abbr title="Active Directory">AD</abbr> and <abbr title="Lightweight Directory Access Protocol">LDAP</abbr> name information not in sync (first name, last name, or both different)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="heading-2" class="row">
+<div class="col-md-12 col-sm-12">
+<h3>Lookup Fields, Detail</h3>
+</div>
+</div>
+
+<div id="detail" class="row">
+<div class="col-md-7 col-sm-7">
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><strong>General</strong></div>
+<table class="table table-striped">
+<tbody>
+<tr>
+	<td>Acct Active</td>
+	<td>Indicates whether user has an activated or administratively disabled (logins disabled) account</td>
+</tr>
+<tr>
+	<td>Net ID</td>
+	<td>Case Network ID</td>
+</tr>
+<tr>
+	<td>Name</td>
+	<td>Full legal name</td>
+</tr>
+<tr>
+	<td>Last</td>
+	<td>Legal last name</td>
+</tr>
+<tr>
+	<td>First</td>
+	<td>Legal first name</td>
+</tr>
+<tr>
+	<td>MI</td>
+	<td>Middle initial</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<br>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><strong>General Mail Information</strong></div>
+
+<table class="table table-striped">
+
+<tr>
+	<td>Primary Email Address</td>
+	<td>Address	Primary email address for account, first.last@case.edu (FDL)</td>
+</tr>
+<tr>
+	<td>Off Campus Email Address</td>
+	<td>Address	Off campus email address for account</td>
+</tr>
+<tr>
+	<td>Mail Aliases</td>
+	<td>Mail alias for account (personal mail aliases and preferred FDL)</td>
+</tr>
+</table>
+</div>
+
+<br>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><strong>Mailbox - mailbox for account</strong></div>
+<table class="table table-striped">
+<tr>
+	<td><span style="color:green">Google</span></td>
+	<td>Mailbox exists and is active</td>
+</tr>
+<tr>
+	<td><span style="color:red">Google Expired</span></td>
+	<td>No active affiliations, Google account suspended</td>
+</tr>
+<tr>
+	<td><span style="color:red">Bitbucket</span></td>
+	<td>No mailbox exists or not routed properly</td>
+</tr>
+<tr>
+	<td>N/A</td>
+	<td>Typically an off-campus mailbox like Link2Exchange</td>
+</tr>
+</table>
+</div>
+
+<br>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><strong>Mail Acct. Status - status of mail account</strong></div>
+
+<table class="table table-striped">
+<tr>
+	<td><span style="color:green">Active</span></td>
+	<td>Mail should be flowing to the mailbox</td>
+</tr>
+<tr>
+	<td><span style="color:red">Disabled</span></td>
+	<td>Google account suspended</td>
+</tr>
+<tr>
+	<td>N/A</td>
+	<td>No route is set, no mailbox of any kind exists</td>
+</tr>
+<tr>
+	<td><span style="color:green">Routed</span></td>
+	<td>Mail routed off-campus (e.g., Link2Exchange)</td>
+</tr>
+</table>
+</div>
+
+<br>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><strong><abbr title="Post Office Protocol">POP</abbr>/<abbr title="Internet Message Access Protocol">IMAP</abbr>, Forwarding, Vacation</strong></div>
+
+<table class="table table-striped">
+<tr>
+	<td>P</td>
+	<td><abbr title="Post Office Protocol">POP</abbr>: enabled/disabled</td>
+</tr>
+<tr>
+	<td>I</td>
+	<td><abbr title="Internet Message Access Protocol">IMAP</abbr>: enabled/disabled</td>
+</tr>
+<tr>
+	<td>F</td>
+	<td>Forwarding: enabled/disabled</td>
+</tr>
+<tr>
+	<td>V</td>
+	<td>Vacation message: enabled/disabled</td>
+</tr>
+</table>
+</div>
+
+<br>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><strong>Password + Security</strong></div>
+<table class="table table-striped">
+<tbody>
+<tr>
+	<td>Password Change</td>
+	<td>The date and time of last password change. (# of days since password change)</td>
+</tr>
+<tr>
+	<td>Password Expires</td>
+	<td>The date and time when current password expires. (# of days until password expires)</td>
+</tr>
+<tr>
+	<td>Controlling Policy</td>
+	<td>Tells whether a password policy (history) exists for this user</td>
+</tr>
+<tr>
+	<td>Password Expiration Cycle</td>
+	<td>How ofter the account password must be changed. (Students/Faculty/Staff typically 360 days, Alumni never)</td>
+</tr>
+<tr>
+	<td>Security Q & A</td>
+	<td>Account has a Security Question and Answer setup. (Yes/No)</td>
+</tr>
+<tr>
+	<td>Act. Code (PIN)</td>
+	<td>Account activation code/PIN - This field required special privileges to see it. Most of the time you will see "---"</td>
+</tr>
+<tr>
+	<td>Activation Method</td>
+	<td>Method which can be used to activate the account. A green check (<span style="color:green">&check;</span>) means that method can be used.
+	<ul>
+		<li>PIN - A valid 4-character PIN exists (always available)</li>
+		<li>PSID - A valid PSID and Date of birth (DoB) exists</li>
+		<li>SSN - A valid SSN and DoB exists</li>
+	</ul>
+	</td>
+</tr>
+<tr>
+	<td>RAVE Account</td>
+	<td>Account is setup for Rave. (Yes/No)</td>
+</tr>
+<tr>
+	<td>Suppress</td>
+	<td>Account is suppressed. (FERPA/HR suppression/None)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+ 
+<div class="col-md-5 col-sm-5">
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><strong>Affiliations</strong></div>
+<table class="table table-striped">
+<tbody>
+<tr>
+	<td>F</td>
+	<td>Case Faculty</td>
+</tr>
+<tr>
+	<td>S</td>
+	<td>Case Staff</td>
+</tr>
+<tr>
+	<td>T</td>
+	<td>Case Student</td>
+</tr>
+<tr>
+	<td>P</td>
+	<td>Case Pre-admitted Student</td>
+</tr>
+<tr>
+	<td>E</td>
+	<td>Case Emeritus</td>
+</tr>
+<tr>
+	<td>A</td>
+	<td>Case Alum</td>
+</tr>
+<tr>
+	<td>f</td>
+	<td>Affiliate Faculty (e.g., CIM)</td>
+</tr>
+<tr>
+	<td>s</td>
+	<td>Affiliate Staff</td>
+</tr>
+<tr>
+	<td>t</td>
+	<td>Affiliate Student</td>
+</tr>
+<tr>
+	<td>o</td>
+	<td>Affiliate Other (e.g., Kelly Services Temp)</td>
+</tr>
+<tr>
+	<td>Expirations</td>
+	<td>Date when affiliation expires (d)</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<br>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><strong>ACL Bits</strong></div>
+<table class="table table-striped">
+<tbody>
+<tr>
+	<td>VIP</td>
+	<td>User is in the VIP group. This gets replicated to the FootPrints VIP flag</td>
+</tr>
+<tr>
+	<td>Active Dir</td>
+	<td>Status of Active Directory access for active affiliation (see Key, Active Directory Codes)</td>
+</tr>
+<tr>
+	<td>Soft. Ctr.</td>
+	<td>Status of Software Center access for active affiliation(s)</td>
+</tr>
+<tr>
+	<td>VPN</td>
+	<td>Status of VPN access for active affiliation(s)</td>
+</tr>
+<tr>
+	<td>Spc. VPN</td>
+	<td>VPN	Status of special VPN access (special profiles with extra privileges) for active affiliation(s)</td>
+</tr>
+<tr>
+	<td>Estore Admin</td>
+	<td>The user has eStore special privileges</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<br>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><strong>Miscellaneous</strong></div>
+<table class="table table-striped">
+<tbody>
+<tr>
+	<td>Phone #</td>
+	<td>Listed phone # for account User</td>
+</tr>
+<tr>
+	<td>Off. Photo</td>
+	<td>Official Photo</td>
+</tr>
+<tr>
+	<td>Pers. Photo</td>
+	<td>Personal Photo</td>
+</tr>
+<tr>
+	<td>Account Notes</td>
+	<td>Account notes, which typically indicate when and why account was modified</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<br>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><strong>Google Apps</strong></div>
+<table class="table table-striped">
+<tbody>
+<tr>
+	<td>Signed Up</td>
+	<td>Account signed up for Google Apps. (Yes/No)</td>
+</tr>
+<tr>
+	<td>Status</td>
+	<td>Google Apps account status. (Active, Suspended, N/A) - Accounts with no active affiliations will be automatically suspended</td>
+</tr>
+<tr>
+	<td>First Visit</td>
+	<td>User has visited their Google Apps Account and accepted Google's
+Terms of Service</td>
+</tr>
+<tr>
+	<td>Change PWD At Next Visit</td>
+	<td>Google Apps password must be changed at next visit (Yes/No)</td>
+</tr>
+<tr>
+	<td>Account Created / Last Login Time</td>
+	<td>Date and time when the Google account was created<br>
+	Date and time the user last logged in to Google</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+
+
+<hr>
+
+<div class="pull-right">
+<p><span class="copy-left">&copy;</span> 2015, Case Western Reserve University</p>
+</div>
+<div class="clearfix"></div>
+</div>
+</body>
+</html>
+
+
+<div id="footer" class="row">
+<div class="col-md-12 col-sm-12">
+<div class="pull-right">
+<p><span class="copy-left">&copy;</span> 2015, Case Western Reserve University</p>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</body>
+</html>
