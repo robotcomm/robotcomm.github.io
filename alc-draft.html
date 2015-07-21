@@ -10,6 +10,20 @@
 <script src="/bootstrap/js/bootstrap.min.js"></script>
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 
+
+<script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+//-->
+</script>
+
+
 <style>
 
 h2 { padding-top: 30px; }
@@ -60,9 +74,11 @@ body { padding-top: 100px; }
 	
 <p>&nbsp;</p>
 
+<div id="foo"><p>test</p></div>
+
 
 <div class="list-group">
-  	<a href="#turn-on" class="list-group-item">
+  	<a href="javascript:void(0)" onclick="toggle_visibility('foo');" class="list-group-item">
       <h4 class="list-group-item-heading">Turn your room on (and off) <span class="caret"></span><span class="glyphicon glyphicon-off pull-right"></h4>
     	<p class="list-group-item-text">without physically touching any equipment</p>
   	</a>
