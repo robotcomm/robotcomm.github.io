@@ -145,54 +145,51 @@ body { padding-top: 100px; }
  
 <h3>Enroll in DUO Security</h3>
 
-<h4>Before you begin</h4>
-<p>Prepare to enroll a mobile phone by having each of these items ready; your CWRU network ID and password, a laptop or desktop computer connected to the internet, a copy of these instructions, and your Android or iOS mobile phone.</p>
-
 
 <div class="row">
 <div class="col-md-12 col-sm-12">
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a onclick="toggle_visibility('enroll-smartphone');">Smartphone or Tablet</a>
+        <a onclick="toggle_visibility('enroll-smartphone');">Smartphone</a>
       </h4>
     </div>
       
   <div id="enroll-smartphone" class="panel-body" style="display:none">
-    <p><strong>Install the Duo Mobile application</strong></p>
+    
+
+    <p><strong>Add a phone number to your Duo profile, Install Duo Mobile application</strong></p>
     <ol>
-      <li>Use your mobile phone to find the "Duo Mobile" application in either iTunes or the Google Play.</li>
-      <li>Install and launch the "Duo Mobile" application.</li>
+      <li>Open the <a href="https://webapps.case.edu/duo/webauth.py">Duo Security self-enrollment page</a> using a laptop or desktop computer.</li>
+      <li>When prompted, type in your CWRU network ID and password.</li>
+      <li>Click <strong>Start Setup</strong>.</li>
+      <li>Choose "Mobile phone" as your device type and click&nbsp;<strong>Continue</strong>.<br>
+      <img src="https://guide.duosecurity.com/static/images/enrollment-choose.png" alt="..." class="img-rounded"></li>
+      <li>Type your 10 digit phone number and choose the country associated with it. Use number of the smartphone you'll have with you when you're logging in.<br>
+      <img src="https://guide.duosecurity.com/static/images/enrollment-phone.png" alt="..." class="img-rounded"></li>
+      <li>Double-check your phone number and then select the box marked "<strong>(###) ###-####</strong>&nbsp;is the correct phone number". Click <strong>Continue</strong>.</li>
+      <li>Choose your operating system (e.g., iOS, Android, Blackberry) and click&nbsp;<strong>Continue</strong>.<br>
+      <img src="https://guide.duosecurity.com/static/images/enrollment-platform.png" class="img-rounded">
+      </li>
+      <li>Search for "Duo Mobile" in your smartphone's application store and then install it.</li>
+      <li>Return to your computer. Choose "I have Duo Mobile installed" and click&nbsp;<strong>Continue</strong>.</li>
     </ol>
 
-    <p><strong>Add your mobile phone to the Duo Security profile</strong></p>
+    <p><strong>Activate Duo Mobile</strong></p>
     <ol>
-      <li>With your laptop or desktop computer, browse to the&nbsp;<a href="https://webapps.case.edu/duo/webauth.py">Duo Security self-enrollment page</a>.</li>
-      <li>Type in your CWRU network ID and password when prompted.</li>
-      <li>Click the&nbsp;<strong>Start Setup</strong>&nbsp;button (Figure 1).</li>
-      <li>Choose "Mobile phone" as device type. Click&nbsp;<strong>Continue</strong>.</li>
-      <li>Choose country from the dropdown box ("United States" is default).</li>
-      <li>Enter 10-digit telephone number (Figure 2).</li>
-      <li>Check the box marked "<strong>(###) ###-####</strong>&nbsp;is the correct phone number" and click&nbsp;<strong>Continue</strong>.</li>
-      <li>Choose phone operating system (iOS or Android). Click&nbsp;<strong>Continue</strong>.</li>
-      <li>Select "I have Duo Mobile installed" and click&nbsp;<strong>Continue</strong>.
-          <!-- responsive embed image here --></li>
-    </ol>
-
-    <p><strong>Add the CWRU account to your mobile application</strong></p>
-    <ol>
-      <li>On your mobile phone, open the Duo Mobile application and tap the&nbsp;<strong>+</strong>&nbsp;or&nbsp;<strong>Add account</strong>&nbsp;button. Then tap&nbsp;<strong>Scan Barcode</strong>.<br>
+      <li>On your mobile phone, open the Duo Mobile application and tap <strong>+</strong> or <strong>Add account</strong>. Then tap&nbsp;<strong>Scan Barcode</strong>.<br>
       <p><strong>NOTE:</strong>&nbsp;Use a free-standing monitor or large laptop to complete these steps. Barcode scanning on a compact display is challenging.</p>
       </li>
       <li>Use your mobile phone to scan the barcode shown on your computer screen.</li>
-      <li>After an account titled "Case Western Reserve University" appears on your mobile phone, click&nbsp;<strong>Continue</strong>&nbsp;on your computer.</li>
+      <li>After an account named "Case Western Reserve University" appears on your mobile phone, click&nbsp;<strong>Continue</strong> to .</li>
     </ol>
 
     <p><strong>Add a descriptive device name</strong></p>
     <ol>
-      <li>Click the gray&nbsp;<strong>Actions</strong>&nbsp;menu to the right of the newly added number</li>
+      <li>Click the gray&nbsp;<strong>Actions</strong>&nbsp;menu to the right of the newly added number.<br>
+      <img src="https://guide.duosecurity.com/static/images/enrollment-platform.png" class="img-rounded"></li>
       <li>Choose "Change Device Name&hellip;" and add a descriptive title for the number (ex., "My Work Mobile").</li>
-      <li>Click the green check mark to complete name change (Figure 5).</li>
+      <li>Click the green check mark to complete name change.</li>
       <li>Click&nbsp;<strong>Done</strong>&nbsp;to save all changes and exit the device management interface.</li>
     </ol>
 
@@ -213,7 +210,7 @@ body { padding-top: 100px; }
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a onclick="toggle_visibility('enroll-mobile');">Mobile phones (feature or basic)</a>
+        <a onclick="toggle_visibility('enroll-mobile');">Cell Phone or Landline</a>
       </h4>
     </div>
       
@@ -247,22 +244,11 @@ body { padding-top: 100px; }
     </ol>
 
     <p><strong>Sign in with mobile phone to complete enrollment</strong></p>
-    <ol>
-      
-    </ol>
   </div>
 </div>
 </div>
 </div>
 
-<div class="row">
-<div class="col-md-12 col-sm-12">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a onclick="toggle_visibility('enroll-landline');">Landline</a>
-      </h4>
-    </div>
       
   <div id="enroll-landline" class="panel-body" style="display:none">
     
@@ -412,6 +398,11 @@ body { padding-top: 100px; }
 </div>
 </div>
 </div>
+
+
+<!-- New content arrangement, Manage your account and Devices -->
+
+
 
 
 <!-- Content piece, "Enroll Additional Devices" -->
