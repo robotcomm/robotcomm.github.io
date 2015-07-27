@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>UnityConnection_VM+WebUI</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><p>/* </p>
+
+<p>CSTA: Telephony | Unified Communication | Cisco Unity Connection | Voicemail  <br>
+title: Voicemail</p>
+
+<p>*/</p>
+
+<h3 id="top"> </h3>
+
+<p><strong>Keywords</strong>: Cisco; Unified communication; Voicemail; Voicemail messages; Phone; Telephone; VoIP; Unity Connection; Unity; Visual voicemail; PIN; Voicemail PIN; Forward message; Save message; Delete message; Unity Connection enrollment; Unity Connection web inbox; Phone shortcuts; Phonesetup.case.edu</p>
+
+
+
+<h3 id="troubleshoot-repair-topics">Troubleshoot + Repair topics</h3>
+
+<p><a href="#cannot-retrieve-message-from-communite">Cannot retrieve message from Communite</a> <br>
+<a href="#cannot-forward-message-from-communite">Cannot forward message from Communite</a>  </p>
+
+
+
+<h3 id="activate-setup-install-topics">Activate + Setup + Install topics</h3>
+
+<p><a href="#setup-new-auto-attendant">Setup new auto-attendant</a> <br>
+<a href="#setup-new-group-shared-inbox">Setup new group / shared inbox</a>  </p>
+
+
+
+<h3 id="move-change-topics">Move + Change topics</h3>
+
+<p><a href="#migrate-auto-attendant-from-communite-to-unity-connection">Migrate auto-attendant from Communite to Unity Connection</a> <br>
+<a href="#migrate-group-shared-inbox-from-communite-to-unity-connection">Migrate group / shared inbox from Communite to Unity Connection</a> <br>
+<a href="#archive-communite-voicemails-in-email">Archive Communite voicemails in email</a>  </p>
+
+
+
+<h3 id="how-to-training-topics">How-to + Training topics</h3>
+
+<p><a href="#requests-for-training">Requests for training</a> <br>
+<a href="#requests-for-literature-or-guides">Requests for literature or guides</a> <br>
+<a href="#requests-for-consultation-re-hardware-purchasing">Requests for consultation re: hardware purchasing</a> <br>
+<a href="http://www.case.edu/its/uc/faq.html">Unified Communication FAQ *</a>  </p>
+
+<p><strong>Unity Connection: Enrollment</strong> <br>
+<a href="#how-do-i-enroll-as-a-user">How do I enroll as a user</a> <br>
+<a href="#how-do-i-set-a-voicemail-pin">How do I set a voicemail PIN</a> <br>
+<a href="#where-can-i-find-more-information-about-unity-connection-enrollment">Where can I find more information about Unity Connection enrollment</a>  </p>
+
+<p><strong>Unity Connection: Voicemail</strong> <br>
+<a href="#how-do-i-send-voice-messages">How do I send voice messages</a> <br>
+<a href="#how-do-i-check-voice-messages">How do I check voice messages</a> <br>
+<a href="#how-do-i-reply-to-voice-messages">How do I reply to voice messages</a> <br>
+<a href="#how-do-i-forward-voice-messages">How do I forward voice messages</a> <br>
+<a href="#how-do-i-manage-receipts">How do I manage receipts</a>  </p>
+
+<p><strong>Unity Connection: Web Inbox</strong> <br>
+<a href="#what-is-web-inbox">What is Web Inbox</a> <br>
+<a href="#how-do-i-use-the-web-inbox">How do I use the Web Inbox</a> <br>
+<a href="#where-can-i-find-more-information-about-web-inbox">Where can I find more information about Web Inbox</a>  </p>
+
+<p><strong>Unity Connection: FAQ</strong> <br>
+<a href="#is-there-a-list-of-voicemail-shortcuts">Is there a list of voicemail shortcuts</a> <br>
+<a href="#is-there-unity-connection-faq">Is there Unity Connection FAQ</a>  </p>
+
+
+
+<h3 id="billing-topics"><a href="#billing">Billing topics</a></h3>
+
+
+
+<h3 id="report-an-outage"><a href="#outage">Report an Outage</a></h3>
+
+
+
+<h3 id="other-unable-to-resolve"><a href="#unable-to-resolve">Other + Unable to Resolve</a></h3>
+
+<hr>
+
+
+
+<h2 id="service-description">Service Description</h2>
+
+
+
+<h2 id="tools-for-resolution">Tools for Resolution</h2>
+
+
+
+<h3 id="required-information">Required Information</h3>
+
+<ul>
+<li>Name,</li>
+<li>CWRU Network ID,</li>
+<li>Contact information (preferred and alternate),</li>
+<li>Location (building name and room number),</li>
+<li>Problem or Request description</li>
+</ul>
+
+
+
+<h3 id="additional-resources">Additional Resources</h3>
+
+<table>
+<thead>
+<tr>
+  <th align="left">Document Title</th>
+  <th align="left">Topic(s) / Purpose</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left"><a href="http://www.case.edu/its/uc/">Unity Connection QRG *</a></td>
+  <td align="left">Quick Reference Guide</td>
+</tr>
+<tr>
+  <td align="left"><a href="http://www.case.edu/its/uc/">Unity Connection Visual Voicemail *</a></td>
+  <td align="left">Instructions: Access visual voicemail, sign in, play messages, place and receive calls</td>
+</tr>
+<tr>
+  <td align="left"><a href="http://www.case.edu/its/uc/">Unity Connection Enrollment Guide *</a></td>
+  <td align="left">Instructions: Unity Connection user enrollment and PIN setup</td>
+</tr>
+<tr>
+  <td align="left"><a href="https://callman4.case.edu/ccmuser/">Unity Connection Web Tools *</a></td>
+  <td align="left">Instructions: Use Unity Connection Web Inbox, FAQ</td>
+</tr>
+<tr>
+  <td align="left"><a href="http://www.case.edu/its/uc/faq.html">Unified Communication FAQ *</a></td>
+  <td align="left">UC program FAQ, of which Unity Connection is a sub-topic</td>
+</tr>
+</tbody></table>
+
+
+
+
+<h3 id="voicemail-shortcuts">Voicemail Shortcuts</h3>
+
+<p>While listening to the <strong>Main menu</strong>, press:</p>
+
+<blockquote>
+  <table>
+<thead>
+<tr>
+  <th align="left">Action</th>
+  <th align="left">Key(s)</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">Hear new messages</td>
+  <td align="left"><kbd>1</kbd></td>
+</tr>
+<tr>
+  <td align="left">Send a message</td>
+  <td align="left"><kbd>2</kbd></td>
+</tr>
+<tr>
+  <td align="left">Review saved messages</td>
+  <td align="left"><kbd>3, 1</kbd></td>
+</tr>
+<tr>
+  <td align="left">Review deleted messages</td>
+  <td align="left"><kbd>3, 2</kbd></td>
+</tr>
+<tr>
+  <td align="left">Change setup options</td>
+  <td align="left"><kbd>4</kbd></td>
+</tr>
+<tr>
+  <td align="left">Change greetings</td>
+  <td align="left"><kbd>4, 1</kbd></td>
+</tr>
+<tr>
+  <td align="left">Turn alternate greeting on or off</td>
+  <td align="left"><kbd>4, 1, 2</kbd></td>
+</tr>
+<tr>
+  <td align="left">Edit other greetings</td>
+  <td align="left"><kbd>4, 1, 3</kbd></td>
+</tr>
+<tr>
+  <td align="left">Change message notification</td>
+  <td align="left"><kbd>4, 2, 1</kbd></td>
+</tr>
+<tr>
+  <td align="left">Change fax delivery</td>
+  <td align="left"><kbd>4, 2, 2</kbd></td>
+</tr>
+<tr>
+  <td align="left">Select full or brief menus</td>
+  <td align="left"><kbd>4, 2, 3</kbd></td>
+</tr>
+<tr>
+  <td align="left">Change PIN</td>
+  <td align="left"><kbd>4, 3, 1</kbd></td>
+</tr>
+<tr>
+  <td align="left">Change recorded name</td>
+  <td align="left"><kbd>4, 3, 2</kbd></td>
+</tr>
+<tr>
+  <td align="left">Change call transfer</td>
+  <td align="left"><kbd>4, 4</kbd></td>
+</tr>
+<tr>
+  <td align="left">Find messages from a Connection user</td>
+  <td align="left"><kbd>5, 1</kbd></td>
+</tr>
+<tr>
+  <td align="left">Find messages from all outside callers</td>
+  <td align="left"><kbd>5, 2</kbd></td>
+</tr>
+<tr>
+  <td align="left">Find messages from an outside caller</td>
+  <td align="left"><kbd>5, 3</kbd></td>
+</tr>
+<tr>
+  <td align="left">Hear meetings</td>
+  <td align="left"><kbd>6</kbd></td>
+</tr>
+<tr>
+  <td align="left">Hear external messages (Not available on some systems)</td>
+  <td align="left"><kbd>7</kbd></td>
+</tr>
+<tr>
+  <td align="left">Switch between using the phone keypad and using voice commands</td>
+  <td align="left"><kbd>9</kbd></td>
+</tr>
+</tbody></table>
+
+  
+  <p><br>  </p>
+</blockquote>
+
+<p>After <strong>recording and addressing</strong> a message, press:</p>
+
+<blockquote>
+  <table>
+<thead>
+<tr>
+  <th align="left">Action</th>
+  <th align="left">Key(s)</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">Send message</td>
+  <td align="left"><kbd>#</kbd></td>
+</tr>
+<tr>
+  <td align="left">Add name</td>
+  <td align="left"><kbd>9, 1</kbd></td>
+</tr>
+<tr>
+  <td align="left">Mark message urgent</td>
+  <td align="left"><kbd>1</kbd></td>
+</tr>
+<tr>
+  <td align="left">Request return receipt</td>
+  <td align="left"><kbd>2</kbd></td>
+</tr>
+<tr>
+  <td align="left">Mark message private</td>
+  <td align="left"><kbd>3</kbd></td>
+</tr>
+<tr>
+  <td align="left">Set future delivery</td>
+  <td align="left"><kbd>4</kbd></td>
+</tr>
+<tr>
+  <td align="left">Review recording</td>
+  <td align="left"><kbd>5</kbd></td>
+</tr>
+<tr>
+  <td align="left">Re-record</td>
+  <td align="left"><kbd>6</kbd></td>
+</tr>
+<tr>
+  <td align="left">Add to the message</td>
+  <td align="left"><kbd>7</kbd></td>
+</tr>
+<tr>
+  <td align="left">Mark message secure</td>
+  <td align="left"><kbd>9, 3</kbd></td>
+</tr>
+</tbody></table>
+
+  
+  <p><br></p>
+</blockquote>
+
+<p><strong>While listening</strong> to a message, press:</p>
+
+<blockquote>
+  <table>
+<thead>
+<tr>
+  <th align="left">Action</th>
+  <th align="left">Key(s)</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">Restart message</td>
+  <td align="left"><kbd>1</kbd></td>
+</tr>
+<tr>
+  <td align="left">Play message by number</td>
+  <td align="left"><kbd>1, 2</kbd></td>
+</tr>
+<tr>
+  <td align="left">Play previous message</td>
+  <td align="left"><kbd>1, 4</kbd></td>
+</tr>
+<tr>
+  <td align="left">Play next message</td>
+  <td align="left"><kbd>1, 6</kbd></td>
+</tr>
+<tr>
+  <td align="left">Save</td>
+  <td align="left"><kbd>2</kbd></td>
+</tr>
+<tr>
+  <td align="left">Delete</td>
+  <td align="left"><kbd>3</kbd></td>
+</tr>
+<tr>
+  <td align="left">Reply</td>
+  <td align="left"><kbd>4</kbd></td>
+</tr>
+<tr>
+  <td align="left">Reply to all</td>
+  <td align="left"><kbd>4, 2</kbd></td>
+</tr>
+<tr>
+  <td align="left">Return call to sender</td>
+  <td align="left"><kbd>4, 4</kbd></td>
+</tr>
+<tr>
+  <td align="left">Forward message</td>
+  <td align="left"><kbd>5</kbd></td>
+</tr>
+<tr>
+  <td align="left">Slow playback</td>
+  <td align="left"><kbd>6, 4</kbd></td>
+</tr>
+<tr>
+  <td align="left">Fast playback</td>
+  <td align="left"><kbd>6, 6</kbd></td>
+</tr>
+<tr>
+  <td align="left">Change volume</td>
+  <td align="left"><kbd>6, 5</kbd></td>
+</tr>
+<tr>
+  <td align="left">Reset volume to default level</td>
+  <td align="left"><kbd>6, 3</kbd></td>
+</tr>
+<tr>
+  <td align="left">Rewind message</td>
+  <td align="left"><kbd>7</kbd></td>
+</tr>
+<tr>
+  <td align="left">Pause or resume</td>
+  <td align="left"><kbd>8</kbd></td>
+</tr>
+<tr>
+  <td align="left">Fast-forward</td>
+  <td align="left"><kbd>9</kbd></td>
+</tr>
+<tr>
+  <td align="left">Fast-forward to end</td>
+  <td align="left"><kbd>#</kbd></td>
+</tr>
+<tr>
+  <td align="left">Play first message</td>
+  <td align="left"><kbd>1, 7</kbd></td>
+</tr>
+<tr>
+  <td align="left">Play last message</td>
+  <td align="left"><kbd>1, 9</kbd></td>
+</tr>
+<tr>
+  <td align="left">Toggle urgent status on/off</td>
+  <td align="left"><kbd>1, 8</kbd></td>
+</tr>
+<tr>
+  <td align="left">Skip message, save or restore as saved</td>
+  <td align="left"><kbd>#, 2</kbd></td>
+</tr>
+<tr>
+  <td align="left">Skip message, save or restore as new</td>
+  <td align="left"><kbd>6</kbd></td>
+</tr>
+<tr>
+  <td align="left">Skip message, save as is</td>
+  <td align="left"><kbd>#, #</kbd></td>
+</tr>
+<tr>
+  <td align="left">Send fax to fax machine for printing</td>
+  <td align="left"><kbd>6, 8</kbd></td>
+</tr>
+<tr>
+  <td align="left">Play message properties</td>
+  <td align="left"><kbd>1, 5</kbd></td>
+</tr>
+<tr>
+  <td align="left">Cancel or back up</td>
+  <td align="left"><kbd>*</kbd></td>
+</tr>
+<tr>
+  <td align="left">Help</td>
+  <td align="left"><kbd>0</kbd></td>
+</tr>
+</tbody></table>
+
+  
+  <p><br></p>
+</blockquote>
+
+<p><strong>After listening</strong> to a message, press:</p>
+
+<blockquote>
+  <table>
+<thead>
+<tr>
+  <th align="left">Action</th>
+  <th align="left">Key(s)</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">Replay message</td>
+  <td align="left"><kbd>1</kbd></td>
+</tr>
+<tr>
+  <td align="left">Play message by number</td>
+  <td align="left"><kbd>1, 2</kbd></td>
+</tr>
+<tr>
+  <td align="left">Play previous message</td>
+  <td align="left"><kbd>1, 4</kbd></td>
+</tr>
+<tr>
+  <td align="left">Play next message</td>
+  <td align="left"><kbd>1, 6</kbd></td>
+</tr>
+<tr>
+  <td align="left">Play first message</td>
+  <td align="left"><kbd>1, 7</kbd></td>
+</tr>
+<tr>
+  <td align="left">Play last message</td>
+  <td align="left"><kbd>1, 9</kbd></td>
+</tr>
+<tr>
+  <td align="left">Toggle urgent status on/off</td>
+  <td align="left"><kbd>1, 8</kbd></td>
+</tr>
+<tr>
+  <td align="left">Save or restore as saved</td>
+  <td align="left"><kbd>2</kbd></td>
+</tr>
+<tr>
+  <td align="left">Delete</td>
+  <td align="left"><kbd>3</kbd></td>
+</tr>
+<tr>
+  <td align="left">Reply</td>
+  <td align="left"><kbd>4</kbd></td>
+</tr>
+<tr>
+  <td align="left">Reply to all</td>
+  <td align="left"><kbd>4, 2</kbd></td>
+</tr>
+<tr>
+  <td align="left">Call the sender</td>
+  <td align="left"><kbd>4, 4</kbd></td>
+</tr>
+<tr>
+  <td align="left">Forward message</td>
+  <td align="left"><kbd>5</kbd></td>
+</tr>
+<tr>
+  <td align="left">Save or restore as new</td>
+  <td align="left"><kbd>6</kbd></td>
+</tr>
+<tr>
+  <td align="left">Rewind</td>
+  <td align="left"><kbd>7</kbd></td>
+</tr>
+<tr>
+  <td align="left">Send fax to fax machine for printing</td>
+  <td align="left"><kbd>6, 8</kbd></td>
+</tr>
+<tr>
+  <td align="left">Play message properties</td>
+  <td align="left"><kbd>1, 5</kbd></td>
+</tr>
+<tr>
+  <td align="left">Save as is</td>
+  <td align="left"><kbd>#</kbd></td>
+</tr>
+<tr>
+  <td align="left">Cancel or back up</td>
+  <td align="left"><kbd>*</kbd></td>
+</tr>
+<tr>
+  <td align="left">Help</td>
+  <td align="left"><kbd>0</kbd></td>
+</tr>
+</tbody></table>
+
+  
+  <p><br></p>
+</blockquote>
+
+<p>Use the following keys while you <strong>record messages, names and greetings</strong>:</p>
+
+<blockquote>
+  <table>
+<thead>
+<tr>
+  <th align="left">Action</th>
+  <th align="left">Key(s)</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">Pause or resume</td>
+  <td align="left"><kbd>8</kbd></td>
+</tr>
+<tr>
+  <td align="left">End a recording</td>
+  <td align="left"><kbd>#</kbd></td>
+</tr>
+</tbody></table>
+
+  
+  <p><br></p>
+</blockquote>
+
+
+
+<h3 id="resolver-groups">Resolver Groups</h3>
+
+<blockquote>
+  <p><strong>VoIP Support</strong>: Available Mon.-Fri., 8 a.m - 5 p.m., EST (and evenings as scheduled). Inquiries placed before 5 p.m. will receive a same-day response. Inquiries placed outside of operating hours will receive a response on the next business day.</p>
+  
+  <p><strong>DSS</strong>: Available as scheduled to facilitate installations, general on-site troubleshooting, etc. VoIP Support schedules necessary DSS appointments.  <br>
+  <br></p>
+</blockquote>
+
+<hr>
+
+
+
+<h2 id="how-to-escalate">How to escalate</h2>
+
+
+
+<h3 id="who-to-contact">Who to contact</h3>
+
+<blockquote>
+  <ol>
+  <li><strong>Dave Weilacher</strong>, <a href="mailto:dave.weilacher@case.edu">dave.weilacher@case.edu</a>, (216) 368-4184 (office)  <br>
+  <br></li>
+  </ol>
+</blockquote>
+
+
+
+<h3 id="description-and-purpose">Description and purpose</h3>
+
+<p>An escalation may be requested by an end user when he or she determines that a critical issue has not been acknowledged properly, remains unresolved for an unacceptable period of time or is severe enough that it requires atypical handling.</p>
+
+<p>Escalation should not be confused with assignment to a resolver group. An escalated issue is typically brought to the attention of management within a second-level support group(s).</p>
+
+
+
+<h3 id="escalation-procedures">Escalation procedures</h3>
+
+<p>Escalations are available whenever requested, including during planned university closures and recognized university holidays.</p>
+
+<p>During unplanned university closures escalations may NOT be available.</p>
+
+<p>Classify the reason for escalation as one of the following; Confirmed Outage (total or partial), Suspected Outage (total or partial), Abend, Slow response time, User Requirements not met, Other functional or Other technical.</p>
+
+<hr>
+
+
+
+<h2 id="troubleshoot-repair">Troubleshoot + Repair</h2>
+
+
+
+<h3 id="cannot-retrieve-message-from-communite">Cannot retrieve message from Communite</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>After <strong>01/07/15</strong> the Communite voicemail system will no longer be available.</li>
+<li>The replacement voicemail system, Unity Connection, will not retain messages stored in Communite.</li>
+<li>To listen to new messages in either system, press <kbd>1</kbd> at the main menu.</li>
+<li>Because Unity Connection will not retain messages stored in Communite, ITS recommends that users produce email copies of important messages by forwarding the message to his or herself prior to the upgrade.</li>
+<li>Instructions for this process are included in this <a href="#archive-communite-voicemails-in-email">document</a> and may also be accessed externally at <a href="http://www.case.edu/its/uc/save-voicemail.html">http://www.case.edu/its/uc/save-voicemail.html</a>.</li>
+<li>For additional instructions, refer to <a href="#voicemail-shortcuts">voicemail shortcuts</a>.</li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="cannot-forward-message-from-communite">Cannot forward message from Communite</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>After <strong>01/07/15</strong> the Communite voicemail system will no longer be available.</li>
+<li>The replacement voicemail system, Unity Connection, will not retain messages stored in Communite.</li>
+<li>To listen to new messages in either system, press <kbd>1</kbd> at the main menu.</li>
+<li>Because Unity Connection will not retain messages stored in Communite, ITS recommends that users produce email copies of important messages by forwarding the message to his or herself prior to the upgrade.</li>
+<li>Instructions for this process are included in this <a href="#archive-communite-voicemails-in-email">document</a> and may also be accessed externally at <a href="http://www.case.edu/its/uc/save-voicemail.html">http://www.case.edu/its/uc/save-voicemail.html</a>.</li>
+<li>For additional instructions, refer to <a href="#voicemail-shortcuts">voicemail shortcuts</a>.</li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h2 id="activate-setup-install">Activate + Setup + Install</h2>
+
+
+
+<h3 id="setup-new-auto-attendant">Setup new auto-attendant</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Add request details to ticket.</li>
+<li>Assign ticket to <strong>VoIP Support</strong> resolver group.</li>
+</ol>
+
+
+
+<h3 id="setup-new-group-shared-inbox">Setup new group / shared inbox</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Add request details to ticket.</li>
+<li>Assign ticket to <strong>VoIP Support</strong> resolver group.</li>
+</ol>
+
+<hr>
+
+
+
+<h2 id="move-change">Move + Change</h2>
+
+
+
+<h3 id="migrate-auto-attendant-from-communite-to-unity-connection">Migrate auto-attendant from Communite to Unity Connection</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>This action is completed as part of the voicemail system upgrade process.</li>
+<li>No action is required from the end user.</li>
+<li>Please note that due to system requirements, the order of mailbox recipients (e.g., press 1 for Smith, press 2 for Jones) may change.</li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="migrate-group-shared-inbox-from-communite-to-unity-connection">Migrate group / shared inbox from Communite to Unity Connection</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>This action is completed as part of the voicemail system upgrade process.</li>
+<li>No action is required from the end user.</li>
+<li>Please note that due to system requirements, the order of mailbox recipients (e.g., press 1 for Smith, press 2 for Jones) may change.</li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="archive-communite-voicemails-in-email">Archive Communite voicemails in email</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li><p>Repeat steps <strong>FOR EACH</strong> message user will save.</p>
+
+<blockquote>
+  <ol><li>Press messages and enter your passcode</li>
+  <li>Press 1 to retrieve messages, then 2 to retrieve saved messages.</li>
+  <li>While the message is playing, press 2 to forward the message</li>
+  <li>Enter your 7-digit mailbox number (e.g., 368-1111)</li>
+  <li>When you hear your name press #, 1, 1</li></ol>
+</blockquote></li>
+<li><p>Provide user with link to external reference, <a href="http://www.case.edu/its/uc/save-voicemail.html">http://www.case.edu/its/uc/save-voicemail.html</a>.</p></li>
+<li>Resolve ticket.</li>
+</ol>
+
+<hr>
+
+
+
+<h2 id="how-to-training">How-to + Training</h2>
+
+
+
+
+
+<h3 id="requests-for-training">Requests for training</h3>
+
+back to [top][]
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Individual and group training is not provided by ITS for this product.</li>
+<li>The behavior of voicemail in Communite is replicated in Unity Connection for all common functions (2 menu levels).</li>
+<li>System documentation, including trifold quick reference guides, are available at <a href="http://www.case.edu/its/uc/">http://www.case.edu/its/uc/</a>.  </li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="requests-for-literature-or-guides">Requests for literature or guides</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>ITS is not providing printed literature on-demand for this product.</li>
+<li>Printed literature may be requested from ITS inventory, if available and uncommitted. Customer may contact ITS Marketing and Communications representative by email at <a href="mailto:uc-info@case.edu">uc-info@case.edu</a> for details. </li>
+<li>System documentation, including trifold quick reference guides, are available at <a href="http://www.case.edu/its/uc/">http://www.case.edu/its/uc/</a>.  </li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="requests-for-consultation-re-hardware-purchasing">Requests for consultation re: hardware purchasing</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="how-do-i-enroll-as-a-user">How do I enroll as a user</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Any employee, contractor or temp worker with an @case.edu email address is also provisioned a CWRU telephone number.</li>
+<li>A voicemail account is created when the phone number is assigned.</li>
+<li>No further action is required to enroll in Unity Connection.</li>
+<li>If accessing voicemail system via the web portal at <a href="https://callman4.case.edu/ccmuser/">phonesetup.case.edu</a>, supply your CWRU Network ID and password when prompted.  </li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="how-do-i-set-a-voicemail-pin">How do I set a voicemail PIN</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>PIN and passcode are terms used interchangeably.</li>
+<li><strong>Using desk phone</strong></li>
+<li>Press <kbd>messages</kbd> button on telephone.</li>
+<li>While listening to the main menu, press <kbd>5, 5, 3</kbd>.</li>
+<li>The default PIN (passcode) is <strong>10900</strong>.</li>
+<li><strong>From another phone</strong></li>
+<li>Call your telephone number (e.g., (216) 368-1111).</li>
+<li>Press <kbd>*</kbd> to skip your greeting.</li>
+<li>While listening to the main menu, press <kbd>5, 5, 3</kbd>.</li>
+<li><strong>From your computer</strong></li>
+<li>Navigate to <a href="https://phonesetup.case.edu">Unity Connection web portal</a>.</li>
+<li>Supply your CWRU Network ID and password, when prompted.</li>
+<li>Select <strong>Options &gt; PIN</strong></li>
+<li>Enter current or default PIN.</li>
+<li>Set new PIN.</li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="where-can-i-find-more-information-about-unity-connection-enrollment">Where can I find more information about Unity Connection enrollment</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Refer to the <a href="http://www.case.edu/its/uc/">Unity Connection Enrollment Guide *</a>. This document is available at the ITS UC information page, <a href="http://www.case.edu/its/uc/">http://www.case.edu/its/uc/</a>.</li>
+<li>To access your phone settings using your computer, including passcode resets, speed dial presets and </li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="how-do-i-send-voice-messages">How do I send voice messages</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>While listening to the <strong>Main menu</strong>, press <kbd>1</kbd> to send a message.</li>
+<li>Or, after <strong>recording and addressing</strong> a message, press <kbd>#</kbd> to send a message.</li>
+<li>To forward a message while listening to it press <kbd>5</kbd>.</li>
+<li>For additional instructions, refer to <a href="#voicemail-shortcuts">voicemail shortcuts</a>.</li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="how-do-i-check-voice-messages">How do I check voice messages</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Press the <kbd>messages</kbd> button on telephone.</li>
+<li>From the main menu press <kbd>1</kbd> to listen to new messages.</li>
+<li>For additional instructions, refer to <a href="#voicemail-shortcuts">voicemail shortcuts</a>.</li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="how-do-i-reply-to-voice-messages">How do I reply to voice messages</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>To reply to a message, press <kbd>4</kbd> while listening to a message, or after it has concluded.</li>
+<li>For additional instructions, refer to <a href="#voicemail-shortcuts">voicemail shortcuts</a>.</li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="how-do-i-forward-voice-messages">How do I forward voice messages</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>To forward a message while listening to it press <kbd>5</kbd>.</li>
+<li>For additional instructions, refer to <a href="#voicemail-shortcuts">voicemail shortcuts</a>.</li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="how-do-i-manage-receipts">How do I manage receipts</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>To forward a message while listening to it press <kbd>5</kbd>.</li>
+<li>For additional instructions, refer to <a href="#voicemail-shortcuts">voicemail shortcuts</a>.</li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="what-is-web-inbox">What is Web Inbox</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>The Cisco Unity Connection Web Inbox lets you manage voice messages and voice message receipts. Using Web Inbox you may; <br>
+<ul><li>view a list of your messages </li>
+<li>play messages</li>
+<li>compose, reply to, forward, or delete messages</li></ul></li>
+<li>Access the Web Inbox at <a href="https://phonesetup.case.edu">phonesetup.case.edu</a></li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="how-do-i-use-the-web-inbox">How do I use the Web Inbox</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>The Cisco Unity Connection Web Inbox lets you manage voice messages and voice message receipts. Using Web Inbox you may; <br>
+<ul><li>view a list of your messages </li>
+<li>play messages</li>
+<li>compose, reply to, forward, or delete messages</li></ul></li>
+<li>Access the Web Inbox at <a href="https://phonesetup.case.edu">phonesetup.case.edu</a></li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="where-can-i-find-more-information-about-web-inbox">Where can I find more information about Web Inbox</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>More information is available at <a href="http://www.case.edu/its/uc/">http://www.case.edu/its/uc/</a>.</li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="is-there-a-list-of-voicemail-shortcuts">Is there a list of voicemail shortcuts</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="is-there-unity-connection-faq">Is there Unity Connection FAQ</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Resolve ticket.</li>
+</ol>
+
+<hr>
+
+
+
+<h2 id="billing">Billing</h2>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Assign to <strong>Engineering Computing</strong> resolver group.</li>
+</ol>
+
+
+
+<h2 id="unable-to-resolve">Unable to Resolve</h2>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Note any troubleshooting steps taken, and the result.</li>
+<li>Assign to <strong>Engineering Computing</strong> resolver group.</li>
+</ol>
+
+
+
+<h2 id="outage">Outage</h2>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Assign to <strong>Engineering Computing</strong> resolver group.</li>
+</ol></div></body>
+</html>

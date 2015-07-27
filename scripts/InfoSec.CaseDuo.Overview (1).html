@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>InfoSec.AuthPilot.Overview.md</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://stackedit.io/libs/MathJax/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><p><a name="top"> </a> <br>
+Information Security | Applications | CaseDuo | Overview</p>
+
+<h2 id="keywords"><a name="keywords"> </a>Keywords</h2>
+
+<p>Multi-factor Authentication; Two-factor Authentication; Two-step Verification; 2FA; Information Security; Identity Management; Duo Pilot; CaseDuo; Duo Security; DuoSecurity; VPN; Mobile security; Personal data; Password Security; Password Theft; Phishing</p>
+
+<h2 id="service-description"><a name="description"> </a> Service Description</h2>
+
+<p>Multi-factor authentication (also, two-factor authentication, two-step verification, 2FA) provides additional layers of security to protect user data in the case of password theft. Duo Security two-factor authentication enhances the security of your CWRU accounts by using your phone or connected mobile device to verify your identity. This prevents anyone but you from accessing your CWRU accounts, even if they know your password. </p>
+
+<h4 id="use-this-article-when">Use this article when:</h4>
+
+<ol>
+<li><em>Any user</em> reports a problem with a DuoSecurity mobile application, Duo Security enrollment or the CaseDuo VPN profile, including potential outages.</li>
+<li><em>Any user</em> has a question about DuoSecurity enrollment, or using DuoSecurity with the CaseDuo VPN profile.</li>
+<li><em>Any user</em> has a general question about multi-factor authentication or the CaseDuo pilot program.</li>
+</ol>
+
+<hr>
+
+<p><a name="resolution"> </a> </p><div class="se-section-delimiter"></div>
+
+<h2 id="tools-for-resolution">Tools for Resolution</h2>
+
+<h4 id="required-information">Required Information</h4>
+
+<ul>
+<li>Pilot participation status (i.e., participating, not participating),</li>
+<li>Name,  </li>
+<li>CWRU Network ID,  </li>
+<li>Contact information (preferred and alternate),  </li>
+<li>Problem or Request description</li>
+</ul>
+
+<h4 id="resolver-groups">Resolver Groups</h4>
+
+<p>Information Security, Identity Management</p>
+
+<hr>
+
+<h2 id="how-to-escalate">How to Escalate</h2>
+
+<h4 id="description-and-purpose">Description and purpose</h4>
+
+<p>An escalation may be requested by an end user when he or she determines that a critical issue has not been acknowledged properly, remains unresolved for an unacceptable period of time or is severe enough that it requires atypical handling.</p>
+
+<p>Escalation should not be confused with assignment to a resolver group. An escalated issue is typically brought to the attention of management within a second-level support group(s).</p>
+
+<h4 id="who-to-contact-for-escalation">Who to contact for escalation</h4>
+
+<ol>
+<li><strong>Kelly Maloney</strong>, kelly.maloney@case.edu, (216) 368-1314 (office)</li>
+<li><strong>Tom Siu</strong>, thomas.siu@case.edu, (216) 368-6959 (office)</li>
+</ol><div class="se-section-delimiter"></div>
+
+<h4 id="escalation-procedures">Escalation procedures</h4>
+
+<p>CaseDuo multi-factor authentication and the CaseDuo VPN profile are not considered a critical services during the pilot period.</p>
+
+<p>Escalation is available Mon.-Fri., 8 a.m - 5 p.m., EST. Escalations are are not available during or unplanned university closures, or during recognized university holidays. </p>
+
+<p>Classify the reason for escalation as one of the following; Confirmed Outage (total or partial), Suspected Outage (total or partial), Abend, Slow response time, User Requirements not met, Other functional or Other technical.  </p>
+
+<hr>
+
+<h2 id="topic-index">Topic Index</h2>
+
+<p><a name="index"> </a></p>
+
+<p><div class="toc"><div class="toc">
+<ul>
+<li><ul>
+<li><a href="#keywords"> Keywords</a></li>
+<li><a href="#service-description">  Service Description</a><ul>
+<li><ul>
+<li><a href="#use-this-article-when">Use this article when:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#tools-for-resolution">Tools for Resolution</a><ul>
+<li><ul>
+<li><a href="#required-information">Required Information</a></li>
+<li><a href="#resolver-groups">Resolver Groups</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#how-to-escalate">How to Escalate</a><ul>
+<li><ul>
+<li><a href="#description-and-purpose">Description and purpose</a></li>
+<li><a href="#who-to-contact-for-escalation">Who to contact for escalation</a></li>
+<li><a href="#escalation-procedures">Escalation procedures</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#topic-index">Topic Index</a></li>
+<li><a href="#detailed-troubleshoot-repair-procedures">Detailed Troubleshoot / Repair Procedures</a><ul>
+<li><ul>
+<li><a href="#user-is-experiencing-an-issue-while-attempting-to-enroll">User is experiencing an issue while attempting to enroll.</a></li>
+<li><a href="#user-is-experiencing-an-issue-with-mobile-application-post-enrollment">User is experiencing an issue with mobile application (post-enrollment).</a></li>
+<li><a href="#user-is-experiencing-an-issue-with-vpn-profile">User is experiencing an issue with VPN profile.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#detailed-activate-setup-install-procedures">Detailed Activate / Setup / Install Procedures</a><ul>
+<li><ul>
+<li><a href="#user-requires-assistance-enrolling-using-a-mobile-phone">User requires assistance enrolling using a mobile phone.</a></li>
+<li><a href="#user-requires-assistance-enrolling-using-a-smartphone">User requires assistance enrolling using a smartphone.</a></li>
+<li><a href="#user-requires-assistance-enrolling-a-connected-mobile-device">User requires assistance enrolling a connected mobile device.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#detailed-move-change-procedures">Detailed Move / Change Procedures</a><ul>
+<li><ul>
+<li><a href="#user-requests-to-change-credentials">User requests to change credentials.</a></li>
+<li><a href="#user-requests-to-unenroll-or-change-a-device">User requests to unenroll or change a device.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#detailed-how-to-training-procedures">Detailed How To / Training Procedures</a><ul>
+<li><ul>
+<li><a href="#how-do-i-enroll-using-mobile-phone">How do I enroll using mobile phone?</a></li>
+<li><a href="#how-do-i-enroll-using-a-smartphone-or-other-connected-device">How do I enroll using a smartphone or other connected device?</a></li>
+<li><a href="#how-do-i-enroll-using-my-land-line">How do I enroll using my land line?</a></li>
+<li><a href="#what-information-do-i-need-to-enroll">What information do I need to enroll?</a></li>
+<li><a href="#how-do-i-use-the-multi-factor-vpn-profile">How do I use the multi-factor VPN profile?</a></li>
+<li><a href="#what-is-the-name-of-the-multi-factor-vpn-profile">What is the name of the multi-factor VPN profile?</a></li>
+<li><a href="#what-is-multi-factor-authentication">What is multi-factor authentication?</a></li>
+<li><a href="#what-is-a-knowledge-factor">What is a ‘knowledge factor’?</a></li>
+<li><a href="#what-is-a-possession-factor">What is a ‘possession factor’?</a></li>
+<li><a href="#what-is-an-inheritance-factor">What is an ‘inheritance’ factor?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#detailed-billing-procedures">Detailed Billing Procedures</a></li>
+<li><a href="#detailed-outage-procedures">Detailed Outage Procedures</a><ul>
+<li><ul>
+<li><a href="#user-reports-an-outage-of-a-duo-application-enrollment-page-or-caseduo-vpn-profile">User reports an outage of a Duo application, Enrollment page or CaseDUO VPN profile.</a></li>
+<li><a href="#user-reports-an-outage-of-other-integrated-application-or-other-vpn-profile">User reports an outage of other integrated application or other VPN profile.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#other-unable-to-resolve">Other / Unable to Resolve</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</p>
+
+<hr>
+
+<h2 id="detailed-troubleshoot-repair-procedures">Detailed Troubleshoot / Repair Procedures</h2>
+
+<p>return to <a href="#top">top</a> | <a href="#index">index</a></p>
+
+<h4 id="user-is-experiencing-an-issue-while-attempting-to-enroll">User is experiencing an issue while attempting to enroll.</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket. </li>
+<li>Determine method of enrollment.</li>
+<li>Walk user through enrollment steps for selected method per Setup / Install steps. </li>
+<li>If mobile application is being used:</li>
+<li>Has user installed the application?</li>
+<li>Troubleshoot installation issues as necessary.</li>
+<li>Does the user experience in-application issues (e.g., application freezes, behaves erratically, etc.)</li>
+<li>Does the user experience improper function (e.g., does not deliver messages, accept correct passwords, etc.)</li>
+<li>Document all troubleshooting steps. </li>
+<li>Resolve the ticket or forward to <strong>Information Security</strong> resolver group.</li>
+</ol>
+
+<h4 id="user-is-experiencing-an-issue-with-mobile-application-post-enrollment">User is experiencing an issue with mobile application (post-enrollment).</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Has user installed the application?</li>
+<li>Troubleshoot installation issues as necessary.</li>
+<li>Does the user experience in-application issues (e.g., application freezes, behaves erratically, etc.)</li>
+<li>Does the user experience improper function (e.g., does not deliver messages, accept correct passwords, etc.)</li>
+<li>Document all troubleshooting steps. </li>
+<li>Resolve the ticket or forward to <strong>Information Security</strong> resolver group.</li>
+</ol>
+
+<h4 id="user-is-experiencing-an-issue-with-vpn-profile">User is experiencing an issue with VPN profile.</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Troubleshoot connection integrity and setup per VPN scripts.</li>
+<li>Document all troubleshooting steps.  </li>
+<li>Resolve the ticket or forward to <strong>Information Security</strong> resolver group.</li>
+</ol>
+
+<hr>
+
+<h2 id="detailed-activate-setup-install-procedures">Detailed Activate / Setup / Install Procedures</h2>
+
+<p>return to <a href="#top">top</a> | <a href="#index">index</a></p>
+
+<h4 id="user-requires-assistance-enrolling-using-a-mobile-phone">User requires assistance enrolling using a mobile phone.</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li><strong>Step user through process below.</strong></li>
+<li>Browse to the <a href="https://sites.google.com/a/case.edu/cwru-duoenrollment/">Duo Security self-enrollment page</a>.</li>
+<li>Type in your CWRU network ID and password when prompted.</li>
+<li>Click or tap the green <strong>Start Setup</strong> button.</li>
+<li>Select the type of device you will use to enroll.</li>
+<li>Click or tap the green <strong>Continue</strong> button.</li>
+<li>Choose country code and enter phone number.</li>
+<li>Select the phone operating system. Choose <strong>Other</strong> if you are not enrolling a smartphone.</li>
+<li>Click or tap the green <strong>Continue</strong> button.</li>
+<li>Verify that the phone number is correct and click or tap the green <strong>Continue</strong> button.</li>
+<li>After successfully enrolling a device, choose “I’m done enrolling devices” to proceed or “Enroll another device”.</li>
+<li>Choose authenticator from enrolled devices, and authentication method (Duo Push, phone call, or passcode).</li>
+<li>Click or tap the green <strong>Log in</strong> button.</li>
+<li>Approve the authentication request (review the sms message, phone call, or Duo Mobile alert and enter the appropriate code into the <strong>second password</strong> field.) </li>
+<li>Resolve the ticket.</li>
+</ol>
+
+<h4 id="user-requires-assistance-enrolling-using-a-smartphone">User requires assistance enrolling using a smartphone.</h4>
+
+<p>return to <a href="#index">index</a> </p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li><strong>Step user through process below.</strong></li>
+<li>Browse to the <a href="https://sites.google.com/a/case.edu/cwru-duoenrollment/">Duo Security self-enrollment page</a>.</li>
+<li>Type in your CWRU network ID and password when prompted.</li>
+<li>Click or tap the green <strong>Start Setup</strong> button.</li>
+<li>Select the type of device you will use to enroll.</li>
+<li>Click or tap the green <strong>Continue</strong> button.</li>
+<li>Choose country code and enter phone number.</li>
+<li>Choose device operating system and click or tap the green <strong>Continue</strong> button.</li>
+<li>Install the Duo Mobile application on your device</li>
+<li>When installed, select the “I have Duo Mobile installed” box and click or tap the green <strong>Continue</strong> button.</li>
+<li>Open the Duo Mobile application</li>
+<li>Tap the <strong>+</strong> button. Then tap <strong>Scan Barcode</strong>.</li>
+<li>Scan the barcode shown onscreen with your mobile device, or if unable to scan, follow the alternate instructions provided.</li>
+<li>Click or tap the green <strong>Continue</strong> button.</li>
+<li>After successfully enrolling a device, choose “I’m done enrolling devices” to proceed or “Enroll another device”.</li>
+<li>Choose authenticator from enrolled devices, and authentication method (Duo Push, phone call, or passcode).</li>
+<li>Click or tap the green <strong>Log in</strong> button.</li>
+<li>Approve the authentication request (review the sms message, phone call, or Duo Mobile alert and enter the appropriate code into the <strong>second password</strong> field.)</li>
+<li>Resolve the ticket.</li>
+</ol>
+
+<h4 id="user-requires-assistance-enrolling-a-connected-mobile-device">User requires assistance enrolling a connected mobile device.</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li><strong>Step user through process below.</strong></li>
+<li>Browse to the <a href="https://sites.google.com/a/case.edu/cwru-duoenrollment/">Duo Security self-enrollment page</a>.</li>
+<li>Type in your CWRU network ID and password when prompted.</li>
+<li>Click or tap the green <strong>Start Setup</strong> button.</li>
+<li>Select the type of device you will use to enroll.</li>
+<li>Choose device operating system and click or tap the green <strong>Continue</strong> button.</li>
+<li>Install the Duo Mobile application on your device</li>
+<li>When installed, select the “I have Duo Mobile installed” box and click or tap the green <strong>Continue</strong> button.</li>
+<li>Open the Duo Mobile application</li>
+<li>Tap the <strong>+</strong> button. Then tap <strong>Scan Barcode</strong>.</li>
+<li>Scan the barcode shown onscreen with your mobile device, or if unable to scan, follow the alternate instructions provided.</li>
+<li>Click or tap the green <strong>Continue</strong> button.</li>
+<li>After successfully enrolling a device, choose “I’m done enrolling devices” to proceed or “Enroll another device”.</li>
+<li>Choose authenticator from enrolled devices, and authentication method (Duo Push, phone call, or passcode).</li>
+<li>Click or tap the green <strong>Log in</strong> button.</li>
+<li>Approve the authentication request (review the sms message, phone call, or Duo Mobile alert and enter the appropriate code into the <strong>second password</strong> field.) </li>
+<li>Resolve the ticket.</li>
+</ol>
+
+<hr>
+
+<h2 id="detailed-move-change-procedures">Detailed Move / Change Procedures</h2>
+
+<p>return to <a href="#top">top</a> | <a href="#index">index</a>  </p>
+
+<h4 id="user-requests-to-change-credentials">User requests to change credentials.</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket. </li>
+<li>Forward to <strong>Information Security</strong> resolver group.</li>
+</ol>
+
+<h4 id="user-requests-to-unenroll-or-change-a-device">User requests to unenroll or change a device.</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Forward to <strong>Information Security</strong> resolver group.</li>
+</ol>
+
+<hr>
+
+<h2 id="detailed-how-to-training-procedures">Detailed How To / Training Procedures</h2>
+
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#training">training questions</a></p>
+
+<h4 id="how-do-i-enroll-using-mobile-phone">How do I enroll using mobile phone?</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Provide user with <a href="#S1">Activate / Setup / Install instructions</a>.</li>
+<li>Walk the user through steps, if requested.</li>
+<li>Advise user that detailed self-help instructions are also available at <a href="https://help.case.edu">help.case.edu</a>.  </li>
+<li>Resolve the ticket.</li>
+</ol>
+
+<h4 id="how-do-i-enroll-using-a-smartphone-or-other-connected-device">How do I enroll using a smartphone or other connected device?</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Provide user with <a href="#S2">Activate / Setup / Install instructions</a>.</li>
+<li>Walk the user through steps, if requested.</li>
+<li>Advise user that detailed self-help instructions are also available at <a href="https://help.case.edu">help.case.edu</a>.</li>
+<li>Resolve the ticket.</li>
+</ol>
+
+<h4 id="how-do-i-enroll-using-my-land-line">How do I enroll using my land line?</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Provide user with <a href="#S3">Activate / Setup / Install instructions</a>.</li>
+<li>Walk the user through steps, if requested.</li>
+<li>Advise user that detailed self-help instructions are also available at <a href="https://help.case.edu">help.case.edu</a>. </li>
+<li>Resolve the ticket.</li>
+</ol>
+
+<h4 id="what-information-do-i-need-to-enroll">What information do I need to enroll?</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li><p>Required to enroll:</p>
+
+<ul><li>Valid CWRU account, Network ID and password</li>
+<li>Mobile phone capable of receiving text messages, OR</li>
+<li>Mobile iOS or Android device, OR</li>
+<li>Land line telephone</li></ul></li>
+<li><p>Resolve the ticket.</p></li>
+</ol>
+
+<h4 id="how-do-i-use-the-multi-factor-vpn-profile">How do I use the multi-factor VPN profile?</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>First, enroll in DuoSecurity using a connected mobile device, cell phone or land line.</li>
+<li>Connect securely to CWRU network resources from a remote location using a VPN client.</li>
+<li>Choose the <strong>CaseDuo</strong> VPN profile from the <strong>Group</strong> dropdown menu.</li>
+<li>The user should enter his or her CWRU Network ID and password as normal.</li>
+<li>User will enter <strong>Second password</strong> provided by Duo Security authentication after enrollment.</li>
+<li>Click <strong>Connect</strong> or <strong>Ok</strong> to complete.  </li>
+<li>Resolve the ticket.</li>
+</ol>
+
+<h4 id="what-is-the-name-of-the-multi-factor-vpn-profile">What is the name of the multi-factor VPN profile?</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>The name of the multi-factor authentication profile is <strong>CaseDuo</strong>. </li>
+<li>To use multi-factor authentication with VPN, choose the <strong>CaseDuo</strong> VPN profile from the <strong>Group</strong> dropdown menu.</li>
+<li>Resolve the ticket.</li>
+</ol>
+
+<h4 id="what-is-multi-factor-authentication">What is multi-factor authentication?</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Multi-factor authentication provides additional layers of security to protect user data in the case of password theft.</li>
+<li>Multi-factor authentication requires the user to present two or more of three authentication factors: a knowledge factor, a possession factor, and an inheritance factor. </li>
+<li>Resolve the ticket.</li>
+</ol>
+
+<blockquote>
+  <p><strong>NOTE:</strong> Each factor must be validated by a service provider or third party before a user is granted access to the protected account..</p>
+</blockquote>
+
+<h4 id="what-is-a-knowledge-factor">What is a ‘knowledge factor’?</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>A “knowledge factor” is a user-created or system-assigned password.</li>
+<li>Provide details [CWRU password complexity requirements].</li>
+<li>Provide details [best practices for passwords].</li>
+<li>Provide details [physical security]. </li>
+<li>Resolve the ticket.</li>
+</ol>
+
+<h4 id="what-is-a-possession-factor">What is a ‘possession factor’?</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Token-code generators, text messages and digital certificate are common examples of the the “possession factor”.</li>
+<li>Provide details [physical security]. </li>
+<li>Resolve the ticket.</li>
+</ol>
+
+<h4 id="what-is-an-inheritance-factor">What is an ‘inheritance’ factor?</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>“Inheritance factors” are not common in consumer applications. </li>
+<li>Most frequently used “inheritance factors” are biometric identifiers (e.g., fingerprint scanner or similar).</li>
+<li>Not used by CaseDUO. </li>
+<li>Resolve the ticket.</li>
+</ol>
+
+<hr>
+
+<h2 id="detailed-billing-procedures">Detailed Billing Procedures</h2>
+
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> <br>
+<em>This space left blank intentionally.</em></p>
+
+<hr>
+
+<h2 id="detailed-outage-procedures">Detailed Outage Procedures</h2>
+
+<p>return to <a href="#top">top</a> | <a href="#index">index</a></p>
+
+<h4 id="user-reports-an-outage-of-a-duo-application-enrollment-page-or-caseduo-vpn-profile">User reports an outage of a Duo application, Enrollment page or CaseDUO VPN profile.</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket. </li>
+<li>Forward to <strong>Information Security</strong> resolver group.</li>
+</ol>
+
+<h4 id="user-reports-an-outage-of-other-integrated-application-or-other-vpn-profile">User reports an outage of other integrated application or other VPN profile.</h4>
+
+<p>return to <a href="#index">index</a></p>
+
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Troubleshoot per VPN and Identity Management scripts.</li>
+<li>Resolve or escalate ticket per applicable script.</li>
+</ol>
+
+<hr>
+
+<h2 id="other-unable-to-resolve">Other / Unable to Resolve</h2>
+
+<p>return to <a href="#top">top</a> | <a href="#index">index</a></p>
+
+<ol>
+<li>Gather resolution information and enter it into the ticket.  </li>
+<li>Note any information that has been provided to the user.</li>
+<li>Note any troubleshooting steps taken.</li>
+<li>Advise user, during the pilot period all detailed troubleshooting, individual/group training, consultation, user/group rights administration, policies and potential application outages will be handled by the ITS Information Security group.   </li>
+<li>Forward to <strong>Information Security</strong> resolver group.</li>
+</ol>
+
+<hr>
+
+<p>© 2014, Case Western Reserve University ITS <br>
+Last updated: 06/09/2014</p></div></body>
+</html>

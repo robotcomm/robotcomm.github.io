@@ -1,0 +1,1244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>ServerStorage_new</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+<title>Servers and Storage | Change Request | Service</title>
+</head>
+<body>
+<p><a name="top"> </a><br>Servers and Storage | Change Request | Service</p>
+<h2 id="-a-name-keywords-a-keywords"><a name="keywords"> </a>Keywords</h2>
+<p>Storage request; Server request; Virtual machine; OU Admin; Storage space; Backup and retrieval services; Backup; Provisioning; Map drive; Network share; Access; Permissions<br>Service Overview</p>
+<h2 id="-a-name-description-a-service-description"><a name="description"> </a> Service Description</h2>
+<p>This document describes the initial information gathering tasks needed for storage and server space requests. These requests will be forwarded to departmental Share Admin or ITS resolver group, as appropriate for processing.</p>
+<h2 id="-a-name-resolution-a-resolution-information"><a name="resolution"> </a> Resolution Information</h2>
+<h4 id="enter-the-following-information-into-ticket-for-all-users-">Enter the following information into ticket for all users:</h4>
+<ul>
+<li>Name,  </li>
+<li>CWRU Network ID,  </li>
+<li>Contact information (preferred and alternate),  </li>
+<li>Problem or Request description</li>
+<li>Department</li>
+<li>Share Admin</li>
+</ul>
+<blockquote>
+<p><strong>How to to Identify Share Admin</strong></p>
+<ol>
+<li>Find the user department name or object name in the share table below.</li>
+<li>The primary contact for Share Administration is listed in the column marked ‘Primary Share Admin’.</li>
+<li>The secondary contact for Share Administration is listed in the column marked ‘Secondary Admins’</li>
+</ol>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Object Name</th>
+<th>Department (or Active Directory administrator group)</th>
+<th>Primary Share Admin</th>
+<th>Case ID</th>
+<th>Secondary Admins</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADS_NR/Levine-HIPAA</td>
+<td>UH-Gastroenterology</td>
+<td>Alan Levine</td>
+<td>adl4</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Ohio_UI</td>
+<td>-</td>
+<td>Alexander Warofka</td>
+<td>arw39</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS_NR/SPM</td>
+<td>ITS-PMO</td>
+<td>Anthony Kramer</td>
+<td>ark3</td>
+<td>-    </td>
+</tr>
+<tr>
+<td>explorer-1</td>
+<td>ITS</td>
+<td>Servers and Storage Engineering</td>
+<td>cxl34</td>
+<td>-    </td>
+</tr>
+<tr>
+<td>ADS/anatomy</td>
+<td>Anatomy</td>
+<td>Christine Marshall</td>
+<td>cam49</td>
+<td>-    </td>
+</tr>
+<tr>
+<td>ADS_NR/PeopleSoft_Reports</td>
+<td>Controller’s Office</td>
+<td>Chuck Yoder</td>
+<td>cry2</td>
+<td>-    </td>
+</tr>
+<tr>
+<td>ADS_NR/windstar</td>
+<td>Controller’s Office</td>
+<td>Chuck Yoder</td>
+<td>cry2</td>
+<td>-    </td>
+</tr>
+<tr>
+<td>ADS_NR/windstar_t</td>
+<td>Controller’s Office</td>
+<td>Chuck Yoder</td>
+<td>cry2</td>
+<td>-    </td>
+</tr>
+<tr>
+<td>ADS/ITS-CSS</td>
+<td>ADS\EMC-ITS-CSS-Admin</td>
+<td>Dave Dominish</td>
+<td>dxd4</td>
+<td>-</td>
+</tr>
+<tr>
+<td>OBFP</td>
+<td>Office of Budget and Financial Planning</td>
+<td>David Elliott</td>
+<td>dre5</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS_NR/ITSmktg</td>
+<td>ADS\EMC-ITSMktg-Admin</td>
+<td>Dean Bianchi</td>
+<td>djb162</td>
+<td>-     </td>
+</tr>
+<tr>
+<td>ADS/ECRC</td>
+<td>ADS\EMC-ECRC-Admin</td>
+<td>Diane Kulle</td>
+<td>djt9</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS/treasurer</td>
+<td>ADS\EMC-treasurer-Admin</td>
+<td>Donzetta Darden</td>
+<td>dlw7</td>
+<td>-    </td>
+</tr>
+<tr>
+<td>ADS_NR/ogc</td>
+<td>ADS\EMC-OGC-Admin</td>
+<td>Dorothy Martin</td>
+<td>dmm35</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS_NR/npdpsc</td>
+<td>National Prion Disease Pathology Surveillance Center</td>
+<td>DSS</td>
+<td>DSS</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS_NR/nrl</td>
+<td>Neurodevelopment Research Lab</td>
+<td>DSS</td>
+<td>DSS</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS_NR/oideo</td>
+<td>Office of Inclusion, Diversity</td>
+<td>DSS</td>
+<td>DSS</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS_NR/OPIR</td>
+<td>Office of Planning &amp; Institutional Research</td>
+<td>DSS</td>
+<td>DSS</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS/attorney</td>
+<td>Law School</td>
+<td>DSS</td>
+<td>DSS</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>CFIA</td>
+<td>Center for International Affairs</td>
+<td>DSS</td>
+<td>DSS</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>LLL</td>
+<td>Life Long Learning</td>
+<td>DSS</td>
+<td>DSS</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS/facultyinfo</td>
+<td>Provost</td>
+<td>Elizabeth Woyczynski</td>
+<td>exh</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS_NR/CSENordNAS</td>
+<td>CSE</td>
+<td>Eric Taylor</td>
+<td>ect</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS_NR/STEM</td>
+<td>ADS\EMC-STEM-Admin</td>
+<td>Erica Paythress</td>
+<td>exp164</td>
+<td>-    </td>
+</tr>
+<tr>
+<td>ADS_NR/Mt_Sinai_Fnd</td>
+<td>ADS\EMC-Mt_Sinai_Fnd-Admin</td>
+<td>Genese Hewston</td>
+<td>gxh42</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS/wsomhomes</td>
+<td>ADS\EMC-wsomhome-Admin</td>
+<td>George Spanakis</td>
+<td>gxs123</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS/psfin</td>
+<td>ITS ERP FIN PRD</td>
+<td>Harry Berger</td>
+<td>hxb6</td>
+<td>-    </td>
+</tr>
+<tr>
+<td>ADS_NB/CCMSB</td>
+<td>Pharmacology</td>
+<td>James Schwonek</td>
+<td>jps8</td>
+<td>-    </td>
+</tr>
+<tr>
+<td>ADS_NR/MajorGifts</td>
+<td>ADS\EMC-MajorGifts-Admin</td>
+<td>Jane Baus</td>
+<td>jxb12</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS/ofprespro</td>
+<td>Office of the President</td>
+<td>Jane Vondrak</td>
+<td>jmv9</td>
+<td>DSS    </td>
+</tr>
+<tr>
+<td>ADS_NR/UGStud</td>
+<td>SoAS (Undergrad)</td>
+<td>Jeffery Wolcowitz</td>
+<td>jxw215</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS/uris</td>
+<td>ADS\EMC-uris-Admin</td>
+<td>Jerry Yang</td>
+<td>jhy</td>
+<td>-</td>
+</tr>
+<tr>
+<td>CFD-NonERPdbs(Linux)</td>
+<td>ITS</td>
+<td>Servers and Storage Engineering</td>
+<td>jrp14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ERP_backups</td>
+<td>ERPDB</td>
+<td>Servers and Storage Engineering</td>
+<td>jrp14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>KSL-ERPDB (Solaris)</td>
+<td>ITS</td>
+<td>Servers and Storage Engineering</td>
+<td>jrp14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>CFD-ERPDB (Solaris ERP Replicas)</td>
+<td>ITS</td>
+<td>Servers and Storage Engineering</td>
+<td>jrp14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>KSL-NonERPdbs (Solaris)</td>
+<td>ITS</td>
+<td>Servers and Storage Engineering</td>
+<td>jrp14</td>
+<td>-</td>
+</tr>
+<tr>
+<td>/backup/wcs-test</td>
+<td>ITS - DELETED</td>
+<td>Kevin Chan</td>
+<td>wxc16</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS/unifiedmessaging</td>
+<td>ITS</td>
+<td>Kevin Chan</td>
+<td>wxc16</td>
+<td>-</td>
+</tr>
+<tr>
+<td>sympa-temp</td>
+<td>ITS</td>
+<td>Kevin Chan</td>
+<td>wxc16</td>
+<td>-</td>
+</tr>
+<tr>
+<td>test</td>
+<td>ITS</td>
+<td>Kevin Chan</td>
+<td>wxc16</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS_NR/CVRI</td>
+<td>UH-Cardiology</td>
+<td>Kevin Montgomery</td>
+<td>kpm32</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS/COMDEV_DOC</td>
+<td>ADS\EMC-COMDEV_DOC-Admin</td>
+<td>Kevin Slesh</td>
+<td>kjs2</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS_NR/fw-logs</td>
+<td>ADS\EMC-FW-logs-Admin</td>
+<td>Lou Changeri</td>
+<td>lxc152</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS_NR/mcno-home</td>
+<td>ADS\EMC-mcnohome-Admin</td>
+<td>Maria Sharron</td>
+<td>mcs25</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS/mcno-home</td>
+<td>ADS\EMC-mcnohome-Admin</td>
+<td>Maria Sharron</td>
+<td>mcs25</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS/its-tis-sse</td>
+<td>Run Infrastructure</td>
+<td>Servers and Storage Engineering</td>
+<td>mxh290</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS/its-tis-sse-projects</td>
+<td>Run Infrastructure</td>
+<td>Servers and Storage Engineering</td>
+<td>mxh290</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS/SSE</td>
+<td>ADS\EMC-SSE-Admin</td>
+<td>Servers and Storage Engineering</td>
+<td>mxh290</td>
+<td>-</td>
+</tr>
+<tr>
+<td>VDI_NFS1</td>
+<td>Runservers</td>
+<td>Servers and Storage Engineering</td>
+<td>mxh290</td>
+<td>-</td>
+</tr>
+<tr>
+<td>VM-NFSDS1</td>
+<td>Runservers</td>
+<td>Servers and Storage Engineering</td>
+<td>mxh290</td>
+<td>-</td>
+</tr>
+<tr>
+<td>VM-NFSstore</td>
+<td>Runservers</td>
+<td>Servers and Storage Engineering</td>
+<td>mxh290</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS/erp_ap_ach</td>
+<td>ITS-ERP</td>
+<td>Matt Panchur</td>
+<td>mrp58</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS/ERP_DOC</td>
+<td>ADS\EMC-ERP-Admin</td>
+<td>Matt Panchur</td>
+<td>mrp58</td>
+<td>-</td>
+</tr>
+<tr>
+<td>erp-dev</td>
+<td>ERP</td>
+<td>Matt Panchur</td>
+<td>mrp58</td>
+<td>-</td>
+</tr>
+<tr>
+<td>erp-dw</td>
+<td>ERP</td>
+<td>Matt Panchur</td>
+<td>mrp58</td>
+<td>-</td>
+</tr>
+<tr>
+<td>erp-prod</td>
+<td>ERP</td>
+<td>Matt Panchur</td>
+<td>mrp58</td>
+<td>-</td>
+</tr>
+<tr>
+<td>erp-sadev</td>
+<td>ERP</td>
+<td>Matt Panchur</td>
+<td>mrp58</td>
+<td>-</td>
+</tr>
+<tr>
+<td>erp-saprod</td>
+<td>ERP</td>
+<td>Matt Panchur</td>
+<td>mrp58</td>
+<td>-    </td>
+</tr>
+<tr>
+<td>erp-web</td>
+<td>ERP</td>
+<td>Matt Panchur</td>
+<td>mrp58</td>
+<td>-    </td>
+</tr>
+<tr>
+<td>KSL-ERP (vp303,vd302,vp309)</td>
+<td>ITS</td>
+<td>Matt Panchur</td>
+<td>mrp58</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS/lib-web</td>
+<td>Lib-Web</td>
+<td>Michael Yeager</td>
+<td>mxy4</td>
+<td>-</td>
+</tr>
+<tr>
+<td>courseware</td>
+<td>Mediavision</td>
+<td>Mike Thomas</td>
+<td>mdt2</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS/finance</td>
+<td>Campus Services</td>
+<td>Administration</td>
+<td>Nancy Wheelock</td>
+<td>-    </td>
+</tr>
+<tr>
+<td>ADS_NR/HR_onbased</td>
+<td>Human Resources</td>
+<td>Nassif Nassif</td>
+<td>ntn</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS_NR/HR_onbasep</td>
+<td>Human Resources</td>
+<td>Nassif Nassif</td>
+<td>ntn</td>
+<td>-    </td>
+</tr>
+<tr>
+<td>ADS_NR/pathology</td>
+<td>Pathology</td>
+<td>Natalie Grabowski \ James Goodman</td>
+<td>new11 \ jrg47</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS/Inventory</td>
+<td>ITS-SSE</td>
+<td>Pat Greene</td>
+<td>pag10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS/COSI_CSPL</td>
+<td>Communication Sciences (artsci)</td>
+<td>Patrizia Bonaventura</td>
+<td>pxb72</td>
+<td>-    </td>
+</tr>
+<tr>
+<td>ADS_NR/UHistorian</td>
+<td>ADS\EMC-UHistorian-Admin</td>
+<td>Richard Baznik</td>
+<td>reb10</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS_NR/FSMCW</td>
+<td>Flora Stone Mather Center for Women</td>
+<td>DSS</td>
+<td>DSS</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS/health_svcs</td>
+<td>ADS\EMC-health_svcs-Admin</td>
+<td>Rick Kramer</td>
+<td>rak7</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS_NR/Pediatrics</td>
+<td>UH-Pediatrics</td>
+<td>DSS</td>
+<td>DSS</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS_NR/Sociology</td>
+<td>Sociology</td>
+<td>DSS</td>
+<td>DSS</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>apps</td>
+<td>ITS</td>
+<td>Servers and Storage Engineering</td>
+<td>rfw</td>
+<td>-</td>
+</tr>
+<tr>
+<td>backup</td>
+<td>ITS</td>
+<td>Servers and Storage Engineering</td>
+<td>rfw</td>
+<td>-</td>
+</tr>
+<tr>
+<td>CFD-VMware</td>
+<td>ITS</td>
+<td>Servers and Storage Engineering</td>
+<td>rfw</td>
+<td>-</td>
+</tr>
+<tr>
+<td>js-archive</td>
+<td>ITS</td>
+<td>Servers and Storage Engineering</td>
+<td>rfw</td>
+<td>-</td>
+</tr>
+<tr>
+<td>KSL-NonERPdbs(Linux)</td>
+<td>ITS</td>
+<td>Servers and Storage Engineering</td>
+<td>rfw</td>
+<td>-</td>
+</tr>
+<tr>
+<td>KSL-VMware</td>
+<td>ITS</td>
+<td>Servers and Storage Engineering</td>
+<td>rfw</td>
+<td>-</td>
+</tr>
+<tr>
+<td>logs</td>
+<td>ITS</td>
+<td>Servers and Storage Engineering</td>
+<td>rfw</td>
+<td>-</td>
+</tr>
+<tr>
+<td>nfstest</td>
+<td>ITS</td>
+<td>Servers and Storage Engineering</td>
+<td>rfw</td>
+<td>-</td>
+</tr>
+<tr>
+<td>sys</td>
+<td>ITS</td>
+<td>Servers and Storage Engineering</td>
+<td>rfw</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS_NR/cancer</td>
+<td>Cancer Center</td>
+<td>Robert Lanese</td>
+<td>rml13</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS_NR/marcomm</td>
+<td>Univ Mkting &amp; Comm - General</td>
+<td>Roni Ornan</td>
+<td>rwo18</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS_NR/FAMMEDRES</td>
+<td>ADS\EMC-FAMMEDRES-Admin</td>
+<td>Samantha Smith</td>
+<td>sls181</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS/FamMed</td>
+<td>UH-Family Medicine</td>
+<td>Samantha Smith</td>
+<td>sls181</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS/SOURCE</td>
+<td>SOURCE Office</td>
+<td>Sheila Pedigo</td>
+<td>sdp5</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS_NR_NB/SLLP</td>
+<td>ADS\EMC-SLLP-Admin</td>
+<td>Sheryl Hirsh</td>
+<td>sah153</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS_NR/Manor_Lab</td>
+<td>Manor Lab (Nutrition Dept) MED School</td>
+<td>Stephen Cullen</td>
+<td>sxc42</td>
+<td>-    </td>
+</tr>
+<tr>
+<td>ADS/grad-study</td>
+<td>Graduate Studies</td>
+<td>Susan Benedict \ DSS</td>
+<td>smb25</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ADS_NR/PMO</td>
+<td>ITS-PMO</td>
+<td>Theresa Grigger</td>
+<td>tme</td>
+<td>-</td>
+</tr>
+<tr>
+<td>LAWVHD</td>
+<td>Law School</td>
+<td>Tron Engle \ DSS</td>
+<td>tac11</td>
+<td>DSS</td>
+</tr>
+<tr>
+<td>ga_pipeline</td>
+<td>Genetics</td>
+<td>Ulrich Neuss</td>
+<td>umn</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS/outcomes-NOC</td>
+<td>UH-Neurology</td>
+<td>Vanessa Forro</td>
+<td>vaf13</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS_NR/FESC</td>
+<td>FES Center    William</td>
+<td>Wene</td>
+<td>wsw19</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ADS_NR/NS-Luo</td>
+<td>ADS\EMC-NS-Luo-Admin</td>
+<td>Yu Luo \ DSS</td>
+<td>yxl710</td>
+<td>DSS</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-a-name-index-a-topic-index"><a name="index"> </a> Topic Index</h2>
+<h4 id="-a-name-troubleshoot-a-troubleshoot-repair-topics"><a name="troubleshoot"> </a> Troubleshoot / Repair topics</h4>
+<ol>
+<li><a href="#T1">I received a low storage space warning and need to request additional storage space.</a></li>
+<li><a href="#T2">I cannot connect to a mapped network drive / share.</a></li>
+<li><a href="#T3">I cannot (edit/delete/view) files on a mapped network drive / share when I should be able to, but can connect.</a></li>
+<li><a href="#U1">Unable to resolve</a></li>
+</ol>
+<h4 id="-a-name-setup-a-activate-setup-install-topics"><a name="setup"> </a> Activate / Setup / Install topics</h4>
+<ol>
+<li><a href="#S1">I need to request additional storage / server space (no specified purpose).</a></li>
+<li><a href="#S2">I need to request additional storage / server space (specified purpose).</a></li>
+<li><a href="#S3">I need to request storage / server space for the first time.</a></li>
+<li><a href="#U1">Unable to resolve</a></li>
+</ol>
+<h4 id="-a-name-change-a-move-change-topics"><a name="change"> </a> Move / Change topics</h4>
+<ol>
+<li><a href="#C1">I need to have an admin free storage space (clean up).</a></li>
+<li><a href="#C2">I need to change/move an application, service or storage.</a></li>
+<li><a href="#C3">I need to remove (delete/retire/sunset) existing resources.</a></li>
+<li><a href="#U1">Unable to resolve</a></li>
+</ol>
+<h4 id="-a-name-training-a-how-to-training-topics"><a name="training"> </a> How To / Training topics</h4>
+<ol>
+<li><a href="#H1">Who is my Share Admin?</a></li>
+<li><a href="#H2">What policies govern server / storage data backup and retrieval?</a></li>
+<li><a href="#H3">I need help setting user permissions (or would like to learn more about this subject).</a></li>
+<li><a href="#H4">I need help granting access to network drive / share (or would like to learn more about this subject).</a></li>
+<li><a href="#H5">I need help mapping a network drive / share (or would like to learn more about this subject).</a></li>
+</ol>
+<h4 id="-a-name-billing-a-billing-topics"><a name="billing"> </a> Billing topics</h4>
+<ol>
+<li><a href="#B1">I have a question about my bill.</a></li>
+</ol>
+<h4 id="-a-name-outage-a-outage-topics"><a name="outage"> </a> Outage topics</h4>
+<ol>
+<li><a href="#O1">There appears to be an outage (more than one person cannot access, or application is not responding).</a></li>
+</ol>
+<h2 id="resolver-groups">Resolver Groups</h2>
+<p>DSS, Servers and Storage Engineering</p>
+<h2 id="escalation">Escalation</h2>
+<p>An escalation may be requested by an end user when he or she determines that a critical issue has not been acknowledged properly, remains unresolved for an unacceptable period of time or is severe enough that it requires atypical handling.</p>
+<p>An escalated issue is typically brought to the attention of management within a second-level support group(s).</p>
+<blockquote>
+<p>Escalation should not be confused with assignment to a resolver group.</p>
+</blockquote>
+<h4 id="who-to-contact-for-issue-escalation">Who to contact for issue escalation</h4>
+<p>Name, Preferred contact (type), Alternate contact 1 (type)</p>
+<ol>
+<li>Martin Hines, 216-368-3678 (office), mxh290@case.edu<br>(Notify IMMEDIATELY in the case of outage)     </li>
+</ol>
+<h4 id="escalation-procedures">Escalation procedures</h4>
+<p>Servers and Storage are supported 24/7 </p>
+<h2 id="detailed-troubleshoot-repair-procedures">Detailed Troubleshoot / Repair Procedures</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#troubleshoot">troubleshoot questions</a></p>
+<h4 id="-a-name-t1-a-i-received-a-low-storage-space-warning-and-need-to-request-additional-storage-space-"><a name="T1"> </a>I received a low storage space warning and need to request additional storage space.</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Type Share Admin name into the ticket.</li>
+<li>Provide the Share Admin name to the user.</li>
+<li>Ask if user would like assistance freeing storage space by removing old, unused or redundant files.</li>
+<li>Enter response into ticket.</li>
+<li>Advise user of ITS Backup Service Level Agreement (<a href="http://www.case.edu/its/backup/">http://www.case.edu/its/backup/</a>). </li>
+<li>Instruct user to contact Primary Share Admin. If Primary Share Admin is either <strong>DSS</strong> or <strong>Servers and Storage Engineering</strong>, then assign to that resolver group.</li>
+<li>If user is Primary Share Admin, then assign ticket to Secondary Share Admin resolver group. If Secondary Share Admin is not listed, then assign to <strong>Servers and Storage Engineering</strong> resolver group.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-t2-a-i-cannot-connect-to-a-mapped-network-drive-share-"><a name="T2"> </a>I cannot connect to a mapped network drive / share.</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a>  </p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Advise user that ticket will be handled by Deskside Support.</li>
+<li>Forward ticket to <strong>DSS</strong> resolver group.</li>
+</ol>
+<h4 id="-a-name-t3-a-i-cannot-edit-delete-view-files-on-a-mapped-network-drive-share-when-i-should-be-able-to-but-can-connect-"><a name="T3"> </a>I cannot (edit/delete/view) files on a mapped network drive / share when I should be able to, but can connect.</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket. </li>
+<li>Advise user that ticket will be handled by Deskside Support.</li>
+<li>Forward ticket to <strong>DSS</strong> resolver group.</li>
+</ol>
+<h2 id="detailed-activate-setup-install-procedures">Detailed Activate / Setup / Install Procedures</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#setup">setup questions</a>  </p>
+<h4 id="-a-name-s1-a-i-need-to-request-additional-storage-server-space-no-specified-purpose-"><a name="S1"> </a>I need to request additional storage / server space (no specified purpose).</h4>
+<p>return to <a href="#setup">setup questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Type Share Admin name into the ticket.</li>
+<li>Provide the Share Admin name to the user.</li>
+<li>Ask user if request is due to a low storage space warning.</li>
+<li>Ask if user would like assistance freeing storage space by removing old, unused or redundant files.</li>
+<li>Enter response into ticket.</li>
+<li>Advise user of ITS Backup Service Level Agreement (<a href="http://www.case.edu/its/backup/">http://www.case.edu/its/backup/</a>).</li>
+<li>Instruct user to contact Primary Share Admin. If Primary Share Admin is either <strong>DSS</strong> or <strong>Servers and Storage Engineering</strong>, then assign to that resolver group.</li>
+<li>If user is Primary Share Admin, then assign ticket to Secondary Share Admin resolver group. If Secondary Share Admin is not listed, then assign to <strong>Servers and Storage Engineering</strong> resolver group.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-s2-a-i-need-to-request-additional-storage-server-space-specified-purpose-"><a name="S2"> </a>I need to request additional storage / server space (specified purpose).</h4>
+<p>return to <a href="#setup">setup questions</a>  </p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Type Share Admin name into the ticket.</li>
+<li>Provide the Share Admin name to the user.</li>
+<li>Ask user to briefly describe the intended use (e.g., application name, storage, redundant support).</li>
+<li>Enter response into ticket.</li>
+<li>Instruct user to contact Primary Share Admin. If Primary Share Admin is either <strong>DSS</strong> or <strong>Servers and Storage Engineering</strong>, then assign to that resolver group.</li>
+<li>If user is Primary Share Admin, then assign ticket to Secondary Share Admin resolver group. If Secondary Share Admin is not listed, then assign to <strong>Servers and Storage Engineering</strong> resolver group.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-s3-a-i-need-to-request-storage-server-space-for-the-first-time-"><a name="S3"> </a>I need to request storage / server space for the first time.</h4>
+<p>return to <a href="#setup">setup questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Type Share Admin name into the ticket.</li>
+<li>Provide the Share Admin name to the user.</li>
+<li>Ask user to briefly describe the intended use (e.g., application name, storage, redundant support).</li>
+<li>Ask user to briefly describe additional requirements the Share Admin should consider (e.g., documentation, training, communication or consulting).</li>
+<li>Enter responses into ticket.</li>
+<li>Instruct user to contact Primary Share Admin. If Primary Share Admin is either <strong>DSS</strong> or <strong>Servers and Storage Engineering</strong>, then assign to that resolver group.</li>
+<li>If user is Primary Share Admin, then assign ticket to Secondary Share Admin resolver group. If Secondary Share Admin is not listed, then assign to <strong>Servers and Storage Engineering</strong> resolver group.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h2 id="detailed-move-change-procedures">Detailed Move / Change Procedures</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#change">change questions</a>  </p>
+<h4 id="-a-name-c1-a-i-need-to-have-an-admin-free-storage-space-clean-up-"><a name="C1"> </a>I need to have an admin free storage space (clean up).</h4>
+<p>return to <a href="#change">change questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Type Share Admin name into the ticket.</li>
+<li>Provide the Share Admin name to the user.</li>
+<li>Advise user of ITS Backup Sevice Level Agreement (<a href="http://www.case.edu/its/backup/">http://www.case.edu/its/backup/</a>).</li>
+<li>Ask user to briefly describe the resource (e.g., application/share name, storage location).</li>
+<li>Enter response into ticket.</li>
+<li>Instruct user to contact Primary Share Admin. If Primary Share Admin is either <strong>DSS</strong> or <strong>Servers and Storage Engineering</strong>, then assign to that resolver group.</li>
+<li>If user is Primary Share Admin, then assign ticket to Secondary Share Admin resolver group. If Secondary Share Admin is not listed, then assign to <strong>Servers and Storage Engineering</strong> resolver group.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-c2-a-i-need-to-change-move-an-application-service-or-storage-"><a name="C2"> </a>I need to change/move an application, service or storage.</h4>
+<p>return to <a href="#change">change questions</a>  </p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Type Share Admin name into the ticket.</li>
+<li>Provide the Share Admin name to the user.</li>
+<li>Advise user of ITS Backup Service Level Agreement (<a href="http://www.case.edu/its/backup/">http://www.case.edu/its/backup/</a>).</li>
+<li>Ask user to briefly describe the resource (e.g., application/share name, storage location).</li>
+<li>Enter response into ticket.</li>
+<li>Instruct user to contact Primary Share Admin. If Primary Share Admin is either <strong>DSS</strong> or <strong>Servers and Storage Engineering</strong>, then assign to that resolver group.</li>
+<li>If user is Primary Share Admin, then assign ticket to Secondary Share Admin resolver group. If Secondary Share Admin is not listed, then assign to <strong>Servers and Storage Engineering</strong> resolver group.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-c3-a-i-need-to-remove-delete-retire-sunset-existing-resources-"><a name="C3"> </a>I need to remove (delete/retire/sunset) existing resources.</h4>
+<p>return to <a href="#change">change questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Type Share Admin name into the ticket.</li>
+<li>Provide the Share Admin name to the user.</li>
+<li>Advise user of ITS Backup Service Level Agreement (<a href="http://www.case.edu/its/backup/">http://www.case.edu/its/backup/</a>).</li>
+<li>Ask user to briefly describe the resource (e.g., application/share name, storage location).</li>
+<li>Enter response into ticket.</li>
+<li>Instruct user to contact Primary Share Admin. If Primary Share Admin is either <strong>DSS</strong> or <strong>Servers and Storage Engineering</strong>, then assign to that resolver group.</li>
+<li>If user is Primary Share Admin, then assign ticket to Secondary Share Admin resolver group. If Secondary Share Admin is not listed, then assign to <strong>Servers and Storage Engineering</strong> resolver group.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h2 id="detailed-how-to-training-procedures">Detailed How To / Training Procedures</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#training">training questions</a></p>
+<h4 id="-a-name-h1-a-who-is-my-share-admin-"><a name="H1"> </a>Who is my Share Admin?</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Find the user department name or object name in the Share Admins table.</li>
+<li>The primary contact for Share Administration is listed in the column marked ‘Primary Share Admin’.</li>
+<li>The secondary contact for Share Administration is listed in the column marked ‘Secondary Admins’</li>
+<li>Provide this information to the user.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-h2-a-what-policies-govern-server-storage-data-backup-and-retrieval-"><a name="H2"> </a>What policies govern server / storage data backup and retrieval?</h4>
+<p>return to <a href="#training">training questions</a>  </p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Advise user of ITS Backup Service Level Agreement (<a href="http://www.case.edu/its/backup/">http://www.case.edu/its/backup/</a>).</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-h3-a-i-need-help-setting-user-permissions-or-would-like-to-learn-more-about-this-subject-"><a name="H3"> </a>I need help setting user permissions (or would like to learn more about this subject).</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket. </li>
+<li>Advise user that ticket will be handled by Deskside Support.</li>
+<li>Forward ticket to <strong>DSS</strong> resolver group.</li>
+</ol>
+<h4 id="-a-name-h4-a-i-need-help-granting-access-to-network-drive-share-or-would-like-to-learn-more-about-this-subject-"><a name="H4"> </a>I need help granting access to network drive / share (or would like to learn more about this subject).</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket. </li>
+<li>Advise user that ticket will be handled by Deskside Support.</li>
+<li>Forward ticket to <strong>DSS</strong> resolver group.</li>
+</ol>
+<h4 id="-a-name-h5-a-i-need-help-mapping-a-network-drive-share-or-would-like-to-learn-more-about-this-subject-"><a name="H5"> </a>I need help mapping a network drive / share (or would like to learn more about this subject).</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket. </li>
+<li>Advise user that ticket will be handled by Deskside Support.</li>
+<li>Forward ticket to <strong>DSS</strong> resolver group.</li>
+</ol>
+<h2 id="detailed-billing-procedures">Detailed Billing Procedures</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#billing">billing questions</a>  </p>
+<h4 id="-a-name-b1-a-i-have-a-question-about-my-bill-"><a name="B1"> </a>I have a question about my bill.</h4>
+<p>return to <a href="#billing">billing questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket. </li>
+<li>Server and Storage billing questions should be directed to Pat Greene, 216-368-1253.</li>
+<li>Research Computing Server and Storage billing questions should be directed to Theresa Grigger, 216-368-5887.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h2 id="detailed-outage-procedures">Detailed Outage Procedures</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#outage">outage questions</a></p>
+<h4 id="-a-name-o1-a-there-appears-to-be-an-outage-more-than-one-person-cannot-access-or-application-is-not-responding-"><a name="O1"> </a>There appears to be an outage (more than one person cannot access, or application is not responding)..</h4>
+<p>return to <a href="#outage">outage questions</a>  </p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Type Share Admin name into the ticket.</li>
+<li>Verify that application, department or Office is not handled via stand-alone escalation procedures (e.g., SPARTA, Office of Research Administration).</li>
+<li>Follow Escalation procedures. Escalation tickets for server outage should be classified as P1 priority.</li>
+</ol>
+<h2 id="-a-name-u1-a-other-unable-to-resolve"><a name="U1"> </a>Other / Unable to Resolve</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.  </li>
+<li>Forward to <strong>Server and Storage Engineering</strong> resolver group.</li>
+</ol>
+<h2 id="-"> </h2>
+<p>Copyright 2014, CWRU ITS<br>Current as of: 3/31/2014 4:23:16 PM </p>
+
+</body>
+</html>

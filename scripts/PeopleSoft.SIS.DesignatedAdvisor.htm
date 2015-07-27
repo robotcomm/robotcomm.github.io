@@ -1,0 +1,499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Applications.InternalService.SIS.DesignatedAdvisor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+<title>Applications|Internal Service|SIS|Designated Advisor</title>
+</head>
+<body>
+<p><a name="top"> </a> Applications | Internal Service | Student Information Systems | Designated Advisor Screen</p>
+<h3 id="draft">DRAFT</h3>
+<h2 id="-a-name-keywords-a-keywords"><a name="keywords"> </a>Keywords</h2>
+<p>Student Information Systems; SIS; Designated Advisor; Advisor; Advising holds; Student registration;</p>
+<h2 id="-a-name-description-a-service-description"><a name="description"> </a> Service Description</h2>
+<p>The designated advisor screen is intended to encourage academically-oriented discussions (performance, goals, mentoring, etc.) between students and professional educators or CWRU staff who do not have an established advising relationship. </p>
+<h4 id="key-benefits-for-the-student-include-">Key benefits for the student include,</h4>
+<ul>
+<li>Broad, cross-discipline pool of advising candidates</li>
+<li>Institutional facilitated networking opportunities</li>
+<li>No applications or paperwork to enroll</li>
+<li>Flexible, informal mentoring relationships are fit to student interests within and without selected field of study</li>
+</ul>
+<h4 id="use-this-article-when-">Use this article when:</h4>
+<ol>
+<li><em>Any student user</em> requests additional information regarding the Designated Advisor program,</li>
+<li><em>Any student user</em> needs assistance navigating or completing a task within the Designated Advisor SIS screens.</li>
+<li><em>Any educator, researcher or staff member</em> requests additional information regarding the Designated Advisor program, including requests to be added to the advisor pool.    </li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Non-functional questions that are not covered in this script will always be forwarded to the Peoplesoft SIS-Reg resolver group.</p>
+</blockquote>
+<h2 id="-a-name-resolution-a-resolution-information"><a name="resolution"> </a> Resolution Information</h2>
+<h4 id="enter-the-following-information-into-ticket-for-all-users-">Enter the following information into ticket for all users:</h4>
+<ul>
+<li>Name,  </li>
+<li>CWRU Network ID,  </li>
+<li>Contact information (preferred and alternate),  </li>
+<li>Problem or Request description</li>
+</ul>
+<h2 id="-a-name-index-a-topic-index"><a name="index"> </a> Topic Index</h2>
+<h4 id="-a-name-troubleshoot-a-troubleshoot-repair-topics"><a name="troubleshoot"> </a> Troubleshoot / Repair topics</h4>
+<ol>
+<li><a href="#T1">What is the ‘advisor box’? Is this new?</a></li>
+<li><a href="#T2">I want my designated advisor to release an academic hold. Why isn’t it working?</a></li>
+<li><a href="#T3">I asked <x> educator/staff member to be a designated mentor. Why can’t he or she add information to my student record?</a></li>
+<li><a href="#T4">I am unable to sign in to SIS.</a></li>
+<li><a href="#U1">Other / Unable to resolve.</a></li>
+</ol>
+<h4 id="-a-name-setup-a-activate-setup-install-topics"><a name="setup"> </a> Activate / Setup / Install topics</h4>
+<p><em>Space reserved for future use</em></p>
+<h4 id="-a-name-change-a-move-change-topics"><a name="change"> </a> Move / Change topics</h4>
+<p><em>Space reserved for future use</em></p>
+<h4 id="-a-name-training-a-how-to-training-topics"><a name="training"> </a> How To / Training topics</h4>
+<ol>
+<li><a href="#H1">What is a ‘designated advisor’ and how does that person differ from an academic advisor?</a></li>
+<li><a href="#H2">Am I required to designate an advisor(s)?</a></li>
+<li><a href="#H3">May I designate more than one advisor?</a></li>
+<li><a href="#H4">What are the steps to add a designated advisor(s)?</a></li>
+<li><a href="#H5">How do I change or remove a previously designated advisor?</a></li>
+<li><a href="#H6">How do I access the designated advisor page?</a></li>
+<li><a href="#U1">Other / Unable to resolve.</a></li>
+</ol>
+<h4 id="-a-name-billing-a-billing-topics"><a name="billing"> </a> Billing topics</h4>
+<p><em>Space reserved for future use</em></p>
+<h4 id="-a-name-outage-a-outage-topics"><a name="outage"> </a> Outage topics</h4>
+<ol>
+<li><a href="#O1">I suspect that SIS is down.</a></li>
+</ol>
+<h2 id="resolver-groups">Resolver Groups</h2>
+<p>PeopleSoft SIS-Reg, Authentication</p>
+<h2 id="escalation">Escalation</h2>
+<p>An escalation may be requested by an end user when he or she determines that a critical issue has not been acknowledged properly, remains unresolved for an unacceptable period of time or is severe enough that it requires atypical handling.</p>
+<p>An escalated issue is typically brought to the attention of management within a second-level support group(s).</p>
+<blockquote>
+<p><strong>NOTE:</strong> Escalation should not be confused with assignment to a resolver group.</p>
+</blockquote>
+<h2 id="detailed-troubleshoot-repair-procedures">Detailed Troubleshoot / Repair Procedures</h2>
+<p>   return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#troubleshoot">troubleshoot questions</a>  </p>
+<h4 id="-a-name-t1-a-what-is-the-advisor-box-is-this-new-"><a name="T1"> </a> What is the ‘advisor box’? Is this new?</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Advise user, ‘The advisor box appears in the lower-right section of the Student Center when a student signs in to SIS, below enrollment dates.’</li>
+<li>Advise user, ‘Your faculty advisor and other designated advisor(s), when selected, display in this box. If you haven’t yet selected a designated advisor(s), only your faculty (academic) advisor name will display.’</li>
+<li>Advise user, ‘To view additional information about any advisor(s), or to add or remove a designated advisor(s), click the <strong>details</strong> link in the lower right corner. </li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-t2-a-i-want-my-designated-advisor-to-release-a-hold-why-isn-t-it-working-"><a name="T2"> </a> I want my designated advisor to release a hold. Why isn’t it working?</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Advise user, ‘Designated advisors have access to view academic and personal information stored in SIS. However, a designated advisor may not release any, regardless of their role at the university.’</li>
+<li>Resolve the ticket.   </li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Refer any user with objections or who requests additional clarification to the Registrar’s office.</p>
+</blockquote>
+<h4 id="-a-name-t3-a-i-asked-x-educator-staff-member-to-be-a-designated-mentor-why-can-t-he-or-she-add-information-to-my-student-record-"><a name="T3"> </a> I asked <x> educator/staff member to be a designated mentor. Why can’t he or she add information to my student record?</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Advise user, ‘A student may add (or remove) a designated advisor(s) from his or her student record in SIS. However, a potential designated advisor has no access to view or modify a student record.’ </li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Refer any user with objections or who requests additional clarification to the Registrar’s office. </p>
+</blockquote>
+<h4 id="-a-name-t4-a-i-am-unable-to-sign-in-to-sis-to-add-change-remove-a-designated-advisor-s-"><a name="T4"> </a> I am unable to sign in to SIS to add/change/remove a designated advisor(s).</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Verify that the user is a current CWRU student.<br>Use the <a href="https://its-services.case.edu/ITS-internal/lookup">ID Lookup Tool</a> to determine whether the user has a working CWRU ID and Password.  </li>
+<li>If the student user has an active, working CWRU ID and Password and cannot access SIS forward ticket to <strong>Peoplesoft SIS-Reg</strong> resolver group.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Only student users with an active, working CWRU ID and Password will have access to update a designated advisor(s) through SIS. Additional information regarding this topic may be found in the Identity Management scripts.</p>
+</blockquote>
+<h2 id="detailed-activate-setup-install-procedures">Detailed Activate / Setup / Install Procedures</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#setup">setup questions</a><br><em>This space left blank intentionally.</em></p>
+<h2 id="detailed-move-change-procedures">Detailed Move / Change Procedures</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#change">change questions</a><br><em>This space left blank intentionally.</em></p>
+<h2 id="detailed-how-to-training-procedures">Detailed How To / Training Procedures</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#training">training questions</a></p>
+<h4 id="-a-name-h1-a-what-is-a-designated-advisor-and-how-does-that-person-differ-from-an-academic-advisor-"><a name="H1"> </a>What is a ‘designated advisor’ and how does that person differ from an academic advisor?</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Advise user, ‘A designated advisor is a professional educator, researcher or CWRU staff member to whom a student opens his or her academic and personal records. Unlike a faculty advisor, the relationship between designated advisor and student is informal, voluntary, student-initiated and may be oriented to academic, professional or avocational interests outside of a declared field of study.’</li>
+<li>Recap the program overview and benefits to the student.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Refer requests for additional information to the Registrar’s office.</p>
+</blockquote>
+<h4 id="-a-name-h2-a-am-i-required-to-designate-an-advisor-s-"><a name="H2"> </a>Am I required to designate an advisor(s)?</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Advise user, ‘The Registrar’s Office recommends that all students consider the benefits of electing one or more designated advisors. Remember, there is no cost or paperwork needed to participate. Also, students may change or remove a designated advisor at any time.’</li>
+<li>Recap the program overview and benefits to the student.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Refer requests for additional information to the Registrar’s office.</p>
+</blockquote>
+<h4 id="-a-name-h3-a-may-i-designate-more-than-one-advisor-"><a name="H3"> </a>May I designate more than one advisor?</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Advise user, ‘SIS supports multiple selected ‘designated advisors’. You may wish to discuss the strategies for effective participation with a representative from the Registrar’s office or with your academic advisor before making a selection.’</li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Refer requests for additional information to the Registrar’s office.</p>
+</blockquote>
+<h4 id="-a-name-h4-a-what-are-the-steps-to-add-a-designated-advisor-s-"><a name="H4"> </a>What are the steps to add a designated advisor(s)?</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Sign in to SIS with your CWRU Network ID and Password.</li>
+<li>Find the <strong>Advisor box</strong> in the lower-right section of the <strong>Student Center</strong> screen.</li>
+<li>Click the <strong>green arrow</strong> in the title bar of the box to expand it.</li>
+<li>Click the <strong>details link</strong>.</li>
+<li>On the subsequent screen, select the tab labeled <strong>designated advisors</strong>.</li>
+<li>Search for an advisor by his or her <strong>CWRU Network ID</strong>. Click <strong>Add Designated Advisor ID</strong>.</li>
+<li>Confirm that selected ID matches desired advisor and click <strong>Confirm &amp; Save Designated Advisor</strong>.</li>
+<li>Resolve the ticket or forward to <strong>Peoplesoft SIS-Reg</strong> resolver group.</li>
+</ol>
+<h4 id="-a-name-h5-a-how-do-i-change-or-remove-a-previously-designated-advisor-"><a name="H5"> </a>How do I change or remove a previously designated advisor?</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Sign in to SIS with your CWRU Network ID and Password.</li>
+<li>Find the <strong>Advisor box</strong> in the lower-right section of the <strong>Student Center</strong> screen.</li>
+<li>Click the <strong>green arrow</strong> in the title bar of the box to expand it.</li>
+<li>Click the <strong>details link</strong>.</li>
+<li>On the subsequent screen, select the tab labeled <strong>designated advisors</strong>.</li>
+<li>Click the <strong>Remove</strong> button to delete an existing designated advisor.</li>
+<li>Resolve the ticket or forward to <strong>Peoplesoft SIS-Reg</strong> resolver group.</li>
+</ol>
+<h4 id="-a-name-h6-a-how-do-i-access-the-designated-advisor-page-"><a name="H6"> </a>How do I access the designated advisor page?</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Sign in to SIS with your CWRU Network ID and Password.</li>
+<li>Find the <strong>Advisor box</strong> in the lower-right section of the <strong>Student Center</strong> screen.</li>
+<li>Click the <strong>green arrow</strong> in the title bar of the box to expand it.</li>
+<li>Click the <strong>details link</strong>.</li>
+<li>On the subsequent screen, select the tab labeled <strong>designated advisors</strong>.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h2 id="detailed-billing-procedures">Detailed Billing Procedures</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#billing">billing questions</a><br><em>This space left blank intentionally.</em></p>
+<h2 id="-a-name-o1-a-detailed-outage-procedures"><a name="O1"> </a>Detailed Outage Procedures</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#outage">outage questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Verify internet connectivity and troubleshoot as necessary.</li>
+<li>Attempt to sign in to SIS using CWRU Network ID and Password.</li>
+<li>Resolve ticket, forward to <strong>Peoplesoft SIS-Reg</strong> resolver group or escalate per SIS OUTAGE procedures.</li>
+</ol>
+<h2 id="-a-name-u1-a-other-unable-to-resolve"><a name="U1"> </a>Other / Unable to Resolve</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.  </li>
+<li>Forward to <strong>Peoplesoft SIS-Reg </strong>resolver group.</li>
+</ol>
+<h2 id="-"> </h2>
+<p>Copyright 2014, CWRU ITS</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

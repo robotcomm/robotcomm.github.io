@@ -1,0 +1,480 @@
+<!-- UAT feedback - where does the documentation need to be adjusted (fewer, more steps, more, less detail) -->
+<!-- UAT feedback - 5-10 volun-tells for Use Cases -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EK Reporting Guide</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<style>
+h2 { padding-top: 60px; }
+h3 { padding-top: 30px; }
+</style>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!-- AJAX -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+</head>
+
+<div class="container">
+<div role="navigation" class="navbar navbar-default navbar-fixed-top">
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="#">EK Reporting</a></li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#procedures">Procedures</a></li>
+        <li><a href="https://50b44a82d0a7db03e8e8be130d883b0b967c49ce.googledrive.com/host/0B5e4Smfyuda_dEJRRlZ1UmhSTGM/evalkit-reporting-usecases.html">Use Cases</a></li>
+        <li><a href="javascript:window.print()"><strong>Print</strong></a>
+    </ul>
+</div>
+
+
+<h2>Disclaimer</h2>
+<p>Internal, working project document. This text is not intended for publication and may change frequently. Sections may be republished in approved channels with stakeholder approval for final copy<a href="http://www.mcsweeneys.net/articles/im-comic-sans-asshole">.</a></p>
+
+<h2 id="requirements">Requirements</h2>
+<p> High level requirements are numbered with whole integers (e.g., counting numbers - 1, 2, 3, etc.) Detail requirements are associated with one high-level requirement and designated by with an ID number in the format, 'high-level ID.x' (e.g., 1.1, 1.2, 1.3, etc.)</p>
+<p>Generally, these requirements describe the behaviors that the new system <strong>must</strong> exhibit, based on the features and uses of the old system. To review a granular matrixed comparison of requirements between the old and new systems, as well as known, planned upgrades to the new system, see the <a href="https://docs.google.com/a/case.edu/spreadsheets/d/1NMxq2ZU4UJ3MAs6XUZqTzKhWRl6OMofUuTdiUe2PPb4/edit#gid=1" target="_blank">Requirements Checklist</a>.</p>
+
+
+<div class="well">
+<p><strong>ID</strong>: 1<br>
+<strong>Desc</strong>: the system shall replicate reporting capabilities available to all users with current system<br>
+<strong>Rationale</strong>: any replacement system must not reduce functionality provided by current system<br>
+<strong>Fit</strong>: all detailed requirements are met by new system</p>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-body">
+<p><strong>ID</strong>: 1.1<br>
+<strong>Desc</strong>: for each individual course section, any user shall be able to review anonymized survey respondent data including:<br>
+		<ul>
+			<li>text of each question included in survey</li>
+			<li>description of scale or answer key</li>
+			<li>description of conversions to numerical scores and averages calculations</li>
+			<li>percentage-wise distribution of question responses by class (section)</li>
+			<li>count distribution of question responses by class (section)</li>
+			<li>class (section) average response for each survey question</li>
+			<li>course (all sections) average response for each survey question</li>
+			<li>overall average (all classes in the same term evaluated using the same questions)</li>
+			<li>response count (section)</li>
+			<li>enrollment count (section)</li>
+		</ul>
+<strong>Rationale</strong>: stakeholder requirement<br>
+<strong>Fit</strong>: all listed reporting capabilities are replicated in new system</p>
+
+<p><strong>ID</strong>: 1.2<br>
+<strong>Desc</strong>: course sections shall be identified using the following data:<br>
+		<ul>
+			<li>semester</li>
+			<li>academic year</li>
+			<li>course number</li>
+			<li>course title</li>
+			<li>section number</li>
+		</ul>
+<strong>Rationale</strong>: stakeholder requirement<br>
+<strong>Fit</strong>: all listed reporting capabilities are replicated in new system</p>
+
+<p><strong>ID</strong>: 1.3<br>
+<strong>Desc</strong>: section reporting data shall be available to any user, organized by semester, summarized in any of the following groups:<br>
+		<ul>
+			<li>all courses</li>
+			<li>School or Dept (e.g., Arts and Sciences, MSASS, Nursing)</li>
+			<li>Level (e.g., 100, 200, 300, 400, 500, 600)</li>
+			<li>Subject (e.g., ACCT, ECON, STAT, etc.)</li>
+		</ul>
+<strong>Rationale</strong>: stakeholder requirement<br>
+<strong>Fit</strong>: all listed reporting capabilities are replicated in new system</p>
+
+<!-- 1.3 can only get for Admins in new system ... probably only by school or dept. Not level or subj.﻿ -->
+
+</div>
+</div>
+
+<div class="well">
+<p><strong>ID</strong>: 2<br>
+<strong>Desc</strong>: the system shall replicate reporting capabilities available to instructors using the current system<br>
+<strong>Rationale</strong>: any replacement system must not reduce functionality provided by current system<br>
+<strong>Fit</strong>: all detailed requirements are met by new system</p>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-body">
+<p><strong>ID</strong>: 2.1<br>
+<strong>Desc</strong>: for each section taught, an instructor shall be able review each submitted evaluation individually<br>
+<strong>Rationale</strong>: stakeholder requirement<br>
+<strong>Fit</strong>: all listed reporting capabilities are replicated in new system</p>
+
+<p><strong>ID</strong>: 2.2<br>
+<strong>Desc</strong>: for each evaluation submitted for a section taught, an instructor shall be able to review the full text of respondent comments<br>
+<strong>Rationale</strong>: stakeholder requirement<br>
+<strong>Fit</strong>: all listed reporting capabilities are replicated in new system</p>
+
+<p><strong>ID</strong>: 2.3<br>
+<strong>Desc</strong>: for each individual course section, any instructor shall be able to review anonymized survey respondent data including:
+		<ul>
+			<li>text of each question included in survey</li>
+			<li>description of scale or answer key</li>
+			<li>description of conversions to numerical scores and averages calculations</li>
+			<li>percentage-wise distribution of question responses by class (section)</li>
+			<li>count distribution of question responses by class (section)</li>
+			<li>class (section) average response for each survey question</li>
+			<li>course (all sections) average response for each survey question</li>
+			<li>overall average (all classes in the same term evaluated using the same questions)</li>
+			<li>response count (course)</li>
+			<li>enrollment count (course)</li>
+		</ul>
+<strong>Rationale</strong>: stakeholder requirement<br>
+<strong>Fit</strong>: all listed reporting capabilities are replicated in new system</p>
+
+<p><strong>ID</strong>: 2.4<br>
+<strong>Desc</strong>: course section reporting shall provide the following identifiable data:<br>
+		<ul>
+			<li>semester</li>
+			<li>academic year</li>
+			<li>course number</li>
+			<li>course title</li>
+			<li>section number</li>
+		</ul>
+<strong>Rationale</strong>: sections must be indentifiable in familiar format and with consistent data points<br>
+<strong>Fit</strong>: all listed reporting capabilities are replicated in new system</p>
+
+<p><strong>ID</strong>: 2.5<br>
+<strong>Desc</strong>: for team-taught courses, course evaluation responses shall be produced for each instructor<br>
+<strong>Rationale</strong>: stakeholder requirement<br>
+<strong>Fit</strong>: all listed reporting capabilities are replicated in new system</p>
+
+<!-- 2.5 mention for that team taught courses, new system will create separate reports for each.﻿ -->
+
+</div>
+</div>
+
+
+<div class="well">
+<p><strong>ID</strong>: 3<br>
+<strong>Desc</strong>: the system shall replicate reporting capabilities available to academic administrators using the current system<br>
+<strong>Rationale</strong>: any replacement system must not reduce functionality provided by current system<br>
+<strong>Fit</strong>: all detailed requirements are met by new system</p>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-body">
+<p><strong>ID</strong>: 3.1<br>
+<strong>Desc</strong>: the system shall provide the capability to review instructor performance over time<br>
+<strong>Rationale</strong>: stakeholder requirement, used for tenure reviews and similar<br>
+<strong>Fit</strong>: all listed reporting capabilities are replicated in new system</p>
+
+<p><strong>ID</strong>: 3.2<br>
+<strong>Desc</strong>: the system shall allow administrative users to export raw data<br>
+<strong>Rationale</strong>: several stakeholders use data exported from the current system to construct reports outside of the system<br>
+<strong>Fit</strong>: raw data is available for export by administrative users</p>
+
+<p><strong>ID</strong>: 3.3<br>
+<strong>Desc</strong>: data exported from the system shall be analagous to data values exported from the current system<br>
+<strong>Rationale</strong>: stakeholders who require raw data for external reporting must be able to compare newly created data to historical data<br>
+<strong>Fit</strong>: raw data exported from system is similar in content to current data exports<br>
+	<br>
+	<strong>Example</strong><br>
+	<pre><code>
+	Strm,Class_Nbr,Class_Mtg_Nbr,Instr_Assign_Seq,EmplID,Network_ID,Responses,Class_Score,Instructor_Score
+	2148,4986,1,3,1022460,ESK18,22,3.18181818181818,3.45454545454545
+	2148,4987,1,2,1003257,MXL70,37,3.75675675675676,3.86486486486486
+	2148,4988,1,2,1003257,MXL70,29,3.86206896551724,4
+	2148,4990,1,1,1019188,SXP234,27,3.25925925925926,3.62962962962963
+	2148,5004,1,3,1021566,JPS136,44,3.79545454545455,4.31818181818182
+	2148,5005,,,1020791,LFP16,36,4.23529411764706,3.67857142857143
+	2148,5005,1,7,3228465,HAM48,36,4.23529411764706,4.55882352941176
+	</code></pre>
+
+<!-- NOTE: breakout for all special-purpose administrative reports here. -->
+
+<!--  
+Strm and class will be one field.
+Class mtg nbr, instructor_assignseq and emplID not available from EvalKit. This is found in SIS.
+EvalKit will provide one line at a time. This may be compiled by hand out of EvalKit. Must use UI.﻿ -->
+
+</p>
+
+</div>
+</div>
+
+<div class="well">
+<p><strong>ID</strong>: 4<br>
+<strong>Desc</strong>: the system shall not present a detailed section report publicly if the enrollment is 3 or fewer<br>
+<strong>Rationale</strong>: policy constraint of current system<br>
+<strong>Fit</strong>: sections with low enrollment are not reported individually</p>
+
+<!--  
+Enrollment restriction not available in EvalKit. Unclear on whether this continues to be a requirement. EK does make restrictions based on response # available. #4﻿ -->
+
+</div>
+
+<div class="well">
+<p><strong>ID</strong>: 5<br>
+<strong>Desc</strong>: the system shall aggregate results for cross-listed sections and report them together in any cross-listed section a user selects<br>
+<strong>Rationale</strong>: any replacement system must not reduce functionality provided by current system<br>
+<strong>Fit</strong>: results for cross-listed sections are aggregated and available in reports for any selected section <br>
+Cross-listings between ungregraduate and graduate level courses are exepmted from this requirement when different survey questions are selected.</p>
+</div>
+
+<div class="well">
+<p><strong>ID</strong>: 6<br>
+<strong>Desc</strong>: the system shall provide a 'print-ready' format option for all system-generated reports<br>
+<strong>Rationale</strong>: any replacement system must not reduce functionality provided by current system<br>
+<strong>Fit</strong>: sytem-generated reports are formatted for print<br>
+Cross-listings between ungregraduate and graduate level courses are exepmted from this requirement when different survey questions are selected.</p>
+</div>
+
+<div class="well">
+<p><strong>ID</strong>: 7<br>
+<strong>Desc</strong>: the project team shall provide a glossary of terms related to reporting in the new system<br>
+<strong>Rationale</strong>: current and new system refer to similar or same data and workflow using distinct terminology<br>
+<strong>Fit</strong>: glossary with term definitions and synonymous terms from old system is published</p>
+</div>
+
+
+<!-- cross-listing requirement - cross-listing are automatically combined in section reports. This is separate by default in EK. However, batch reporting will allow users to recreate the same.﻿ -->
+
+<h2 id="procedures">Procedures</h2>
+
+<p>From EvaluationKIT dashboard, choose <strong>Results</strong> (in the upper-right corner) and then choose a reporting structure. Please note that student users will click the link marked "Student Reporting" to access publicly available information.</p>
+
+<p><strong>Students</strong><br>
+<a href="#student-reporting">Student Reporting</a></p>
+
+<p><strong>Instructors + Administrators</strong><br>
+<a href="#response-rate-tracker">Response Rate Tracker</a><br>
+<a href="#project-results">Project Results</a><br>
+<a href="#instructor-results">Instructor Results</a><br>
+<a href="#report-builder">Report Builder</a><br>
+<a href="#report-feedback">Results Feedback</a><br>
+</p>
+
+<p><strong>Academic Adminstrators</strong><br>
+<a href="#intructor-means-reporting">Instructor Means Reporting</a></p>
+
+<h3><span id="student-reporting">Student Reporting</span></h3> 
+<p>Measure instructor, course, results against one another, or a benchmark group.</p>
+		<ol>
+			<li>Choose area.</li>
+			<li>Choose instructor(s), or leave default settings (All Instructors).</li>
+			<li>Choose course(s), or leave default settings (All Courses).</li>
+			<li>Choose term(s), or leave default settings (All Terms).</li>
+			<li>Choose year(s), or leave default settings (All Years).</li>
+			<li>Choose a question on which to report.<br>
+			<li>Click <strong>View Question Response Scale</strong> to review answer key.</li>
+			<li>Click <strong>Search</strong>.</li>
+			<li>Matching records are shown in the "Results" list.</li>
+			<li>Click any column header to sort the list by that criterion. Click the header again to reverse sort order. Criteria are:
+				<ul>
+					<li>Course</li>
+					<li>Instructor</li>
+					<li>Term</li>
+					<li>Respondents (total)</li>
+					<li>Average (based on scale)</li>
+				</ul>
+			</li>	
+		</ol></li>
+
+<h3><span id="response-rate-tracker">Response Rate Tracker</span></h3> 
+<p>Track course evaluation response rate.</p>
+	<ol>
+	<li><strong>Review response rates by project</strong></li>
+	<li>Choose a project from the list provided or search by name. The following data are provided:<br>
+		<ul>
+			<li>Project Name</li>
+			<li>Enrollments (total count)</li>
+			<li>Responded (total count, opt-outs not excluded)</li>
+			<li>Response Rate (percentage, opt-outs not excluded)</li>
+			<li>Opted-Out (total count)</li>
+			<li>% of Enrollments Opted-Out</li>
+			<li>Responded with Opted-Out Removed (count)</li>
+			<li>Response Rate with Opted-Out Removed (percentage)</li>
+		</ul>
+	</li>
+	<li><strong>Review response rates in a project by course section</strong></li>
+	<li>Choose a project from the list provided or search by name.<br>
+	<li>Click the name of the project to open detail.</li>
+	<li>View courses in the list of results.</li>
+	<li>If needed, search for a specific course or section using course code, course title or course unique ID. The following data are provided:<br> 
+		<ul>
+			<li>Code (course identifier)</li>
+			<li>Title (course identifier)</li>
+			<li>Unique ID (section identifier)</li>
+			<li>Enrollments (total count)</li>
+			<li>Responded (total count, opt-outs not excluded)</li>
+			<li>Response Rate (percentage, opt-outs not excluded)</li>
+			<li>Opted-Out (total count)</li>
+			<li>% of Enrollments Opted-Out</li>
+			<li>Responded with Opted-Out Removed (count)</li>
+			<li>Response Rate with Opted-Out Removed (percentage)</li>
+		</ul>
+	</li>
+	</ol>
+
+<h3><span id="project-results">Project Results</span></h3> 
+<p>Preview the results of several, all or individual courses associated with a single project.</p>
+	<ol>
+	<li>Choose a project from the list provided or search by name.</li>
+	<li>If needed, choose additional limiting criteria (project end date OR results available) and an associated date range.</li>
+	<li>Click magnifying glass icon in "View" column to open results. </li>
+	<li><strong>Individual Course Reports</strong></li>
+	<ol>
+	<li>Choose an individual course and click the download icon in "View" column.</li>
+	<li>Choose applicable format (PDF, PDF+Comments, Raw Data).</li>
+	<li>System will display message confirming that report is being generated.</li>
+	<li>Choose to save the report to a location, or open with application.</li>
+	<li>Open report using appropriate application (e.g., Adobe PDF, Microsoft Excel).</li>
+	</ol>
+	<li><strong>Batch Reporting</strong></li>
+	<ol>
+	<li>To report the results of more than one course together, click the selection box for each and click Batch Report.</li>
+	<li>Name the report.</li>
+	<li>Choose a data format option:
+	<ul>
+		<li>Merge Multiple PDF Reports into one PDF for Selected Courses</li>
+		<li>Download Multiple PDF Reports/Batch as ZIP file for Selected Courses</li>
+		<li>Aggregate Data for Selected Items into One Report</li>
+		<li>Choose whether or not to include "Write-in Questions"</li>
+	</ul></li>
+	<li>Click <strong>Go</strong>.</li>
+	<li>System will display message confirming that report is being generated.</li>
+	<li>Report results will be emailed to user from system when complete.</li></ol>
+	</ol>
+
+<h3><span id="instructor-results">Instructor Results</span></h3> 
+<p>Results for individual instructors (pre-determined based on current user credentials)</p>
+	<ol>
+	<li><strong>View Setup</strong></li>
+	<ol>
+	<li>All available columns are shown by default. Choose to show or hide any of the following (report results will not be affected):
+		<ul>
+		<li>Course Code</li>
+		<li>Title</li>
+		<li>Unique ID</li>
+		<li>Hierarchy Level</li>
+		<li>Project</li>
+		</ul></li>
+	<li>Choose project search scope. Select from projects from dropdown list named "Project".</li>
+	<li>Click Search to show courses in selected projects in "Results" list below.</li></ol>
+	<li><strong>Individual Instructor, Individual Course Reporting</strong></li>
+	<ol>
+	<li>Choose an individual course and click the download icon in "View" column.</li>
+	<li>Choose applicable format (PDF, PDF+Comments, Raw Data).</li>
+	<li>System will display message confirming that report is being generated.</li>
+	<li>Choose to save the report to a location, or open with application.</li>
+	<li>Open report using appropriate application (e.g., Adobe PDF, Microsoft Excel).</li>
+	</ol>
+	<li><strong>Individual Instructor, Batch Course Reporting</strong></li>
+	<ol>
+	<li>To report the results of more than one course together, click the selection box for each and click <strong>Batch Report</strong>.</li>
+	<li>Name the report.</li>
+	<li>Choose a data format option:
+		<ul>
+		<li>Merge Multiple PDF Reports into one PDF for Selected Courses</li>
+		<li>Download Multiple PDF Reports/Batch as ZIP file for Selected Courses</li>
+		<li>Aggregate Data for Selected Items into One Report</li>
+		<li>Choose whether or not to include "Write-in Questions".</li></ul></li>
+	<li>Click <strong>Go</strong>.</li>
+	<li>System will display message confirming that report is being generated.</li>
+	<li>Report results will be emailed to user from system when complete.</li>
+</ol></ol>
+
+<h3><span id="report-builder">Report Builder</span></h3> 
+<p>Build custom reports.<br>
+ITS <strong>strongly recommends</strong> EvaluationKit administrator guidance when using this option.</p>
+	<ol>
+	<li>Click <strong>&plus; Create New Report</strong>.</li>
+	<li><strong>Set Report Properties</strong><br>
+	Add report name and brief description. Click <strong>Continue</strong>.</li>
+	<li><strong>Choose Projects</strong></li>
+	<ol>
+		<li>Select project(s) from "Select Projects" list.</li>
+		<li>Click <strong>&plus; Add Selected Projects</strong>.</li>
+		<li>Verify correct projects appear in "Report Projects" list and click <strong>Continue</strong>.</li>
+	</ol>
+	<li><strong>Choose Questions to Report</strong><br>
+	Choose one or more questions to add to your report and click <strong>Continue</strong></li>
+	<li><strong>Build Your Query</strong></li>
+	<ol>
+		<li>Choose "Areas" (e.g., Engineering, Francis Payne Bolton School of Nursing) to limit query scope.</li>
+		<li>Click <strong>&plus; Add Selected Areas</strong>.</li>
+		<li>Choose limiting criteria for particular questions (e.g., question #1 where responses are selected and the response is greater than x_value).</li>
+		<li>Click <strong>Save</strong>.</li>
+		<li>Click <strong>Select Instructors</strong> to limit report by specific instructors. Or, leave default value (all instructors).</li>
+		<li>Click <strong>Select Courses</strong> to limit report by specific course. Or, leave default value (all courses).</li>
+		<li>Scroll to top of page and click <strong>Continue</strong>.</li>
+	</ol>
+	<li><strong>Choose a Report Template</strong><br>
+	Click number links at bottom to preview each option:<br>
+		<ul>
+			<li>1. Node Summary Report</li>
+			<li>2. Node Summary Report with Project Detail</li>
+			<li>3. Project Summary Report</li>
+			<li>4. Project Summary Report with Node Detail</li>
+			<li>5. Course Summary Report</li>
+			<li>6. Course Summary Report with Project Detail</li>
+			<li>7. Instructor Summary Report</li>
+			<li>8. Instructor Summary Report with Project Detail</li>
+		</ul>
+		</li>
+	<li>Click <strong>Generate</strong></li>
+	<li>Results are shown. <br>
+	<strong>NOTE:</strong> If no results match query parameters, "No Data Found" is displayed in red.</li>
+	</ol>
+</ol>
+
+<h3><span id="results-feedback">Results Feedback</span></h3> 
+<p>Review survey comments.</p>
+<ol>
+<li>Search for comments using one or more of the following criteria:<br>
+	<ul>
+		<li>Project</li>
+		<li>Course code</li>
+		<li>Course title</li>
+		<li>Course unique ID</li>
+		<li>Hierarchy level</li>
+	</ul></li>
+<li>To review new comments only, check the box named "New Only".</li>
+<li>Click <strong>Search</strong>.</li>
+<li>Matching records are shown in the "Results Feedback" list.</li>
+</ol>
+
+<h3><span id="instructor-means-reporting">Instructor Means Reporting</span></h3> 
+<p>Measure instructor results against one another, or a benchmark group.</p>
+		<ol>
+			<li>Choose project(s).</li>
+			<li>Choose hierarchy level(s).</li>
+			<li>Choose instructor(s), or leave default settings (All Instructors).</li>
+			<li>Choose course(s), or leave default settings (All Courses).</li>
+			<li>Choose question on which to report.<br>
+			<strong>NOTE:</strong> A report may only contain questions which use the same scale (e.g., likert)</li>
+			<li>Choose respondent or average criteria (e.g., where number of respondents greater than x, where average rating is greater than x)</li>
+			<li>Choose to group by <strong>Course</strong>, <strong>Instructor</strong>, or <strong>Instructor/Course</strong>.</li>
+			<li>Choose to aggregate question responses, or show reports for questions individually.</li>
+			<li>Choose an area to serve as benchmark.</li>
+			<li>Click <strong>Search</strong>.</li>
+			<li>Matching records are shown in the "Results" list.</li>
+			<li>Click any column header to sort the list by that criterion. Click the header again to reverse sort order.</li>
+			<li>Click the appropriately labelled links to export results in PDF or Excel format.</li>
+		</ol></p>
+
+<hr>
+
+<div class="pull-right">
+<p>&copy; 2015, Case Western Reserve University</p>
+</div>
+<div class="clearfix"></div>
+</div>
+
+</html>
+

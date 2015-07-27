@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Applications | Academic Technologies | Research Computing Services | Computing Cluster</title>
+<link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body><div class="container"><p>Applications | Academic Technologies | Research Computing Services | Computing Cluster  </p>
+
+<h3 id="top"> </h3>
+
+<p><strong>Keywords</strong>: <br>
+HPCC Brochure; HPCC; HPC; High Performance Computing Cluster; High Performance Computing; Modeling; Simulation; Computational Resources; Visualization; RHEL5; RHEL6; Ganglia; MATLAB; Mathematica; R; Qhull; Sundials; NumPy; SciPy; Torch; ANSYS; FLUENT; OpenFOAM; NAMD; GROMACS; LAMMPS; CHARMM; Rosetta; Schroedinger; Gaussian; VASP; PHENIX; openmm; Amber; MCell; SYBL-X; CPMD; Gnuplot; Paraview; VMD; Visit; UCSF Chimera; Relion; CUDA; JACKET; OpenACC; Neuron; PEDSYS; Parser; Gadgetron; HPC FIle Recovery &amp; Backup; HPC Resources; Ohio Super Computing; OSC; XSEDE; eXtrem Science and Engineering Discovery Environment; POD; Penguin On Demand; Amazon Cloud Computing</p>
+
+<h3 id="troubleshoot-repair-topics">Troubleshoot + Repair topics</h3>
+
+<p><a href="#other-hpc-resources">HPC Cluster does not meet needs of researcher</a> <br>
+<a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/cluster-faq/troubleshooting--issues#TOC-My-job-enters-the-queue-successfully-but-it-waits-a-long-time-before-it-gets-to-run">Job run delayed after entering queue*</a> <br>
+<a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/cluster-faq/troubleshooting--issues#TOC-Unable-to-access-Cluster-via-WiFi-VPN-using-your-laptop">Problems accessing cluster resources with VPN*</a> <br>
+<a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/cluster-faq/troubleshooting--issues#TOC-SSH-Authentication-Error">SSH Authentication errors*</a> <br>
+<a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/cluster-faq/troubleshooting--issues#TOC-Got-error-similar-to-following-after-the-job-submission:">‘Permission denied’ errors after job submission*</a> <br>
+<a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/cluster-faq/troubleshooting--issues#TOC-MATLAB-License-Checkout-Failed">User MATLAB license checkout fails*</a> <br>
+<a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/cluster-faq/troubleshooting--issues#TOC-MATLAB-MDCS-Validation-failed">User MATLAB MDCS validation fails*</a> <br>
+<a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/cluster-faq/troubleshooting--issues#TOC-I-can-not-submit-my-job-using-qsub">User cannot submit job using qsub*</a> <br>
+<a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/cluster-faq/troubleshooting--issues#TOC-I-deleted-important-files-on-my-home-directory-by-accident.-Is-there-a-way-to-recover-those-files-">Recover accidentally deleted files*</a> <br>
+<a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/cluster-faq/troubleshooting--issues#TOC-In-the-text-editor-I-am-prompted-about-swap-file.-What-is-this-and-what-should-I-do-">Swap file questions*</a> <br>
+<a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/important-notes-for-new-users/software-installation-guide">Installation troubleshooting + software configuration instructions*</a>  </p>
+
+
+
+<h3 id="activate-setup-install-topics">Activate + Setup + Install topics</h3>
+
+<p><a href="#setup-an-hpcc-account">I want to setup / activate my HPCC account</a> <br>
+<a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/important-notes-for-new-users/software-installation-guide">Guide to Installing Software in Home Directory*</a> <br>
+<a href="#change-hardware">I would like to change the hardware I use (laptop or desktop workstation)</a>  </p>
+
+
+
+<h3 id="move-change-topics">Move + Change topics</h3>
+
+<p><a href="#apply-for-group-account">I need to apply for an HPCC group account.</a> <br>
+<a href="#add-users-to-a-group">I need to add users to my group.</a> <br>
+<a href="#delete-users-from-a-group">I need to delete users from my group.</a>  </p>
+
+
+
+<h3 id="how-to-training-topics">How-to + Training topics</h3>
+
+<p><a href="#file-recovery-and-backup">I would like to recover or backup the files residing in HPC Cluster</a> <br>
+<a href="#printed-brochures">I would like a printed copy of the Research Computing brochure.</a> <br>
+<a href="#schedule-training">I would like to schedule training with the Research Computing group.</a> <br>
+<a href="#schedule-consultation">I would like to schedule consultation with the Research Computing group.</a> <br>
+<a href="#more-information">Where can I find more information about Research Computing?</a> <br>
+<a href="#list-of-applications">Where can I find a list of applications available through Research Computing, or more information about a specific application?</a> <br>
+<a href="#FAQ">Is there a FAQ for Research Computing?</a> <br>
+<a href="#self-install-application">Where can I find more information about self-installing an application in my Home directory?</a> <br>
+<a href="#contribute-to-research-computing">How can I contribute to the growth of Research Computing at CWRU?</a> <br>
+<a href="#contact-research-computing">How do I contact Research Computing administration if I have other questions?</a> <br>
+<a href="#sign-in-to-use-research-computing-services">How do I sign in to use Research Computing services?</a> <br>
+<a href="#eligibility-guidelines">Who is eligible to use Research Computing resources?</a> <br>
+<a href="#x-application-instructions">How do I use “X” application?</a> <br>
+<a href="#compiling-code">How do I compile my code?</a> <br>
+<a href="#running-cluster-jobs">How do I run cluster jobs?</a> <br>
+<a href="#training-website-and-schedule">Is there an HPC training website or schedule of classroom training?</a>  </p>
+
+
+
+<h3 id="billing-topics"><a href="#billing">Billing topics</a></h3>
+
+
+
+<h3 id="report-an-outage"><a href="#outage">Report an Outage</a></h3>
+
+
+
+<h3 id="other-unable-to-resolve"><a href="#unable-to-resolve">Other + Unable to Resolve</a></h3>
+
+
+
+<h2 id="service-description">Service Description</h2>
+
+<p>ITS operates a high performance computing cluster to support computationally intense research and learning initiatives at the university. Cluster nodes run Red Hat Enterprise Linux (RHEL).</p>
+
+<p>Researchers are invited to participate in the growth of central high performance computing facilities by providing hardware, or by sharing software and operational costs. Operation of the facility is guided by usage policies approved by the Advisory Committee on Research Computing.</p>
+
+
+
+<h3 id="use-this-article-when">Use this article when:</h3>
+
+<ol>
+<li><em>Any user</em> has a general question about, wishes to contribute to, or requires consultation regarding High Performance Computing at CWRU,</li>
+<li>An <em>account holder</em> has specific questions about his or her new/ongoing research and applications of the High Performance Computing Cluster, modifications to a group account, or billing,</li>
+<li>A <em>non-account user</em> has a question about securing High Performance Computing resources, establishing an account, or requests consultation regarding computationally intense new or ongoing research at CWRU.</li>
+</ol>
+
+<blockquote>
+  <p><strong>NOTE:</strong> Provide the user the followup email address “its-cluster-admin@case.edu” before resolving any ticket.</p>
+</blockquote>
+
+
+
+<h2 id="tools-for-resolution">Tools for Resolution</h2>
+
+
+
+<h3 id="required-information">Required Information</h3>
+
+<ul>
+<li>Name,</li>
+<li>CWRU Network ID,</li>
+<li>Contact information (preferred and alternate),</li>
+<li>School or Dept., </li>
+<li>Problem or Request description</li>
+</ul>
+
+
+
+<h3 id="required-notifications">Required Notifications</h3>
+
+<ol>
+<li>For all topics with an external link (indicated with an asterisk (*), direct the user to the URL provided. </li>
+<li>Confirm that user has successfully navigated to the appropriate page (or noted the URL). </li>
+<li>ALWAYS provide the user the followup email address “its-cluster-admin@case.edu” before resolving any ticket.</li>
+</ol>
+
+
+
+<h3 id="additional-resources">Additional Resources</h3>
+
+<p>Copy table into email replies:</p>
+
+<p><strong>Useful HPCC Resources</strong>  </p>
+
+<table>
+<thead>
+<tr>
+  <th align="left">Name</th>
+  <th align="left">Primary use</th>
+  <th align="left">URL</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left">HPCC Contact email</td>
+  <td align="left">Request help or information from ITS support</td>
+  <td align="left">its-cluster-admin@case.edu</td>
+</tr>
+<tr>
+  <td align="left">HPCC Home</td>
+  <td align="left">Information regarding the use of HPC resources</td>
+  <td align="left"><a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home">https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home</a></td>
+</tr>
+<tr>
+  <td align="left">Access and Usage policies</td>
+  <td align="left">Outlines who is eligible to use HPC resources, and how to apply</td>
+  <td align="left"><a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/cluster-faq/accessing-hpcc">https://sites.google.com/a/case.edu/hpc-upgraded-cluster/cluster-faq/accessing-hpcc</a></td>
+</tr>
+<tr>
+  <td align="left">Software guide</td>
+  <td align="left">Lists available software</td>
+  <td align="left"><a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide">https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide</a></td>
+</tr>
+<tr>
+  <td align="left">Software installation guide</td>
+  <td align="left">Software installation guide</td>
+  <td align="left"><a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/important-notes-for-new-users/software-installation-guide">https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/important-notes-for-new-users/software-installation-guide</a></td>
+</tr>
+<tr>
+  <td align="left">HPC Training Schedule</td>
+  <td align="left">HPC courses, seminars and published HowTo guides</td>
+  <td align="left"><a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/hpcc-training">https://sites.google.com/a/case.edu/hpc-upgraded-cluster/hpcc-training</a></td>
+</tr>
+<tr>
+  <td align="left">Ganglia</td>
+  <td align="left">Monitoring: Consolidated summary view</td>
+  <td align="left"><a href="https://arc-mgmt.case.edu/ganglia/">https://arc-mgmt.case.edu/ganglia/</a></td>
+</tr>
+<tr>
+  <td align="left">nodemon</td>
+  <td align="left">Monitoring: Red Hat Enterprise Linux 5 (RHEL5)</td>
+  <td align="left"><a href="http://arc-mgmt.case.edu/nodemon/">http://arc-mgmt.case.edu/nodemon/</a></td>
+</tr>
+<tr>
+  <td align="left">nodemon6</td>
+  <td align="left">Monitoring: Red Hat Enterprise Linux 6 (RHEL6)</td>
+  <td align="left"><a href="http://arc-mgmt.case.edu/nodemon6/">http://arc-mgmt.case.edu/nodemon6/</a></td>
+</tr>
+</tbody></table>
+
+
+<p><strong><a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/other-hpc-resources">Alternative HPC Resources</a></strong></p>
+
+<table>
+<thead>
+<tr>
+  <th align="left">Name</th>
+  <th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+  <td align="left"><a href="https://www.osc.edu/supercomputing">OSC</a></td>
+  <td align="left"><strong>Ohio Supercomputing Center</strong> - The Ohio Supercomputer Center is a statewide resource that provides supercomputing services and computational science expertise to Ohio university researchers as well as Ohio industries.</td>
+</tr>
+<tr>
+  <td align="left"><a href="https://www.xsede.org/high-performance-computing">XSEDE</a></td>
+  <td align="left"><strong>eXtreme Science and Engineering Discovery Environment</strong> - XSEDE integrates resources and services - supercomputers, collections of data, and new tools, makes them easier to use, and helps more people use them.</td>
+</tr>
+<tr>
+  <td align="left"><a href="http://www.penguincomputing.com/services/hpc-cloud/pod">POD</a></td>
+  <td align="left"><strong>Penguin on Demand</strong> - Penguin Computing on Demand (POD) provides you HPC resources for which you pay-as-you-go.</td>
+</tr>
+<tr>
+  <td align="left"><a href="http://aws.amazon.com/ec2/">Amazon AWS</a></td>
+  <td align="left"><strong>Amazon Web Services, Cloud Computing</strong> - Amazon AWS provides a stack of cloud computing web services that provide customizable, on-demand computational resources in the cloud.</td>
+</tr>
+</tbody></table>
+
+
+
+
+<h3 id="resolver-groups">Resolver Groups</h3>
+
+<p>Research Computing</p>
+
+<hr>
+
+
+
+<h2 id="how-to-escalate">How to Escalate</h2>
+
+
+
+<h3 id="who-to-contact-for-escalation">Who to contact for escalation</h3>
+
+<ol>
+<li><strong>Sanjaya Gajurel</strong>, (216) 315-4136 (office)</li>
+<li><strong>Hadrian Djohari</strong>, (216) 368-0395 (office)</li>
+<li><strong>Mike Warfe</strong>, (216) 368-5647 (office)</li>
+</ol>
+
+
+
+<h3 id="description-and-purpose">Description and purpose</h3>
+
+<p>An escalation may be requested by an end user when he or she determines that a critical issue has not been acknowledged properly, remains unresolved for an unacceptable period of time or is severe enough that it requires atypical handling.</p>
+
+<p>Escalation should not be confused with assignment to a resolver group. An escalated issue is typically brought to the attention of management within a second-level support group(s).</p>
+
+
+
+<h3 id="escalation-procedures">Escalation procedures</h3>
+
+<p>Research Computing is not considered a critical service.</p>
+
+<p>Escalation is available Mon.-Fri., 8 a.m - 5 p.m., EST. Escalations are are not available during or unplanned university closures, or during recognized university holidays.</p>
+
+<p>Classify the reason for escalation as one of the following; Confirmed Outage (total or partial), Suspected Outage (total or partial), Abend, Slow response time, User Requirements not met, Other functional or Other technical.  </p>
+
+<blockquote>
+  <p><strong>NOTE:</strong> If essential research or job function(s) are impaired due to an outage, follow critical service protocol. Use <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/hpcc-training">published schedule and contact information</a> to route P0 and P1 incidents to the appropriate resolver group and current Ops Manager On Call.</p>
+</blockquote>
+
+<hr>
+
+
+
+<h2 id="troubleshoot-repair">Troubleshoot + Repair</h2>
+
+
+
+<h3 id="other-hpc-resources">Other HPC Resources</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Probe for unmet needs. Note observations in ticket.</li>
+<li>Review <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/servers-and-storage/cluster-resources">available HPC resources</a> with user. Provide link to HPC resource page.</li>
+<li>Available HPC Resources</li>
+<li>Review <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/other-hpc-resources">Alternative HPC Resources</a> with user. Provide link to overview page.</li>
+<li>Provide user with table of alternative resources (OSC, XSEDE, POD, Amazon AWS).</li>
+<li>Resolve ticket or assign <strong>ITS Cluster Admin</strong> resolver group.</li>
+</ol>
+
+<hr>
+
+
+
+<h2 id="activate-setup-install">Activate + Setup + Install</h2>
+
+
+
+<h3 id="setup-an-hpcc-account">Setup an HPCC account</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Students: faculty advisor should add the student user by visiting <a href="https://www.google.com/url?q=https%3A%2F%2Fhpcc1-mgmtnode2.case.edu%2Fhpcams%2Fcgi-bin%2Fcluster_faculty.php&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGaNwDSwMja-qvB4RkG4XubPJIEwQ">Activate &amp; Manage HPCC account</a>.</li>
+<li>Faculty: visit <a href="https://www.google.com/url?q=https%3A%2F%2Fhpcc1-mgmtnode2.case.edu%2Fhpcams%2Fcgi-bin%2Fcluster_faculty.php&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGaNwDSwMja-qvB4RkG4XubPJIEwQ">Activate &amp; Manage HPCC account</a>.</li>
+<li>Provide followup email address, “its-cluster-admin@case.edu”.</li>
+<li>Resolve the ticket.</li>
+</ol>
+
+
+
+<h3 id="change-hardware">Change hardware</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Eligible faculty may manage HPCC account settings from <a href="https://www.google.com/url?q=https%3A%2F%2Fhpcc1-mgmtnode2.case.edu%2Fhpcams%2Fcgi-bin%2Fcluster_faculty.php&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGaNwDSwMja-qvB4RkG4XubPJIEwQ">Activate &amp; Manage HPCC account</a>.</li>
+<li>Direct the user to additional self-service information: <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/important-notes-for-new-users/software-installation-guide">Guide to Software Installation</a>.</li>
+<li>Provide followup email address, “its-cluster-admin@case.edu”.</li>
+<li>Resolve the ticket.</li>
+</ol>
+
+<hr>
+
+
+
+<h2 id="move-change">Move + Change</h2>
+
+
+
+<h3 id="apply-for-group-account">Apply for group account</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Eligible faculty may apply for Cluster Access using <a href="https://hpcc1-mgmtnode2.case.edu/hpcams/cgi-bin/cluster_faculty.php">this webform</a>.</li>
+<li>All others may request additional information regarding membership options from the Research Computing group directly via email.</li>
+<li>Provide followup email address, “its-cluster-admin@case.edu”.</li>
+<li>Resolve the ticket.</li>
+</ol>
+
+
+
+<h3 id="add-users-to-a-group">Add users to a group</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Eligible faculty may manage HPCC account settings from <a href="https://www.google.com/url?q=https%3A%2F%2Fhpcc1-mgmtnode2.case.edu%2Fhpcams%2Fcgi-bin%2Fcluster_faculty.php&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGaNwDSwMja-qvB4RkG4XubPJIEwQ">Activate &amp; Manage HPCC account</a>.</li>
+<li>Direct the user to additional self-service information: <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/important-notes-for-new-users/software-installation-guide">Guide to Software Installation</a>.    </li>
+<li>Provide followup email address, “its-cluster-admin@case.edu”.</li>
+<li>Resolve the ticket.</li>
+</ol>
+
+
+
+<h3 id="delete-users-from-a-group">Delete users from a group</h3>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Eligible faculty may manage HPCC account settings from <a href="https://www.google.com/url?q=https%3A%2F%2Fhpcc1-mgmtnode2.case.edu%2Fhpcams%2Fcgi-bin%2Fcluster_faculty.php&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGaNwDSwMja-qvB4RkG4XubPJIEwQ">Activate &amp; Manage HPCC account</a>.</li>
+<li>Direct the user to additional self-service information: <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/important-notes-for-new-users/software-installation-guide">Guide to Software Installation</a>.</li>
+<li>Provide followup email address, “its-cluster-admin@case.edu”.</li>
+<li>Resolve the ticket.</li>
+</ol>
+
+<hr>
+
+
+
+<h2 id="how-to-training">How-to + Training</h2>
+
+
+
+<h3 id="file-recovery-and-backup">File recovery and backup</h3>
+
+<p>back to <a href="#top">top</a> <br>
+1. Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket. <br>
+1.  Refer user to guide; <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/important-notes-for-new-users/helpful-references/recovering-files-hpcc">Recovering Files @HPC</a> <br>
+2.  Forward to <strong>ITS Server and Storage</strong> resolver group.</p>
+
+
+
+<h3 id="printed-brochures">Printed brochures</h3>
+
+<p>back to <a href="#top">top</a> <br>
+1. Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket. <br>
+2. Classify ticket as S1. <br>
+3. Forward to <strong>Research Computing</strong> resolver group.</p>
+
+
+
+<h3 id="schedule-training">Schedule training</h3>
+
+<p>back to <a href="#top">top</a> <br>
+1. Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket. <br>
+2. Refer user to <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/hpcc-training">Training schedule</a> provided by Research Computing. <br>
+3. Provide user with Resource table referred to in resolution information. <br>
+4. Requests for additional training should be sent to the Research Computing group directly via email. <br>
+5. Provide followup email address, “its-cluster-admin@case.edu”. <br>
+6. Resolve the ticket.</p>
+
+
+
+<h3 id="schedule-consultation">Schedule consultation</h3>
+
+<p>back to <a href="#top">top</a> <br>
+1. Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket. <br>
+2. Refer user to <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/hpcc-training">Training schedule</a> provided by Research Computing. <br>
+3. Provide user with Resource table referred to in resolution information. <br>
+4. Requests for consultation should be sent to the Research Computing group directly via email. <br>
+5. Provide followup email address, “its-cluster-admin@case.edu”. <br>
+6. Resolve the ticket.</p>
+
+
+
+<h3 id="more-information">More information</h3>
+
+<p>back to <a href="#top">top</a> <br>
+1. Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket. <br>
+2. Refer user to <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/hpcc-training">Training schedule</a> provided by Research Computing. <br>
+3. Provide user with Resource table referred to in resolution information. <br>
+4. Provide followup email address, “its-cluster-admin@case.edu”. <br>
+5. Resolve the ticket.</p>
+
+
+
+<h3 id="list-of-applications">List of applications</h3>
+
+<p>back to <a href="#top">top</a> <br>
+1. Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket. <br>
+2. Refer user to <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide">Available Software</a> and <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/important-notes-for-new-users/software-installation-guide">Software Guide</a>. <br>
+3. Provide followup email address, “its-cluster-admin@case.edu”. <br>
+4. Resolve the ticket.</p>
+
+
+
+<h3 id="faq">FAQ</h3>
+
+<p>back to <a href="#top">top</a> <br>
+1. Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket. <br>
+2. Advise user, Research Computing provides extensive documentation of available services at the HPCC website. Please use the left-hand navigation to find answers to frequently asked questions. <br>
+3. Refer user to <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide">Available Software</a> and <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/important-notes-for-new-users/software-installation-guide">Software Guide</a>. <br>
+4. Provide followup email address, “its-cluster-admin@case.edu”. <br>
+5. Resolve the ticket.</p>
+
+
+
+<h3 id="self-install-application">Self-install application</h3>
+
+<p>back to <a href="#top">top</a> <br>
+1. Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket. <br>
+2. Advise user of <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/important-notes-for-new-users/software-installation-guide">Software Guide</a>. <br>
+3. Provide followup email address, “its-cluster-admin@case.edu”. <br>
+4. Resolve the ticket.</p>
+
+
+
+<h3 id="contribute-to-research-computing">Contribute to Research Computing</h3>
+
+<p>back to <a href="#top">top</a> <br>
+1. Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket. <br>
+2. Researchers are invited to participate in the growth of central high performance computing facilities by providing hardware, or by sharing software and operational costs. <br>
+3. Operation of the facility is guided by usage policies approved by the Advisory Committee on Research Computing. <br>
+4. Provide followup email address, “its-cluster-admin@case.edu”. <br>
+5. Resolve the ticket.</p>
+
+
+
+<h3 id="contact-research-computing">Contact Research Computing</h3>
+
+<p>back to <a href="#top">top</a> <br>
+1. Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket. <br>
+2. Advise user, the best and most efficient way to contact Research Computing administration is via their email address. <br>
+3. Provide followup email address, “its-cluster-admin@case.edu”. <br>
+4. Resolve the ticket.</p>
+
+<blockquote>
+  <p><strong>NOTE:</strong> Research Administration works to acknowledge receipt of a request as soon possible. Users may expect a detailed response, when applicable, within 2 business days.</p>
+</blockquote>
+
+
+
+<h3 id="sign-in-to-use-research-computing-services">Sign in to use Research Computing services</h3>
+
+<p>back to <a href="#top">top</a> <br>
+1. Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket. <br>
+2. Users must establish a secure shell connection to the login node using an SSH client from a computer with a Case network IP address. <br>
+3. Connections from off-campus computers and wireless connections will work only if a Case IP address proxy is obtained via VPN. <br>
+4. Advise user to visit HPC Website for additional details. <br>
+5. Provide followup email address, “its-cluster-admin@case.edu”. <br>
+6. Resolve the ticket.</p>
+
+<pre><code>&gt; **NOTE:** Unsecured telnet sessions will not connect.
+</code></pre>
+
+
+
+<h3 id="eligibility-guidelines">Eligibility guidelines</h3>
+
+<p>back to <a href="#top">top</a> <br>
+1. Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket. <br>
+2. Advise user, generally only faculty and those who faculty have designated as members of group accounts have access to Research Computing resources. <br>
+3. Users inquiring of alternative membership, or guest access to the HPC Cluster may inquire of the Research Computing group directly via email. <br>
+4. Provide followup email address, “its-cluster-admin@case.edu”. <br>
+5. Resolve the ticket.</p>
+
+
+
+<h3 id="x-application-instructions">“X” application instructions</h3>
+
+<p>back to <a href="#top">top</a> <br>
+1. Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket. <br>
+2. Refer user to <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home">HPC website</a>. Left-hand navigation list frequently asked questions. <br>
+3. Refer user to <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide">Available Software</a> and <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/important-notes-for-new-users/software-installation-guide">Software Guide</a>. <br>
+4. Provide followup email address, “its-cluster-admin@case.edu”. <br>
+5. Resolve the ticket.</p>
+
+
+
+<h3 id="compiling-code">Compiling code</h3>
+
+<p>back to <a href="#top">top</a> <br>
+1. Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket. <br>
+2. Refer use to <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/cluster-faq/compiling-and-linking">Cluster FAQ: Editing, Compiling, Linking and Software Installation</a>. <br>
+3. Refer user to <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home">HPC website</a>. Left-hand navigation list frequently asked questions. <br>
+4. Refer user to <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide">Available Software</a> and <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/important-notes-for-new-users/software-installation-guide">Software Guide</a>. <br>
+5. Provide followup email address, “its-cluster-admin@case.edu”. <br>
+6. Resolve the ticket.</p>
+
+
+
+<h3 id="running-cluster-jobs">Running cluster jobs</h3>
+
+<p>back to <a href="#top">top</a> <br>
+1. Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket. <br>
+2. Refer user to <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/cluster-faq/running-jobs">Cluster FAQ: Running Jobs</a>. <br>
+3. Refer user to <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home">HPC website</a>. Left-hand navigation list frequently asked questions. <br>
+4. Refer user to <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide">Available Software</a> and <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/important-notes-for-new-users/software-installation-guide">Software Guide</a>. <br>
+5. Provide followup email address, “its-cluster-admin@case.edu”. <br>
+6. Resolve the ticket.</p>
+
+
+
+<h3 id="training-website-and-schedule">Training website and schedule</h3>
+
+<p>back to <a href="#top">top</a> <br>
+1. Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket. <br>
+2. Refer user to <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/hpcc-training">Training schedule</a> provided by Research Computing. <br>
+3. Refer user to <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home">HPC website</a>. Left-hand navigation list frequently asked questions. <br>
+4. Refer user to <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/Software-Guide">Available Software</a> and <a href="https://sites.google.com/a/case.edu/hpc-upgraded-cluster/home/important-notes-for-new-users/software-installation-guide">Software Guide</a>. <br>
+5. Provide followup email address, “its-cluster-admin@case.edu”. <br>
+6. Resolve the ticket.</p>
+
+<hr>
+
+
+
+<h2 id="billing">Billing</h2>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Forward to <strong>Research Computing</strong> resolver group.</li>
+</ol>
+
+<hr>
+
+
+
+<h2 id="outage">Outage</h2>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Check the service status in Solarwinds.</li>
+<li>Open the HPC status webpage (see chart below). <br>
+<ul><li><a href="http://arc-mgmt.case.edu/nodemon/">Red Hat Enterprise Linux 5 (RHEL5)</a></li>
+<li><a href="http://arc-mgmt.case.edu/nodemon6/">Red Hat Enterprise Linux 6 (RHEL6)</a></li></ul></li>
+<li>Type in your CWRU Network ID and password</li>
+<li>Check the date and time of the status to verify it is current.</li>
+<li>Basic information on how many nodes are available and running, how many nodes are down (intentionally or not) is summarized at top of page.</li>
+<li>If more than 50% of nodes are available, middle portion of page reads “HPCC status is OK”,</li>
+<li>If more than 50% of nodes are unavailable, middle portion of page reads “Possible Power Outage at HPCC”.</li>
+<li>Advise user of possible power outage and details (i.e. xx number of nodes are available…, etc.), provide followup email address “its-cluster-admin@case.edu”, and resolve ticket.</li>
+<li>The bottom section of the page specifies whether the head nodes (login and master) are accessible, the number of jobs running on the cluster, and current cluster use information.</li>
+<li>If the bottom section of the page reads “Moab is down, HPC status in question” advise user that HPCC is experiencing performance issues and immediately forward the ticket to the <strong>Research Computing</strong> resolver group.</li>
+</ol>
+
+<hr>
+
+
+
+<h2 id="unable-to-resolve">Unable to Resolve</h2>
+
+<p>back to <a href="#top">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Forward to <strong>Research Computing</strong> resolver group.</li>
+</ol></div></body>
+</html>

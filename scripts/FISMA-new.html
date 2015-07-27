@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SRE Information and Onboarding Guide</title>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+h2 { padding-top: 30px; }
+h3 { padding-top: 20px; }
+</style>
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+<p><br>
+Research Computing | Computing Services | FISMA FCSRE <br></p>
+
+<h1>FISMA FCSRE</h1>
+<p>The FISMA Compliant Secure Research Environment (FCSRE) is a controlled environment and FISMA-based security program. Research data with sensitive content may be stored and analyzed inside the environment.</p>
+
+<p>The <a href="https://www.congress.gov/bill/107th-congress/house-bill/2458/text?q=%7B%22search%22%3A%5B%22%5C%22Federal+Information+Security+Management+Act%5C%22%22%5D%7D">Federal Information Security Act of 2002 (FISMA)</a> is a law requiring protection of sensitive data created, stored or accessed by the Federal Government or any entity on its behalf.</p>
+
+<p><strong>Keywords</strong>: <br>
+Federal Information Security Management Act; FISMA; FISMA compliant secure research environment; FISMA FCSRE; Program overview; Research computing; Secure research; Patient information; HIPAA; Sensitive data; Information privacy; Information security</p>
+
+
+
+<h3 id="troubleshoot-repair-topics">Troubleshoot + Repair topics</h3>
+
+<p><a href="#specific-application-unavailable-or-not-responding">Specific application unavailable or not responding</a><br>
+<a href="unable-to-access-environment">Unable to access environment</a><br>
+<a href="#username-or-password-not-accepted">Username or password not accepted</a></p>
+
+
+
+<h3 id="activate-setup-install-topics">Activate + Setup + Install topics</h3>
+
+<p><a href="#new-user">Request to add self or others as new user(s)</a><br>
+<a href="#onboarding-information">Onboarding information</a></p>
+
+<p><strong>Services</strong> <br>
+<a href="#service-request">Virtual Desktop</a> <br>
+<a href="#service-request">Shared Storage</a> <br>
+<a href="#service-request">Personal Storage</a> <br>
+<a href="#service-request">Database</a> <br>
+<a href="#service-request">Virtual Machine</a> <br>
+<a href="#service-request">DB Administration</a> <br>
+<a href="#service-request">System Administration</a> <br>
+<a href="#service-request">File Recovery</a></p>
+
+
+
+<h3 id="move-change-topics">Move + Change topics</h3>
+
+<p><a href="#request-to-renew-accounts">Request to renew account(s)</a> <br>
+<a href="#request-to-change-identity-or-entitlement-options">Request to change identity or entitlement options</a></p>
+
+
+
+<h3 id="how-to-training-topics">How-to + Training topics</h3>
+
+<p><strong>Research Consulting Services</strong> <br>
+ <a href="#contact-research-computing">Requests for consultation</a> <br>
+ <a href="#contact-research-computing">Requests for training</a> <br>
+ <a href="#contact-research-computing">Requests for literature or guides</a>  </p>
+
+<p><strong>FAQ</strong> <br>
+ <a href="#what-is-fcsre">What is FISMA?</a> <br>
+ <a href="#what-is-fcsre">What is FCSRE?</a> <br>
+ <a href="#what-is-fcsre">When will the FCSRE be available?</a> <br>
+ <a href="#why-fcsre">Why is this program important?</a> <br>
+ <a href="#what-is-fcsre">What is meant by ‘environment’?</a> <br>
+ <a href="#security-measures">How is data kept secure?</a> <br>
+ <a href="#customers">Who will use the FCSRE?</a> <br>
+ <a href="#system-application">How will the FCSRE be used?</a> <br>
+ <a href="#current-contracts-and-grants">Do FISMA standards apply to my research?</a> <br>
+ <a href="#cost">What is the cost to use the FCSRE?</a></p>
+
+<p><strong>Legislation</strong> <br>
+ <a href="https://www.congress.gov/bill/107th-congress/house-bill/2458/text?q=%7B%22search%22%3A%5B%22%5C%22Federal+Information+Security+Management+Act%5C%22%22%5D%7D">H.R.2458 Title III (FISMA) *</a>  </p>
+
+
+
+<h3 id="billing-topics"><a href="#billing">Billing topics</a></h3>
+
+
+
+<h3 id="other-unable-to-resolve"><a href="#unable-to-resolve">Other + Unable to Resolve</a></h3>
+
+
+
+<h3 id="report-an-outage"><a href="#Outage">Report an Outage</a></h3>
+
+<hr>
+
+
+
+
+<h2 id="tools-for-resolution">Tools for Resolution</h2>
+<h3 id="required-information">Required Information</h3>
+
+<ul>
+<li>Name</li>
+<li>CWRU Network ID</li>
+<li>Contact information (preferred and alternate)</li>
+<li>User status with respect to SRE (provisioned, applied, pre-application, de-provisioned)</li>
+<li>User role with respect to SRE (Research Personnel - on-campus, Clinical/Field Personnel, Partner/Vendor, System Administrative, Application Management, Compliance)</li>
+<li>User role within SRE org structure (tenant, user, management team, ops team, advisory)</li>
+<li>Tenant / Organization name</li>
+<li>Problem or Request description</li>
+</ul>
+
+
+
+<h3 id="access-prerequisites">Access Prerequisites</h3>
+
+<ul>
+<li>Active CWRU NetID</li>
+<li>Active Duo Security account</li>
+<li>Approval from Tenant Manager or Study Official </li>
+<li>Completed training</li>
+<li>Signed confidentiality agreement (via SRE Manager)</li>
+<li>Employees - HR clearance (via SRE Manager)</li>
+</ul>
+
+
+
+<h3 id="resolver-groups">Resolver Groups</h3>
+
+<div class="well well-sm">
+  <p><strong>SRE Admin</strong>: Available by appointment Mon.-Fri., 8 a.m - 5 p.m., EST. Inquiries placed before 5 p.m. will be acknowledged same-day. Customers should expect a response within 3 business days.</p>
+
+<p><strong>Tenant Resolvers</strong>: One resolver group per established tenant. The tenant resolver will resolve all issues not handled by the service desk that are specific to that tenant, or if unresolved, will assign to SRE Admin.</p>
+
+</div>
+
+
+
+<h2 id="how-to-escalate">How to Escalate</h2>
+
+
+
+<h3 id="who-to-contact-for-escalation">Who to contact for escalation</h3>
+
+<p>FISMA Compliant Secure Research Environment planning is not considered a critical service. Issues that may in other cases be escalated should be assigned to the <strong>SRE Admin</strong> resolver group.</p>
+
+
+
+<h3 id="description-and-purpose">Description and purpose</h3>
+
+<p>An escalation may be requested by an end user when he or she determines that a critical issue has not been acknowledged properly, remains unresolved for an unacceptable period of time or is severe enough that it requires atypical handling.</p>
+
+<p>Escalation should not be confused with assignment to a resolver group. An escalated issue is typically brought to the attention of management within a second-level support group(s).</p>
+
+
+
+<h3 id="escalation-procedures">Escalation procedures</h3>
+
+<p>Escalation is not available at this time. Assign all unresolved issues to the <strong>SRE Admin</strong> resolver group.</p>
+
+<hr>
+
+
+
+<h2 id="troubleshoot-repair">Troubleshoot + Repair</h2>
+
+
+
+<h3 id="specific-application-unavailable-or-not-responding">Specific application unavailable or not responding</h3>
+
+<p>return to <a href="#">top</a></p>
+
+  <div class="well well-sm"><p><strong>NOTE:</strong> If an outage or critical service degradation is reported, the CDI is charged with responding via <a href="#outage">Outage Management Procedure (PROC40)</a>. If you suspect an end user is describing a previously unreported case that meets either of these criteria, please respond appropriately.</p></div>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Request name of misbehaving application.</li>
+<li>Request specific details of error (e.g., error msg, description of symptoms).</li>
+<li>Note whether user is on-campus or using a virtual desktop (e.g., affiliate hospital user).</li>
+<li>Check Footprints for related tickets.</li>
+<li><strong>On-campus users</strong> - Check SolarWinds to verify that application is up.</li>
+<li>Verify user has network access. Troubleshoot connectivity if appropriate.</li>
+<li>Verify user has access to Duo Security, and that it is functioning correctly.</li>
+<li>Sign out of environment, and in again.</li>
+<li>Verify that user is able to access SRE environment by usual method (virtual desktop or web interface).</li>
+<li>Attempt to replicate error while user is signed in.</li>
+<li>Note troubleshooting details in comments.</li>
+<li>Resolve the ticket or assign to <strong>SRE Admin</strong> resolver group.</li>
+</ol>
+
+
+<h3 id="unable-to-access-environment">Unable to access environment</h3>
+
+<p>return to <a href="#">top</a></p>
+
+  <div class="well well-sm"><p><strong>NOTE:</strong> If an outage or critical service degradation is reported, the CDI is charged with responding via <a href="#outage">Outage Management Procedure (PROC40)</a>. If you suspect an end user is describing a previously unreported case that meets either of these criteria, please respond appropriately.</p></div>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Note whether user is on-campus or using a virtual desktop (e.g., affiliate hospital user).</li>
+<li>Check Footprints for related tickets.</li>
+<li>Verify user has network access. Troubleshoot connectivity if appropriate.</li>
+<li>Verify user has access to Duo Security, and that it is functioning correctly.</li>
+<li>Sign out of environment, and in again.</li>
+<li>Verify that user is able to access SRE environment by usual method (virtual desktop or web interface).</li>
+<li>Note troubleshooting details in comments.</li>
+<li>Resolve the ticket or assign to <strong>SRE Admin</strong> resolver group.</li>
+</ol>
+
+
+<h3 id="username-or-password-not-accepted">Username or password not accepted</h3>
+
+<p>return to <a href="#">top</a></p>
+
+  <div class="well well-sm">
+  <p><strong>NOTE:</strong> If an outage or critical service degradation is reported, the CDI is charged with responding via <a href="#outage">Outage Management Procedure (PROC40)</a>. If you suspect an end user is describing a previously unreported case that meets either of these criteria, please respond appropriately.</p></div>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Verify user has network access. Troubleshoot connectivity if appropriate.</li>
+<li>Verify user has access to Duo Security, and that it is functioning correctly.</li>
+<li>Sign out of environment, and in again.</li>
+<li>Verify that user is able to access SRE environment by usual method (virtual desktop or web interface).</li>
+<li>Note troubleshooting details in comments.</li>
+<li>Resolve the ticket or assign to <strong>SRE Admin</strong> resolver group.</li>
+</ol>
+
+<hr>
+
+
+
+<h2 id="activate-setup-install">Activate + Setup + Install</h2>
+
+
+
+<h3 id="new-user">New user</h3>
+
+<p>return to <a href="#">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>New users must complete a <strong>SRE Access Request Form</strong> (paper), which is provided them by a Study / Tenant Official.</li>
+<li>The <strong>SRE Access Request Form</strong> includes requested entitlements and an expiration date.</li>
+<li>The <strong>SRE Access Request Form</strong> must be signed by both the end user and his or her Study / Tenant Official. </li>
+<li>User should contact his or her Study Official to request this form.</li>
+<li>In addition to issuing request form, a Study / Tenant Official will; <br>
+<ul><li>verify user identity</li>
+<li>approve or deny study access</li>
+<li>approve or deny request to create SRE account</li>
+<li>verify user has met training requirements</li></ul></li>
+<li>Upon receipt of a completed and approved form, the SRE Manager will verify the validity of the form and generate a work ticket for the SRE Operations team.</li>
+<li>Tickets for the SRE Operations team may not be created on the basis of an initial end-user request.</li>
+<li>To resolve general questions about the process of requesting access, including pre-award consultation, onboarding, cost and assistance seeking funds, please see <strong><a href="#contact-research-computing">Contact Research Computing</a></strong>.</li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="onboarding-information">Onboarding information</h3>
+
+<p>return to <a href="#">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Training requirements for new users are determined by SRE Management and the Study or Tenant Official, according to an individual user’s work role, entitlements. </li>
+<li>SRE Management and the appropriate advisory groups have determined the minimum level of training (including recurring training) required by all users to meet compliance requirements set out in Federal Regulations.</li>
+<li>The Tenant or Study Official is responsible for ensuring that new are trained appropriately as part of the onboarding process.</li>
+<li>Tenant Group onboarding is somewhat more complex than onboarding an individual user.</li>
+<li>The SRE Manager is responsible for ensuring that appropriate</li>
+<li>Assign to <strong>SRE Admin</strong> resolver group.</li>
+</ol>
+
+
+
+<h3 id="service-request">Service Request</h3>
+
+<p>return to <a href="#">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Current users who have received access at the approval of a Study or Tenant Official should route all change requests through the individual who approved access. See, <strong><a href="#request-to-change-identity-or-entitlement-options">Request to change identity or entitlement options</a></strong></li>
+<li>Tenant or Study Officials are invited to consult directly with the <strong>SRE Admin</strong> group concerning secure research computing requirements.</li>
+<li>Please do not attempt to counsel an end user. Rather, practice reflective-listening and attempt to clarify the user’s situation and unmet needs, rather than recording a simple request.</li>
+<li>Note pertinent details in ticket.</li>
+<li>Advise user that a member of the SRE Admin team will acknowledge the request within three-business days.</li>
+<li>Assign to <strong>SRE Admin</strong> resolver group.</li>
+</ol>
+
+<hr>
+
+
+
+<h2 id="move-change">Move + Change</h2>
+
+
+
+<h3 id="request-to-renew-accounts">Request to renew account(s)</h3>
+
+<p>return to <a href="#">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Requests for account renewals and expirations are produced by the SRE Manager and approved by the appropriate Study / Tenant Official.</li>
+<li>After a request has been approved, the SRE Manager supplies the SRE Operations team with a detailed work ticket. </li>
+<li>The SRE Operations team completes requested changes within existing Change Management guidelines.</li>
+<li>Tickets for the SRE Operations team may not be created on the basis of an initial end-user request.</li>
+<li>If an end user requests to modify access to extend his or her access expiration date, then the end user must complete a new <strong>SRE Access Request Form</strong>. See, <strong><a href="#new-user">New User</a></strong></li>
+<li>Resolve ticket.</li>
+</ol>
+
+<h3 id="request-to-change-identity-or-entitlement-options">Request to change identity or entitlement options</h3>
+
+<p>return to <a href="#">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>To initiate, an end user must complete a new <strong>SRE Access Request Form</strong>. See, <strong><a href="#new-user">New User</a></strong></li>
+<li>Requests for identity or entitlement changes must be approved by the appropriate Study / Tenant Official.</li>
+<li>After a request has been approved, the SRE Manager supplies the SRE Operations team with a detailed work ticket. </li>
+<li>The SRE Operations team completes requested changes within existing Change Management guidelines.</li>
+<li>Tickets for the SRE Operations team may not be created on the basis of an initial end-user request.</li>
+<li>Assign to <strong>SRE Admin</strong> resolver group.</li>
+</ol>
+
+<hr>
+
+<h2 id="how-to-training">How-to + Training</h2>
+
+
+
+<h3 id="contact-research-computing">Contact research computing</h3>
+
+<p>return to <a href="#">top</a></p>
+
+<p>Requests for additional information, consulting, training, printed literature and similar are handled directly by <strong>SRE Admin</strong>. Note that this includes questions concerning FISMA requirements as they apply to existing grants and contracts.</p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Assign to <strong>SRE Admin</strong> resolver group.</li>
+</ol>
+
+
+
+<h3 id="what-is-fcsre">What is FCSRE?</h3>
+
+<p>return to <a href="#">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li><p>Refer to text below.</p>
+  <div class="well well-sm">
+  <p>The FISMA Compliant Secure Research Environment (FCSRE) is a controlled environment and FISMA-based security program. Research data with sensitive content can be stored and analyzed inside the environment.</p>
+  
+  <p>The <a href="https://www.congress.gov/bill/107th-congress/house-bill/2458/text?q=%7B%22search%22%3A%5B%22%5C%22Federal+Information+Security+Management+Act%5C%22%22%5D%7D">Federal Information Security Act of 2002 (FISMA)]</a> is a law requiring protection of sensitive data created, stored or accessed by the Federal Government or any entity on its behalf.</p></div></li>
+
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="why-fcsre">Why FCSRE?</h3>
+
+<p>return to <a href="#">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li><p>Refer to text below.</p>
+  <div class="well well-sm">
+  <p>FCSRE is important to CWRU for tactical and strategic reasons.</p>
+  
+  <p><strong>Tactical</strong> <br>
+   Data containing personal identifiers, including clinical data from affiliated hospitals, is used in research by CWRU faculty, instructors and students. This data needs to be protected as required in federal and state regulations.</p>
+  
+  <p><strong>Strategic</strong> <br>
+   A fully-FISMA compliant research environment provides competitive advantage to CWRU researchers seeking funding through grants and contracts.</p>
+</li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="security-measures">Security measures</h3>
+
+<p>return to <a href="#">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>FCSRE hardware is isolated in physically secure commercial data center.</li>
+<li>Physical access to data center is strictly controlled and monitored by vendor partner.</li>
+<li>Electronic access to FCSRE assets is provided to authorized CWRU faculty only.</li>
+<li>Electronic access to FCSRE assets is conducted using secure communication protocols.</li>
+<li>Resolve ticket or assign to <strong>SRE Admin</strong> resolver group.</li>
+</ol>
+
+
+
+<h3 id="customers">Customers</h3>
+
+<p>return to <a href="#">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li><p>Refer to text below.</p>
+  <div class="well well-sm">
+  <p>Anyone at CWRU who is conducting research with a grant, contract or institutional agreement that requires a high level of protection is eligible to request access to the FCSRE. The Case Comprehensive Cancer Center and the Institute for Computational Biology will be the first groups to use the FCSRE.</p>
+  <p><strong>NOTE:</strong> Eligible data include personal health information (PHI) and include data sources from affiliated hospitals.</p></div>
+</li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+<h3 id="system-application">System application</h3>
+
+<p>return to <a href="#">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li><p>Refer to text below.</p>
+
+<div class="well well-sm">
+  <p>The FCSRE will be used to store, manage and analyze data containing personal health information (PHI). It will include secured systems for data storage and management (e.g., LabMatrix, REDCap, OnCore and APEX) as well as software for analyzing data (e.g., SAS, SPSS and R). FCSRE software may be accessed via virtual desktop technology.</p>
+  </div>
+</li>
+<li>Resolve ticket.</li>
+</ol>
+
+
+
+<h3 id="current-contracts-and-grants">Current contracts and grants</h3>
+
+<p>return to <a href="#">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>FISMA compliance is mandatory for all government contracts.</li>
+<li><p>FISMA compliance MAY be required for grants. Determination is based on the following criteria:</p>
+
+<ul><li>Presence of specific language in the grant that requires FISMA compliance</li>
+<li>Whether the grant has been awarded using a contracting form.</li></ul></li>
+<li><p>Do not attempt to evaluate a specific scenario for user.</p></li>
+<li><p>User may contact any of the following for additional guidance;</p></li>
+
+<ul><li>Department Assistant,</li>
+<li>Office of Contracts &amp; Grants (SOM),</li>
+<li>Office of Sponsored Projects Administration (other PHI, not SOM)</li></ul></li>
+<li><p>Resolve ticket or assign to <strong>SRE Admin</strong> resolver group.</p></li>
+</ol>
+
+
+
+<h3 id="cost">Cost</h3>
+
+<p>return to <a href="#">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li><p>Refer to text below.</p>
+  <div class="well well-sm">
+  <p>Costs for department or division usage will be recouped using a chargeback mechanism. Rates will be published when available.</p></div>
+</li>
+<li>Resolve ticket.</li>
+</ol>
+
+<hr>
+
+
+
+<h2 id="billing">Billing</h2>
+
+<p>return to <a href="#">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Assign to <strong>SRE Admin</strong> resolver group.</li>
+</ol>
+
+<hr>
+
+
+
+<h2 id="outage">Outage</h2>
+
+<p>return to <a href="#">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Assign to <strong>NOC</strong> and <strong>SRE Admin</strong> resolver groups.</li>
+</ol>
+
+  <p><strong>Outage Management Procedure (PROC40) - Summary</strong></p>
+  
+  <ol>
+  <li>A network or service outage, or degradation of a critical service will either be found through  monitoring or communication to the NOC.</li>
+  <li>The NOC will reach out to the resolver team and create a P0/P1 prioritized ticket based on feedback from the team, and communicate the outage and available details to a predetermined group of people by email. A bridge line will be open with dial in information provided in the communication.</li>
+  <li>NOC agents will reach out to the resolver team periodically for updates on the status of the outage as well as an ETA on resolution to the problem. These updates will be sent out to the predetermined communication recipients and provided on the bridge line to anyone who calls in for an update.</li>
+  <li>Upon resolution of the outage, the NOC will communicate that information to the email recipients and within 2 hours generate a Problem Record for Root Cause Analysis (PROC24).</li>
+  </ol>
+
+<hr>
+
+<h2 id="unable-to-resolve">Unable to Resolve</h2>
+
+<p>return to <a href="#">top</a></p>
+
+<ol>
+<li>Gather <a href="#tools-for-resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Assign to <strong>SRE Admin</strong> resolver group.</li>
+</ol>
+
+<hr>
+
+<div class="pull-right">
+<p>&copy; 2015, Case Western Reserve University</p>
+</div>
+<div class="clearfix"></div>
+</div>
+</body>
+</html>

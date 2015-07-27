@@ -1,0 +1,648 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>InfoSec.AuthPilot.Overview</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+<title>Application|Internal Service|Emergency Notification System Information Update</title>
+</head>
+<body>
+<p><a name="top"> </a><br>Information Security | Applications | CaseDuo | Overview</p>
+<h2 id="-a-name-keywords-a-keywords"><a name="keywords"> </a>Keywords</h2>
+<p>Multi-factor Authentication; Two-factor Authentication; Two-step Verification; 2FA; Information Security; Identity Management; Duo Pilot; CaseDuo; Duo Security; DuoSecurity; VPN; Mobile security; Personal data; Password Security; Password Theft; Phishing</p>
+<h2 id="-a-name-description-a-service-description"><a name="description"> </a> Service Description</h2>
+<p>Multi-factor authentication (also, two-factor authentication, two-step verification, 2FA) provides additional layers of security to protect user data in the case of password theft. Duo Security two-factor authentication enhances the security of your CWRU accounts by using your phone or connected mobile device to verify your identity. This prevents anyone but you from accessing your CWRU accounts, even if they know your password. </p>
+<blockquote>
+<p><strong>NOTE:</strong> Authentication with Duo Security at CWRU is a pilot project. Full access to Duo Security is expected June 2014.</p>
+</blockquote>
+<h4 id="use-this-article-when-">Use this article when:</h4>
+<ol>
+<li>A <em>pilot user</em> reports a problem with a DuoSecurity mobile application, Duo Security enrollment or the CaseDuo VPN profile.</li>
+<li>A <em>pilot user</em> has a question about DuoSecurity enrollment, or using DuoSecurity with the CaseDuo VPN profile.</li>
+<li><em>Any user</em> has a general question about multi-factor authentication or the CaseDuo pilot program.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Any user may report a suspected outage of a DuoSecurity application or the CaseDuo VPN profile.</p>
+</blockquote>
+<h2 id="-a-name-resolution-a-resolution-information"><a name="resolution"> </a> Resolution Information</h2>
+<h4 id="enter-the-following-information-into-ticket-for-all-users-">Enter the following information into ticket for all users:</h4>
+<ul>
+<li>Pilot participation status (i.e., participating, not participating),</li>
+<li>Name,  </li>
+<li>CWRU Network ID,  </li>
+<li>Contact information (preferred and alternate),  </li>
+<li>Problem or Request description</li>
+</ul>
+<h2 id="-a-name-index-a-topic-index"><a name="index"> </a> Topic Index</h2>
+<h4 id="-a-name-troubleshoot-a-troubleshoot-repair-topics"><a name="troubleshoot"> </a> Troubleshoot / Repair topics</h4>
+<ol>
+<li><a href="#T1">User is experiencing an issue while attempting to enroll.</a></li>
+<li><a href="#T2">User is experiencing an issue with mobile application (post-enrollment).</a></li>
+<li><a href="#T3">User is experiencing an issue with VPN profile.</a></li>
+<li><a href="#T4">User is experiencing an issue with other integrated system (coming soon).</a></li>
+<li><a href="#U1">User reports any other Troubleshoot / Repair issue.</a></li>
+</ol>
+<h4 id="-a-name-setup-a-activate-setup-install-topics"><a name="setup"> </a> Activate / Setup / Install topics</h4>
+<ol>
+<li><a href="#S1">User requires assistance enrolling using a mobile phone.</a></li>
+<li><a href="#S2">User requires assistance enrolling using a smartphone or other connected device.</a></li>
+<li><a href="#S3">User requires assistance enrolling using a land line.</a></li>
+<li><a href="#U1">User reports any other Activate / Setup / Install issue.</a></li>
+</ol>
+<h4 id="-a-name-change-a-move-change-topics"><a name="change"> </a> Move / Change topics</h4>
+<ol>
+<li><a href="#C1">User requests to change credentials.</a></li>
+<li><a href="#C2">User requests to unenroll or change a device.</a></li>
+<li><a href="#U1">User reports any other Move / Change issue.</a></li>
+</ol>
+<h4 id="-a-name-training-a-how-to-training-topics"><a name="training"> </a> How To / Training topics</h4>
+<ol>
+<li><a href="#H1">How do I enroll using mobile phone?</a></li>
+<li><a href="#H2">How do I enroll using a smartphone or other connected device?</a></li>
+<li><a href="#H3">How do I enroll using my land line?</a></li>
+<li><a href="#H4">What information do I need to enroll</a></li>
+<li><a href="#H5">How do I use the multi-factor VPN profile?</a></li>
+<li><a href="#H6">What is the name of the multi-factor VPN profile?</a></li>
+<li><a href="#H7">When will the pilot period end?</a></li>
+<li><a href="#H8">What is multi-factor authentication?</a></li>
+<li><a href="#H9">What is a ‘knowledge factor’?</a></li>
+<li><a href="#H10">What is a ‘posession factor’?</a></li>
+<li><a href="#H11">What is an ‘inheritance’ factor?</a></li>
+<li><a href="#U1">User requests other information</a></li>
+</ol>
+<h4 id="-a-name-billing-a-billing-topics"><a name="billing"> </a> Billing topics</h4>
+<p><em>Space reserved for future use</em></p>
+<h4 id="-a-name-outage-a-outage-topics"><a name="outage"> </a> Outage topics</h4>
+<ol>
+<li><a href="#O1">User reports an outage of a Duo application, Enrollment page or CaseDUO VPN profile.</a></li>
+<li><a href="#O2">User reports an outage of other integrated application or other VPN profile.</a></li>
+</ol>
+<h2 id="resolver-groups">Resolver Groups</h2>
+<p>Information Security, Identity Management</p>
+<h2 id="escalation">Escalation</h2>
+<p>An escalation may be requested by an end user when he or she determines that a critical issue has not been acknowledged properly, remains unresolved for an unacceptable period of time or is severe enough that it requires atypical handling.</p>
+<p>An escalated issue is typically brought to the attention of management within a second-level support group(s).</p>
+<blockquote>
+<p>Escalation should not be confused with assignment to a resolver group.</p>
+</blockquote>
+<h4 id="who-to-contact-for-issue-escalation">Who to contact for issue escalation</h4>
+<p>Name, Preferred contact (type), Alternate contact 1 (type), Alternate contact 2 (type) </p>
+<ol>
+<li><strong>Kelly Maloney</strong>, joe.user@case.edu, (555) 555-0123 (mobile), (216) 368-2000 (office)</li>
+<li><strong>Tom Siu</strong>, jan.user@case.edu, (555) 555-0123 (mobile), (216) 368-2000 (office)</li>
+</ol>
+<h4 id="escalation-procedures">Escalation procedures</h4>
+<p>CaseDuo multi-factor authentication and the CaseDuo VPN profile are supported during business hours (M-F, 8 AM-5 PM EST.)</p>
+<h2 id="detailed-troubleshoot-repair-procedures">Detailed Troubleshoot / Repair Procedures</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#troubleshoot">troubleshoot questions</a></p>
+<h4 id="-a-name-t1-a-user-is-experiencing-an-issue-while-attempting-to-enroll-"><a name="T1"> </a>User is experiencing an issue while attempting to enroll.</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li></li>
+<li>Resolve the ticket or forward to <strong>Information Security</strong> resolver group.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Important note at close of ordered list.</p>
+</blockquote>
+<h4 id="-a-name-t2-a-user-is-experiencing-an-issue-with-mobile-application-post-enrollment-"><a name="T2"> </a>User is experiencing an issue with mobile application (post-enrollment).</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a>  </p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Has user installed the application?</li>
+<li>Troubleshoot installation issues as necessary.</li>
+<li>Does the user experience in-application issues (e.g., application freezes, behaves erratically, etc.)</li>
+<li>Does the user experience improper function (e.g., does not deliver messages, accept correct passwords, etc.)</li>
+<li>Document all troubleshooting steps. </li>
+<li>Resolve the ticket or forward to <strong>Information Security</strong> resolver group.</li>
+</ol>
+<h4 id="-a-name-t3-a-user-is-experiencing-an-issue-with-vpn-profile-"><a name="T3"> </a>User is experiencing an issue with VPN profile.</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket. </li>
+<li>Resolve the ticket or forward to <strong>Information Security</strong> resolver group.</li>
+</ol>
+<h4 id="-a-name-t4-a-user-is-experiencing-an-issue-with-other-integrated-system-coming-soon-"><a name="T4"> </a>User is experiencing an issue with other integrated system (coming soon).</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket. </li>
+<li>Resolve the ticket or forward to <strong>Information Security</strong> resolver group.</li>
+</ol>
+<h2 id="detailed-activate-setup-install-procedures">Detailed Activate / Setup / Install Procedures</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#setup">setup questions</a>  </p>
+<h4 id="-a-name-s1-a-user-requires-assistance-enrolling-using-a-mobile-phone-"><a name="S1"> </a>User requires assistance enrolling using a mobile phone.</h4>
+<p>return to <a href="#setup">setup questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li><strong>Step user through process below.</strong></li>
+<li>Browse to the <a href="https://sites.google.com/a/case.edu/cwru-duoenrollment/">Duo Security self-enrollment page</a>.</li>
+<li>Type in your CWRU network ID and password when prompted.</li>
+<li>Click or tap the green <strong>Start Setup</strong> button.</li>
+<li>Select the type of device you will use to enroll.</li>
+<li>Click or tap the green <strong>Continue</strong> button.</li>
+<li>Choose country code and enter phone number.</li>
+<li>Select the phone operating system. Choose <strong>Other</strong> if you are not enrolling a smartphone.</li>
+<li>Click or tap the green <strong>Continue</strong> button.</li>
+<li>Verify that the phone number is correct and click or tap the green <strong>Continue</strong> button.</li>
+<li>After successfully enrolling a device, choose “I’m done enrolling devices” to proceed or “Enroll another device”.</li>
+<li>Choose authenticator from enrolled devices, and authentication method (Duo Push, phone call, or passcode).</li>
+<li>Click or tap the green <strong>Log in</strong> button.</li>
+<li>Approve the authentication request (review the sms message, phone call, or Duo Mobile alert and enter the appropriate code into the <strong>second password</strong> field.) </li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-s2-a-user-requires-assistance-enrolling-using-a-smartphone-"><a name="S2"> </a>User requires assistance enrolling using a smartphone.</h4>
+<p>return to <a href="#setup">setup questions</a>  </p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li><strong>Step user through process below.</strong></li>
+<li>Browse to the <a href="https://sites.google.com/a/case.edu/cwru-duoenrollment/">Duo Security self-enrollment page</a>.</li>
+<li>Type in your CWRU network ID and password when prompted.</li>
+<li>Click or tap the green <strong>Start Setup</strong> button.</li>
+<li>Select the type of device you will use to enroll.</li>
+<li>Click or tap the green <strong>Continue</strong> button.</li>
+<li>Choose country code and enter phone number.</li>
+<li>Choose device operating system and click or tap the green <strong>Continue</strong> button.</li>
+<li>Install the Duo Mobile application on your device</li>
+<li>When installed, select the “I have Duo Mobile installed” box and click or tap the green <strong>Continue</strong> button.</li>
+<li>Open the Duo Mobile application</li>
+<li>Tap the <strong>+</strong> button. Then tap <strong>Scan Barcode</strong>.</li>
+<li>Scan the barcode shown onscreen with your mobile device, or if unable to scan, follow the alternate instructions provided.</li>
+<li>Click or tap the green <strong>Continue</strong> button.</li>
+<li>After successfully enrolling a device, choose “I’m done enrolling devices” to proceed or “Enroll another device”.</li>
+<li>Choose authenticator from enrolled devices, and authentication method (Duo Push, phone call, or passcode).</li>
+<li>Click or tap the green <strong>Log in</strong> button.</li>
+<li>Approve the authentication request (review the sms message, phone call, or Duo Mobile alert and enter the appropriate code into the <strong>second password</strong> field.)</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-s3-a-user-requires-assistance-enrolling-a-connected-mobile-device-"><a name="S3"> </a>User requires assistance enrolling a connected mobile device.</h4>
+<p>return to <a href="#setup">setup questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li><strong>Step user through process below.</strong></li>
+<li>Browse to the <a href="https://sites.google.com/a/case.edu/cwru-duoenrollment/">Duo Security self-enrollment page</a>.</li>
+<li>Type in your CWRU network ID and password when prompted.</li>
+<li>Click or tap the green <strong>Start Setup</strong> button.</li>
+<li>Select the type of device you will use to enroll.</li>
+<li>Choose device operating system and click or tap the green <strong>Continue</strong> button.</li>
+<li>Install the Duo Mobile application on your device</li>
+<li>When installed, select the “I have Duo Mobile installed” box and click or tap the green <strong>Continue</strong> button.</li>
+<li>Open the Duo Mobile application</li>
+<li>Tap the <strong>+</strong> button. Then tap <strong>Scan Barcode</strong>.</li>
+<li>Scan the barcode shown onscreen with your mobile device, or if unable to scan, follow the alternate instructions provided.</li>
+<li>Click or tap the green <strong>Continue</strong> button.</li>
+<li>After successfully enrolling a device, choose “I’m done enrolling devices” to proceed or “Enroll another device”.</li>
+<li>Choose authenticator from enrolled devices, and authentication method (Duo Push, phone call, or passcode).</li>
+<li>Click or tap the green <strong>Log in</strong> button.</li>
+<li>Approve the authentication request (review the sms message, phone call, or Duo Mobile alert and enter the appropriate code into the <strong>second password</strong> field.) </li>
+<li>Resolve the ticket.</li>
+</ol>
+<h2 id="detailed-move-change-procedures">Detailed Move / Change Procedures</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#change">change questions</a>  </p>
+<h4 id="-a-name-c1-a-user-requests-to-change-credentials-"><a name="C1"> </a>User requests to change credentials.</h4>
+<p>return to <a href="#change">change questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket. </li>
+<li>Forward to <strong>Information Security</strong> resolver group.</li>
+</ol>
+<h4 id="-a-name-c2-a-user-requests-to-unenroll-or-change-a-device-"><a name="C2"> </a>User requests to unenroll or change a device.</h4>
+<p>return to <a href="#change">change questions</a>  </p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Forward to <strong>Information Security</strong> resolver group.</li>
+</ol>
+<h2 id="detailed-how-to-training-procedures">Detailed How To / Training Procedures</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#training">training questions</a></p>
+<h4 id="-a-name-h1-a-how-do-i-enroll-using-mobile-phone-"><a name="H1"> </a>How do I enroll using mobile phone?</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Provide user with <a href="#S1">Activate / Setup / Install instructions</a>.</li>
+<li>Walk the user through steps, if requested.</li>
+<li>Advise user that detailed self-help instructions are also available at <a href="https://help.case.edu">help.case.edu</a>.  </li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-h2-a-how-do-i-enroll-using-a-smartphone-or-other-connected-device-"><a name="H2"> </a>How do I enroll using a smartphone or other connected device?</h4>
+<p>return to <a href="#training">training questions</a>  </p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Provide user with <a href="#S2">Activate / Setup / Install instructions</a>.</li>
+<li>Walk the user through steps, if requested.</li>
+<li>Advise user that detailed self-help instructions are also available at <a href="https://help.case.edu">help.case.edu</a>.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-h3-a-how-do-i-enroll-using-my-land-line-"><a name="H3"> </a>How do I enroll using my land line?</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Provide user with <a href="#S3">Activate / Setup / Install instructions</a>.</li>
+<li>Walk the user through steps, if requested.</li>
+<li>Advise user that detailed self-help instructions are also available at <a href="https://help.case.edu">help.case.edu</a>. </li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-h4-a-what-information-do-i-need-to-enroll-"><a name="H4"> </a>What information do I need to enroll?</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li><p>Required to enroll:</p>
+<ul>
+<li>Valid CWRU account, Network ID and password</li>
+<li>Mobile phone capable of receiving text messages, OR</li>
+<li>Mobile iOS or Android device, OR</li>
+<li>Land line telephone</li>
+</ul>
+</li>
+<li><p>Resolve the ticket.</p>
+</li>
+</ol>
+<h4 id="-a-name-h5-a-how-do-i-use-the-multi-factor-vpn-profile-"><a name="H5"> </a>How do I use the multi-factor VPN profile?</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>First, enroll in DuoSecurity using a connected mobile device, cell phone or land line.</li>
+<li>Connect securely to CWRU network resources from a remote location using a VPN client.</li>
+<li>Choose the <strong>CaseDuo</strong> VPN profile from the <strong>Group</strong> dropdown menu.</li>
+<li>The user should enter his or her CWRU Network ID and password as normal.</li>
+<li>User will enter <strong>Second password</strong> provided by Duo Security authentication after enrollment.</li>
+<li>Click <strong>Connect</strong> or <strong>Ok</strong> to complete.  </li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> After the pilot period, multi-factor authentication will be integrated with the primary VPN profile.</p>
+</blockquote>
+<h4 id="-a-name-h6-a-what-is-the-name-of-the-multi-factor-vpn-profile-"><a name="H6"> </a>What is the name of the multi-factor VPN profile?</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>The name of the multi-factor authentication profile is <strong>CaseDuo</strong>. </li>
+<li>To use multi-factor authentication with VPN, choose the <strong>CaseDuo</strong> VPN profile from the <strong>Group</strong> dropdown menu.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> After the pilot period, multi-factor authentication will be integrated with the primary VPN profile.</p>
+</blockquote>
+<h4 id="-a-name-h7-a-when-will-the-pilot-period-end-"><a name="H7"> </a>When will the pilot period end?</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Information Security anticipates that the pilot will end in June 2014. The product will be available to all users at that time.</li>
+<li>CaseDuo will be integrated with additional ITS services at an undetermined future date. </li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Important note at close of ordered list.</p>
+</blockquote>
+<h4 id="-a-name-h8-a-what-is-multi-factor-authentication-"><a name="H8"> </a>What is multi-factor authentication?</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Multi-factor authentication provides additional layers of security to protect user data in the case of password theft.</li>
+<li>Multi-factor authentication requires the user to present two or more of three authentication factors: a knowledge factor, a possession factor, and an inheritance factor. </li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Each factor must be validated by a service provider or third party before a user is granted access to the protected account..</p>
+</blockquote>
+<h4 id="-a-name-h9-a-what-is-a-knowledge-factor-"><a name="H9"> </a>What is a ‘knowledge factor’?</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>A “knowledge factor” is a user-created or system-assigned password.</li>
+<li>Provide details [CWRU password complexity requirements].</li>
+<li>Provide details [best practices for passwords].</li>
+<li>Provide details [physical security]. </li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-h10-a-what-is-a-possession-factor-"><a name="H10"> </a>What is a ‘possession factor’?</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Token-code generators, text messages and digital certificate are common examples of the the “possession factor”.</li>
+<li>Provide details [physical security]. </li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-h11-a-what-is-an-inheritance-factor-"><a name="H11"> </a>What is an ‘inheritance’ factor?</h4>
+<p>return to <a href="#training">training questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>“Inheritance factors” are not common in consumer applications. </li>
+<li>Most frequently used “inheritance factors” are biometric identifiers (e.g., fingerprint scanner or similar).</li>
+<li>Not used by CaseDUO. </li>
+<li>Resolve the ticket.</li>
+</ol>
+<h2 id="detailed-billing-procedures">Detailed Billing Procedures</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#billing">billing questions</a><br><em>This space left blank intentionally.</em></p>
+<h2 id="detailed-outage-procedures">Detailed Outage Procedures</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a> | <a href="#outage">outage questions</a></p>
+<h4 id="-a-name-o1-a-user-reports-an-outage-of-a-duo-application-enrollment-page-or-caseduo-vpn-profile-"><a name="O1"> </a>User reports an outage of a Duo application, Enrollment page or CaseDUO VPN profile.</h4>
+<p>return to <a href="#outage">outage questions</a></p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket. </li>
+<li>Forward to <strong>Information Security</strong> resolver group.</li>
+</ol>
+<h4 id="-a-name-o2-a-user-reports-an-outage-of-other-integrated-application-or-other-vpn-profile-"><a name="O2"> </a>User reports an outage of other integrated application or other VPN profile.</h4>
+<p>return to <a href="#outage">outage questions</a>  </p>
+<ol>
+<li>Gather <a href="#resolution">resolution information</a> and enter it into the ticket.</li>
+<li>Troubleshoot per VPN and Identity Management scripts.</li>
+<li>Resolve or escalate ticket per applicable script.</li>
+</ol>
+<h2 id="-a-name-u1-a-other-unable-to-resolve"><a name="U1"> </a>Other / Unable to Resolve</h2>
+<p>return to <a href="#top">top</a> | <a href="#index">index</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket.  </li>
+<li>Note any information that has been provided to the user.</li>
+<li>Note any troubleshooting steps taken.</li>
+<li>Advise user, during the pilot period all detailed troubleshooting, individual/group training, consultation, user/group rights administration, policies and potential application outages will be handled by the ITS Information Security group.   </li>
+<li>Forward to <strong>Information Security</strong> resolver group.</li>
+</ol>
+<h2 id="-"> </h2>
+<p>Copyright 2014, CWRU ITS<br>Last updated 4/1/2014 11:22:53 AM</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

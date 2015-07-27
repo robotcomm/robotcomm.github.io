@@ -1,0 +1,1056 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Application|AcademicTechnologies|Blackboard|Service</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+<title>Application|AcademicTechnologies|Blackboard|Service</title>
+</head>
+<body>
+<p><a name="top"> </a><br>Applications | Academic Technologies | Blackboard | Service</p>
+<p><a name="keywords"> </a> </p>
+<h2 id="keywords">Keywords</h2>
+<p>Blackboard; Wizard; Course copy; Discussion board; Retention Center; Digital dropbox; Assignments; Assessments; Inline grading; Virtual classroom; Distance learning</p>
+<p><a name="service"> </a> </p>
+<h2 id="service-description">Service Description</h2>
+<p>Blackboard is a Learning Management System (LMS) used by instructors and students at CWRU. Blackboard may be used to supplement classroom-based courses, supply the online component of hybrid courses or deliver the content for distance education courses.</p>
+<h4 id="key-features-for-more-effective-communication-">Key features for more effective communication,</h4>
+<ul>
+<li>Use blogs and wikis to facilitate ongoing writing assignments and collaborative projects.</li>
+<li>Discussion boards enable moderated, rich, asynchronous conversations and drive student engagement.</li>
+<li>Simplify periodic communications with automated email lists.</li>
+</ul>
+<h4 id="key-features-for-ease-of-use-">Key features for ease of use,</h4>
+<ul>
+<li>Global navigation provides one-click access to frequently accessed destinations (including all applicable course sites.) </li>
+<li>My Blackboard (access via the Global navigation menu) aggregates a user’s posts, grades, upcoming assignments and calendar entries.</li>
+</ul>
+<h4 id="key-features-for-rich-content-and-media-">Key features for rich content and media,</h4>
+<ul>
+<li>Video everywhere allows any user to easily record from a webcam or mobile device and embed clips into the Content Editor.</li>
+<li>The upgraded Content Editor is compatible with additional rich content and media types.</li>
+<li>Use the new Content Collection feature to help ensure content freshness and consistent presentation across course sites.</li>
+</ul>
+<h4 id="key-features-for-instructors-">Key features for instructors.</h4>
+<ul>
+<li>Instructors may now use a Inline Assignment Grading to complete assignment review and grading seamlessly within Blackboard’s browser interface.</li>
+<li>Monitor student progress and performance using the enhanced Retention Center feature.</li>
+<li>Blackboard Learn is extended by <a href="http://www.case.edu/its/itac/BBWizard">Blackboard Wizard</a>, an CWRU developed application that automates many manual tasks (e.g., setting up course sites, adding or removing users and migrating grades from Blackboard to SIS).</li>
+<li>Deleted Site Recovery</li>
+</ul>
+<p><a name="resolution"> </a> </p>
+<h2 id="resolution-information">Resolution Information</h2>
+<h4 id="enter-the-following-information-into-ticket-for-all-users-">Enter the following information into ticket for all users:</h4>
+<ul>
+<li>Name</li>
+<li>CWRU Network ID </li>
+<li>Contact information (preferred and alternate) </li>
+<li>Problem or Request description</li>
+<li>Course Name, or Number and Section (if applicable)</li>
+<li>Instructor name (if applicable)</li>
+</ul>
+<h4 id="additional-resources">Additional Resources</h4>
+<ul>
+<li><a href="http://www.case.edu/its/training/blackboardmain.html">Blackboard training material</a>  </li>
+<li><a href="https://help.blackboard.com/en-us/Learn/9.1_SP_10_and_SP_11/Student/002_Browser_Support_SP_11">Browser Support for Service Pack (SP) 11</a></li>
+<li><a href="https://connect.case.edu/p55713558/">Blackboard presentation (general overview)</a></li>
+<li><a href="http://www.youtube.com/watch?v=J0BSL2fwNSs">Blackboard presentation (SP 11 updates)</a></li>
+</ul>
+<h4 id="recent-changes-please-note-">Recent changes, please note!</h4>
+<ol>
+<li>Assign all Echo360 issues to the <strong>MediaVision resolver group</strong>.</li>
+<li>Assign all Adobe Connect issues to the <strong>Adobe Connect resolver group</strong>.</li>
+<li>New procedure <a href="#H06">‘How to add guest users to a site’</a> now included in How To topics.</li>
+<li>New procedure <a href="#H07">‘How to add multiple sections of students into one course’</a> now included in How To topics.</li>
+</ol>
+<p><a name="index"> </a></p>
+<h2 id="topic-index">Topic Index</h2>
+<p><a name="troubleshoot"> </a> </p>
+<h4 id="troubleshoot-repair-topics">Troubleshoot / Repair topics</h4>
+<ol>
+<li><a href="#T1">A student cannot access course</a></li>
+<li><a href="#T2">Instructor cannot find his or her course</a></li>
+<li><a href="#T3">Course does NOT appear in the Blackboard Wizard (creating a new course site)</a></li>
+<li><a href="#T4">One or more pages are not loading properly</a></li>
+<li><a href="#T5">Both old and new students are added in a course site. What do I do?</a></li>
+<li><a href="#T6">I can’t find a course site from a previous semester.</a></li>
+<li><a href="#T7">My side navigation menu has disappeared. Where is it?</a></li>
+<li><a href="#T8">I am receiving an error message.</a></li>
+<li><a href="#T9">I reused a course site. Now, an old announcement displays.</a></li>
+<li><a href="#T10">Faculty cannot upload quiz information from Excel</a></li>
+<li><a href="#T11">I cannot find the Digital Dropbox.</a></li>
+<li><a href="#T12">I need to recover a course site that has been deleted.</a></li>
+<li><a href="#U1">Other / Unable to resolve</a></li>
+</ol>
+<p><a name="activate"> </a> </p>
+<h4 id="activate-setup-install-topics">Activate / Setup / Install topics</h4>
+<ol>
+<li><a href="http://www.case.edu/training/Blackboard_files/1Create_Site_Availability.pdf">Create a new course site*</a></li>
+<li><a href="#U1">Other / Unable to resolve</a></li>
+</ol>
+<p><a name="change"> </a> </p>
+<h4 id="move-change-topics">Move / Change topics</h4>
+<ol>
+<li><a href="#M1">Reordering the Course Menu</a></li>
+<li><a href="#M2">Editing or removing menu tags</a></li>
+<li><a href="#M3">Changing test settings</a></li>
+<li><a href="#M4">How to move content from one site to another</a></li>
+<li><a href="#M5">User requests to increase a course quota</a></li>
+<li><a href="#U1">Other / Unable to resolve</a></li>
+</ol>
+<p><a name="training"> </a> </p>
+<h4 id="how-to-training-topics">How To / Training topics</h4>
+<p><a name="training general"> </a> <strong>General</strong></p>
+<ol>
+<li><a href="#H1">I am a new faculty member. Where do I start?</a></li>
+<li><a href="#H2">How do I add events to my calendar?</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/3Creating_Folders_Contentarea.pdf">Creating Folders within Content Areas*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/4Adding_Content_to_Folder.pdf">Adding Content to a Folder*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/5Creating_syllabus.pdf">How to Create Content: Syllabus*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/1Create_Site_Availability.pdf">Creating a Site and Making a it Available*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/2Creating_Content_Areas.pdf">Creating Content Areas*</a></li>
+<li><a href="#H3">How do I create a new menu tag?</a></li>
+<li><a href="#H4">I want to use an existing course site for this semester. What do I do?</a></li>
+<li><a href="#H5">What options and tools are available for groups?</a></li>
+<li><a href="#H6">I have a question about the Blackboard mobile app.</a></li>
+<li><a href="#H06">How to add guest users to a site</a></li>
+<li><a href="#H07">How to add multiple student sections to one course</a></li>
+</ol>
+<p><a name="training assessments"> </a> <strong>Assessments</strong></p>
+<ol>
+<li><a href="http://www.case.edu/training/Blackboard_files/6Creating_Assignment.pdf">Adding an Assignment to Blackboard*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/24GradeCtr.pdf">Accessing Assignment Submissions*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/7Creating_quizortest.pdf">Creating and Deploying a Quiz or Test*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/8Building_Test.pdf">Building a Test using the Blackboard Tool*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/9Deploying_Test.pdf">Deploying a Test on Blackboard*</a></li>
+<li><a href="http://www.case.edu/its/training/materials/blackboard/Bb_UploadforAssessment.pdf">Uploading Questions to Blackboard from an Excel File*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/10Create_Pool_Questions.pdf">Creating a Pool of Questions in Blackboard*</a></li>
+</ol>
+<p><a name="training discussion"> </a> <strong>Discussion Tools</strong></p>
+<ol>
+<li><a href="#H7">Creating an announcement</a> </li>
+<li><a href="http://www.case.edu/training/Blackboard_files/12Discussion_Boards.pdf">Setting up the Discussion Board: Creating Forums, Threads and Replies*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/14Creating_Blog.pdf">Creating a Blog in Blackboard*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/15Creating_Wiki.pdf">Creating a Wiki in Blackboard*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/11Creating_Groups.pdf">Blog, Wiki and Discussion Board: What are the Differences?*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/11Creating_Groups.pdf">Creating Groups in Blackboard*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/13Group_Discussion_Board.pdf">Group Discussion Board*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/16Group_Virtual_Classroom.pdf">Group Virtual Classroom*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/37Emails.pdf">Email in Blackboard*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/16Group_Virtual_Classroom.pdf">Virtual Classroom in Blackboard*</a></li>
+</ol>
+<p><a name="training wizard"> </a> <strong>Blackboard Wizard</strong></p>
+<ol>
+<li><a href="https://docs.google.com/file/d/0B7n8xrcotO7-Nlg4VW5Denlxc00/edit?usp=sharing">How can I add individual users to my site?*</a></li>
+<li><a href="https://docs.google.com/file/d/0B7n8xrcotO7-Nlg4VW5Denlxc00/edit?usp=sharing">How can I remove an individual user from my site?*</a></li>
+<li><a href="https://docs.google.com/file/d/0B7n8xrcotO7-Nlg4VW5Denlxc00/edit?usp=sharing">How do I restore a site that I have archived?*</a></li>
+<li><a href="https://docs.google.com/file/d/0B7n8xrcotO7-Nlg4VW5Denlxc00/edit?usp=sharing">How do I change my Blackboard site title?*</a></li>
+<li><a href="https://docs.google.com/file/d/0B7n8xrcotO7-Nlg4VW5Denlxc00/edit?usp=sharing">How do I verify the enrollment of my site?*</a></li>
+<li><a href="https://docs.google.com/file/d/0B7n8xrcotO7-Nlg4VW5Denlxc00/edit?usp=sharing">How do I check my site quota?*</a></li>
+<li><a href="https://docs.google.com/file/d/0B7n8xrcotO7-Nlg4VW5Denlxc00/edit?usp=sharing">How can I archive a Blackboard site to use at a later time?*</a></li>
+<li><a href="https://docs.google.com/file/d/0B7n8xrcotO7-Nlg4VW5Denlxc00/edit?usp=sharing">How do I remove an archived site?*</a></li>
+</ol>
+<p><a name="training grade center"> </a> <strong>Grade Center</strong></p>
+<ol>
+<li><a href="#H8">What’s new in Quiz?</a></li>
+<li><a href="#H9">How do I remove or modify an assignment item in the Grade Center?</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/24GradeCtr.pdf">Accessing and Getting to Know the Grade Center*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/25GradeCtr_Adding_Columns.pdf">Adding a Column in the Grade Center*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/26GradeCtr_Categ_Calculations.pdf">Categories and Columns in the Grade Center*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/27GradeCtr_SmartViews.pdf">Smart View in the Grade Center*</a></li>
+<li><a href="#H10">Importing and Exporting the Grade Center</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/29GradeCtr_Auto_Entry.pdf">Automatic Entries in the Grade Center*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/31GradeCtr_Extra_Credit.pdf">Extra Credit in the Grade Center*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/32GradeCtr_Entering-Grades.pdf">Entering Grades in the Grade Center*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/35GradeCtr_Export_to_SIS.pdf">Overwriting Grades in the Grade Center*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/30GradeCtr_View_Attempts.pdf">Viewing Attempts in the Grade Center*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/34GradeCtr_Column_Stats.pdf">Column Statistics and Attempt Statistics in the Grade Center*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/35GradeCtr_Export_to_SIS.pdf">Exporting Grades from the Grade Center into SIS*</a></li>
+<li><a href="http://www.case.edu/training/Blackboard_files/36GradeCtr_Backingup.pdf">Backing up the Grade Center*</a></li>
+</ol>
+<p><a name="training new features"> </a> <strong>New Features</strong></p>
+<ol>
+<li><a href="#H11">Learn more about: Inline Assignment Grading</a></li>
+<li><a href="#H12">Learn more about: Global Navigation</a></li>
+<li><a href="#H13">Learn more about: Retention Center</a></li>
+<li><a href="#H14">Learn more about: Video Everywhere</a></li>
+<li><a href="#H15">SP11 specific: Why can’t I see classmate / student posts in the discussion board?</a></li>
+<li><a href="#U1">Other / Unable to resolve</a></li>
+</ol>
+<p><a name="billing"> </a> </p>
+<h4 id="billing-topics">Billing topics</h4>
+<p><em>Space reserved for future use</em></p>
+<p><a name="outage"> </a> </p>
+<h4 id="outage-topics">Outage topics</h4>
+<ol>
+<li>Is Blackboard down?</li>
+<li>Other / Unable to resolve</li>
+</ol>
+<p><a name="resolver"> </a> </p>
+<h2 id="resolver-groups">Resolver Groups</h2>
+<p>Blackboard</p>
+<p><a name="escalation"> </a> </p>
+<h2 id="escalation">Escalation</h2>
+<p>An escalation may be requested by an end user when he or she determines that a critical issue has not been acknowledged properly, remains unresolved for an unacceptable period of time or is severe enough that it requires atypical handling.</p>
+<p>An escalated issue is typically brought to the attention of management within a second-level support group(s).</p>
+<blockquote>
+<p>Escalation should not be confused with assignment to a resolver group.</p>
+</blockquote>
+<h4 id="who-to-contact-for-issue-escalation-how-to-training-">Who to contact for issue escalation (How to / Training)</h4>
+<p>Name, Preferred contact (type), Alternate contact 1 (type), Alternate contact 2 (type)</p>
+<ol>
+<li><strong>Katie Skapin</strong>, (216) 368-3177 (office), <a href="mailto:kas200@case.edu">kas200@case.edu</a></li>
+<li><strong>Sue Schick</strong>, (216) 368-4381 (office)</li>
+</ol>
+<h4 id="who-to-contact-for-issue-escalation-troubleshoot-repair-">Who to contact for issue escalation (Troubleshoot / Repair)</h4>
+<p>Name, Preferred contact (type), Alternate contact 1 (type), Alternate contact 2 (type)</p>
+<ol>
+<li><strong>Katie Skapin</strong>, (216) 368-3177 (office), <a href="mailto:kas200@case.edu">kas200@case.edu</a></li>
+<li><strong>Sue Schick</strong>, (216) 368-4381 (office)</li>
+<li><strong>Paul Jarc</strong>, (216) 368-0687 (office)</li>
+</ol>
+<h4 id="who-to-contact-for-issue-escalation-outage-">Who to contact for issue escalation (Outage)</h4>
+<p>Name, Preferred contact (type), Alternate contact 1 (type), Alternate contact 2 (type)</p>
+<ol>
+<li><strong>Paul Jarc</strong>, (216) 368-0687 (office), <a href="mailto:kas200@case.edu">kas200@case.edu</a></li>
+<li><strong>Sue Schick</strong>, (216) 368-4381 (office)</li>
+<li><strong>Tina Oestreich</strong>, (216) 368-5283 (office)</li>
+</ol>
+<h4 id="escalation-procedures">Escalation procedures</h4>
+<p>Blackboard is a critical service, supported 24/7.</p>
+<h2 id="detailed-troubleshoot-repair-procedures">Detailed Troubleshoot / Repair Procedures</h2>
+<p><a href="#top">return to top</a> | <a href="#index">index</a> | <a href="#troubleshoot">troubleshoot questions</a></p>
+<h4 id="-a-name-t1-a-a-student-cannot-access-course"><a name="T1"> </a> A student cannot access course</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>Sign in to <a href="http://blackboard.case.edu/">Blackboard</a> and select the System Admin tab.</li>
+<li><p>Click Courses to search by course name, ID or instructor. </p>
+<p><strong>Format search parameters as shown</strong><br>Course name: ‘CHEM 101’<br>Course ID: ‘CHEM101_abc123’<br>Instructor: ‘abc123’</p>
+</li>
+<li><p>Course <strong>NOT FOUND</strong>, Instructor has not added the course to Blackboard. Refer student to Instructor.</p>
+</li>
+<li>Course <strong>FOUND</strong>, Review status column.</li>
+<li><p>Status <strong>NOT AVAILABLE</strong>, Course not yet made available to students by instructor.  </p>
+<p>Forward ticket to <strong>Blackboard</strong> resolver group with request to contact<br>instructor w/r to date of availability.</p>
+</li>
+<li>Status <strong>AVAILABLE</strong>, Enter details into ticket and forward to <strong>Blackboard</strong> resolver group.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> NOTE: If you need access to either Blackboard or the System Admin<br>tab send a message to <a href="mailto:kas200@case.edu">kas200@case.edu</a> to request<br>permission.</p>
+</blockquote>
+<h4 id="-a-name-t2-a-instructor-cannot-find-his-or-her-course"><a name="T2"> </a> Instructor cannot find his or her course</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket.</li>
+<li>Course <strong>HAS NOT</strong> been hosted by instructor in Blackboard prior, <ul>
+<li>Walk the instructor through process of creating a new course and making it available.</li>
+</ul>
+</li>
+<li><strong>Create a new course</strong><ol>
+<li>Log in to Blackboard. </li>
+<li>Click the Blackboard Wizard tab located at the top of the Blackboard page.</li>
+<li>Click Add a New Blackboard site on the left menu. </li>
+<li>Choose the Desired Semester and click Next. </li>
+<li>Choose the Course and click Next. </li>
+<li>Enter in the Site Title and click Next. </li>
+<li>Create the Course Site ID and click Next.</li>
+<li>A confirmation page will appear. Review information and click Create site.</li>
+</ol>
+</li>
+<li><strong>Make the site available</strong><ol>
+<li>Log in to Blackboard. </li>
+<li>Click on the desired course from the My Courses list or the Global Navigation list. </li>
+<li>From the Control Panel, select Customization. </li>
+<li>Select Properties. </li>
+<li>Under set Availability, select Yes to make the course available. If you do not want to make the site available, select No. </li>
+<li>Click Submit. </li>
+<li>Refer also to the <a href="https://docs.google.com/document/d/1RBocalpFZLAIwHSJjz9hy9TkYdGhSLKeiX8uvFgfxQA/edit?usp=sharing">Blackboard Wizard guide</a>.</li>
+</ol>
+</li>
+<li>Course in question <strong>HAS</strong> been hosted by instructor in Blackboard prior, <strong>AND</strong></li>
+<li>Instructor <strong>WILL NOT</strong> reuse course, but <strong>WILL</strong> reuse course content,<ol>
+<li><strong>Course Copy</strong></li>
+<li>Verify that a new course site has been created. Refer to the <a href="https://docs.google.com/document/d/1RBocalpFZLAIwHSJjz9hy9TkYdGhSLKeiX8uvFgfxQA/edit?usp=sharing">Blackboard Wizard guide</a>.</li>
+<li>Sign in to <a href="http://blackboard.case.edu/">Blackboard</a>.</li>
+<li>Navigate to original (source) content site.</li>
+<li>Select <strong>Packages and Utilities &gt; Course Copy</strong> from the Control Panel menu.</li>
+<li>Click <strong>Browse</strong> to find the new (destination) course.</li>
+<li>Select the check box next to the new (destination) course name and then click <strong>Submit</strong>.</li>
+<li>Select check boxes for content to copy.</li>
+<li>Do <strong>NOT</strong> select <strong>Include Enrollments</strong> in the Copy.</li>
+<li>To copy Blackboard assignments, select <strong>Grade Center Column &gt; Settings AND Content Area</strong> check boxes where the assignments are stored.</li>
+<li>Click Submit. </li>
+</ol>
+</li>
+<li>Instructor <strong>WILL</strong> reuse a course site, <ol>
+<li>Sign in to <a href="http://blackboard.case.edu/">Blackboard</a>.</li>
+<li>Access <strong>Blackboard Wizard</strong>.</li>
+<li>Click <strong>Reuse a Blackboard Site</strong>.</li>
+<li><strong>Make the Site Unavailable</strong></li>
+<li>Go to the course site within <a href="http://blackboard.case.edu">Blackboard</a></li>
+<li>Click <strong>Customization</strong> in the Course Management menu.</li>
+<li>Click <strong>Properties</strong>.</li>
+<li>Under <strong>Set Availability</strong>, select <strong>No</strong>.</li>
+<li>Click <strong>Submit</strong>.</li>
+<li><strong>Remove existing users and sections</strong></li>
+<li>Click Remove Users from a Site. Follow prompts.</li>
+<li>Select Course Sections and then the section which is to be removed.</li>
+<li><strong>Add New Enrolled Students and Others</strong></li>
+<li>Click Add Users to a Site. Follow prompts.</li>
+<li><strong>Modify content for new section</strong></li>
+<li>Access the course site to update and modify site content (such as announcements, calendar events, etc)</li>
+</ol>
+</li>
+<li>Refer user to the <a href="https://docs.google.com/document/d/1RBocalpFZLAIwHSJjz9hy9TkYdGhSLKeiX8uvFgfxQA/edit?usp=sharing">Blackboard Wizard guide</a>, Reuse a Course Site.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> User will receive a confirmation at his or her CWRU email address<br>when process is complete. Resubmitting before the receipt of process<br>completion may result in duplicate materials and should be avoided.</p>
+<p>Course Site ID CANNOT be changed. If you plan to reuse the course,<br>avoid any unique identifiers.</p>
+</blockquote>
+<h4 id="-a-name-t3-a-course-does-not-appear-in-the-blackboard-wizard-creating-a-new-course-site-"><a name="T3"> </a>  Course does NOT appear in the Blackboard Wizard (creating a new course site)</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket.</li>
+<li>Instructor should contact the Registrar office or work with their department to ensure that they are <strong>listed in SIS as the Instructor of Record</strong>. </li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-t4-a-one-or-more-pages-are-not-loading-properly"><a name="T4"> </a> One or more pages are not loading properly</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>Verify internet connectivity.</li>
+<li>Verify user is able to sign in to <a href="http://blackboard.case.edu/">Blackboard</a> using CWRU ID and password.</li>
+<li>Verify user’s browser is supported. Refer to <a href="https://help.blackboard.com/en-us/Learn/9.1_SP_10_and_SP_11/Student/002_Browser_Support_SP_11">Browser Support for Service Pack (SP) 11</a>.</li>
+<li>Instruct user to log out of <a href="http://blackboard.case.edu/">Blackboard</a>, clear their cache/cookies and retry.</li>
+<li>Record the name of pages that are malfunctioning, if specific slow response and enter this information into the ticket.</li>
+<li>Resolve the ticket or forward to <strong>Blackboard</strong> resolver group.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Blackboard support strongly recommends the Firefox, Chrome and<br>Opera web browsers for the best Blackboard experience. Blackboard support<br>recommends that users avoid both Internet Explorer and Safari.</p>
+</blockquote>
+<h4 id="-a-name-t5-a-both-old-and-new-students-are-added-in-a-course-site-what-do-i-do-"><a name="T5"> </a>  Both old and new students are added in a course site. What do I do?</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>Instruct user to access the Blackboard Wizard.</li>
+<li>Click <strong>Remove Users from a Site</strong>. Follow prompts.</li>
+<li>Select Course Sections and then the section which is to be removed.</li>
+<li>Resolve the ticket or forward to <strong>Blackboard</strong> resolver group.</li>
+</ol>
+<h4 id="-a-name-t6-a-i-can-t-find-a-course-site-from-a-previous-semester-"><a name="T6"> </a> I can’t find a course site from a previous semester.</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>Refer a <strong>student user</strong> to his or her instructor.</li>
+<li>User in an instructor,<ul>
+<li>Has he or she removed the site? </li>
+<li>If not may another instructor have done so?</li>
+<li>Site removed accidentally? </li>
+<li>Has the course title changed?</li>
+</ul>
+</li>
+<li>Sign in to <a href="http://blackboard.case.edu/">Blackboard</a>. </li>
+<li>Click the <strong>System Admin</strong> tab to search for all courses by instructor. Reference creation date to confirm with the instructor that they are looking at the correct site.</li>
+<li>Resolve the ticket or forward to <strong>Blackboard</strong> resolver group.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Please see Deleted Site Recovery Tool.</p>
+</blockquote>
+<h4 id="-a-name-t7-a-my-side-navigation-menu-has-disappeared-where-is-it-"><a name="T7"> </a>  My side navigation menu has disappeared. Where is it?</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>Instruct user to access his or her Blackboard course.</li>
+<li>Click the small blue line on the left to restore the course menu.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-t8-a-i-am-receiving-an-error-message-"><a name="T8"> </a> I am receiving an error message.</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>Ask the user to attempt their action again, making sure they don’t double click any buttons.</li>
+<li><strong>Error IS repeatable</strong>, </li>
+<li>Troubleshoot as necessary.</li>
+<li><strong>Error IS NOT repeatable</strong>, </li>
+<li>Forward ticket to <strong>Blackboard</strong> resolver group. Include,<ul>
+<li>Steps that were taken to generate error message.</li>
+<li>Screen-shot of error message or specific error message text.</li>
+</ul>
+</li>
+<li>Resolve the ticket or forward to <strong>Blackboard</strong> resolver group.</li>
+</ol>
+<h4 id="-a-name-t9-a-i-reused-a-course-site-now-an-old-announcement-displays-"><a name="T9"> </a> I reused a course site. Now, an old announcement displays.</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>Select <strong>Course Tools</strong> and then <strong>Announcements</strong> from the Control Panel.</li>
+<li>Hover over the old announcement and click the drop-down arrow.</li>
+<li><strong>Delete an announcement</strong></li>
+<li>Select <strong>Delete</strong> from the drop-down menu.</li>
+<li><strong>Change a start/end date OR edit announcement content</strong></li>
+<li>Select <strong>Edit</strong> from the drop-down menu.</li>
+<li>Resolve the ticket or forward to <strong>Blackboard</strong> resolver group.</li>
+</ol>
+<h4 id="-a-name-t10-a-faculty-cannot-upload-quiz-information-from-excel"><a name="T10"> </a> Faculty cannot upload quiz information from Excel</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>File needs to be formatted correctly and saved in a text (tab-delimited) format. </li>
+<li>See <a href="http://www.case.edu/its/training/materials/blackboard/Bb_UploadforAssessment.pdf">formatting guide</a>.</li>
+<li>Resolve the ticket or forward to <strong>Blackboard</strong> resolver group.</li>
+</ol>
+<h4 id="-a-name-t11-a-i-cannot-find-the-digital-dropbox-"><a name="T11"> </a> I cannot find the Digital Dropbox.</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>Digital Dropbox is no longer available. It has been replaced with the Assignment and SafeAssignment features.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Users can retrieve Digital Dropbox files using the Digital Dropbox<br>link from the <a href="http://www.case.edu/its/itac/BBWizard">Blackboard Wizard</a>.</p>
+</blockquote>
+<h4 id="-a-name-t12-a-i-need-to-recover-a-course-site-that-has-been-deleted-"><a name="T12"> </a>  I need to recover a course site that has been deleted.</h4>
+<p>return to <a href="#troubleshoot">troubleshoot questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>The Deleted Site Recovery tool allows restoration of sites that were removed using the the Blackboard Wizard.</li>
+<li><strong>Use the Recovery Tool</strong></li>
+<li>Access the <a href="https://webapps.case.edu/blackboard/undelete-site">Recovery Tool</a>.</li>
+<li>Enter user CWRU Network ID to generate a list of deleted sites.</li>
+<li>Click the name of the course(s) to be restored.</li>
+<li>Verify that correct instructor name is added to the restored site.</li>
+<li>Click <strong>Recover Course Site</strong>.</li>
+<li>For additional information, review the <a href="http://youtu.be/pnydYKiq4hE">training video</a>.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Recovered sites are marked Unavailable (not student-accessible)<br>until the instructor changes this setting.</p>
+</blockquote>
+<h2 id="detailed-activate-setup-install-procedures">Detailed Activate / Setup / Install Procedures</h2>
+<p><a href="#top">return to top</a> | <a href="#index">index</a> | <a href="#setup">setup questions</a></p>
+<p><em>This space left blank intentionally.</em></p>
+<h2 id="detailed-move-change-procedures">Detailed Move / Change Procedures</h2>
+<p><a href="#top">return to top</a> | <a href="#index">index</a> | <a href="#change">change questions</a></p>
+<h4 id="-a-name-m1-a-reordering-the-course-menu"><a name="M1"> </a> Reordering the Course Menu</h4>
+<p>return to <a href="#change">change questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>Turn <strong>Edit Mode</strong> to <strong>On</strong>.</li>
+<li>Hover over the menu item.</li>
+<li>Click and hold the movement arrow (located to the left of the item; the mouse cursor changes into a “+”).</li>
+<li>Drag the course menu item to a new location on the course menu and release the mouse.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-m2-a-editing-or-removing-menu-tags"><a name="M2"> </a> Editing or removing menu tags</h4>
+<p>return to <a href="#change">change questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket.</li>
+<li>Turn <strong>Edit Mode</strong> to <strong>On</strong>.</li>
+<li>Hover over the menu item.</li>
+<li>Click the drop-down arrow that appears on the right.</li>
+<li>Select <strong>Rename Link</strong> to rename the item OR <strong>Delete</strong> to remove the item.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-m3-a-changing-test-settings"><a name="M3"> </a> Changing test settings</h4>
+<p>return to <a href="#change">change questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>Find the Blackboard content area where the test is located.</li>
+<li>Hover over the test name.</li>
+<li>Click the drop-down arrow that appears on the right.</li>
+<li><strong>Change settings</strong> (e.g., availability, feedback, time restrictions, password restrictions, number of attempts).</li>
+<li>Select Edit Test Options</li>
+<li><strong>Change values</strong> (e.g., questions, answers, or point values) </li>
+<li>Select Edit the Test.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-m4-a-how-to-move-content-from-one-site-to-another"><a name="M4"> </a> How to move content from one site to another</h4>
+<p>return to <a href="#change">change questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>Verify that a new course site has been created. Refer to the <a href="https://docs.google.com/document/d/1RBocalpFZLAIwHSJjz9hy9TkYdGhSLKeiX8uvFgfxQA/edit?usp=sharing">Blackboard Wizard guide</a>.</li>
+<li>Sign in to <a href="http://blackboard.case.edu/">Blackboard</a>.</li>
+<li>Navigate to original (source) content site.</li>
+<li>Select <strong>Packages and Utilities &gt; Course Copy</strong> from the Control Panel menu.</li>
+<li>Click <strong>Browse</strong> to find the new (destination) course.</li>
+<li>Select the check box next to the new (destination) course name and then click Submit.</li>
+<li>Select check boxes for content to copy.</li>
+<li>Do NOT select Include Enrollments in the Copy.</li>
+<li>To copy Blackboard Assignments, select <strong>Grade Center Column &gt; Settings AND Content Area check boxes</strong> where the assignments are stored.</li>
+<li>Click Submit.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> User will receive a confirmation at his or her CWRU email address when process is complete. Resubmitting before the receipt of process completion may result in duplicate materials and should be avoided.</p>
+</blockquote>
+<h4 id="-a-name-m5-a-user-requests-to-increase-a-course-quota"><a name="M5"> </a>  User requests to increase a course quota</h4>
+<p>return to <a href="#change">change questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li><strong>Course quota increase request</strong></li>
+<li>Sign in to <a href="http://blackboard.case.edu/">Blackboard</a>.</li>
+<li>Click <strong>System Admin</strong> tab.</li>
+<li>Click <strong>Courses</strong> and search for the relevant course.</li>
+<li>Select the drop-down arrow next to the course name and click <strong>Quotas</strong>.</li>
+<li>If increase amount is <strong>less than 1 GB</strong>, grant request and increase quota (Blackboard recommends increases in increments of 200 MB.)</li>
+<li>In Section 1, enter new quota amount in the Limit Quota Amount box. </li>
+<li>Click Submit.</li>
+<li>Resolve ticket.</li>
+<li>If increase amount is <strong>equal to or greater than 1 GB</strong>, forward ticket to <strong>Blackboard</strong> resolver group.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> If you need access to either Blackboard or the System Admin tab send a message to <a href="mailto:kas200@case.edu">kas200@case.edu</a> to request permission.</p>
+</blockquote>
+<h2 id="detailed-how-to-training-procedures">Detailed How To / Training Procedures</h2>
+<p><a href="#top">return to top</a> | <a href="#index">index</a> | <a href="#training">training questions</a></p>
+<h4 id="-a-name-h1-a-i-am-a-new-faculty-member-where-do-i-start-"><a name="H1"> </a>  I am a new faculty member. Where do I start?</h4>
+<p>return to <a href="#training general">training questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>Verify that a new course site has been created. Refer to the <a href="https://docs.google.com/document/d/1RBocalpFZLAIwHSJjz9hy9TkYdGhSLKeiX8uvFgfxQA/edit?usp=sharing">Blackboard Wizard guide</a></li>
+<li>Advise user of <a href="http://www.case.edu/its/training/blackboardmain.html">additional training materials</a>.</li>
+<li>User requests a one-on-one training,</li>
+<li>Note the request in the ticket forward to <strong>Blackboard</strong> resolver group for scheduling.</li>
+<li>Resolve ticket.</li>
+</ol>
+<h4 id="-a-name-h2-a-how-do-i-add-events-to-my-calendar-"><a name="H2"> </a>  How do I add events to my calendar?</h4>
+<p>return to <a href="#training general">training questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket.</li>
+<li>Click <strong>user name</strong> (upper right corner of the Blackboard screen).</li>
+<li>Click the calendar icon.</li>
+<li>Click the date of the new event.</li>
+<li>Enter event details (e.g., name, time, additional information, course).</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-h3-a-how-do-i-create-a-new-menu-tag-"><a name="H3"> </a>  How do I create a new menu tag?</h4>
+<p>return to <a href="#training general">training questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>Turn <strong>Edit Mode</strong> to <strong>On</strong>.</li>
+<li>Select Blackboard course site.</li>
+<li>Click the <strong>+</strong> button in the in Course Menu.</li>
+<li>Select the applicable option.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>Menu Options</strong></p>
+<ul>
+<li>Content Area, New content placeholder.</li>
+<li>Module Page: Page that instructors can add modules to (e.g., calculator, alerts, to-do list, tasks).</li>
+<li>Blank Page: Blank page that needs to be populated with HTML or text.</li>
+<li>Tool Link: Direct link to a Blackboard tool (e.g., Discussion Board, My Grades).</li>
+<li>Web Link: Allows instructors to add a hyperlink to the menu.</li>
+<li>Course Link: Allows for a direct link to an area of the site, such as a Content Area or a specific discussion board forum.</li>
+<li>Subheader: Subheader with text label.</li>
+<li>Divider: Line break to be used as a visual divider.</li>
+</ul>
+</blockquote>
+<h4 id="-a-name-h4-a-i-want-to-use-an-existing-course-site-for-this-semester-what-do-i-do-"><a name="H4"> </a> I want to use an existing course site for this semester. What do I do?</h4>
+<p>return to <a href="#training general">training questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>See <strong>Reuse a Site</strong> in the <a href="http://www.case.edu/its/itac/BBWizard">Blackboard Wizard</a>.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-h5-a-what-options-and-tools-are-available-for-groups-"><a name="H5"> </a> What options and tools are available for groups?</h4>
+<p>return to <a href="#training general">training questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li><strong>Grouping options</strong><ul>
+<li>Manual enroll (recommended) Instructor assigns group membership.</li>
+<li>Self-enroll: Students place themselves into groups.</li>
+</ul>
+</li>
+<li><strong>Group features</strong><ul>
+<li>Private page: Accessible only to group members and instructor.</li>
+<li>Private tools: All course tools my be deployed privately to groups (e.g., Blog, Discussion Board, e-mail, Journal, Wiki, file exchange).</li>
+</ul>
+</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-h6-a-i-have-a-question-about-the-blackboard-mobile-app-"><a name="H6"> </a> I have a question about the Blackboard mobile app.</h4>
+<p>return to <a href="#training general">training questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket.</li>
+<li>Forward the ticket to the <strong>Blackboard</strong> resolver group.</li>
+</ol>
+<h4 id="-a-name-h06-a-how-to-add-guest-users-to-a-site-"><a name="H06"> </a> How to add guest users to a site.</h4>
+<p>return to <a href="#training general">training questions</a></p>
+<ol>
+<li>Gather resolution information and enter into the ticket.</li>
+<li>Instruct user to access Blackboard course site.</li>
+<li><strong>Add a guest user</strong></li>
+<li>From the Control Panel, select <strong>Users and Groups</strong> &gt; <strong>Users</strong></li>
+<li>Click <strong>Find Users to Enroll</strong> </li>
+<li>Type the user CWRU ID into the textbox</li>
+<li>Select <strong>Guest</strong> role and then click <strong>Submit</strong></li>
+<li><strong>Verify guest access is enabled for course</strong> </li>
+<li>From the Control Panel, select <strong>Customization</strong> &gt; <strong>Guest and Observer Access</strong></li>
+<li>Select <strong>Yes</strong> under <strong>Guest Access</strong> and click <strong>Submit</strong></li>
+<li><strong>Verify guest access is enabled for content areas</strong></li>
+<li>Click on the drop-down arrow next to each Content Area </li>
+<li>Select on <strong>Permit Guests</strong> </li>
+<li>Resolve ticket</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> If Deny Guests is displayed instead, Content Area is already accessible to guests</p>
+</blockquote>
+<h4 id="-a-name-h07-a-how-to-add-multiple-student-sections-to-one-course"><a name="H07"> </a> How to add multiple student sections to one course</h4>
+<p>return to <a href="#training general">training questions</a></p>
+<ol>
+<li>Gather resolution information and enter into the ticket.</li>
+<li>Sign in to Blackboard</li>
+<li>Access Blackboard Wizard</li>
+<li>Click <strong>Add Users to a Site</strong></li>
+<li>Follow prompts. Select <strong>Course Sections</strong></li>
+<li>Repeat steps 4 and 5 until all course sections have been added.</li>
+<li>Resolve ticket</li>
+</ol>
+<h4 id="-a-name-h7-a-creating-an-announcement"><a name="H7"> </a> Creating an announcement</h4>
+<p>return to <a href="#training discussion">training questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket.</li>
+<li>Turn <strong>Edit Mode</strong> to <strong>On</strong>.</li>
+<li>Select Blackboard course site.</li>
+<li>From the Control Panel select <strong>Course Tools</strong> and then <strong>Announcements</strong> (alternatively, click the Announcements section of the course menu).</li>
+<li>Click <strong>Create Announcement</strong>.</li>
+<li>Enter announcement details.</li>
+<li>Choose availability settings.</li>
+<li>Choose delivery options.</li>
+<li>Click Submit to post.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-h8-a-what-s-new-in-quiz-"><a name="H8"> </a> What’s new in Quiz?</h4>
+<p>return to <a href="#training grade center">training questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket.</li>
+<li>See details about <a href="http://help.blackboard.com/en-us/Learn/9.1_SP_10_and_SP_11/Instructor/070_Tests_Surveys_Pools/112_Running_Item_Analysis_on_a_Test">Item Analysis</a>. </li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-h9-a-how-do-i-remove-or-modify-an-assignment-item-in-the-grade-center-"><a name="H9"> </a> How do I remove or modify an assignment item in the Grade Center?</h4>
+<p>return to <a href="#training grade center">training questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket.</li>
+<li>Ask user if he or she wants to change Assignment settings (e.g., point value, Grade Center category, or Grade Center display name), Assignment content or both. </li>
+<li>Start with step below that corresponds to answer. </li>
+<li><strong>Change Assignment settings</strong></li>
+<li>Locate the column in the Grade Center that corresponds to the assignment user wants to change.</li>
+<li>Hover over the column header.</li>
+<li>Click the drop-down arrow.</li>
+<li>Select Edit Column Information.</li>
+<li><strong>Change Assignment content</strong></li>
+<li>Find the content area where the assignment is located.</li>
+<li>Hover over the assignment name.</li>
+<li>Click the drop-down arrow that appears on the right.</li>
+<li>Select Edit.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-h10-a-importing-and-exporting-the-grade-center"><a name="H10"> </a> Importing and Exporting the Grade Center</h4>
+<p>return to <a href="#training grade center">training questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li><strong>Export Grade Center</strong></li>
+<li>Navigate to the Grade Center.</li>
+<li>Hover over the Work Offline button.</li>
+<li>Select Download.</li>
+<li>Choose the data to export, set delimiter type to Tab and the click Submit.</li>
+<li>Follow the prompts to complete download.</li>
+<li><strong>Import Grade Center</strong></li>
+<li>Access the Grade Center and select Full Grade Center.</li>
+<li>Hover over the work Offline button.</li>
+<li>Select Upload.</li>
+<li>Browse for the file and select the delimiter type. </li>
+<li>Choose Tab as the Delimiter Type.</li>
+<li>Click submit.</li>
+<li>User accessible self-help at <a href="http://www.case.edu/its/training/materials/blackboard/Bb_QuickGuide.pdf">Quick Start Guide</a>.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<h4 id="-a-name-h11-a-learn-more-about-inline-assignment-grading"><a name="H11"> </a> Learn more about: Inline Assignment Grading</h4>
+<p>return to <a href="#training new features">training questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket.</li>
+<li>Inline Grading allows instructors to view, mark up, grade and return submissions within <a href="blackboard.case.edu">Blackboard</a>.</li>
+<li>Allowed file types: DOCX, DOC, XLS, XLM (Macros disabled), PPT and PDF</li>
+<li>Submissions made prior to the SP11 conversion are not compatible with Inline Grading. </li>
+<li>Resolve the ticket</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Refer to <a href="http://www.case.edu/its/training/blackboardmain.html">online training materials</a> and Lynda.com for additional information.</p>
+</blockquote>
+<h4 id="-a-name-h12-a-learn-more-about-global-navigation"><a name="H12"> </a> Learn more about: Global Navigation</h4>
+<p>return to <a href="#training new features">training questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>Global Navigation allows students and instructors to quickly access recent locations and most frequently used features.</li>
+<li>To access, click the user name in the upper right of the My Blackboard screen.</li>
+<li>Global navigation is pre-configured and not user editable.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Refer to <a href="http://www.case.edu/its/training/blackboardmain.html">online training materials</a> and Lynda.com for additional information.</p>
+</blockquote>
+<h4 id="-a-name-h13-a-learn-more-about-retention-center"><a name="H13"> </a> Learn more about: Retention Center</h4>
+<p>return to <a href="#training new features">training questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>The Retention Center is a new feature which allows instructors to track student progress, identify at-risk students and notify students of their status.</li>
+<li><strong>Enable the Retention Center</strong></li>
+<li>Select Blackboard course site.</li>
+<li>From the Control Panel, select <strong>Customization</strong> and then <strong>Tool Availability</strong>.</li>
+<li>Scroll down to Retention Center and select the check box.</li>
+<li>Click Submit.</li>
+<li><strong>Access the Retention Center</strong></li>
+<li>Enter the Blackboard site.</li>
+<li>Select <strong>Evaluation</strong> from the Control Panel.</li>
+<li>Select Retention Center.</li>
+<li>OR access Global Navigation and click the Retention Center icon.</li>
+<li><strong>Add a Custom Rule</strong></li>
+<li>Access the Retention Center.</li>
+<li>Hover over the Create Rule button and click rule-type option.</li>
+<li>Name the rule and decide whether to include it in the at-risk table.</li>
+<li>Define rule criteria.</li>
+<li>Click Submit.</li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Refer to <a href="http://www.case.edu/its/training/blackboardmain.html">online training materials</a> and Lynda.com for additional information.</p>
+</blockquote>
+<h4 id="-a-name-h14-a-learn-more-about-video-everywhere"><a name="H14"> </a> Learn more about: Video Everywhere</h4>
+<p>return to <a href="#training new features">training questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>Video Everywhere allows instructors and students to:<ol>
+<li>Record video and embed it in a course site.</li>
+<li>Automatically upload video content to a private YouTube channel.</li>
+</ol>
+</li>
+<li>Resolve the ticket.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> Refer to <a href="http://www.case.edu/its/training/blackboardmain.html">online training materials</a> and Lynda.com for additional information.</p>
+</blockquote>
+<h4 id="-a-name-h15-a-sp11-specific-why-can-t-i-see-classmate-student-posts-in-the-discussion-board-"><a name="H15"> </a> SP11 specific: Why can’t I see classmate / student posts in the discussion board?</h4>
+<p>return to <a href="#training new features">training questions</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket.</li>
+<li>Advise user that there is a known issue with Blackboard discussion boards and certain common word processing programs (ex., Microsoft Word).</li>
+<li>To work around the issue, the user must only paste plain text into the discussion boards when composing comments outside of Blackboard. </li>
+<li>Resolve the ticket or forward to <strong>Blackboard</strong> resolver group.</li>
+</ol>
+<h2 id="detailed-billing-procedures">Detailed Billing Procedures</h2>
+<p><a href="#top">return to top</a> | <a href="#index">index</a> | <a href="#billing">billing questions</a></p>
+<p><em>This space left blank intentionally.</em></p>
+<h2 id="detailed-outage-procedures">Detailed Outage Procedures</h2>
+<p><a href="#top">return to top</a> | <a href="#index">index</a> | <a href="#outage">outage questions</a></p>
+<h4 id="-a-name-o1-a-is-blackboard-down-"><a name="O1"> </a> Is Blackboard down?</h4>
+<ol>
+<li>Gather resolution information and enter it into the ticket.</li>
+<li>Attempt to sign in to <a href="http://blackboard.case.edu/">Blackboard</a>.</li>
+<li>Access available: See, troubleshoot questions.</li>
+<li>Access <strong>NOT</strong> available: Forward ticket to <strong>Blackboard</strong> resolver group.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE:</strong> See escalation procedures.</p>
+</blockquote>
+<h2 id="-a-name-u1-a-other-unable-to-resolve"><a name="U1"> </a> Other / Unable to Resolve</h2>
+<p><a href="#top">return to top</a> | <a href="#index">index</a></p>
+<ol>
+<li>Gather resolution information and enter it into the ticket. </li>
+<li>Forward to <strong>Blackboard</strong> resolver group.</li>
+</ol>
+<h2 id="-"> </h2>
+<p>Copyright 2014, CWRU ITS </p>
+<p>Current as of: 3/4/2014 9:53:51 AM</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
