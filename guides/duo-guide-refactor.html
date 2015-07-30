@@ -331,7 +331,7 @@ body { padding-top: 100px; }
       </h4>
     </div>
       
-  <div id="use-iphone" class="panel-body" style="display:none">
+  <div id="auth-push" class="panel-body" style="display:none">
     <dl>
       <dt>Use mobile application (Duo Push)</dt>
       <dd><p>&nbsp;</p>
@@ -372,11 +372,11 @@ body { padding-top: 100px; }
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a onclick="toggle_visibility('auth-push');">Passcode (mobile application)</a>
+        <a onclick="toggle_visibility('auth-mobile-passcode');">Passcode (mobile application)</a>
       </h4>
     </div>
       
-  <div id="use-iphone" class="panel-body" style="display:none">
+  <div id="auth-mobile-passcode" class="panel-body" style="display:none">
     <dl>
       <dt>Use mobile application (Duo Push)</dt>
       <dd><p>&nbsp;</p>
@@ -417,11 +417,11 @@ body { padding-top: 100px; }
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a onclick="toggle_visibility('auth-push');">Voice Call</a>
+        <a onclick="toggle_visibility('auth-call');">Voice Call</a>
       </h4>
     </div>
       
-  <div id="use-iphone" class="panel-body" style="display:none">
+  <div id="auth-call" class="panel-body" style="display:none">
     <dl>
       <dt>Use mobile application (Duo Push)</dt>
       <dd><p>&nbsp;</p>
@@ -462,11 +462,56 @@ body { padding-top: 100px; }
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a onclick="toggle_visibility('auth-push');">Text Message (SMS)</a>
+        <a onclick="toggle_visibility('auth-sms');">Text Message (SMS)</a>
       </h4>
     </div>
       
-  <div id="use-iphone" class="panel-body" style="display:none">
+  <div id="auth-sms" class="panel-body" style="display:none">
+    <dl>
+      <dt>Use mobile application (Duo Push)</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+      <dt>Use mobile application (passcode)</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+      <dt>Use voice call</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+      <dt>Use text message (SMS)</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+    </dl>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-12 col-sm-12">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a onclick="toggle_visibility('auth-token');">Hardware Token</a>
+      </h4>
+    </div>
+      
+  <div id="auth-token" class="panel-body" style="display:none">
     <dl>
       <dt>Use mobile application (Duo Push)</dt>
       <dd><p>&nbsp;</p>
