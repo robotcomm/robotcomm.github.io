@@ -177,6 +177,70 @@ body { padding-top: 100px; }
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
+        <a onclick="toggle_visibility('enroll-mobile');">Enroll a Basic Mobile Phone</a>
+      </h4>
+    </div>
+      
+  <div id="enroll-mobile" class="panel-body" style="display:none">
+    
+    <ol>
+      <li>Open the <a href="https://webapps.case.edu/duo/webauth.py">Duo Security self-enrollment page</a> using a laptop or desktop computer.</li>
+      <li>When prompted, type in your CWRU network ID and password.</li>
+      <li>Click <strong>Start Setup</strong>.</li>
+      <li>Choose "Mobile phone" as your device type and click&nbsp;<strong>Continue</strong>.<br>
+      <p>&nbsp;</p>
+      <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
+        <img src="https://guide.duosecurity.com/static/images/enrollment-choose.png" class="img-responsive"></div></div><p>&nbsp;</p></li>
+      <li>Type your 10 digit phone number and choose the country associated with it. Use number of the telephone you'll answer when logging in.<br>
+      <p>&nbsp;</p>
+      <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
+        <img src="https://guide.duosecurity.com/static/images/enrollment-phone.png" class="img-responsive"></div></div><p>&nbsp;</p></li>
+      <li>Double-check your phone number and then select the box marked "<strong>(###) ###-####</strong>&nbsp;is the correct phone number". Click <strong>Continue</strong>.</li>
+      <li>Choose phone operating system, "Other" and then click&nbsp;<strong>Continue</strong>.</li>
+      <li>A “Device successfully enrolled” message is displayed and the phone number of the registered device is indicated on your computer.</li>
+      <li>Your phone is now enrolled and can be used in the authentication process.</li>
+      <li>If you want to register other devices, click <strong>Enroll another device</strong>. Otherwise, click <strong>I’m done enrolling devices</strong>.</li>
+    </ol>
+  </div>
+</div>
+
+      
+<div class="row">
+<div class="col-md-12 col-sm-12">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a onclick="toggle_visibility('enroll-landline');">Enroll a Landline</a>
+      </h4>
+    </div>
+      
+  <div id="enroll-landline" class="panel-body" style="display:none">
+    
+    <ol>
+      <li>Open the <a href="https://webapps.case.edu/duo/webauth.py">Duo Security self-enrollment page</a> using a laptop or desktop computer.</li>
+      <li>When prompted, type in your CWRU network ID and password.</li>
+      <li>Click <strong>Start Setup</strong>.</li>
+      <li>Choose "Landline" as your device type and click&nbsp;<strong>Continue</strong>.</li>
+      <li>Type your 10 digit phone number and choose the country associated with it. Use number of the telephone you'll answer when logging in.<br>
+      <p>&nbsp;</p>
+      <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
+        <img src="https://guide.duosecurity.com/static/images/enrollment-phone.png" class="img-responsive"></div></div><p>&nbsp;</p></li>
+      <li>Double-check your phone number and then select the box marked "<strong>(###) ###-####</strong>&nbsp;is the correct phone number". Click <strong>Continue</strong>.</li>
+      <li>A “Device successfully enrolled” message is displayed and the phone number of the registered device is indicated on your computer.</li>
+      <li>Your phone is now enrolled and can be used in the authentication process.</li>
+      <li>If you want to register other devices, click <strong>Enroll another device</strong>. Otherwise, click <strong>I’m done enrolling devices</strong>.</li>
+    </ol>
+  </div>
+</div>
+
+<div class="row">
+<div class="col-md-12 col-sm-12">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
         <a onclick="toggle_visibility('enroll-tablet');">Enroll a Tablet</a>
       </h4>
     </div>
@@ -212,77 +276,6 @@ body { padding-top: 100px; }
   </div>
 </div>
 
-
-<div class="row">
-<div class="col-md-12 col-sm-12">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a onclick="toggle_visibility('enroll-mobile');">Enroll a Basic Mobile Phone</a>
-      </h4>
-    </div>
-      
-  <div id="enroll-mobile" class="panel-body" style="display:none">
-    
-    <p><strong>Add phone number to your Duo profile</strong></p>
-    <ol>
-      li>Open the <a href="https://webapps.case.edu/duo/webauth.py">Duo Security self-enrollment page</a> using a laptop or desktop computer.</li>
-      <li>When prompted, type in your CWRU network ID and password.</li>
-      <li>Click <strong>Start Setup</strong>.</li>
-      <li>Choose "Mobile phone" as your device type and click&nbsp;<strong>Continue</strong>.<br>
-      <p>&nbsp;</p>
-      <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
-        <img src="https://guide.duosecurity.com/static/images/enrollment-choose.png" class="img-responsive"></div></div><p>&nbsp;</p></li>
-      <li>Type your 10 digit phone number and choose the country associated with it. Use number of the telephone you'll answer when logging in.<br>
-      <p>&nbsp;</p>
-      <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
-        <img src="https://guide.duosecurity.com/static/images/enrollment-phone.png" class="img-responsive"></div></div><p>&nbsp;</p></li>
-      <li>Double-check your phone number and then select the box marked "<strong>(###) ###-####</strong>&nbsp;is the correct phone number". Click <strong>Continue</strong>.</li>
-      <li>Choose phone operating system, "Other" and then click&nbsp;<strong>Continue</strong>.</li>
-      <li>A “Device successfully enrolled” message is displayed and the phone number of the registered device is indicated on your computer.</li>
-      <li>Your phone is now enrolled and can be used in the authentication process.</li>
-      <li>If you want to register other devices, click <strong>Enroll another device</strong>. Otherwise, click <strong>I’m done enrolling devices</strong>.</li>
-    </ol>
-  </div>
-</div>
-
-      
-<div class="row">
-<div class="col-md-12 col-sm-12">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a onclick="toggle_visibility('enroll-landline');">Enroll a Landline</a>
-      </h4>
-    </div>
-      
-  <div id="enroll-landline" class="panel-body" style="display:none">
-    
-    <p><strong>Add phone number to your Duo profile</strong></p>
-    <ol>
-      li>Open the <a href="https://webapps.case.edu/duo/webauth.py">Duo Security self-enrollment page</a> using a laptop or desktop computer.</li>
-      <li>When prompted, type in your CWRU network ID and password.</li>
-      <li>Click <strong>Start Setup</strong>.</li>
-      <li>Choose "Mobile phone" as your device type and click&nbsp;<strong>Continue</strong>.<br>
-      <p>&nbsp;</p>
-      <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
-        <img src="https://guide.duosecurity.com/static/images/enrollment-choose.png" class="img-responsive"></div></div><p>&nbsp;</p></li>
-      <li>Type your 10 digit phone number and choose the country associated with it. Use number of the telephone you'll answer when logging in.<br>
-      <p>&nbsp;</p>
-      <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
-        <img src="https://guide.duosecurity.com/static/images/enrollment-phone.png" class="img-responsive"></div></div><p>&nbsp;</p></li>
-      <li>Double-check your phone number and then select the box marked "<strong>(###) ###-####</strong>&nbsp;is the correct phone number". Click <strong>Continue</strong>.</li>
-      <li>Choose phone operating system, "Other" and then click&nbsp;<strong>Continue</strong>.</li>
-      <li>Device enrolled.</li>
-    </ol>
-  </div>
-</div>
-
-
 <!-- New content arrangement -- Authenticate by Device -->
 
 <h3>Authenticate with a Supported Device</h3>
@@ -297,8 +290,36 @@ body { padding-top: 100px; }
     </div>
       
   <div id="use-iphone" class="panel-body" style="display:none">
-    <p>Self enrollment is available via multiple methods. Information Security recommends all users enroll the following two devices:</p>
-
+    <dl>
+      <dt>Use mobile application (Duo Push)</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+      <dt>Use mobile application (passcode)</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+      <dt>Use voice call</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+      <dt>Use text message (SMS)</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+    </dl>
   </div>
 </div>
 </div>
@@ -393,40 +414,9 @@ body { padding-top: 100px; }
 <!-- New content arrangement, Manage your account and Devices -->
 
 
-
-
-<!-- Content piece, "Enroll Additional Devices" -->
-
-<p id="enroll-additional-devices">&nbsp;</p>
-<ol>
-<li>To enroll additional devices, choose&nbsp;<strong>Enroll another device</strong>&nbsp;and repeat the process.</li>
-<li>To enroll a mobile phone that is NOT a smartphone, choose mobile phone, and "Other" as the OS type.</li>
-<li>Install the&nbsp;<strong>Duo Mobile</strong>&nbsp;application BEFORE you begin the enrollment process for an Android or iOS tablet.</li>
-</ol>
-
-
-<!-- Content piece, "Set a Default Device" -->
-
-<p id="set-a-default-device">&nbsp;</p>
-<blockquote>
-<p><strong>NOTE:</strong>&nbsp;After enrolling and naming devices, choose one as a default. Your default device receives all authentication requests (push notifications, calls or texts) when multiple devices are enrolled, unless specified otherwise at VPN sign in.</p>
-</blockquote>
-<ol>
-<li>Return to the device management interface.</li>
-<li>Click the gray&nbsp;<strong>Actions</strong>&nbsp;menu to the right of the newly added number.</li>
-<li>Choose "Set as default" to change this to your default authentication method.</li>
-<li>Click&nbsp;<strong>Done</strong>&nbsp;to save all changes and exit the device management interface.</li>
-</ol>
-<p><span style="text-decoration: underline;"><em><strong>Figure 10; Default device receives push notifications or call when multiple devices are enrolled</strong></em></span></p>
-<p><span style="text-decoration: underline;"><em><strong><br /></strong></em></span><span id="media-85692-0.2656413437635453" class="mceNonEditable" title="{attributes: {   &quot;alt&quot;: &quot;&quot;,   &quot;caption&quot;: &quot;&quot;,   &quot;cp-enable&quot;: &quot;false&quot;,   &quot;float&quot;: &quot;&quot;,   &quot;margin&quot;: &quot;&quot;,   &quot;widthpercentage&quot;: &quot;100&quot; }}"><span class="fig-img-" style="width: 100%;"><img class="fig-img" src="https://webcms.case.edu/terminalfour/SiteManager?ctfn=download&amp;fnno=60&amp;ceid=1580176917" alt="" /></span></span>&zwnj;</p>
-
-
 <!-- Content piece, "How to authenticate VPN sessions with DUO security" -->
 
 <p id="how-to-authenticate-vpn-sessions-with-duo-security">&nbsp;</p>
-<h4 id="before-you-begin-2">Before you begin</h4>
-<p>If you haven't already done so, install the Cisco AnyConnect VPN client on your laptop. The appropriate version is available in the Software Center. Make sure you have your previously enrolled mobile phone on and charged. Remember, VPN only works from off-campus or when using the&nbsp;<strong>Case Guest</strong>&nbsp;wireless network.</p>
-<h4 id="launch-cisco-anyconnect-vpn">Launch Cisco AnyConnect VPN</h4>
 <ol>
 <li>Launch the Cisco AnyConnect VPN client.</li>
 <li>Choose a supported VPN profile from the dropdown menu (supported profiles display a second password field.) The&nbsp;<strong>CaseDuo</strong>&nbsp;profile grants the same access as the&nbsp;<strong>Case</strong>&nbsp;profile (Figure 11).</li>
