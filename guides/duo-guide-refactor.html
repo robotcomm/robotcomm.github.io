@@ -297,7 +297,7 @@ body { padding-top: 100px; }
 <thead>
   <tr>
     <th rowspan="2"><span style="font-weight:normal;">Device</span></th>
-    <th><span style="font-weight:normal;">Method</span></th>
+    <th><span style="font-weight:normal; color=white;">Method</span></th>
     <th>Duo Push *</th>
     <th>Passcode</th>
     <th>Voice Call</th>
@@ -327,41 +327,24 @@ body { padding-top: 100px; }
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a onclick="toggle_visibility('auth-push');">Duo Push (mobile application)</a>
+        <a onclick="toggle_visibility('auth-push');">Duo Push (recommended)</a>
       </h4>
     </div>
       
   <div id="auth-push" class="panel-body" style="display:none">
-    <dl>
-      <dt>Use mobile application (Duo Push)</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-      <dt>Use mobile application (passcode)</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-      <dt>Use voice call</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-      <dt>Use text message (SMS)</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-    </dl>
+    <ol>
+      <li>Launch the Cisco AnyConnect VPN client.</li>
+      <li>Choose "Case" from the list of VPN profiles.</li>
+      <li>Type your CWRU Network ID and password in the boxes marked <strong>Username</strong> and <strong>Password</strong>, respectively.</li>
+      <li>Type the word "push" in the box marked <strong>Second Password</strong>.</li>
+      <li>Click <strong>Connect</strong>.</li>
+      <li>An alert will display on your smartphone or tablet.</li>
+      <li>Tap <strong>Accept</strong> to authenticate.</li>
+      <li>The network Acceptable Use Banner displays on your computer screen. Click <strong>Accept</strong> to finish.</li>
+      <li>VPN connection completed.</li>
+    </ol>
+  <p>&nbsp;</p>
+  <p>If you receive a login request on your phone or tablet that you did not request, Tap the red <strong>Deny</strong> button and then choose "It seems fraudulent" when prompted to alert <strong>Information Security</strong>. It is possible that your password has been compromised.</p>
   </div>
 </div>
 </div>
@@ -372,41 +355,23 @@ body { padding-top: 100px; }
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a onclick="toggle_visibility('auth-mobile-passcode');">Passcode (mobile application)</a>
+        <a onclick="toggle_visibility('auth-mobile-passcode');">Passcode</a>
       </h4>
     </div>
       
   <div id="auth-mobile-passcode" class="panel-body" style="display:none">
-    <dl>
-      <dt>Use mobile application (Duo Push)</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-      <dt>Use mobile application (passcode)</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-      <dt>Use voice call</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-      <dt>Use text message (SMS)</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-    </dl>
+    <p>Use mobile passcodes to authenticate if you have your smartphone or tablet, but do not have a mobile data connection (e.g., poor cellular reception).</p>
+    <ol>
+      <li>Open the Duo Mobile application on your smartphone or tablet.</li>
+      <li>Tap the key icon to generate a 6-digit passcode.</li>
+      <li>Launch the Cisco AnyConnect VPN client.</li>
+      <li>Choose "Case" from the list of VPN profiles.</li>
+      <li>Type your CWRU Network ID and password in the boxes marked <strong>Username</strong> and <strong>Password</strong>, respectively.</li>
+      <li>Type the passcode in the box marked <strong>Second Password</strong>.</li>
+      <li>Click <strong>Connect</strong>.</li>
+      <li>The network Acceptable Use Banner displays on your computer screen. Click <strong>Accept</strong> to finish.</li>
+      <li>VPN connection completed.</li>
+    </ol>
   </div>
 </div>
 </div>
@@ -422,36 +387,20 @@ body { padding-top: 100px; }
     </div>
       
   <div id="auth-call" class="panel-body" style="display:none">
-    <dl>
-      <dt>Use mobile application (Duo Push)</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-      <dt>Use mobile application (passcode)</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-      <dt>Use voice call</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-      <dt>Use text message (SMS)</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-    </dl>
+    <ol>
+      <li>Launch the Cisco AnyConnect VPN client.</li>
+      <li>Choose "Case" from the list of VPN profiles.</li>
+      <li>Type your CWRU Network ID and password in the boxes marked <strong>Username</strong> and <strong>Password</strong>, respectively.</li>
+      <li>Type the word "phone" in the box marked <strong>Second Password</strong>.</li>
+      <li>Click <strong>Connect</strong>.</li>
+      <li>Your will receive a telephone call from <code>216-368-2000</code> on the telephone number listed <strong>first</strong> in your Case Duo profile.</li>
+      <li>Answer the telephone and, when prompted, press any key to authenticate.</li>
+      <li>The network Acceptable Use Banner displays on your computer screen. Click <strong>Accept</strong> to finish.</li>
+      <li>VPN connection completed.</li>
+    </ol>
+  <p>&nbsp;</p>
+  <p>Although it is possible to call any phone number in your profile (e.g., type "phone2", "phone3", etc.) a more practical solution is to use the <strong>Manage Devices</strong> screen to change the order of your devices so that your voice-only phone (e.g., landline) appears <strong>before</strong> your basic cell phone and smartphone. This way, you do not need to remember the order of devices to reliably authenticate with your preferred method when using a multi-device account.</p>
+  <p><strong>NOTE:</strong> Because hardware tokens and tablets do not typically have an associated phone number, it does not matter where in the order of devices they appear in your profile. However, a basic cell phone should precede a smartphone, and follow a landline.</p>
   </div>
 </div>
 </div>
@@ -467,36 +416,20 @@ body { padding-top: 100px; }
     </div>
       
   <div id="auth-sms" class="panel-body" style="display:none">
-    <dl>
-      <dt>Use mobile application (Duo Push)</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-      <dt>Use mobile application (passcode)</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-      <dt>Use voice call</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-      <dt>Use text message (SMS)</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-    </dl>
+    <ol>
+      <li>Launch the Cisco AnyConnect VPN client.</li>
+      <li>Choose "Case" from the list of VPN profiles.</li>
+      <li>Type your CWRU Network ID and password in the boxes marked <strong>Username</strong> and <strong>Password</strong>, respectively.</li>
+      <li>Type the word "SMS" in the box marked <strong>Second Password</strong>.</li>
+      <li>Click <strong>Connect</strong>.</li>
+      <li>You will receive a series of single use passcodes on the SMS-capable phone listed <strong>first</strong> in your Case Duo profile.</li>
+      <li>Type the SMS passcode into the box marked <strong>Second Password</strong>.</li>
+      <li>The network Acceptable Use Banner displays on your computer screen. Click <strong>Accept</strong> to finish.</li>
+      <li>VPN connection completed.</li>
+    </ol>
+  <p>&nbsp;</p>
+  <p>Although it is possible to send SMS codes to any compatible device in your profile (e.g., type "SMS2", "SMS3", etc.), a more practical solution is to use the <strong>Manage Devices</strong> screen to change the order of your devices so that your basic cell phone appears <strong>before</strong> your your smartphone, but after a landline. This way, you do not need to remember the order of devices to reliably authenticate with your preferred method when using a multi-device account.</p>
+  <p><strong>NOTE:</strong> Because hardware tokens and tablets do not typically have an associated phone number, it does not matter where in the order of devices they appear in your profile.</p>
   </div>
 </div>
 </div>
@@ -512,124 +445,21 @@ body { padding-top: 100px; }
     </div>
       
   <div id="auth-token" class="panel-body" style="display:none">
-    <dl>
-      <dt>Use mobile application (Duo Push)</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-      <dt>Use mobile application (passcode)</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-      <dt>Use voice call</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-      <dt>Use text message (SMS)</dt>
-      <dd><p>&nbsp;</p>
-        <ol>
-          <li>step1</li>
-        </ol>
-      <p>&nbsp;</p>
-      </dd>
-    </dl>
+    <p>Hardware tokens are available for purchase. Contact ITS Information Security for details.</p>
+    <ol>
+      <li>Use your hardware key to generate a passcode.</li>
+      <li>Launch the Cisco AnyConnect VPN client.</li>
+      <li>Choose "Case" from the list of VPN profiles.</li>
+      <li>Type your CWRU Network ID and password in the boxes marked <strong>Username</strong> and <strong>Password</strong>, respectively.</li>
+      <li>Type the passcode in the box marked <strong>Second Password</strong>.</li>
+      <li>Click <strong>Connect</strong>.</li>
+      <li>The network Acceptable Use Banner displays on your computer screen. Click <strong>Accept</strong> to finish.</li>
+      <li>VPN connection completed.</li>
+    </ol>
   </div>
 </div>
 </div>
 </div>
-
-
-<!-- New content arrangement, Manage your account and Devices -->
-
-
-<!-- Content piece, "How to authenticate VPN sessions with DUO security" -->
-
-<p id="how-to-authenticate-vpn-sessions-with-duo-security">&nbsp;</p>
-<ol>
-<li>Launch the Cisco AnyConnect VPN client.</li>
-<li>Choose a supported VPN profile from the dropdown menu (supported profiles display a second password field.) The&nbsp;<strong>CaseDuo</strong>&nbsp;profile grants the same access as the&nbsp;<strong>Case</strong>&nbsp;profile (Figure 11).</li>
-<li>Enter your CWRU Network ID and password in the appropriate fields (Figure 12).</li>
-</ol>
-<p><span style="text-decoration: underline;"><em><strong>Figure 11; Choose a supported VPN profile</strong></em></span></p>
-<p><span style="text-decoration: underline;"><em><strong><span id="media-85657-0.8753659726390969" class="mceNonEditable"><span class="fig-img-"><img class="fig-img" src="https://webcms.case.edu/terminalfour/SiteManager?ctfn=download&amp;fnno=60&amp;ceid=1863575405" alt="" /></span></span></strong></em></span>&zwnj;</p>
-<p><span style="text-decoration: underline;"><em><strong>Figure 12; "Case Duo" profile, "Second Password" field displayed</strong></em></span></p>
-<p><span id="media-85652-0.582779324612769" class="mceNonEditable"><span class="fig-img-"><img class="fig-img" src="https://webcms.case.edu/terminalfour/SiteManager?ctfn=download&amp;fnno=60&amp;ceid=250724136" alt="" /></span></span>&zwnj;</p>
-<p>&nbsp;</p>
-<h4><span style="font-size: 1.17em;">Authenticate with DuoPush</span></h4>
-<ol>
-<li>Type "push" into the "Second Password" field.</li>
-<li>The Duo Mobile application will send an alert to your mobile phone.</li>
-<li>Tap&nbsp;<strong>View Now</strong>&nbsp;to display the alert.</li>
-<li>Tap&nbsp;<strong>Approve</strong>&nbsp;to complete the authentication cycle.</li>
-</ol>
-<p><span style="text-decoration: underline;"><em><strong>Figure 13; "View Now" displays a push alert &nbsp; &nbsp; Figure 13; Tap the green button to authenticate</strong></em></span></p>
-<p><span style="text-decoration: underline;"><em><strong><span id="media-85650-0.27365125932028056" class="mceNonEditable" title="{attributes: {&quot;border&quot;: &quot;&quot;, &quot;cp-enable&quot;: &quot;false&quot;,&quot;float&quot;: &quot;&quot;, &quot;height&quot;: &quot;400&quot;,&quot;width&quot;: &quot;300&quot;}}"><span class="fig-img-"><img class="fig-img" src="https://webcms.case.edu/terminalfour/SiteManager?ctfn=download&amp;fnno=60&amp;ceid=497620920" alt="" /></span></span></strong></em><strong>&zwnj;</strong></span> &nbsp; &nbsp; &nbsp;<span id="media-85649-0.23558608492785083" class="mceNonEditable"><span class="fig-img-"><img class="fig-img" src="https://webcms.case.edu/terminalfour/SiteManager?ctfn=download&amp;fnno=60&amp;ceid=1167902735" alt="" /></span></span>&zwnj;</p>
-<p>&nbsp;</p>
-<p><strong>NOTE:</strong><span>&nbsp;Tap the red&nbsp;</span><strong>Deny</strong><span>&nbsp;button and then choose "It seems fraudulent" when prompted if you did not initiate the login process. This will alert the Information Security team to a potential issue. An unsolicited push request indicates that your password may have been compromised.</span></p>
-<p><span style="text-decoration: underline;"><em><strong>Figure 14; Do not accept unsolicited sign in requests</strong></em></span></p>
-<p><span id="media-85693-0.11933359862906112" class="mceNonEditable"><span class="fig-img-"><img class="fig-img" src="https://webcms.case.edu/terminalfour/SiteManager?ctfn=download&amp;fnno=60&amp;ceid=112662934" alt="" /></span></span>&zwnj;</p>
-<p>&nbsp;</p>
-<h4 id="start-your-vpn-session">Start your VPN session</h4>
-<ol>
-<li>The VPN client will show the warning banner.</li>
-<li>Click&nbsp;<strong>Accept</strong>&nbsp;to start your VPN session.</li>
-</ol>
-<p><span style="text-decoration: underline;"><strong><em>Figure 15; VPN warning message- click Accept to start VPN session</em></strong></span></p>
-<p><span style="text-decoration: underline;"><strong><em><span id="media-85696-0.8600617226318275" class="mceNonEditable"><span class="fig-img-"><img class="fig-img" src="https://webcms.case.edu/terminalfour/SiteManager?ctfn=download&amp;fnno=60&amp;ceid=1198198973" alt="" /></span></span>&zwnj;</em></strong></span>&zwnj;</p>
-<p><br />&zwnj;&zwnj;&zwnj;</p>
-
-
-<!-- Content piece, "Alternative authentication methods" -->
-
-<p id="alternative-authentication-methods">&nbsp;</p>
-<h4 id="duo-mobile-with-passcode">Duo Mobile with passcode</h4>
-<ol>
-<li>Launch the Cisco AnyConnect VPN client and select choose a VPN profile.</li>
-<li>Enter your CWRU Network ID and password.</li>
-<li>Open the Duo Mobile application on your mobile phone.</li>
-<li>Tap the key icon to generate a 6-digit passcode.</li>
-<li>Type the passcode in the "Second Password" field and click&nbsp;<strong>Connect</strong>&nbsp;to complete the authentication cycle.</li>
-<li>Start your VPN session.</li>
-</ol>
-<p><span style="text-decoration: underline;"><em><strong>Figure 16; Tap the key icon to generate a passcode</strong></em></span></p>
-<p><span style="text-decoration: underline;"><em><strong><br /></strong></em></span><span id="media-85648-0.3009063641658567" class="mceNonEditable"><span class="fig-img-"><img class="fig-img" src="https://webcms.case.edu/terminalfour/SiteManager?ctfn=download&amp;fnno=60&amp;ceid=1281854520" alt="" /></span></span>&zwnj;</p>
-<p>&nbsp;</p>
-<h4 id="mobile-phone-with-text-message-sms">Mobile phone with text message (SMS)</h4>
-<blockquote>
-<p><strong>NOTE:</strong>&nbsp;Using SMS with the VPN requires the user to login twice, once to get the SMS code, and a second time to login with the code sent by the system.</p>
-</blockquote>
-<ol>
-<li>Launch the Cisco AnyConnect VPN client and select choose a VPN profile.</li>
-<li>Enter your CWRU Network ID and password.</li>
-<li>Type "sms" into the "Second Password" field and press the&nbsp;<code>Enter</code>&nbsp;key to send an authentication code to your default, SMS-capable device. Passcodes generated using this method expire in 5 minutes and may be used only once.</li>
-<li>Enter your your CWRU Network ID and password again.</li>
-<li>Type your passcode into the "Second Password" field and click&nbsp;<strong>Connect</strong>&nbsp;to complete the authentication cycle.</li>
-<li>Start your VPN session.</li>
-</ol>
-<h4 id="phone-with-voice-call-landline-or-mobile">Phone with voice call (landline or mobile)</h4>
-<ol>
-<li>Launch the Cisco AnyConnect VPN client and select choose a VPN profile.</li>
-<li>Enter your CWRU Network ID and password.</li>
-<li>Type "phone" in the "Second Password" field.</li>
-<li>Answer your phone and press any key to complete the authentication cycle.</li>
-<li>Start your VPN session.</li>
-</ol>
-<blockquote>
-<p><strong>NOTE:</strong>&nbsp;If multiple phones are enrolled, type "phone" and then the number that represents its place in the order of enrolled devices.</p>
-<p>Example: Three devices are enrolled in this order; an office phone, an Android tablet and a mobile phone. To place an authentication call to the mobile phone, type "phone3" in the "Second Password" field and click&nbsp;<strong>Connect</strong>. To authenticate using the office phone, type "phone1" in the "Second Password" field.</p>
-</blockquote>
-<hr />
-
-<!-- end section to revise -->
 
 <hr>
 
