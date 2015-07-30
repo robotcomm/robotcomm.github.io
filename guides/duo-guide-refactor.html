@@ -288,17 +288,17 @@ body { padding-top: 100px; }
     <li>Windows phones</li>
     <li>Basic cell phones with and without text msg capabilities</li>
     <li>Landlines, Softphones, etc.</li>
-    <li>Hardware tokens (e.g., Yubikey) *</li>
+    <li>Hardware tokens (e.g., Yubikey)</li>
   </ul>
-<p>&nbsp;</p>
 <p>Review the table below to identify what methods of authentication your enrolled devices support. Then, follow the instructions to authenticate a VPN session.</p>
+<p>&nbsp;</p>
 
 <table class="table table-striped table-condensed">
 <thead>
   <tr>
-    <td>Method</td>
-    <td>&nbsp;</td>
-    <th>Duo Push **</th>
+    <th>&nbsp;</th>
+    <th><span style="font-weight:normal;">Method</span></th>
+    <th>Duo Push *</th>
     <th>Passcode</th>
     <th>Voice Call</th>
     <th>Text Message (SMS)</th>
@@ -328,7 +328,7 @@ body { padding-top: 100px; }
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a onclick="toggle_visibility('auth-push');">iPhone &amp; iPad</a>
+        <a onclick="toggle_visibility('auth-push');">Duo Push (mobile application)</a>
       </h4>
     </div>
       
@@ -373,13 +373,41 @@ body { padding-top: 100px; }
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a onclick="toggle_visibility('use-android');">Android Phones &amp; Tablets</a>
+        <a onclick="toggle_visibility('auth-push');">Passcode (mobile application)</a>
       </h4>
     </div>
       
-  <div id="use-android" class="panel-body" style="display:none">
-    <p>Self enrollment is available via multiple methods. Information Security recommends all users enroll the following two devices:</p>
-
+  <div id="use-iphone" class="panel-body" style="display:none">
+    <dl>
+      <dt>Use mobile application (Duo Push)</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+      <dt>Use mobile application (passcode)</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+      <dt>Use voice call</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+      <dt>Use text message (SMS)</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+    </dl>
   </div>
 </div>
 </div>
@@ -390,13 +418,41 @@ body { padding-top: 100px; }
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a onclick="toggle_visibility('use-blackberry');">Blackberry Phones &amp; Tablets</a>
+        <a onclick="toggle_visibility('auth-push');">Voice Call</a>
       </h4>
     </div>
       
-  <div id="use-blackberry" class="panel-body" style="display:none">
-    <p>Self enrollment is available via multiple methods. Information Security recommends all users enroll the following two devices:</p>
-
+  <div id="use-iphone" class="panel-body" style="display:none">
+    <dl>
+      <dt>Use mobile application (Duo Push)</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+      <dt>Use mobile application (passcode)</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+      <dt>Use voice call</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+      <dt>Use text message (SMS)</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+    </dl>
   </div>
 </div>
 </div>
@@ -407,47 +463,41 @@ body { padding-top: 100px; }
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
-        <a onclick="toggle_visibility('use-windowsphone');">Windows Phones &amp; Tablets</a>
+        <a onclick="toggle_visibility('auth-push');">Text Message (SMS)</a>
       </h4>
     </div>
       
-  <div id="use-windowsphone" class="panel-body" style="display:none">
-    <p>Self enrollment is available via multiple methods. Information Security recommends all users enroll the following two devices:</p>
-
-  </div>
-</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-md-12 col-sm-12">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a onclick="toggle_visibility('use-cell');">Cell Phones &amp; Landlines</a>
-      </h4>
-    </div>
-      
-  <div id="use-cell" class="panel-body" style="display:none">
-    <p>Self enrollment is available via multiple methods. Information Security recommends all users enroll the following two devices:</p>
-
-  </div>
-</div>
-</div>
-</div>
-
-<div class="row">
-<div class="col-md-12 col-sm-12">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a onclick="toggle_visibility('use-token');">Hardware Token</a>
-      </h4>
-    </div>
-      
-  <div id="use-token" class="panel-body" style="display:none">
-    <p>Self enrollment is available via multiple methods. Information Security recommends all users enroll the following two devices:</p>
-
+  <div id="use-iphone" class="panel-body" style="display:none">
+    <dl>
+      <dt>Use mobile application (Duo Push)</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+      <dt>Use mobile application (passcode)</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+      <dt>Use voice call</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+      <dt>Use text message (SMS)</dt>
+      <dd><p>&nbsp;</p>
+        <ol>
+          <li>step1</li>
+        </ol>
+      <p>&nbsp;</p>
+      </dd>
+    </dl>
   </div>
 </div>
 </div>
