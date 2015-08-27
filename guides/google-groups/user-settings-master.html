@@ -33,7 +33,7 @@ h3 { padding-top: 20px; }
 <body>
 <div class="container">
 
-
+<h1>Google Groups <small>User Settings Guide</small></h1>
 <p class="lead">While each group is created with a specific set of attributes, many of the default settings can be modified by the group’s manager. These customizable attributes are accessed from the menu appearing on the left side of the group management screen, and are divided into four categories:</p>
 
 <ul>
@@ -43,245 +43,32 @@ h3 { padding-top: 20px; }
 	<li><strong>Information</strong> - controls how the group interacts with mail servers and appears on the web</li>
 </ul>
 
-<br>
-<div id="search-overview" class="row">
-<div class="col-md-4 col-sm-4">
-<strong>Search Options</strong><br>
-<ul>
-	<li>Network ID</li>
-	<li>Last Name</li>
-	<li>Full Name</li>
-	<li>Email (first.last)</li>
-	<li>Mail Alias</li>
-	<li>Forward</li>
-</ul>
-</div>
-<div class="col-md-4 col-sm-4">
-<strong>Comparison Options</strong><br>
-<ul>
-	<li>equals</li>
-	<li>starts with</li>
-	<li>contains</li>
-	<li>ends with</li>
-</ul>
-</div>
-<div class="col-md-4 col-sm-4">
-</div>
-</div>
-
-<div id="wildcard" class="row">
-<div class="col-md-12 col-sm-12">
-<br>
-<strong>Wildcard Search Values</strong>
-
-<p>Standard wildcard characters may be used in searches. Searches that return a large number records (e.g., <code>Network ID equals *</code>) will take a long time to complete and may cause the browser to time out.</p>
-<p>Wildcard searches are most useful when you do not know if a name has an unusual spelling, pronunciation, or is long and may have been shortened in some records (for example Shannon Huntington Smythe-Whitely => Shannon Huntington). A search like <code>Full name equals Shannon *huntington*</code> would reduce the selection set considerably but still produce useful results.</p><br>
-</div>
-</div>
-
-<div id="heading-1" class="row">
-<div class="col-md-12 col-sm-12">
-<h3>Lookup Tool Key</h3>
-</div>
-</div>
-
-<div id="key" class="row">
-<div class="col-md-4 col-sm-4">
-
-<div class="panel panel-default">
-  <!-- Default panel contents -->
-  <div class="panel-heading"><strong>Codes</strong></div>
-<table class="table table-striped">
-<tbody>
-<tr>
-	<td style="background-color: #808080;">&not;</td>
-	<td>
-	Never (affiliations)</br>
-	FALSE (<abbr title="Access Control List">ACL</abbr> bit)</br>
-	Disabled (account)</td>
-</tr>
-<tr>
-	<td style="background-color: #FFFF00;">&tilde;</td>
-	<td>Former (affiliations)<br>
-	Pending Reg. (account)</td>
-</tr>
-<tr>
-	<td style="background-color: #008000;">&bull;</td>
-	<td>Active (affiliations, account)<br>
-	TRUE (<abbr title="Access Control List">ACL</abbr> bit)</td>
-</tr>
-<tr>
-	<td style="background-color: #00FFFF;">&#x262f;</td>
-	<td>Grace Period, some services reduced (affiliations)</td>
-</tr>
-<tr>
-	<td style="background-color: #FAAFBA;">&#x262f;</td>
-	<td>New Hire</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-<br>
-<div class="panel panel-default">
-  <!-- Default panel contents -->
-  <div class="panel-heading"><strong>Forwarding Color Key</strong></div>
-<table class="table table-striped">
-<tbody>
-<tr>
-	<td style="background-color: #008000;">&nbsp;</td>
-	<td>Keep in Inbox</td>
-</tr>
-<tr>
-	<td style="background-color: #000000;">&nbsp;</td>
-	<td>Keep in Inbox, but mark read</td>
-</tr>
-<tr>
-	<td style="background-color: #0000FF;">&nbsp;</td>
-	<td>Archive to "All Mail" folder only</td>
-</tr>
-<tr>
-	<td style="background-color: #FFA500;">&nbsp;</td>
-	<td>Delete from Google</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<div class="col-md-4 col-sm-4">
-
-<div class="panel panel-default">
-  <!-- Default panel contents -->
-  <div class="panel-heading"><strong>Affiliations</strong></div>
-<table class="table table-striped">
-<tbody>
-<tr>
-	<td>F</td>
-	<td>Case Faculty</td>
-</tr>
-<tr>
-	<td>S</td>
-	<td>Case Staff</td>
-</tr>
-<tr>
-	<td>T</td>
-	<td>Case Student</td>
-</tr>
-<tr>
-	<td>P</td>
-	<td>Case Pre-admitted Student</td>
-</tr>
-<tr>
-	<td>E</td>
-	<td>Case Emeritus</td>
-</tr>
-<tr>
-	<td>A</td>
-	<td>Case Alum</td>
-</tr>
-<tr>
-	<td>f</td>
-	<td>Affiliate Faculty (e.g., CIM)</td>
-</tr>
-<tr>
-	<td>s</td>
-	<td>Affiliate Staff</td>
-</tr>
-<tr>
-	<td>t</td>
-	<td>Affiliate Student</td>
-</tr>
-<tr>
-	<td>o</td>
-	<td>Affiliate Other (e.g., Kelly Services Temp)</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<div class="col-md-4 col-sm-4">
-<div class="panel panel-default">
-  <!-- Default panel contents -->
-  <div class="panel-heading"><strong>Active Directory Codes</strong></div>
-<table class="table table-striped">
-<tbody>
-<tr>
-	<td style="background-color: #808080;">&not;</td>
-	<td>Not authorized for <abbr title="Active Directory">AD</abbr> account</td>
-</tr>
-<tr>
-	<td style="background-color: #008000;">&bull;</td>
-	<td>Authorized for <abbr title="Active Directory">AD</abbr>, account is ready to be used</td>
-</tr>
-<tr>
-	<td style="background-color: #FF0000;">S</td>
-	<td>Error occurred searching <abbr title="Active Directory">AD</abbr> for user</td>
-</tr>
-<tr>
-	<td style="background-color: #00FFFF;">&hellip;</td>
-	<td><abbr title="Active Directory">AD</abbr> account pending creation (user not found)</td>
-</tr>
-<tr>
-	<td style="background-color: #FFA500;">D</td>
-	<td>Authorized for <abbr title="Active Directory">AD</abbr>, account not yet active (disabled)</td>
-</tr>
-<tr>
-	<td style="background-color: #FFA500;">L</td>
-	<td><abbr title="Active Directory">AD</abbr> account locked (probably too many bad logins - will automatically unlock)</td>
-</tr>
-<tr>
-	<td style="background-color: #FFFF00;">P</td>
-	<td><abbr title="Single Sign-On">SSO</abbr> and <abbr title="Active Directory">AD</abbr> passwords not in sync</td>
-</tr>
-<tr>
-	<td style="background-color: #FFFF00;">N</td>
-	<td><abbr title="Active Directory">AD</abbr> and <abbr title="Lightweight Directory Access Protocol">LDAP</abbr> name information not in sync (first name, last name, or both different)</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-
-<div id="heading-2" class="row">
-<div class="col-md-12 col-sm-12">
-<h3>Lookup Fields, Detail</h3>
-</div>
-</div>
 
 <div id="detail" class="row">
 <div class="col-md-7 col-sm-7">
 <div class="panel panel-default">
   <!-- Default panel contents -->
-  <div class="panel-heading"><strong>General</strong></div>
+  <div class="panel-heading"><strong>Email options</strong></div>
 <table class="table table-striped">
 <tbody>
 <tr>
-	<td>Acct Active</td>
-	<td>Indicates whether user has an activated or administratively disabled (logins disabled) account</td>
-</tr>
+	<td>Subject prefix</td>
+	<td>desc</td></tr>
 <tr>
-	<td>Net ID</td>
-	<td>Case Network ID</td>
-</tr>
+	<td>Email footer</td>
+	<td>desc</td></tr>
 <tr>
-	<td>Name</td>
-	<td>Full legal name</td>
-</tr>
+	<td>Auto replies</td>
+	<td>desc</td></tr> 
 <tr>
-	<td>Last</td>
-	<td>Legal last name</td>
-</tr>
+	<td>Post replies</td>
+	<td>desc</td></tr>
 <tr>
-	<td>First</td>
-	<td>Legal first name</td>
-</tr>
+	<td>Max message size</td>
+	<td>desc</td></tr>
 <tr>
-	<td>MI</td>
-	<td>Middle initial</td>
-</tr>
+	<td>Bounced email notifications</td>
+	<td>desc</td></tr>
 </tbody>
 </table>
 </div>
@@ -290,21 +77,17 @@ h3 { padding-top: 20px; }
 
 <div class="panel panel-default">
   <!-- Default panel contents -->
-  <div class="panel-heading"><strong>General Mail Information</strong></div>
+  <div class="panel-heading"><strong>Identity</strong></div>
 
 <table class="table table-striped">
 
 <tr>
-	<td>Primary Email Address</td>
-	<td>Address	Primary email address for account, first.last@case.edu (FDL)</td>
+	<td>Required forms of identity</td>
+	<td>desc</td>
 </tr>
 <tr>
-	<td>Off Campus Email Address</td>
-	<td>Address	Off campus email address for account</td>
-</tr>
-<tr>
-	<td>Mail Aliases</td>
-	<td>Mail alias for account (personal mail aliases and preferred FDL)</td>
+	<td>Display names and email addresses</td>
+	<td>desc</td>
 </tr>
 </table>
 </div>
@@ -313,23 +96,19 @@ h3 { padding-top: 20px; }
 
 <div class="panel panel-default">
   <!-- Default panel contents -->
-  <div class="panel-heading"><strong>Mailbox - mailbox for account</strong></div>
+  <div class="panel-heading"><strong>Tags</strong></div>
 <table class="table table-striped">
 <tr>
-	<td><span style="color:green">Google</span></td>
-	<td>Mailbox exists and is active</td>
+	<td>Post rule</td>
+	<td>desc</td>
 </tr>
 <tr>
-	<td><span style="color:red">Google Expired</span></td>
-	<td>No active affiliations, Google account suspended</td>
+	<td>Number of tags per topic maximum</td>
+	<td>desc</td>
 </tr>
 <tr>
-	<td><span style="color:red">Bitbucket</span></td>
-	<td>No mailbox exists or not routed properly</td>
-</tr>
-<tr>
-	<td>N/A</td>
-	<td>Typically an off-campus mailbox like Link2Exchange</td>
+	<td>Tag suggestions</td>
+	<td>desc</td>
 </tr>
 </table>
 </div>
@@ -338,24 +117,24 @@ h3 { padding-top: 20px; }
 
 <div class="panel panel-default">
   <!-- Default panel contents -->
-  <div class="panel-heading"><strong>Mail Acct. Status - status of mail account</strong></div>
+  <div class="panel-heading"><strong>Moderation</strong></div>
 
 <table class="table table-striped">
 <tr>
-	<td><span style="color:green">Active</span></td>
-	<td>Mail should be flowing to the mailbox</td>
+	<td>Moderate messages</td>
+	<td>desc</td>
 </tr>
 <tr>
-	<td><span style="color:red">Disabled</span></td>
-	<td>Google account suspended</td>
+	<td>New member restrictions</td>
+	<td>desc</td>
 </tr>
 <tr>
-	<td>N/A</td>
-	<td>No route is set, no mailbox of any kind exists</td>
+	<td>Rejected author notifications</td>
+	<td>desc</td>
 </tr>
 <tr>
-	<td><span style="color:green">Routed</span></td>
-	<td>Mail routed off-campus (e.g., Link2Exchange)</td>
+	<td>Spam messages</td>
+	<td>desc</td>
 </tr>
 </table>
 </div>
@@ -364,15 +143,15 @@ h3 { padding-top: 20px; }
 
 <div class="panel panel-default">
   <!-- Default panel contents -->
-  <div class="panel-heading"><strong><abbr title="Post Office Protocol">POP</abbr>/<abbr title="Internet Message Access Protocol">IMAP</abbr>, Forwarding, Vacation</strong></div>
+  <div class="panel-heading"><strong>Categories</strong></div>
 
 <table class="table table-striped">
 <tr>
-	<td>P</td>
-	<td><abbr title="Post Office Protocol">POP</abbr>: enabled/disabled</td>
+	<td>Add a new category group</td>
+	<td>desc</td>
 </tr>
 <tr>
-	<td>I</td>
+	<td>Add a new category</td>
 	<td><abbr title="Internet Message Access Protocol">IMAP</abbr>: enabled/disabled</td>
 </tr>
 <tr>
