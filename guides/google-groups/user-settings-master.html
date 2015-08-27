@@ -33,7 +33,9 @@ h3 { padding-top: 20px; }
 <body>
 <div class="container">
 
-<h1>Google Groups <small>User Settings Guide</small></h1>
+<h1>Google Groups<br>
+<small>User Settings Guide</small></h1>
+
 <p>While each group is created with a specific set of attributes, many of the default settings can be modified by the group’s manager. These customizable attributes are accessed from the menu appearing on the left side of the group management screen, and are divided into four categories:</p>
 
 <ul>
@@ -43,8 +45,8 @@ h3 { padding-top: 20px; }
 	<li><strong>Information</strong> - controls how the group interacts with mail servers and appears on the web</li>
 </ul>
 
-
-<div id="detail" class="row">
+<!-- Settings start -->
+<div id="settings" class="row">
 <div class="col-md-12 col-sm-12">
 <h2>Settings</h2>
 <br>
@@ -148,7 +150,6 @@ h3 { padding-top: 20px; }
 <br>
 
 <div class="panel panel-default">
-  <!-- Default panel contents -->
   <div class="panel-heading"><strong>Categories</strong></div>
 
 <table class="table table-striped">
@@ -164,8 +165,171 @@ h3 { padding-top: 20px; }
 </div>
 </div>
 
-<!-- Permissions start -->
+
+<!-- Roles start -->
+<div id="roles" class="row">
+<div class="col-md-12 col-sm-12">
+<h2>Roles</h2>
+<br>
+</div>
+</div>
+
 <div id="detail" class="row">
+<div class="col-md-6 col-sm-6">
+
+<div class="panel panel-default">
+<div class="panel-heading"><strong>Google Groups default roles</strong></div>
+
+<table class="table table-striped">
+	<tr>
+	<td>Name</td>
+	<td>desc</td></tr>
+	
+	<tr>
+	<td>Description</td>
+	<td>desc</td></tr>
+	
+	<tr>
+	<td>Members (who currently hold this role)</td>
+	<td>desc</td></tr> 
+	
+	<tr>
+	<td>Permissions (will affect all users who hold this role)</td>
+	<td>desc</td></tr>
+</table>
+</div>
+
+<div class="col-md-6 col-sm-6">
+<div class="panel panel-default">
+
+<div class="panel-heading"><strong>User generated roles</strong></div>
+<table class="table table-striped">
+	<tr>
+	<td>Name</td>
+	<td>desc</td></tr>
+
+	<tr>
+	<td>Description</td>
+	<td>desc</td></tr>
+
+	<tr>
+	<td>Domain restriction</td>
+	<td>desc</td></tr>
+
+	<tr>
+	<td>Badge</td>
+	<td>desc</td></tr>
+
+	<tr>
+	<td>Members (who currently hold this role)</td>
+	<td>desc</td></tr>
+
+	<tr>
+	<td>Permissions (will affect all users who hold this role)</td>
+	<td>desc</td></tr>
+</table>
+</div>
+</div>
+</div>
+
+
+
+<!-- Information start -->
+<div id="information" class="row">
+<div class="col-md-12 col-sm-12">
+<h2>Information</h2>
+<br>
+</div>
+</div>
+
+<div id="detail" class="row">
+<div class="col-md-7 col-sm-7">
+
+<div class="panel panel-default">
+<div class="panel-heading"><strong>General informaation</strong></div>
+
+<table class="table table-striped">
+	<tr>
+	<td>Group name</td>
+	<td>desc</td></tr>
+	
+	<tr>
+	<td>Group email address</td>
+	<td>desc</td></tr>
+	
+	<tr>
+	<td>Group description</td>
+	<td>desc</td></tr> 
+	
+	<tr>
+	<td>Group's primary language</td>
+	<td>desc</td></tr>
+
+	<tr>
+	<td>Topic types</td>
+	<td>desc</td></tr>
+
+	<tr>
+	<td>Posting options</td>
+	<td>desc</td></tr>
+
+	<tr>
+	<td>Embedding your groups</td>
+	<td>desc</td></tr>
+</table>
+</div>
+
+
+<div class="panel panel-default">
+<div class="panel-heading"><strong>Directory</strong></div>
+
+<table class="table table-striped">
+	<tr>
+	<td>Group directory</td>
+	<td>desc</td></tr>
+</table>
+</div>
+
+<div class="col-md-5 col-sm-5">
+<div class="panel panel-default">
+
+<div class="panel-heading"><strong>Content control</strong></div>
+<table class="table table-striped">
+	<tr>
+	<td>Archive options</td>
+	<td>desc</td></tr>
+
+	<tr>
+	<td>Orphaned posts</td>
+	<td>desc</td></tr>
+</table>
+</div>
+
+<div class="panel-heading"><strong>Web view customization</strong></div>
+<table class="table table-striped">
+	<tr>
+	<td>Best answers</td>
+	<td>desc</td></tr>
+
+	<tr>
+	<td>Conversation mode</td>
+	<td>desc</td></tr>
+
+	<tr>
+	<td>Subject length</td>
+	<td>desc</td></tr>
+</table>
+</div>
+
+<div class="panel-heading"><strong>Advanced</strong></div>
+	<p>The options listed under this heading are controlled by the group owner and are not editable by the group's manager.</p>
+</div>
+
+</div>
+</div>
+
+<!-- Permissions start -->
+<div id="permissions" class="row">
 <div class="col-md-12 col-sm-12">
 <h2>Permissions</h2>
 <br>
@@ -173,7 +337,7 @@ h3 { padding-top: 20px; }
 </div>
 
 <div id="detail" class="row">
-<div class="col-md-7 col-sm-7">
+<div class="col-md-6 col-sm-6">
 
 <div class="panel panel-default">
 <div class="panel-heading"><strong>Basic permissions</strong></div>
@@ -264,8 +428,11 @@ h3 { padding-top: 20px; }
 	<td>desc</td></tr>
 </table>
 </div>
+</div>
 
-<br>
+
+<div class="col-md-6 col-sm-6">
+<div class="panel panel-default">
 
 <div class="panel panel-default">
   <div class="panel-heading"><strong>Access permissions</strong></div>
@@ -288,11 +455,8 @@ h3 { padding-top: 20px; }
 	<td>desc</td></tr>
 </table>
 </div>
-</div>
 
-
-<div class="col-md-5 col-sm-5">
-<div class="panel panel-default">
+<br>
 
 <div class="panel-heading"><strong>Moderate permissions</strong></div>
 <table class="table table-striped">
@@ -387,7 +551,6 @@ h3 { padding-top: 20px; }
 </div>
 </div>
 </div>
-
 
 <hr>
 
