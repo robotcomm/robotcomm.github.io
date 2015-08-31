@@ -62,11 +62,11 @@ h3 { padding-top: 20px; }
 <table class="table table-striped">
 	<tr>
 	<td>Subject prefix</td>
-	<td>desc</td></tr>
+	<td>This text will be displayed before whatever you type into the subject of a message.</td></tr>
 	
 	<tr>
 	<td>Email footer</td>
-	<td>desc</td></tr>
+	<td>What appears beneath each message from the group. By default, includes instructions for using the Google Group. Can also include a custom message with the large text box.</td></tr>
 	
 	<tr>
 	<td>Auto replies</td>
@@ -74,7 +74,7 @@ h3 { padding-top: 20px; }
 	
 	<tr>
 	<td>Post replies</td>
-	<td>desc</td></tr>
+	<td>Options for who sees users' replies to list emails.</td></tr>
 	
 	<tr>
 	<td>Max message size</td>
@@ -94,15 +94,39 @@ h3 { padding-top: 20px; }
 <table class="table table-striped">
 	<tr>
 	<td>Required forms of identity</td>
-	<td>desc</td></tr>
+	<td>Regulates under which identity authors of posts are identified; their chosen display name, their google profile name, or either.</td></tr>
 
 	<tr>
 	<td>Display names and email addresses</td>
-	<td>desc</td></tr>
+	<td>On/off setting to require that every user has a unique display name.</td></tr>
 </table>
 </div>
 </div>
 
+
+<div class="panel panel-default">
+  <div class="panel-heading"><strong>Moderation</strong></div>
+
+<table class="table table-striped">
+	<tr>
+	<td>Moderate messages</td>
+	<td>On/off setting to moderate messages sent to the group or not.</td></tr>
+
+	<tr>
+	<td>New member restrictions</td>
+	<td>Choose whether or not new users have restrictions placed on their ability to post.</td></tr>
+	
+	<tr>
+	<td>Rejected author notifications</td>
+	<td>Choose whether or not to notify users when moderators reject their post. Can write a custom message to send.</td></tr>
+
+	<tr>
+	<td>Spam messages</td>
+	<td>Options for what to do with messages that Google automatically flags as spam.</td></tr>
+</table>
+</div>
+
+<br>
 
 <div class="col-md-5 col-sm-5">
 <div class="panel panel-default">
@@ -111,39 +135,15 @@ h3 { padding-top: 20px; }
 <table class="table table-striped">
 	<tr>
 	<td>Post rule</td>
-	<td>desc</td></tr>
+	<td>On/off setting to restrict whether or not users have to enter at least one tag to post.</td></tr>
 
 	<tr>
 	<td>Number of tags per topic maximum</td>
-	<td>desc</td></tr>
+	<td>Choose how many tags users can put on each post. From 1 to 14.</td></tr>
 
 	<tr>
 	<td>Tag suggestions</td>
-	<td>desc</td></tr>
-</table>
-</div>
-
-<br>
-
-<div class="panel panel-default">
-  <div class="panel-heading"><strong>Moderation</strong></div>
-
-<table class="table table-striped">
-	<tr>
-	<td>Moderate messages</td>
-	<td>desc</td></tr>
-
-	<tr>
-	<td>New member restrictions</td>
-	<td>desc</td></tr>
-	
-	<tr>
-	<td>Rejected author notifications</td>
-	<td>desc</td></tr>
-
-	<tr>
-	<td>Spam messages</td>
-	<td>desc</td></tr>
+	<td>Suggested tags for users who post to the list to use.</td></tr>
 </table>
 </div>
 
@@ -183,19 +183,19 @@ h3 { padding-top: 20px; }
 <table class="table table-striped">
 	<tr>
 	<td>Name</td>
-	<td>desc</td></tr>
+	<td>Owner, Manger, Member. Cannot change.</td></tr>
 	
 	<tr>
 	<td>Description</td>
-	<td>desc</td></tr>
+	<td>Default description is a barebones description of the role and cannot be modified.</td></tr>
 	
 	<tr>
 	<td>Members (who currently hold this role)</td>
-	<td>desc</td></tr> 
+	<td>Searchable list of members with that role. Button allows you to add members to this role with a searchable list of the whole group's members.</td></tr> 
 	
 	<tr>
 	<td>Permissions (will affect all users who hold this role)</td>
-	<td>desc</td></tr>
+	<td>List of permissions for the role. Can be modified via the edit button next to "Permissions."</td></tr>
 </table>
 </div>
 </div>
@@ -207,27 +207,27 @@ h3 { padding-top: 20px; }
 <table class="table table-striped">
 	<tr>
 	<td>Name</td>
-	<td>desc</td></tr>
+	<td>Enter a name for your role.</td></tr>
 
 	<tr>
 	<td>Description</td>
-	<td>desc</td></tr>
+	<td>Provide a short description of the role's purpose, possibly add an example of who would hold the role.</td></tr>
 
 	<tr>
 	<td>Domain restriction</td>
-	<td>desc</td></tr>
+	<td>Restrict who can have this role based on the domain of their email address. For example, @case.edu or @gmail.com.</td></tr>
 
 	<tr>
 	<td>Badge</td>
-	<td>desc</td></tr>
+	<td>Select a photo to be used as the icon for this role. Can choose whether or not to display the badge next to member names and a rank for this role.</td></tr>
 
 	<tr>
 	<td>Members (who currently hold this role)</td>
-	<td>desc</td></tr>
+	<td>Searchable list of members with that role. Button allows you to add members to this role with a searchable list of the whole group's members.</td></tr>
 
 	<tr>
 	<td>Permissions (will affect all users who hold this role)</td>
-	<td>desc</td></tr>
+	<td>Add privileges for the role. By default the role will not have any special privileges at all. Can be added in the edit menu.</td></tr>
 </table>
 </div>
 </div>
@@ -247,36 +247,36 @@ h3 { padding-top: 20px; }
 <div class="col-md-7 col-sm-7">
 
 <div class="panel panel-default">
-<div class="panel-heading"><strong>General informaation</strong></div>
+<div class="panel-heading"><strong>General information</strong></div>
 
 <table class="table table-striped">
 	<tr>
 	<td>Group name</td>
-	<td>desc</td></tr>
+	<td>Edit the group's name.</td></tr>
 	
 	<tr>
 	<td>Group email address</td>
-	<td>desc</td></tr>
+	<td>Edit the group's email address.</td></tr>
 	
 	<tr>
 	<td>Group description</td>
-	<td>desc</td></tr> 
+	<td>Provide a description of the purpose of the group.</td></tr> 
 	
 	<tr>
 	<td>Group's primary language</td>
-	<td>desc</td></tr>
+	<td>Drop-down to select the primary language of the group. Changes the language of the pre-made messages included in each email.</td></tr>
 
 	<tr>
 	<td>Topic types</td>
-	<td>desc</td></tr>
+	<td>Choose the topic types that are allowed and which one will be selected by default.</td></tr>
 
 	<tr>
 	<td>Posting options</td>
-	<td>desc</td></tr>
+	<td>Choose where users can post to the group from.</td></tr>
 
 	<tr>
 	<td>Embedding your groups</td>
-	<td>desc</td></tr>
+	<td>HTML that you can copy into a web page's source HTML to embed a link to the group into an external web page.</td></tr>
 </table>
 </div>
 
@@ -287,7 +287,7 @@ h3 { padding-top: 20px; }
 <table class="table table-striped">
 	<tr>
 	<td>Group directory</td>
-	<td>desc</td></tr>
+	<td>Choose whether or not to list this group in the directory of Case domain google groups.</td></tr>
 </table>
 </div>
 </div>
@@ -299,7 +299,7 @@ h3 { padding-top: 20px; }
 <table class="table table-striped">
 	<tr>
 	<td>Archive options</td>
-	<td>desc</td></tr>
+	<td>Choose whether or not to archive posts to the group.</td></tr>
 
 	<tr>
 	<td>Orphaned posts</td>
@@ -312,15 +312,15 @@ h3 { padding-top: 20px; }
 <table class="table table-striped">
 	<tr>
 	<td>Best answers</td>
-	<td>desc</td></tr>
+	<td>Choose whether or not to prioritize displaying best answers over other replies to a post.</td></tr>
 
 	<tr>
 	<td>Conversation mode</td>
-	<td>desc</td></tr>
+	<td>Choose whether or not emails are grouped into threads based on subject.</td></tr>
 
 	<tr>
 	<td>Subject length</td>
-	<td>desc</td></tr>
+	<td>Choose a maximum length for the subject line of posts to the group.</td></tr>
 </table>
 </div>
 
@@ -349,23 +349,23 @@ h3 { padding-top: 20px; }
 <table class="table table-striped">
 	<tr>
 	<td>View topics</td>
-	<td>desc</td></tr>
+	<td>Choose which roles within the group can view topics.</td></tr>
 	
 	<tr>
 	<td>Post</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can post to the group./td></tr>
 	
 	<tr>
 	<td>Join the group</td>
-	<td>desc</td></tr> 
+	<td>Change who can join the group and what conditions have to be met to join.</td></tr> 
 	
 	<tr>
 	<td>Allow members external to this organiztion</td>
-	<td>desc</td></tr>
+	<td>Choose whether or not email addresses outside of Case's domain can be members of the group.</td></tr>
 	
 	<tr>
 	<td>New member question</td>
-	<td>desc</td></tr>
+	<td>Write a question that users who request to join the group can answer to determine whether or not they qualify to join.</td></tr>
 </table>
 </div>
 
@@ -377,59 +377,59 @@ h3 { padding-top: 20px; }
 <table class="table table-striped">
 	<tr>
 	<td>Add references</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can add references to topics.</td></tr>
 
 	<tr>
 	<td>Assign topics</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can assign topics in a forum to another user.</td></tr>
 
 	<tr>
 	<td>Attach files</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can attach files to posts.</td></tr>
 
 	<tr>
 	<td>Enter free form tags</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can enter free form tags for topics in a forum.</td></tr>
 
 	<tr>
 	<td>Have custom profile photos</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can have custom profile photos.</td></tr>
 
 	<tr>
 	<td>Mark favorite reply on own topic</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can mark a reply to one of their topics as a favorite reply.</td></tr>
 
 	<tr>
 	<td>Me too topic</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can "bump" a question with the Me Too feature.</td></tr>
 
 	<tr>
 	<td>Post</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can post messages to the group.</td></tr>
 
 	<tr>
 	<td>Post annoucements</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can post announcements to the group.</td></tr>
 
 	<tr>
 	<td>Post as the group</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can anonymously post and reply as the group.</td></tr>
 
 	<tr>
 	<td>Post rich text format</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can post in rich text format.</td></tr>
 
 	<tr>
 	<td>Reply to author</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can reply privately to the author of a topic.</td></tr>
 
 	<tr>
 	<td>Reply to auto-closed topic</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can reply to topics that have been automatically closed.</td></tr>
 
 	<tr>
 	<td>Use canned responses</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can use canned responses to reply to topics.</td></tr>
 </table>
 </div>
 </div>
@@ -443,19 +443,19 @@ h3 { padding-top: 20px; }
 <table class="table table-striped">
 	<tr>
 	<td>Contact the owners of this group</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can contact the owner(s) of the group.</td></tr>
 
 	<tr>
 	<td>View members</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can view the members of the group.</td></tr>
 	
 	<tr>
 	<td>View member email addresses</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can view members' email addresses.</td></tr>
 
 	<tr>
 	<td>View topics</td>
-	<td>desc</td></tr>
+	<td>Choose which roles can view the topics in the group.</td></tr>
 </table>
 </div>
 
@@ -466,7 +466,7 @@ h3 { padding-top: 20px; }
 <table class="table table-striped">
 	<tr>
 	<td>Add members</td>
-	<td>desc</td></tr>
+	<td></td></tr>
 
 	<tr>
 	<td>Approve members</td>
