@@ -7,34 +7,54 @@
  <title>Google Groups Settings Guide</title>
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+
+<script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+//-->
+</script>
+
 
 <style>
+
 h2 { padding-top: 30px; }
 h3 { padding-top: 20px; }
-
-/*.copy-left {
-  display: inline-block;
-  text-align: right;
-  margin: 0;
- -moz-transform: scaleX(-1);
- -o-transform: scaleX(-1);
- -webkit-transform: scaleX(-1);
- transform: scaleX(-1);
- filter: FlipH;
- -ms-filter: "FlipH";
- }*/
+body { padding-top: 100px; }
 
 </style>
 
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
 </head>
+
+<nav class="navbar navbar-default navbar-fixed-top" style="  background-color: #0a304e;">
+  	<div class="container">
+		<div class="row">
+		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+			<div class="visible-xs visible-sm visible-md hidden-lg">
+				<h1 style="color: white">Groups <small style="color: #c8d1d7">Settings Guide</small></h1></div>
+			<div class="visible-lg hidden-xs hidden-sm hidden-md">
+				<h1 style="color: white">Google Groups
+				<small style="color: #c8d1d7">User Settings Guide</small></h1></div>
+		</div>
+		</div>
+ 	</div>
+</nav>
+
 
 <body>
 <div class="container">
 
-<h1>Google Groups<br>
-<small>User Settings Guide</small></h1>
+<button onclick="javascript:window.print()" type="button" class="btn btn-default hidden-xs"><span class="glyphicon glyphicon-print"></span> Print</button>
+<p>&nbsp;</p>
 
 <p>While each group is created with a specific set of attributes, many of the default settings can be modified by the group’s manager. These customizable attributes are accessed from the menu appearing on the left side of the group management screen, and are divided into four categories:</p>
 
@@ -48,12 +68,12 @@ h3 { padding-top: 20px; }
 <!-- Settings start -->
 <div id="settings" class="row">
 <div class="col-md-12 col-sm-12">
-<h2>Settings</h2>
+<h2><a onclick="toggle_visibility('settings-detail');">Settings</a></h2>
 <br>
 </div>
 </div>
 
-<div id="detail" class="row">
+<div id="settings-detail" class="row" style="display:none">
 <div class="col-md-7 col-sm-7">
 
 <div class="panel panel-default">
@@ -167,12 +187,12 @@ h3 { padding-top: 20px; }
 <!-- Roles start -->
 <div id="roles" class="row">
 <div class="col-md-12 col-sm-12">
-<h2>Roles</h2>
+<h2><a onclick="toggle_visibility('roles-detail');">Roles</a></h2>
 <br>
 </div>
 </div>
 
-<div id="detail" class="row">
+<div id="roles-detail" class="row" style="display:none">
 <div class="col-md-6 col-sm-6">
 
 <div class="panel panel-default">
@@ -236,12 +256,12 @@ h3 { padding-top: 20px; }
 <!-- Information start -->
 <div id="information" class="row">
 <div class="col-md-12 col-sm-12">
-<h2>Information</h2>
+<h2><a onclick="toggle_visibility('information-detail');">Information</a></h2>
 <br>
 </div>
 </div>
 
-<div id="detail" class="row">
+<div id="information-detail" class="row" style="display:none">
 <div class="col-md-7 col-sm-7">
 
 <div class="panel panel-default">
@@ -333,12 +353,12 @@ h3 { padding-top: 20px; }
 <!-- Permissions start -->
 <div id="permissions" class="row">
 <div class="col-md-12 col-sm-12">
-<h2>Permissions</h2>
+<h2><a onclick="toggle_visibility('permissions-detail');">Permissions</a></h2>
 <br>
 </div>
 </div>
 
-<div id="detail" class="row">
+<div id="permissions-detail" class="row" style="display:none">
 <div class="col-md-6 col-sm-6">
 
 <div class="panel panel-default">
