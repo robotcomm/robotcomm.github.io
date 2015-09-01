@@ -57,31 +57,17 @@ body { padding-top: 100px; }
 
 <p>While each group is created with a specific set of attributes, many of the default settings can be modified by the group’s manager. These customizable attributes are accessed from the menu appearing on the left side of the group management screen, and are divided into four categories:</p>
 
-<!-- <ul>
-	<li><strong>Settings</strong> - controls group appearance and behavior with regard to members</li>
-	<li><strong>Permissions</strong> - determines the degree of control a user or role has with regard to group settings</li>
-	<li><strong>Roles</strong> - controls settings and permissions for a named class of users</li>
-	<li><strong>Information</strong> - controls how the group interacts with mail servers and appears on the web</li>
-</ul>
- -->
-<!-- Settings start -->
-<!-- <div id="settings" class="row">
-<div class="col-md-12 col-sm-12">
-<h2><a onclick="toggle_visibility('settings-detail');">Settings</a></h2>
-</div>
-</div> -->
 
-<div class="well well-sm">
+<!-- Settings start -->
 	<h3>
-		<a onclick="toggle_visibility('settings-detail');"><span class="pull-left">Settings</span><span class="glyphicon glyphicon-cog pull-right"></span></a>
+		<a onclick="toggle_visibility('settings-detail');"><span class="pull-left">Settings <span class="glyphicon glyphicon-wrench"></span> ... </span></a>
 	</h3>
-</div>
 
 <div id="settings-detail" style="display:none">
 <hr>
 
 <div id="settings-header" class="row">
-<div class="col-md-12 col-sm-12"><p class="lead">controls group appearance and behavior with regard to members</p></div></div>
+<div class="col-md-12 col-sm-12"><p class="lead">Settings control group appearance and behavior with regard to members</p></div></div>
 
 <div id="settings-table" class="row">
 <div class="col-md-7 col-sm-7">
@@ -195,17 +181,18 @@ body { padding-top: 100px; }
 </div>
 
 <!-- Roles start -->
-<div id="roles" class="row">
-<div class="col-md-12 col-sm-12">
-<h2><a onclick="toggle_visibility('roles-detail');">Roles</a></h2>
+	<h3>
+		<a onclick="toggle_visibility('roles-detail');"><span class="pull-left">Roles <span class="glyphicon glyphicon-user"></span> ... </span></a>
+	</h3>
 
-</div>
-</div>
+<div id="roles-detail" style="display:none">
+<hr>
 
-<div id="roles-detail" class="row" style="display:none">
+<div id="roles-header" class="row">
+<div class="col-md-12 col-sm-12"><p class="lead">Roles control settings and permissions for a named class of users</p></div></div>
+
+<div id="roles-table" class="row">
 <div class="col-md-6 col-sm-6">
-
-<p class="lead">controls settings and permissions for a named class of users</p>
 
 <div class="panel panel-default">
 <div class="panel-heading"><strong>Google Groups default roles</strong></div>
@@ -262,21 +249,23 @@ body { padding-top: 100px; }
 </div>
 </div>
 </div>
-
+</div>
 
 
 <!-- Information start -->
-<div id="information" class="row">
-<div class="col-md-12 col-sm-12">
-<h2><a onclick="toggle_visibility('information-detail');">Information</a></h2>
 
-</div>
-</div>
+	<h3>
+		<a onclick="toggle_visibility('information-detail');"><span class="pull-left">Information <span class="glyphicon glyphicon-cog"></span> ... </span></a>
+	</h3>
 
-<div id="information-detail" class="row" style="display:none">
+<div id="information-detail" style="display:none">
+<hr>
+
+<div id="information-header" class="row">
+<div class="col-md-12 col-sm-12"><p class="lead">This class of controls determines how the group interacts with mail servers and appears on the web</p></div></div>
+
+<div id="information-table" class="row">
 <div class="col-md-7 col-sm-7">
-
-<p class="lead">controls how the group interacts with mail servers and appears on the web</p>
 
 <div class="panel panel-default">
 <div class="panel-heading"><strong>General information</strong></div>
@@ -365,19 +354,20 @@ body { padding-top: 100px; }
 </div>
 
 <!-- Permissions start -->
-<div id="permissions" class="row">
-<div class="col-md-12 col-sm-12">
-<h2><a onclick="toggle_visibility('permissions-detail');">Permissions</a></h2>
-
-</div>
-</div>
-
-<div id="permissions-detail" class="row" style="display:none">
 
 
+	<h3>
+		<a onclick="toggle_visibility('permissions-detail');"><span class="pull-left">Permissions <span class="glyphicon glyphicon-lock"></span> ... </span></a>
+	</h3>
+
+<div id="permissions-detail" style="display:none">
+<hr>
+
+<div id="permissions-header" class="row">
+<div class="col-md-12 col-sm-12"><p class="lead">Permissions determine the degree of control a user (or role) has over group settings</p></div></div>
+<div id="permissions-table" class="row">
 <div class="col-md-6 col-sm-6">
 
-<p class="lead">determines the degree of control a user or role has with regard to group settings</p>
 
 <div class="panel panel-default">
 <div class="panel-heading"><strong>Basic permissions</strong></div>
@@ -389,14 +379,14 @@ body { padding-top: 100px; }
 	
 	<tr>
 	<td>Post</td>
-	<td>Choose which roles can post to the group./td></tr>
+	<td>Choose which roles can post to the group.</td></tr>
 	
 	<tr>
 	<td>Join the group</td>
 	<td>Change who can join the group and what conditions have to be met to join.</td></tr> 
 	
 	<tr>
-	<td>Allow members external to this organiztion</td>
+	<td>Allow members external to this organization</td>
 	<td>Choose whether or not email addresses outside of Case's domain can be members of the group.</td></tr>
 	
 	<tr>
@@ -588,6 +578,7 @@ body { padding-top: 100px; }
 	<td>Unmark favorite reply on any topic</td>
 	<td>Choose which roles can un-pin any favorited post.</td></tr>
 </table>
+</div>
 </div>
 </div>
 </div>
