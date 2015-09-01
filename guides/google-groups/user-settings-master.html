@@ -65,16 +65,22 @@ body { padding-top: 100px; }
 </ul>
  -->
 <!-- Settings start -->
-<div id="settings" class="row">
+<!-- <div id="settings" class="row">
 <div class="col-md-12 col-sm-12">
 <h2><a onclick="toggle_visibility('settings-detail');">Settings</a></h2>
 </div>
+</div> -->
+
+
+<a onclick="toggle_visibility('settings-detail');" class="btn btn-primary btn-lg btn-block">Settings</a>
+
+<div id="settings-detail" style="display:none">
+<div id="settings-header" class="row">
+<div class="col-md-12 col-sm-12"><p class="lead">controls group appearance and behavior with regard to members</p></div>
 </div>
 
-<div id="settings-detail" class="row" style="display:none">
+<div id="settings-table" class="row">
 <div class="col-md-7 col-sm-7">
-
-<p class="lead">controls group appearance and behavior with regard to members</p>
 
 <div class="panel panel-default">
 <div class="panel-heading"><strong>Email options</strong></div>
