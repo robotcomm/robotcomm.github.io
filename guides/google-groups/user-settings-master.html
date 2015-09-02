@@ -55,12 +55,13 @@ body { padding-top: 100px; }
 <button onclick="javascript:window.print()" type="button" class="btn btn-default hidden-xs"><span class="glyphicon glyphicon-print"></span> Print</button>
 <p>&nbsp;</p>
 
-<p>While each group is created with a specific set of attributes, many of the default settings can be modified by the group’s manager. These customizable attributes are accessed from the menu appearing on the left side of the group management screen, and are divided into four categories:</p>
+<p>While each group is created with a specific set of attributes, many of the default settings can be modified by the group’s manager.</p>
+<p>These customizable attributes are accessed from the menu appearing on the left side of the group management screen, and are divided into four categories:</p>
 
 
 <!-- Settings start -->
 <div class="row">
-<div class="col-md-5 col-sm-5">
+ <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
 	<h3>
 		<a onclick="toggle_visibility('settings-detail');"><span class="pull-left">1. Settings </span><span class="glyphicon glyphicon-wrench pull-right"></span></a>
 	</h3>
@@ -72,7 +73,9 @@ body { padding-top: 100px; }
 
 
 <div id="settings-header" class="row">
-<div class="col-md-12 col-sm-12"><p class="lead">Settings control group appearance and behavior with regard to members</p></div></div>
+<div class="col-md-12 col-sm-12">
+<p>&nbsp;</p>
+<p class="lead">Settings control group appearance and behavior with regard to members</p></div></div>
 
 <hr>
 
@@ -85,7 +88,8 @@ body { padding-top: 100px; }
 <table class="table table-striped">
 	<tr>
 	<td>Subject prefix</td>
-	<td>This text will be displayed before whatever you type into the subject of a message.</td></tr>
+	<td>This text will be displayed before whatever you type into the subject of a message.
+	<p><strong>Default</strong>: blank</p></td></tr>
 	
 	<tr>
 	<td>Email footer</td>
@@ -126,7 +130,7 @@ body { padding-top: 100px; }
 </div>
 </div>
 
-<div class="col-md-5 col-sm-5">
+ <div class="col-md-5 col-sm-5">
 
 <div class="panel panel-default">
   <div class="panel-heading"><strong>Moderation</strong></div>
@@ -190,7 +194,7 @@ body { padding-top: 100px; }
 <!-- Roles start -->
 
 <div class="row">
-<div class="col-md-5 col-sm-5">
+ <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
 	<h3>
 		<a onclick="toggle_visibility('roles-detail');"><span class="pull-left">2. Roles  </span><span class="glyphicon glyphicon-user pull-right"></span></a>
 	</h3>
@@ -200,7 +204,9 @@ body { padding-top: 100px; }
 <div id="roles-detail" style="display:none">
 
 <div id="roles-header" class="row">
-<div class="col-md-12 col-sm-12"><p class="lead">Roles control settings and permissions for a named class of users</p></div></div>
+<div class="col-md-12 col-sm-12">
+<p>&nbsp;</p>
+<p class="lead">Roles control settings and permissions for a named class of users</p></div></div>
 
 <hr>
 
@@ -268,7 +274,7 @@ body { padding-top: 100px; }
 <!-- Information start -->
 
 <div class="row">
-<div class="col-md-5 col-sm-5">
+ <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
 	<h3>
 		<a onclick="toggle_visibility('information-detail');"><span class="pull-left">3. Information </span><span class="glyphicon glyphicon-cog pull-right"></span></a>
 	</h3>
@@ -279,7 +285,9 @@ body { padding-top: 100px; }
 <hr>
 
 <div id="information-header" class="row">
-<div class="col-md-12 col-sm-12"><p class="lead">This class of controls determines how the group interacts with mail servers and appears on the web</p></div></div>
+<div class="col-md-12 col-sm-12">
+<p>&nbsp;</p>
+<p class="lead">This class of controls determines how the group interacts with mail servers and appears on the web</p></div></div>
 
 <div id="information-table" class="row">
 <div class="col-md-7 col-sm-7">
@@ -330,7 +338,7 @@ body { padding-top: 100px; }
 </div>
 </div>
 
-<div class="col-md-5 col-sm-5">
+ <div class="col-md-5 col-sm-5">
 
 <div class="panel panel-default">
 <div class="panel-heading"><strong>Content control</strong></div>
@@ -374,7 +382,7 @@ body { padding-top: 100px; }
 <!-- Permissions start -->
 
 <div class="row">
-<div class="col-md-5 col-sm-5">
+ <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
 	<h3>
 		<a onclick="toggle_visibility('permissions-detail');"><span class="pull-left">4. Permissions </span><span class="glyphicon glyphicon-lock pull-right"></span></a>
 	</h3>
@@ -385,10 +393,12 @@ body { padding-top: 100px; }
 <hr>
 
 <div id="permissions-header" class="row">
-<div class="col-md-12 col-sm-12"><p class="lead">Permissions determine the degree of control a user (or role) has over group settings</p></div></div>
+<div class="col-md-12 col-sm-12">
+<p>&nbsp;</p>
+<p class="lead">Permissions determine the degree of control a user (or role) has over group settings</p></div></div>
+
 <div id="permissions-table" class="row">
 <div class="col-md-6 col-sm-6">
-
 
 <div class="panel panel-default">
 <div class="panel-heading"><strong>Basic permissions</strong></div>
