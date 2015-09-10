@@ -36,20 +36,22 @@ h3 { padding-top: 20px; }
 <p>Applications | External applications | IPT</p>
 
 <p><strong>Keywords</strong> <br>
-IPT; Intern placement tracking; MSASS; Password reset; Password; Reset</p>
+Field instructor; IPT; Intern placement tracking; MSASS; Password reset; Password; Reset; Social work</p>
 
 <h1>Intern Placement Tracking (IPT)<br>
 <small>End User (MSASS) Support</span></small></h1>
 <p>Intern Placement Tracking (IPT) is used to student time spent in the field. The application is administered by staff and faculty (e.g., field advisors) in the Mandel School.</p>
-<p>The ITS Service Desk will facilitate IPT password reset requests, only.</p>
 
 <h3>Troubleshoot</h3>
-  <p><a href="#lost-password">Reset a Lost Password</a><br>
+  <p><a href="#lost-password-student">Reset a Lost Password (student)</a><br>
+  <a href="#lost-password">Reset a Lost Password (field instructor)</a><br>
   <a href="#url">URL for IPT</a><br>
   <a href="#field">Questions Related to Field Experience</a><br>
+  <a href="#survey">Questions Related to Evaluation Forms</a><br>
   <a href="#other">Other Technical Issues</a><br>
-  <a href="#moodle">Issues with Moodle</a></p>
-
+  
+<h3>Activate + Setup + Install</h3>
+  <p><a href="#new-account">New IPT Accounts</a></p>
 
 
 <hr>
@@ -60,9 +62,42 @@ IPT; Intern placement tracking; MSASS; Password reset; Password; Reset</p>
   <li>Name</li>
   <li>Contact information (preferred and alternate)</li>
   <li>Case Network ID</li>
+  <li>Case Email Address</li>
   <li>Location</li>
   <li>Problem or Request description</li>
 </ul>
+
+<strong>Identity Verification Steps</strong>
+<p id="verification">Please note, you must verify <mark>ALL</mark> users before providing any account information.</p>
+<ol>
+  <li>Determine user <strong>role</strong> (e.g., student, field instructor).</li>
+  <li><strong>Students</strong>
+    <ol>
+    <li><p>To verify, user should be able to correctly confirm without prompting:</p>
+    <ul>
+      <li>Name</li>
+      <li>Network ID</li>
+      <li>CWRU email address (abc123@case.edu)</li>
+    </ul></li>
+    <li>If a student cannot independently verify this information, refer user to Henrientta Jones (hpj@case.edu) [MSASS].</li>
+    <li>Do not provide account information.</li>
+    <li>Resolve ticket, indicating that user identity is unverified.</li>
+    </ol></li>
+  <li><strong>Field Instructors</strong>
+    <ol>
+    <li><p>To verify, user should be able to correctly confirm without prompting:</p>
+    <ul>
+      <li>Name</li>
+      <li>Birthdate</li>
+    </ul></li>
+    <li>If a field instructor cannot independently verify this information, refer user to Henrientta Jones (hpj@case.edu) [MSASS].</li>
+    <li>Do not provide account information.</li>
+    <li>Resolve ticket, indicating that user identity is unverified.</li>
+    </ol></li>
+  <li>If any user correctly verifies but does not have an IPT account, refer that person to Henrientta Jones (hpj@case.edu) [MSASS] and resolve ticket.</li>
+  <li>After successful verification, proceed with troubleshooting steps.</li>
+</ol>
+
 
 <h3 id="users">Additional Information</h3>
 
@@ -80,14 +115,15 @@ IPT; Intern placement tracking; MSASS; Password reset; Password; Reset</p>
 
 <h2>Troubleshoot + Repair</h2>
 
-<h3 id="lost-password">Reset a Lost Password</h3>
+<h3 id="lost-password-student">Reset a Lost Password (student)</h3>
   <p>back to <a href="#">top</a> </p>
   <ol>
+    <li>If not completed, <a href="verification">verify user identity</a>.</li>
     <li>Gather resolution information and enter it into the ticket.</li>
-    <li>Verify that the user has attempted to reset his or her password already using the button marked "Forgot your username or password?</li>
+    <li>Verify that the user has attempted to reset his or her password already using the button marked "Forgot your username or password".</li>
     <li>If no, direct user to <a href="https://www.alceasoftware.com/web/login.php">IPT login</a>. Instruct user to perform self-service password reset.
     <p>The user will need to provide an Organization ID (msass), User Type (student) and associated email address. After the user clicks <strong>Submit</strong>, the system will display the following confirmation: <code>A reset password link has been emailed to you at abc12@case.edu. The link will be valid for the next two hours.</code></p>
-    <p><mark>Important</mark> For security reasons you should NOT provide users with any credential information over the phone that they have not confirmed first, including email addresses.</p></li>
+    <p><mark>Important</mark> For security reasons you should NOT provide students with any credential information over the phone that they have not confirmed first, including email addresses.</p></li>
     <li>Resolve the ticket, or, if unsuccessful, complete the following to reset the default password for the user.</li>  
     <li>Sign in to <a href="https://www.alceasoftware.com/web/login.php">IPT</a> using either set of Administrator credentials:<br>
       <ul>
@@ -108,9 +144,46 @@ IPT; Intern placement tracking; MSASS; Password reset; Password; Reset</p>
     <li>Scroll to the bottom of the student detail page and select the box labeled "Reset Username and Password to Defaults".</li>
     <li>Click <strong>Save</strong>.</li>
     <li>The student will receive an email with a link and instructions to set a new password.</li>
+    <li>If you cannot locate the user by name, he or she may need to have a new account created. Refer user to Henrientta Jones (hpj@case.edu) [MSASS].</li>
     <li>Resolve ticket.</li>
   </ol>
   
+
+<h3 id="lost-password">Reset a Lost Password (field instructor)</h3>
+  <p>back to <a href="#">top</a> </p>
+  <ol>
+    <li>If not completed, <a href="verification">verify user identity</a>.</li>
+    <li>Gather resolution information and enter it into the ticket.</li>
+    <li>Verify that the user has attempted to reset his or her password already using the button marked "Forgot your username or password".</li>
+    <li>If no, direct user to <a href="https://www.alceasoftware.com/web/login.php">IPT login</a>. Instruct user to perform self-service password reset.
+    <p>The user will need to provide an Organization ID (msass), User Type (field instructor) and associated email address. After the user clicks <strong>Submit</strong>, the system will display the following confirmation: <code>A reset password link has been emailed to you at abc12@case.edu. The link will be valid for the next two hours.</code></p>
+    <p><mark>Important</mark> Provided a field instructor has correctly identified him or herself by name and date of birth, you may provide account credentials (email, network ID).</p></li>
+    <li>Resolve the ticket, or, if unsuccessful, complete the following to reset the default password for the user.</li>  
+    <li>Sign in to <a href="https://www.alceasoftware.com/web/login.php">IPT</a> using either set of Administrator credentials:<br>
+      <ul>
+          <li>
+          <strong>Organization:</strong> msass<br>
+          <strong>Login Name:</strong> *******<br>
+          <strong>Password:</strong> *******<br></li>
+          <li>
+          <strong>Organization:</strong> msass<br>
+          <strong>Login Name:</strong> *******<br>
+          <strong>Password:</strong> *******<br></li>
+      </ul>
+    </li>
+    <li>Click the tab marked <strong>Field Instructor List</strong>.</li>
+    <li>Locate the user by name provided.<br>
+    <mark>list format:</mark> Last, First</li>
+    <li>Click the <strong>name of the user</strong> to open a student detail page.</li>
+    <li>Scroll to the bottom of the user detail page and select the box labeled "Reset Username and Password to Defaults".</li>
+    <li>Click <strong>Save</strong>.</li>
+    <li>The field instructor will receive an email with a link and instructions to set a new password.</li>
+    <li>If you cannot locate the user by name, he or she may need to have a new account created. Refer user to Henrientta Jones (hpj@case.edu) [MSASS].</li>
+    <li>Resolve ticket.</li>
+  </ol>
+
+
+
 
 <h3 id="url">URL for IPT</h3>
   <p>back to <a href="#">top</a> </p>
@@ -124,32 +197,47 @@ IPT; Intern placement tracking; MSASS; Password reset; Password; Reset</p>
 <h3 id="field">Questions Related to Field Experience</h3>
   <p>back to <a href="#">top</a> </p>
   <ol>
+    <li>If not completed, <a href="verification">verify user identity</a>.</li>
     <li>Gather resolution information and enter it into the ticket.</li>
     <li>Refer user to his or her field advisor.</li>
     <li>Resolve ticket.</li>
   </ol>
 
+<a href="#survey">Questions Related to Evaluation Forms</a><br>
+  <p>back to <a href="#">top</a> </p>
+  <ol>
+    <li>If not completed, <a href="verification">verify user identity</a>.</li>
+    <li>Gather resolution information and enter it into the ticket.</li>
+    <li>Refer user to his or her field advisor.</li>
+    <li>Resolve ticket.</li>
+  </ol>
+
+
 <h3 id="other">Other Technical Issues</h3>
   <p>back to <a href="#">top</a> </p>
   <ol>
+    <li>If not completed, <a href="verification">verify user identity</a>.</li>
     <li>Gather resolution information and enter it into the ticket.</li>
     <li>Determine source of technical error or problem.</li>
     <li>If issue is IPT alone or undetermined, refer user to his or her field advisor and close ticket.</li>
-    <li>If issues is with Moodle, refer to existing Moodle scripts.</li>
-    <li>If issue is neither IPT nor Moodle specific (e.g., connectivity, hardware problem, etc.) troubleshoot and attempt to resolve as instructed in appropriate scripts.</li>
-    <li>Note all troubleshooting steps taken in comments.</li>
-</ol>
-
-<h3 id="moodle">Issues with Moodle</h3>
-  <p>back to <a href="#">top</a> </p>
-  <ol>
-    <li>Gather resolution information and enter it into the ticket.</li>
-    <li>Refer to existing Moodle scripts.</li>
+    <li>If issue is not IPT-specific (e.g., connectivity, hardware problem, etc.) troubleshoot and attempt to resolve as instructed in appropriate scripts.</li>
     <li>Note all troubleshooting steps taken in comments.</li>
 </ol>
 
 <h2>Activate + Setup + Install</h2>
-<p>This space left blank intentionally</p>  
+
+<h3 id="new-account">New IPT Accounts</h3>
+<p>back to <a href="#">top</a> </p>
+  <ol>
+    <li>If not completed, <a href="verification">verify user identity</a>.</li>
+    <li>Gather resolution information and enter it into the ticket.</li>
+    <li>Sign in to IPT and attempt to locate user by name.</li>
+    <li>If you cannot locate user in search results, a new account should be created.<br>
+    Refer user to Henrientta Jones (hpj@case.edu) [MSASS] and resolve ticket.</li>
+    <li>Otherwise, troubleshoot user access issues as provided in previous sections.</li>
+  </ol>
+
+
 <h2>Move + Change</h2>
 <p>This space left blank intentionally</p>
 <h2>How-to + Training</h2>
