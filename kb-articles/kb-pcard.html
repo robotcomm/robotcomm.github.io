@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="utf-8">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+		<style>
+		h2 { padding-top: 30px; }
+		h3 { padding-top: 20px; }
+		</style>
+
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container"><!DOCTYPE html>
+<html lang="en">
+<head>
 {% include_relative _includes/header.html %}
 
 </head>
@@ -161,6 +177,58 @@
 </div><!--.row-->
 </div><!-- end main content area-->{% include_relative _includes/survey.html %}
 {% include_relative _includes/footer.html %}
+</div>
+</body>
+</html><hr>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+<div class="well">
+<p class="lead">Answer three questions to help us improve your experience</p>
+
+<iframe name="confirm" id="confirm" style="display:none;" onload="if(typeof sent_confirm!='undefined'){window.location='https://googledrive.com/host/0B5e4Smfyuda_dEJRRlZ1UmhSTGM/thank-you-webex.html';}"></iframe>
+<form action="https://docs.google.com/forms/d/1XYrNCfwy4w_Cx_k7FkaTN5LhYN8e2920DOna_n7l-jQ/formResponse" method="POST" id="ss-form" target="confirm" onsubmit="sent_confirm=true">
+
+    <div class="form-group">
+  		<p><label>Would you recommend WebEx to a colleague or friend? *</label><br>
+    		<select class="form-control" name="entry.535955540" id="entry_535955540" placeholder="Yes">
+    		<option selected disabled hidden value=''></option>
+    		<option value="Yes">Yes</option> 
+    		<option value="No">No</option>
+  		</select></p>
+
+  		<p><label>Do the included instructions lead naturally to an expected outcome? *</label><br>
+    		<select class="form-control" name="entry.1059610721" id="entry_1059610721" placeholder="Yes">
+    		<option selected disabled hidden value=''></option>
+    		<option value="Yes">Yes</option> 
+    		<option value="No">No</option>
+  		</select></p>
+
+  		<p><label>Are the included instructions clear and understandable? *</label><br>
+    		<select class="form-control" name="entry.1188770357" id="entry_1188770357" placeholder="Yes">
+    		<option selected disabled hidden value=''></option>
+    		<option value="Yes">Yes</option> 
+    		<option value="No">No</option>
+  		</select></p>
+
+  		<p><label>Feedback</label><br>
+  		<textarea name="entry.1986528048" class="form-control" rows="3" id="entry_1986528048" placeholder="Survey responses are anonymous. So if you want personal followup, add your contact information here."></textarea></p>
+		<p>&nbsp;</p>
+		<button type="submit" name="submit" value="Submit" id="ss-submit" class="btn btn-primary">Submit response</button>
+		</form>
+	</div>
+</div>
+
+
+<hr>
+
+<div class="pull-right">
+<p>&copy; 2015, Case Western Reserve University</p>
+</div>
+<div class="clearfix"></div>
+
 </div>
 </body>
 </html>
