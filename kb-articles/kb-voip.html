@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include_relative _includes/header.html %}
+
+</head>
+<body>
+<div class="container"><span><!-- navigation object : Page Name template -->ITS KBA 714 VoIP</span>
+</section>
+</div>
+</div>
+  
+<div class='displayNone'><!-- navigation object : Breadcrumbs hidden template -->
+  <div class="breadcrumb col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <!-- navigation object : Home Link template --><a href='SiteManager?ctfn=publish&amp;fnno=30&amp;chid=144&amp;lang=en&amp;sid=27574'><img src='https://webcms.case.edu/terminalfour/SiteManager?ctfn=download&amp;fnno=60&amp;ceid=1705997649' alt="Go to Home" /></a><!-- navigation object : Breadcrumbs Template --> > <a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=27574&amp;chid=144&amp;lang=en">ITS</a> > <a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=41906&amp;chid=144&amp;lang=en">ITS Development</a> > <a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=67312&amp;chid=144&amp;lang=en">rpretzer</a> > <a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=67341&amp;chid=144&amp;lang=en">KBA</a> > <a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=67384&amp;chid=144&amp;lang=en">ITS KBA 714 VoIP</a>
+  </div><!-- .breadcrumb -->
+</div>
+  
+  
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-col">
+    
+    <div class="row"><a id="d.en.200189"></a>
+
+
+<div class='tinyMCE noLine  col-xs-12 col-sm-12 col-md-12 col-lg-12' >
+<a class="anchor" name="200189"></a>
+<h3>VoIP Phones</h3>
+  
+
+  
+<p>Voice over IP (Voice over Internet Protocol or "VoIP") technology converts voice calls from analog to digital to be sent over digital data networks. This allows Case Western Reserve University to use its existing data network (which includes fiber or copper wiring between and within buildings, and Cisco routers and switches) to transport telephone service throughout the campus. By offering Voice over IP, or VoIP, Case is moving toward a "converged" network, where voice, data, and video all travel along the Case gigabit network. Another benefit of VoIP is that it converts voicemails left on phones to .wav files that are sent to the phone user&rsquo;s email inbox.</p>
+<h4>Helpful links:</h4>
+<p>Phone account setup: <a href="https://apexweb.case.edu/apexp/f?p=127" target="_blank">apexweb.case.edu/apexp/f?p=127</a></p>
+<p>Voicemail administrative settings: <a href="https://um.case.edu/communite/login.aspx" target="_blank">um.case.edu/communite/login.aspx</a></p>
+<p>Voicemail directions and helpful information: <a title="Home%20%BB%20Case.edu%20%BB%20ITS%20%BB%20KBA%20%BB%20ITS%20KBA%2078818%20Voicemail" target="_blank" class="a" href="SiteManager?ctfn=publish&amp;fnno=30&amp;chid=144&amp;lang=en&amp;sid=67490">ITS KBA 78818 Voicemail</a></p>
+<p>A list of VoIP phones in use on campus: <a title="Home%20%BB%20Case.edu%20%BB%20ITS%20%BB%20KBA%20%BB%20ITS%20KBA%2084556%20Types%20Of%20Desk%20Phones" target="_blank" class="a" href="SiteManager?ctfn=publish&amp;fnno=30&amp;chid=144&amp;lang=en&amp;sid=67461">ITS KBA 84556 Types Of Desk Phones</a></p>
+<p>Directions for using 7x90 model phones: <a title="Home%20%BB%20Case.edu%20%BB%20ITS%20%BB%20KBA%20%BB%20ITS%20KBA%2084533%20Cisco7x90%20Configuration" target="_blank" class="a" href="SiteManager?ctfn=publish&amp;fnno=30&amp;chid=144&amp;lang=en&amp;sid=67465">ITS KBA 84533 Cisco7x90 Configuration</a></p>
+<p>Directions for using 7940 and 7960 phones:&nbsp;<a href="https://webcms.case.edu/terminalfour/SiteManager?ctfn=download&amp;fnno=60&amp;ceid=1367327108">Model 7940/7960 User Guide</a></p>
+<p>A manufacturer&rsquo;s user guide for the VoIP 7940 and 7960:&nbsp;<a href="http://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cuipph/7960g_7940g/sip/english/user/guide/user.html" target="_blank">http://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cuipph/7960g_7940g/sip/english/user/guide/user.html</a></p>
+<h4>How-To:</h4>
+<p class="s1"><a href="#CreateUnified">Create Unified Messaging account for voicemail</a></p>
+<p class="s1"><a href="#Forwardcalls">Forward calls directly to voicemail</a></p>
+<p class="s1"><a href="#outgoing">Turn off name playback on outgoing message</a></p>
+<p class="s1"><a href="#turnofftime">Turn of time and phone number announcement in message playback</a></p>
+<p class="s1"><a href="#deletecalls">Delete calls from call log</a></p>
+<p class="s1"><a href="#hidedisplay">Hide display of your telephone number at the called phone</a></p>
+<p class="s1"><a href="#preventtransfer">Prevent transfer number from showing up on caller's display</a></p>
+<p class="s1"><a href="#speeddial">Set up speed dial on 7960 (analog) phone</a></p>
+<p class="s1"><a href="#locatefaceplate">Locate faceplate number</a></p>
+<p class="s1"><a href="#locatemac">Locate MAC address</a></p>
+<h4>Problem Solving:</h4>
+<p class="s1"><a href="#disappeared">Speed dials have disappeared</a></p>
+<p class="s1"><a href="#pooraudio">Poor audio quality on VoIP phone</a></p>
+<p class="s1"><a href="#troubledialing">Trouble dialing on VoIP phone</a></p>
+<p class="s1"><a href="#nodialtone">No dial tone, phone is rebooting, or user has no connectivity on their VoIP</a></p>
+<h4><a id="CreateUnified"></a>Create Unified Messaging Account for voicemail</h4>
+<p>To request a phone or phone number, go to <span class="s1">https://apexweb.case.edu/apexp/f?p=127</span> and fill out the form, or contact the ITS Service Desk at 216.368.HELP (4357), <a href="mailto:help@case.edu" target="_blank"> </a><a class="a" href="mailto:help@case.edu" target="_blank">help@case.edu </a>or go to <span class="s1">help.case.edu </span>and click on &ldquo;Live Chat&rdquo; or &ldquo;Submit an Issue.&rdquo;</p>
+<h4><a id="Forwardcalls"></a>Forward calls directly to voicemail</h4>
+<ol>
+<li>Press the &ldquo;<strong>CFwdALL&rdquo; </strong>key. This ONLY appears when the phone is not in use.</li>
+<li>Press the &ldquo;<strong>Messages</strong>&rdquo; key.</li>
+<li>Press the &ldquo;<strong>CFwdALL&rdquo; </strong>key.</li>
+</ol>
+<h4><a id="outgoing"></a>Turn off name playback on outgoing message</h4>
+<ol>
+<li>Go to the Communite web page at <a class="a" href="http://um.case.edu/Communite" target="_blank">http://um.case.edu/Communite</a></li>
+<li>Enter your CWRU Network ID and password.</li>
+<li>Go to the &ldquo;Options&rdquo; pull-down menu and choose &ldquo;Telephone Interface.&rdquo;</li>
+<li>Under &ldquo;Mailbox Greeting,&rdquo; uncheck one or both boxes.</li>
+</ol>
+<h4><a id="turnofftime"></a>Turn off time and phone number announcement during message playback</h4>
+<ol>
+<li>Go to the Communite web page at <a class="a" href="http://um.case.edu/Communite" target="_blank">http://um.case.edu/Communite</a></li>
+<li>Enter your CWRU Network ID and password.</li>
+<li>Go to the &ldquo;Options&rdquo; pull-down menu and choose &ldquo;Telephone Interface.&rdquo;</li>
+<li>Under &ldquo;Mailbox Greeting,&rdquo; uncheck one or both boxes.</li>
+<li>Click on the <strong>Brief </strong>button under &ldquo;Set Playback Mode&rdquo; (on the bottom of the page).</li>
+<li>Click <strong>Save</strong>. From this point forward, if the user would like to hear the time and telephone number after listening to a message, they must press 8 to "get envelope information."</li>
+</ol>
+<h4><a id="deletecalls"></a>Delete calls from call log</h4>
+<p>7940/60 phones: you cannot delete individual calls, but you can delete all of the calls stored on your phone.</p>
+<ol>
+<li>Press the <strong>Directories </strong>key</li>
+<li>Press the <strong>Clear </strong>key. Be careful because it clears ALL of the calls on ALL of your lists. Each list can store up to 32 telephone calls. The older calls will automatically be deleted as newer calls come in.</li>
+</ol>
+<p>For the 7905, you can clear individual calls on any list by pressing the <strong>Delete </strong>key while reviewing your list.</p>
+<h4><a id="hidedisplay"></a>Hide display of your telephone number at the called phone</h4>
+<p>Dial *67 before the call.</p>
+<h4><a id="preventtransfer"></a>Prevent transfer number from showing up on caller's display</h4>
+<ol>
+<li>Press the <strong>Transfer </strong>Soft Key</li>
+<li>Dial *67, 368-xxxx (where 368-xxxx is the telephone number calls will be transferred to)</li>
+<li>Press <strong>Transfer </strong>again.</li>
+</ol>
+<h4><a id="speeddial"></a>Set up speed dial on 7960 (analog) phone</h4>
+<p>You must set up a speed dial list before you can use speed dial. If a speed dial list is already set up, skip to Step 8.</p>
+<ol>
+<li>Go to <a class="a" href="http://phonesetup.case.edu/" target="_blank">http://phonesetup.case.edu</a></li>
+<li>Enter your CWRU Network ID and password.</li>
+<li>Click on User Options and Device To Create a Speed Dial List.</li>
+<li>Click on <strong>Speed Dials</strong>.</li>
+<li>Enter numbers and labels for those you frequently call &ndash;don&rsquo;t forget to add &ldquo;9&rdquo; for outside calls.</li>
+<li>Click on <strong>Save </strong>at the bottom of the page.</li>
+</ol>
+<p>To use a speed dial while the phone is hung up, press the one or two-digit speed dial number. Press <strong>AbbrDial </strong>softkey. The Speaker button will automatically let you hear the phone ring.</p>
+<h4><a id="locatefaceplate"></a>Locate faceplate number</h4>
+<p>The voice and data network is brought to your office, residence hall or classroom by fiber optic and ethernet cables, much like the way electricity travels through electrical wires to your outlets. The <em><strong>outlets </strong></em>for the network and telephone system are called faceplates. Each and every faceplate on campus has a unique number to identify it.</p>
+<p>The first three digits of the number represent the building, the second set of numbers is the specific equipment room number (Some buildings have several), the third number usually indicates the floor, and the last set of numbers is that particular faceplate. If you want a faceplate activated or have a problem with an existing faceplate you need to have the faceplate number when you call the help desk.</p>
+<ol>
+<li>The faceplate number is usually on a white sticker underneath the phone jack in the center of the faceplate. The number is in the format "###-##-##-###" and if split across two rows, both rows of numbers will be required by the Service Desk for assistance.</li>
+<li>If there is more than one number listed for your faceplate, you want the number directly adjacent to where your cable plugs in. If there is no number next to where your cable plugs in, you want the number in the center of the faceplate.</li>
+<li>If part of the number seems to be missing, or the label is ripped off or hard to read, you may be able to determine the missing sections from other faceplates in the room. The first five digits should be the same as other faceplates in that room. The last five digits are in sequence with the other faceplates in the room, or adjacent rooms. Therefore, if you are missing a number, but have the faceplate numbers for other faceplates in the room, or in adjacent offices, this information will be useful to the Service Desk when you call for assistance.</li>
+</ol>
+<h4><a id="locatemac"></a>Locate MAC address</h4>
+<p>MAC addresses exist on a label on the bottom of the phone. It is the center label. The Serial Number of the phone is located on the label marked SN.</p>
+<h4>Problems:</h4>
+<h4><a id="disappeared"></a>Speed dials have disappeared</h4>
+<ol>
+<li>Go to <a class="s4" href="http://phonesetup.case.edu/" target="_blank">http://phonesetup.case.edu </a>while logged into VPN, CaseWireless or on the CWRU wired network</li>
+<li>Sign in with your CWRU Network ID and password.</li>
+<li>Click &ldquo;<strong>User Options</strong>&rdquo; and then &ldquo;<strong>Device</strong>.&rdquo;</li>
+<li>Click <strong>Speed Dials</strong>.</li>
+<li>Verify that the speed dials are correct and update as necessary.</li>
+<li>On the top left corner, click on the second icon next to save disk. This icon looks like a cube with a circular arrow and is the <strong>Reset </strong>button.</li>
+<li>Click the <strong>Reset </strong>button again. This will cause the phone to turn off and reset itself</li>
+<li><a href="mailto:help@case.edu" target="_blank">If the above-mentioned steps do not work, contact the Service Desk at 216.368.HELP (4357) or email </a><a class="s6" href="mailto:help@case.edu" target="_blank">help@case.edu</a></li>
+</ol>
+<h4><a id="pooraudio"></a>Poor audio quality on VoIP phone</h4>
+<p>If you hear "choppy" or "cut off" voices, or someone you talk with sounds "underwater" or "like Darth Vader," there is a simple way to change the voice quality setting on any IP phone. The problem could be your IP phone - it could be the IP phone of the person you are talking with. Here is how you fix problems with your phone.</p>
+<ol>
+<li>Press the <strong>SETTINGS </strong>key on your phone</li>
+<li>Press the number <strong>3</strong></li>
+<li>Press <strong>3 </strong>and then <strong>9 </strong><em>(If you do not hit 9 quickly enough after you hit the 3, the phone will time out).</em></li>
+<li>If the screen says "39 SW Port Configuration - AUTO", then you need to follow these steps. Otherwise, skip to 5.<ol>
+<li>Make sure the phone is hung up - you are not talking on the phone.</li>
+<li>Press <strong>SETTINGS</strong></li>
+<li>Press <strong>3</strong></li>
+<li>Press <strong>3 </strong>and then <strong>9</strong></li>
+<li>Make sure the line marked 39 is highlighted on your phone</li>
+<li>Press <strong>Edit</strong></li>
+<li>Press the number <strong>1 </strong>once &ndash; 1 should appear on the screen</li>
+<li>Press the number <strong>0 </strong>(zero) four times until a 0 appears next to the 1</li>
+<li>Press the number <strong>3 </strong>three times until the letter f appears next to 10</li>
+<li>Make sure it says 10f on your screen</li>
+<li>Press <strong>Validate</strong></li>
+<li>Press <strong>Save</strong></li>
+<li>When the configuring stops, pick up the handset as if you are going to make a call.</li>
+<li>Hang up the handset.</li>
+<li>You have just changed your phone from AUTO to 10FULL. To make sure the change was made, press SETTINGS, 3, and 39. It should say "39 SW Port configuration - 10FULL"</li>
+</ol></li>
+<li>The audio setting on your phone is optimal. If you are still having trouble with your phone&rsquo;s audio, please contact Telephone services for suggestions (help@case.edu).Additional Steps for each IP Phone in a Daisy Chain with other IP Phones</li>
+<li>For the phone that you are on, verify the switch port configuration (Step 7). For the remaining phones within the configuration, you will need to verify both the PC port configuration (7) AND the switch port configuration (1)</li>
+<li>Verify PC port configuration:<ol>
+<li>Press the <strong>Settings </strong>button on the phone.</li>
+<li>Press the number <strong>3.</strong></li>
+<li>Press <strong>40 </strong><em>(If you do not hit 0 quickly enough after you hit the 4, the phone will time out).</em></li>
+</ol></li>
+<li>If it says <strong>"40 PC Port Configuration - 10FULL"</strong>, your phone is set up for optimal audio. If it says <strong>"40 PC Port Configuration - AUTO", or 40 PC Port Configuration &ndash; HALF, </strong>continue to step 8a.<ol id="l13">
+<li>Make sure the line marked 40 is highlighted on your phone</li>
+<li>Press <strong>Edit</strong></li>
+<li>Press the number <strong>1 </strong>once &ndash; 1 should appear on the screen</li>
+<li>Press the number <strong>0 </strong>(zero) four times until a 0 appears next to the 1</li>
+<li>Press the number <strong>3 </strong>three times until the letter f appears next to 10</li>
+<li>Make sure it says 10f on your screen</li>
+<li>Press <strong>Validate</strong></li>
+<li>Press <strong>Save</strong></li>
+<li>When the configuring stops, pick up the handset as if you are going to make a call.</li>
+<li>Hang up the handset.</li>
+<li>You have just changed your phone from AUTO to 10FULL. To make sure the change was made, press SETTINGS, 3, and 40. It should say "40 PC Port configuration - 10FULL"</li>
+</ol></li>
+<li>The audio setting on your phone is optimal. If you are still having trouble with your phone&rsquo;s audio, please contact Telephone services for suggestions (help@case.edu).</li>
+</ol>
+<h4><a id="troubledialing"></a>Trouble dialing on VoIP phone</h4>
+<p>Campus Calling:</p>
+<p>Dial the 7-digit extension number Campus Security: dial 368-3333</p>
+<p>External Calling:</p>
+<p>Local: Dial 9 + area code + Seven Digit Number Long Distance: Dial 9 + 1+ Area Code + Number Emergency: Dial 9 +911 or 911</p>
+<p>International: Dial 9+011+International Number University Hospital:</p>
+<p>Enter 142. When you hear the tone, enter the 5-digit extension number.</p>
+<h4><a id="nodialtone"></a>No dial tone, phone is rebooting, or user has no connectivity on their VoIP</h4>
+<ol>
+<li>Verify that the cable from the phone&rsquo;s &ldquo;10/100 SW&rdquo; jack is plugged directly into a faceplate PHONE JACK or into the &ldquo;10/100 PC&rdquo; of another phone -- NOT into one of the faceplate DATA JACKs.</li>
+<li>Verify the phone has power<ol id="l15">
+<li>If the phone is plugged directly into a faceplate, it does not need a power adapter.</li>
+<li>If the phone is plugged into anything else, it must have a separate power adapter. Make sure that the cable and adapter connections are good and that the power outlet is functional.</li>
+</ol></li>
+<li>Verify that the cord from the faceplate is plugged into the CENTER Ethernet port on the back of a 7940/7960.</li>
+<li>Try resetting the phone by unplugging and then plugging back into the center port</li>
+<li>If steps 1-4 do not resolve the issue, contact 216.368.HELP (4357) or email <a class="a" href="mailto:help@case.edu" target="_blank">help@case.edu </a>for assistance.</li>
+</ol>
+</div>
+<div style="clear:both"></div>
+</div><!--.row-->
+</div><!-- end main content area-->{% include_relative _includes/survey.html %}
+{% include_relative _includes/footer.html %}
+</div>
+</body>
+</html>
