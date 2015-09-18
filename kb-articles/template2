@@ -1,0 +1,5 @@
+{% include_relative _includes/survey.html %}
+{% include_relative _includes/footer.html %}
+</div>
+</body>
+</html>

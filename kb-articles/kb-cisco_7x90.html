@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include_relative _includes/header.html %}
+
+</head>
+<body>
+<div class="container"><span><!-- navigation object : Page Name template -->ITS KBA 84533 Cisco7x90 Configuration</span>
+</section>
+</div>
+</div>
+  
+<div class='displayNone'><!-- navigation object : Breadcrumbs hidden template -->
+  <div class="breadcrumb col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <!-- navigation object : Home Link template --><a href='SiteManager?ctfn=publish&amp;fnno=30&amp;chid=144&amp;lang=en&amp;sid=27574'><img src='https://webcms.case.edu/terminalfour/SiteManager?ctfn=download&amp;fnno=60&amp;ceid=346386024' alt="Go to Home" /></a><!-- navigation object : Breadcrumbs Template --> > <a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=27574&amp;chid=144&amp;lang=en">ITS</a> > <a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=41906&amp;chid=144&amp;lang=en">ITS Development</a> > <a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=67312&amp;chid=144&amp;lang=en">rpretzer</a> > <a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=67341&amp;chid=144&amp;lang=en">KBA</a> > <a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=67465&amp;chid=144&amp;lang=en">ITS KBA 84533 Cisco7x90 Configuration</a>
+  </div><!-- .breadcrumb -->
+</div>
+  
+  
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-col">
+    
+    <div class="row"><a id="d.en.200654"></a>
+
+
+<div class='tinyMCE noLine  col-xs-12 col-sm-12 col-md-12 col-lg-12' >
+<a class="anchor" name="200654"></a>
+<h3>Cisco 7x90 Phone Configuration Settings</h3>
+  
+
+  
+<p>Cisco 7x90 phones connected to the campus VoIP network must have the switch port set for "10FULL". Use of "10AUTO" or other configuration options results in robotic or "Darth Vader"-like voice quality. Use the phone&rsquo;s settings button to verify or change this setting.</p>
+<p>How to change the "<strong>Switch Port Configuration</strong>" setting:</p>
+<ol>
+<li>Hang up the phone.</li>
+<li>Press the <strong>settings </strong>button.</li>
+<li>Press <strong>3 </strong>(or scroll to Network Configuration and press <strong>Select</strong>).</li>
+<li>Press <strong>39 </strong>with no time between digits (or scroll to SW Port Configuration and press <strong>Select</strong>).</li>
+<li>Make sure that the "<strong>39 SW Port Configuration</strong>" line is highlighted.</li>
+<li>Press <strong>**# </strong>(star, star, pound). The <strong>Edit </strong>soft button will appear.</li>
+<li>Enter "<strong>10F</strong>" using the keypad.<ol id="l2">
+<li>Press the number <strong>1 </strong>one time until a <strong>1 </strong>appears in the screen</li>
+<li>Press the number <strong>0 </strong>(zero) four times until a 0 appears next to the 1</li>
+<li>Press the number <strong>3 </strong>three times until the letter f appears next to 10</li>
+</ol></li>
+<li>Make sure it says <strong>10f </strong>on your screen.</li>
+<li>Press <strong>Validate.</strong></li>
+<li>Press <strong>Save.</strong></li>
+<li>When the configuring stops, pick up the handset as if you are going to make a call, then hang up the handset.</li>
+<li>If another device will be plugged into this phone&rsquo;s "PC Port," use the above procedure to set <strong>40 PC Port</strong>:<ol id="l3">
+<li>&bull; A phone daisy-chained to this phone &ndash; set 40 PC Port to <strong>10FULL</strong></li>
+<li>An Analog Terminal Adapter (ATA) daisy-chained to this phone &ndash; set 40 PC Port to <strong>10HALF</strong></li>
+</ol></li>
+</ol>
+</div>
+<div style="clear:both"></div>
+</div><!--.row-->
+</div><!-- end main content area-->{% include_relative _includes/survey.html %}
+{% include_relative _includes/footer.html %}
+</div>
+</body>
+</html>

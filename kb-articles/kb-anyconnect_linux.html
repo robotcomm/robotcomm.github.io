@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include_relative _includes/header.html %}
+
+</head>
+<body>
+<div class="container"><span><!-- navigation object : Page Name template -->ITS KBA 1723 Linux VPN</span>
+</section>
+</div>
+</div>
+  
+<div class='displayNone'><!-- navigation object : Breadcrumbs hidden template -->
+  <div class="breadcrumb col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <!-- navigation object : Home Link template --><a href='SiteManager?ctfn=publish&amp;fnno=30&amp;chid=144&amp;lang=en&amp;sid=27574'><img src='https://webcms.case.edu/terminalfour/SiteManager?ctfn=download&amp;fnno=60&amp;ceid=1577354683' alt="Go to Home" /></a><!-- navigation object : Breadcrumbs Template --> > <a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=27574&amp;chid=144&amp;lang=en">ITS</a> > <a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=41906&amp;chid=144&amp;lang=en">ITS Development</a> > <a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=67312&amp;chid=144&amp;lang=en">rpretzer</a> > <a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=67341&amp;chid=144&amp;lang=en">KBA</a> > <a href="SiteManager?ctfn=publish&amp;fnno=30&amp;sid=67422&amp;chid=144&amp;lang=en">ITS KBA 1723 Linux VPN</a>
+  </div><!-- .breadcrumb -->
+</div>
+  
+  
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-col">
+    
+    <div class="row"><a id="d.en.200455"></a>
+
+
+<div class='tinyMCE noLine  col-xs-12 col-sm-12 col-md-12 col-lg-12' >
+<a class="anchor" name="200455"></a>
+<h2>Install the Cisco AnyConnect VPN Client on a Linux Machine</h2>
+  
+
+  
+<blockquote>
+<p class="p1">The instructions are demonstrated on an Ubuntu 9.10 system. Installation will vary with each Linux system.</p>
+</blockquote>
+<ol class="ol1">
+<li class="li2">Open the downloaded installation file in the archive manager. Extract the install files to a convenient location.</li>
+<li class="li2">Open the <strong>ciscovpn</strong> folder.</li>
+<li class="li3">Run the script vpn_install.sh in a terminal window as the root user. For example: <br /> <span class="s1">[root@linuxhost]# cd ciscovpn</span><br /> <span class="s1">[root@linuxhost]# ./vpn_install.sh</span></li>
+<li class="li3">The AnyConnect VPN client is installed when "Starting the VPN agent&hellip;" and "Done" appear in the script.</li>
+<li class="li2">The client files are installed at /opt/cisco/vpn/bin.</li>
+<li class="li2">To start the GUI, cd to the /opt/cisco/vpn/bin directory and type <strong>./vpnui</strong>.</li>
+<li class="li2">The AnyConnect GUI starts. Enter <strong>vpn.case.edu</strong> into the <strong>Connect to</strong> field.</li>
+<li class="li2">Click the <strong>Connect</strong> button. You will be prompted for your Case Network ID and password before the connection is established.</li>
+</ol>
+</div>
+<a id="d.en.200458"></a>
+
+
+<div class='tinyMCE noLine  col-xs-12 col-sm-12 col-md-12 col-lg-12' >
+<a class="anchor" name="200458"></a>
+<h3>About VPN at CWRU</h3>
+  
+
+  
+<p class="p1">Virtual Private Networking (VPN) software is used to remotely connect to the campus network, and yet appear to on-line resources as though you are directly connected. This software also helps secure your computer on the network so that traffic to and from your computer is encrypted.</p>
+<p class="p1">The provider for VPN software at CWRU is Cisco AnyConnect. It is available at <a href="https://vpnsetup.case.edu" target="_blank">vpnsetup.case.edu</a>.</p>
+</div>
+<div style="clear:both"></div>
+</div><!--.row-->
+</div><!-- end main content area-->{% include_relative _includes/survey.html %}
+{% include_relative _includes/footer.html %}
+</div>
+</body>
+</html>
