@@ -24,6 +24,28 @@ h3 { padding-top: 20px; }
   -ms-filter: "FlipH";
  }
 
+.dl-horizontal {
+  *zoom: 1;
+}
+.dl-horizontal:before,
+.dl-horizontal:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.dl-horizontal:after {
+  clear: both;
+}
+.dl-horizontal dt {
+  float: left;
+  width: 160px;
+  clear: left;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /*white-space: nowrap;*/
+}
+
 </style>
 
 
@@ -266,154 +288,127 @@ h3 { padding-top: 20px; }
 
 <h4>Navigate Hub Window</h4>
 		
-<p>Switch to tab: <kbd>&#8984;</kbd> + number of the tab (ex., <kbd>&#8984; + 1</kbd> switches to the contacts tab).<br>
-Add a contact: <kbd>&#8984; + D</kbd><br>
-Show Expanded Contacts View: <kbd>Shift + &#8984; + T</kbd><br>
-Show Offline Contacts: <kbd>Shift + &#8984; + H</kbd></p>
+<dl class="dl-horizontal">
+	<dt>Switch to tab</dt>
+	<dd><kbd>&#8984;</kbd> + number of the tab (ex., <kbd>&#8984; + 1</kbd> switches to the contacts tab)</dd>
+	<dt>Add a contact</dt>
+	<dd><kbd>&#8984; + D</kbd></dd>
+	<dt>Show Expanded Contacts View</dt> 
+	<dd><kbd>Shift + &#8984; + T</kbd></dd>
+	<dt>Show Offline Contacts</dt>
+	<dd><kbd>Shift + &#8984; + H</kbd></dd>
+</dl>
 
 <h4>Call Handling</h4>
 
-<p>End Call: <kbd>&#8984; + K</kbd><br>
-Mute Audio:</strong> <kbd>&#8997; + &#8984; + DOWN ARROW</kbd><br>
-Increase Volume: <kbd>UP ARROW</kbd><br>
-Decrease Volume: <kbd>DOWN ARROW</kbd><br>
-Hold: Access through the menus when the conversation window is active, or <kbd>tab</kbd> or <kbd>Shift+tab</kbd> to move through the buttons and objects in the window.<br>
-Transfer Call: <kbd>&#8997; + &#8984; + T</kbd></p>
+<dl class="dl-horizontal">
+	<dt>End Call</dt>
+	<dd><kbd>&#8984; + K</kbd></dd>
+	<dt>Mute Audio</dt>
+	<dd><kbd>&#8997; + &#8984; + DOWN ARROW</kbd></dd>
+	<dt>Increase Volume</dt>
+	<dd><kbd>UP ARROW</kbd></dd>
+	<dt>Decrease Volume</dt>
+	<dd><kbd>DOWN ARROW</kbd></dd>
+	<dt>Hold</dt>
+	<dd>Access through the menus when the conversation window is active, or <kbd>tab</kbd> or <kbd>Shift+tab</kbd> to move through the buttons and objects in the window.</dd>
+	<dt>Transfer Call</dt>
+	<dd><kbd>&#8997; + &#8984; + T</kbd></dd>
+</dl>
 
 <h4>Incoming Call</h4>
 
-<p>Answer a  Call:</strong><kbd>&#8984; + L</kbd><br>
-Decline, Answer:</strong> When the Conversation window is in focus, tab or Shift + tab to move to the Decline or Answer button.<br>
-Answer a Call, see caller ID:
-	<ol>
+<dl class="dl-horizontal">
+	<dt>Answer a  Call</dt>
+	<dd><kbd>&#8984; + L</kbd></dd>
+	<dt>Decline, Answer</dt>
+	<dd>When the Conversation window is in focus, tab or Shift + tab to move to the Decline or Answer button.</dd>
+	<dt>Answer a Call, see caller ID</dt>
+	<dd><ol>
 		<li><kbd>Ctrl + &#8984; + SPACEBAR</kbd> to open the Cisco Jabber Status Menu</li>
 		<li>DOWN ARROW to move through the menu options and select <strong>answer call from xxx-xxx-xxxx.</strong></li>
 		<li>Press ENTER.</li>
-	</ol>
-</p>
-
+	</ol></dd>
+</dl>
 
 <h4>Instant Messages</h4>
 
-<p>Start a chat with the selected contact: <kbd>&#8984; + N</kbd><br>
-Start a group chat with multiple selected contacts: <kbd>&#8997; + Shift + &#8984; + N</kbd><br>
-Close chat: <kbd>&#8984; + W</kbd><br>
-Exit the messaging text entry field: <kbd>Ctrl + tab</kbd><br>
-Restore default font: <kbd>&#8997; + Shift + &#8984; + T</kbd><br>
-Show All Fonts: <kbd>&#8984; + T</kbd><br>
-Bold: <kbd>&#8984; + B</kbd><br>
-Italic: <kbd>&#8997; + &#8984;  + I</kbd><br>
-Underline</td>: <kbd>&#8984; + U</kbd><br>
-Bigger: <kbd>&#8984;  +  + (plus)</kbd><br>
-Smaller: <kbd>&#8984; + - (minus)</kbd><br>
-Show Colors: <kbd>Shift + &#8984; + C</kbd><br>
-Copy Style: <kbd>&#8997; + Shift +  &#8984; + C</kbd><br>
-Paste Style</td>: <kbd>&#8997; + &#8984; + V</kbd></p>
+<dl class="dl-horizontal">
+	<dt>Start a chat with the selected contact</dt>
+	<dd><kbd>&#8984; + N</kbd></dd>
+	<dt>Start a group chat with multiple selected contacts</dt>
+	<dd><kbd>&#8997; + Shift + &#8984; + N</kbd></dd>
+	<dt>Close chat: <kbd>&#8984; + W</kbd></dt>
+	<dt>Exit the messaging text entry field</dt>
+	<dd><kbd>Ctrl + tab</kbd></dd>
+	<dt>Restore default font</dt>
+	<dd><kbd>&#8997; + Shift + &#8984; + T</kbd></dd>
+	<dt>Show All Fonts</dt>
+	<dd><kbd>&#8984; + T</kbd></dd>
+	<dt>Bold</dt>
+	<dd><kbd>&#8984; + B</kbd></dd>
+	<dt>Italic</dt>
+	<dd><kbd>&#8997; + &#8984;  + I</kbd></dd>
+	<dt>Underline</dt>
+	<dd><kbd>&#8984; + U</kbd></dd>
+	<dt>Bigger</dt>
+	<dd><kbd>&#8984;  +  + (plus)</kbd></dd>
+	<dt>Smaller</dt>
+	<dd><kbd>&#8984; + - (minus)</kbd></dd>
+	<dt>Show Colors</dt>
+	<dd><kbd>Shift + &#8984; + C</kbd></dd>
+	<dt>Copy Style</dt>
+	<dd><kbd>&#8997; + Shift +  &#8984; + C</kbd></dd>
+	<dt>Paste Style</dt>
+	<dd><kbd>&#8997; + &#8984; + V</kbd></dd>
+</dl>
 
 <h4>Global Shortcuts</h4>
 
 <p>Global keyboard shortcuts when the <span>Cisco Jabber</span> window is in the background.</p>
- 
-<p>Answer a  Call: <kbd>Ctrl  + &#8984; + L</kbd><br>
-Dial selected text in an application: <kbd>Shift + &#8984; + 0 (zero)</kbd> or <br>&#8984;  + )</kbd><br>
-Answer a Call and see the caller ID:
-	<ol>
-		<li><kbd>Ctrl + &#8984; + SPACEBAR</kbd> to open the Cisco Jabber</span> Status Menu</li>
-		<li>DOWN ARROW to move through the menu options and select <strong>answer call from xxx-xxx-xxxx.</strong></li>
-		<li>Press ENTER.</li>
-	</ol></p>
+
+<dl class="dl-horizontal">
+	<dt>Answer a  Call</dt>
+	<dd><kbd>Ctrl  + &#8984; + L</kbd></dd>
+	<dt>Dial selected text in an application</dt>
+	<dd><kbd>Shift + &#8984; + 0 (zero)</kbd> or <br>&#8984;  + )</kbd></dd>
+	<dt>Answer a Call and see the caller ID</dt>
+		<dd><ol>
+			<li><kbd>Ctrl + &#8984; + SPACEBAR</kbd> to open the Cisco Jabber</span> Status Menu</li>
+			<li>DOWN ARROW to move through the menu options and select <strong>answer call from xxx-xxx-xxxx.</strong></li>
+			<li>Press ENTER.</li>
+		</ol></dd>
+</dl>
 
 <h4>Voice Messages</h4>
 
-<p>Delete voice message: <kbd>del</kbd><br>
-Empty voice message trash: <kbd>&#8997; + &#8984; + del</kbd><br>
-Play voice message: <kbd>&#8997; + &#8984; + P</kbd><br>
-View voice message tab: <kbd>&#8984; + 4</kbd></p>
+<dl class="dl-horizontal">
+	<dt>Delete voice message</dt>
+	<dd><kbd>del</kbd></dd>
+	<dt>Empty voice message trash</dt>
+	<dd><kbd>&#8997; + &#8984; + del</kbd></dd>
+	<dt>Play voice message</dt>
+	<dd><kbd>&#8997; + &#8984; + P</kbd></dd>
+	<dt>View voice message tab</dt>
+	<dd><kbd>&#8984; + 4</kbd></dd>
+</dl>
 
 <h4>Call</h4>
 					 
-<p>New Call: <kbd>Shift + &#8984; + N</kbd><br>
-Redial: <kbd>&#8984; + R</kbd><br>
-Place a call to the selected contact in the contact list: <kbd>&#8997; + &#8984; + C</kbd></p>
+<dl class="dl-horizontal">					 
+	<dt>New Call</dt>
+	<dd><kbd>Shift + &#8984; + N</kbd></dd>
+	<dt>Redial</dt>
+	<dd><kbd>&#8984; + R</kbd></dd>
+	<dt>Place a call to the selected contact in the contact list</dt>
+	<dd><kbd>&#8997; + &#8984; + C</kbd></dd>
+</dl>
 
 <h3>Keyboard Navigation</h3>
 <p>Press the tab key and arrow keys to navigate through the main window menus.</p>
 
 
-<!-- This is info for service desk
-
-<h2>Troubleshooting</h2>
-<h3>Verify Audio and Video Device Settings</h3>
-
-<p>If you have an issue with your audio or video devices, you can verify the selected devices.</p>
-
-Select <strong>Jabber</span> &gt; <strong>Preferences. The <strong>General Preferences</span> window opens.
-Select Audio/Video</span>. The <strong>Audio/Video Preferences</span> window opens.
-Verify the device settings.
-
-<h3>Check the Connection Status</h3>
-
-<p>If there is an issue with a feature, you can check your connection status. For example, if you cannot access your voice messages.</p>
- 
-	 </div>
-<b>Procedure</b><hr noshade="noshade"/><table class="steptable" border="0" cellpadding="3" cellspacing="0" width="90%"><ol><tr><td align="left" valign="top"><b>StepÂ 1</b>Â Â 
-            </td><td valign="top" class="stepexpand"><a name="JABM_TK_6ED26AB_00__step_5DB82DA913DD4E40A7CFE04854CF2792"></a><span>Select 
-			 <strong>Help</span> &gt; <strong>Show Connection
-				  Status</span></span>. 
-		  </span> The
-			 server connection status window opens. 
-		  </td></tr>
-<tr><td align="left" valign="top"><b>StepÂ 2</b>Â Â 
-            </td><td valign="top" class="stepexpand"><a name="JABM_TK_6ED26AB_00__step_C5CA46F5A53B423498A345D4B9DC088E"></a><span>For each
-			 server listed, verify that the status displayed is 
-			 <strong>Connected</span>. 
-		  </span><ul><li style="margin-top:0.5em; margin-bottom:.5em; line-height:1.2em;"><a name="JABM_TK_6ED26AB_00__choice_FF5590B172C1428BB709353EB3B7A5E7"></a>If the server connections
-				are all showing as connected, select 
-				<strong>Copy</span> to capture the information and send to your
-				system administrator. 
-			 </li>
-<li style="margin-top:0.5em; margin-bottom:.5em; line-height:1.2em;"><a name="JABM_TK_6ED26AB_00__choice_3EFD3B63842C4C29834372A0DB554991"></a>If a server connection
-				shows a different status, select 
-				<strong>Open
-				  Accounts</span> to verify the settings are correct for the account. If the
-				issue persists report a problem to your system administrator. 
-			 </li>
-</ul>
-</td></tr>
-</ol></table><hr noshade="noshade"/>
 </div>
-</div>
-<a name="JABM_TK_9C8FBFA_00"></a><h3>Report a Problem</h3>
-<div><a name="JABM_TK_9C8FBFA_00__context_F9BB472EC1F84213BC2FCE630B06E32F"></a>
-		<p>If you encounter a problem with Cisco Jabber, you can create a problem
-		  report to assist your system administrator resolve your issue.
-		</p>
-
-		<p>The Problem Reporting Assistant guides you through the reporting
-		  process. The problem report generated contains logs from your computer. 
-		</p>
-
-	 </div>
-<b>Procedure</b><hr noshade="noshade"/><table class="steptable" border="0" cellpadding="3" cellspacing="0" width="90%"><ol><tr><td align="left" valign="top"><b>StepÂ 1</b>Â Â 
-            </td><td valign="top"><a name="JABM_TK_9C8FBFA_00__step_B20A9B262157496F9C6BEC0C8CF7361B"></a><span>Select 
-			 <strong>Help</span> &gt; <strong>Report a
-				  Problem</span></span>.
-		  </span></td></tr>
-<tr><td align="left" valign="top"><b>StepÂ 2</b>Â Â 
-            </td><td valign="top"><a name="JABM_TK_9C8FBFA_00__step_B14EE9A1AB874238917C8089E21044C4"></a><span>Enter information on the issue and select 
-			 <strong>Continue</span>.
-		  </span></td></tr>
-<tr><td align="left" valign="top"><b>StepÂ 3</b>Â Â 
-            </td><td valign="top"><a name="JABM_TK_9C8FBFA_00__step_1697479FF86949A0A4A80E6F842D3BD2"></a><span>Select 
-			 <strong>Generate</span> to create the problem report.
-		  </span></td></tr>
-<tr><td align="left" valign="top"><b>StepÂ 4</b>Â Â 
-            </td><td valign="top"><a name="JABM_TK_9C8FBFA_00__step_D13BE179CA824D60BF4C60A039FD5BDC"></a><span>Select 
-			 <strong>Send Report</span> to create an email that you can
-			 send to your system administrator.
-		  </span></td></tr>
-</ol></table><hr noshade="noshade"/>
-</div>
-</div>
-</div>
-</div> -->
+</body>
+</head>
+</html>
