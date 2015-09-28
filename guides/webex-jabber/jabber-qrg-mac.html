@@ -61,22 +61,69 @@ h3 { padding-top: 20px; }
 <p>INFO ON INSTALL, SYS REQS HERE</p></div>
 
 
-<h2>Make Calls</h2>
+<h2>Make a Call</h2>
+<ol>
+	<li>Open the Jabber application and sign in.</li>
+	<li>Hover over a contact name in your contacts list.</li>
+	<li>If the contact is available to call, a green box with the word 'Call' will appear in contact details.</li>
+	<li>Click this box to start a call.</li>
+	<li>If your contact has more than one contact number, a downward-facing caret displays on the right side of the green box. Click the caret to choose a call option (e.g., cell, office, home).</li>
+</ol>
 
-<h3>Start a Jabber to Jabber Call</h3>
+<h3>Transfer a Call</h3>
+<ol>
+	<li>Choose the <strong>more</strong> menu icon and click <strong>Transfer Call</strong>.</li>
+	<li>Search for the person you are transferring the call to.</li>
+	<li>Click the <strong>Transfer</strong> icon and the call is transferred.</li>
+</ol>
+
+<h3>Forward Calls</h3>
+<ol>
+	<li>Choose <strong>Jabber</strong> &gt; <strong>Preferences</strong> &gt; <strong>Calls</strong>.</li>
+	<li>Choose <strong>Call Forward</strong>.</li>
+	<li>In the Forward Calls to section, Choose an option from the available list or add a new number.</li>
+	<li>To add a new number in the available list, click the + (plus) button.</li>
+	<li>Enter a phone number, including country and area codes.</li>
+</ol>
+
+<h3>Conference Calls</h3>
+<p>You can create an ad-hoc conference with your contacts. Simply merge your calls to create a conference call:
+<ol>
+	<li>Start a call with your first contact.</li>
+	<li>Start a second call with another contact, the first call is automatically put on hold.</li>
+	<li>Choose <strong>More</strong> &gt; <strong>Merge</strong> and the two calls are merged into a conference call.</li>
+</ol></p>
+
+<h3>Jabber to Jabber Calling</h3>
+<p>To call another Cisco Jabber client: 
+<ol>
+	<li>Choose the call icon for your contact. For example in the contact list or in the chat window.</li>
+	<li>Choose <strong>Jabber Call</strong> from the menu.</li>
+</ol></p>
 
 <p>Please note the following caveats of Jabber to Jabber calling: 
 	<ul>
 		<li>You can make a <strong>Jabber to Jabber</strong> call with only <mark>one contact at a time</mark>.</li>
 		<li>When you are on a <strong>Jabber to Jabber</strong> call, if you call another contact <mark>your ongoing call will end</mark>.</li>
-	</ul>
-<mark>This feature must be enabled by your administrator.</mark></p>
+		<li>This feature must be enabled by your administrator.</li>
+	</ul></p>
 
-<p>To make a call to another Cisco Jabber client: 
+<h3>URI Dialing</h3>
+
+<p>Use URI dialing to make calls and resolve contacts with <mark>Uniform Resource Identifiers</mark> (URI). Users connected to <mark>Cisco TelePresence Video Communication Server</mark> (VCS), are only accessible using an associated URI. To call a URI contact:
 <ol>
-	<li>Choose the call icon for your contact. For example in the contact list or in the chat window.</li>
-	<li>Choose <strong>Jabber</strong> Call from the menu.</li>
+	<li>Enter the characters of the URI including the @ symbol and at least two characters after the @. For example aaa123@ca. The call bricklet will display the results.</li>
+	<li>Choose <strong>Call</strong> in the bricklet, to call the contact using their SIP URI.</li>
 </ol></p>
+
+<p>To create a SIP URI for contacts in your Mac address book: 
+<ol>
+	<li>Choose the user in your Mac address book and click <strong>Edit</strong>.</li>
+	<li>Within the phone section of the contact card, add the SIP URI for your contact.</li>
+	<li>Click <strong>Done</strong>.</li>
+	<li>Repeat for additional contacts.</li>
+</ol></p>
+
 
 <h3>Change Audio Devices</h3>
 
@@ -88,59 +135,7 @@ h3 { padding-top: 20px; }
 	<li>Close the <strong>Preferences</strong> window to apply the changes.</li>
 </ol>
 
-<h3>Create Ad-hoc Conference Call</h3>
 
-<p>You can create an ad-hoc conference with your contacts, simply merge your calls to create a conference call.</p>
-
-<ol>
-	<li>Start a call with your first contact.</li>
-	<li>Start a second call with another contact, the first call is automatically put on hold.</li>
-	<li>Choose <strong>More</strong> &gt; <strong>Merge</strong> and the two calls are merged into a conference call.</li>
-</ol>
-
-<h3>Forward Calls</h3>
-
-<p>To forward calls from Cisco Jabber:
-<ol>
-	<li>Choose <strong>Jabber</strong> &gt; <strong>Preferences</strong> &gt; <strong>Calls</strong>.</li>
-	<li>Choose <strong>Call Forward</strong>.</li>
-	<li>In the Forward Calls to section, Choose an option from the available list or add a new number.</li>
-	<li>To add a new number in the available list, click the + (plus) button.</li>
-	<li>Enter a phone number, including country and area codes.</li>
-</ol></p>
-
-<h3>URI Dialing</h3>
-
-<p>You can use URI dialing to make calls and resolve contacts with <mark>Uniform Resource Identifiers</mark> (URI).</p>
-<p>Users connected to <mark>Cisco TelePresence Video Communication Server</mark> (VCS), are only accessible using an associated URI.</p>
-
-<h4>Setup SIP URI</h4>
-
-<p>To create a SIP URI for contacts in your Mac address book:</p>
- 
- <ol>
-	<li>Choose the user in your Mac address book and click <strong>Edit</strong>.</li>
-	<li>Within the phone section of the contact card, add the SIP URI for your contact.</li>
-	<li>Click <strong>Done</strong>.</li>
-	<li>Repeat for additional contacts.</li>
-</ol>
-
-<h4>Dialing a Contact using a SIP URI</h4>
-
-<ol>
-	<li>Enter the characters of the URI including the @ symbol and at least two characters after the @. For example aaa123@ca. The call bricklet will display the results.</li>
-	<li>Choose <strong>Call</strong> in the bricklet, to call the contact using their SIP URI.</li>
-</ol>
-
-<h3>Transfer an Active Call</h3>
-
-<ol>
-	<li>Choose the <strong>more</strong> menu icon and click <strong>Transfer Call</strong>.</li>
-	<li>Search for the person you are transferring the call to.</li>
-	<li>Click the <strong>Transfer</strong> icon and the call is transferred.</li>
-</ol>
-
- 
 <h2>Contacts</h2>
 <h3>Dial from your address book (Mac)</h3>
 
