@@ -38,9 +38,11 @@ You may search for a component, or parent part / assembly.
     
 ### Example users of the Creo View Lite application:
     
-* Reliability Engineer - view and manipulate the 3D representation using Creo View to show wetted parts. Screenshot exploded view and annotate for listing packet.
-* Customer Quality (CQI) / Call Center - open to view / rotate / explode product as needed when troubleshooting an install or potential problem.
-*  
+| Role | Description |
+|:----:|:------------|  
+| Reliability Engineer | view and manipulate the 3D representation using Creo View to show wetted parts. Screenshot exploded view and annotate for listing packet. |
+| Customer Quality (CQI) / Call Center | open to view / rotate / explode product as needed when troubleshooting an install or potential problem. |
+  
 
 ### How-To  
 
