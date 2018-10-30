@@ -39,14 +39,16 @@ You may search for a component, or parent part / assembly.
 ### Example users of the Creo View Lite application:
     
 | Role | Description |
-|:----:|:------------|  
+|:---- |:----------- |  
 | Reliability Engineer | view and manipulate the 3D representation using Creo View to show wetted parts. Screenshot exploded view and annotate for listing packet. |
-| Customer Quality (CQI) / Call Center | open to view / rotate / explode product as needed when troubleshooting an install or potential problem. |
+| Customer Quality (CQI) / Call Center | view / rotate / explode product as needed when troubleshooting with customer. |
+| Compliance | with Reliability review 3D viewables for 'claims of similarity'.  |
+| Technical Literature team | retrieve viewables for use in constructing tech lit (some will still be pulled from SAP). |
   
 
-### How-To  
+### How-to  
 
-1. Click **View & Measure** task > **Lifecycle state**.
+1. Click **View & Measure** > **Lifecycle state**.
 1. Choose **Released** from the dropdown list.
 1. Type search term with wildcards into the *Search field*.
 1. Press <kbd>ENTER</kbd>
@@ -61,15 +63,37 @@ You may search for a component, or parent part / assembly.
 
 The **View Part Properties** task displays the CAD document and parametric attribtutes. 
 
+
 ## View Parts List  
 
 The **View Part Structure** task displays the CAD document, parametric attributes, and the parts list (BOM) in tabular form. Each row in the table contains the part parametric data, and a link to CAD data and / or PDF viewable(s).  
 
 To review the parts list in Excel, click the **Export All** button.
 
+
 ## View Part Structure
 
+The **View Part Structure** task displays the parts list (BOM) in a hierarchical view. The relationship between parts / assemblies and related parents or children is represented by indentation.
+
+### How-to
+
+1. Click **View Part Structure** > **Lifecycle state**.
+1. Choose **Released** from the dropdown list.
+1. Type search term with wildcards into the *Search field*.
+1. Press <kbd>ENTER</kbd>
+1. Review attribute information and thumbnail image in **Part Details** section.
+1. Scroll to **Part Structure** to review assembly hierarchy.
+1. In **Part Structure** table, click assembly title (ex., 1244_chr.asm) select it.
+1. Assembly appears in **Selected Part** section.
+1. Click the file name in **Selected Part** to filter **Part Structure**.
+1. Click **View Design Files** to show 3D CAD assembly.
+1. If prompted, click **OK** to open the viewable in Adobe Reader.
+ 
+
 ## View Document
+
+
+
 
 ## View Document Structure  
 
