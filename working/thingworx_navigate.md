@@ -1,3 +1,4 @@
+
 # ThingWorx Navigate  
 
 ThingWorx Navigate enables users to quickly and easily access specific Windchill information from approved devices that support a Web browser.
@@ -42,6 +43,18 @@ You may search for a component, or parent part / assembly.
     * Reliability Engineer - view and manipulate the 3D representation using Creo View to show wetted parts. Screenshot exploded view and annotate for listing packet.
     * Customer Quality (CQI) / Call Center - open to view / rotate / explode product as needed when troubleshooting an install or potential problem.
     *  
+
+### How-To  
+
+1. Click **View & Measure** task > **Lifecycle state**.
+1. Choose **Released** from the dropdown list.
+1. Type search term with wildcards into the *Search field*.
+1. Press <kbd>ENTER</kbd>.
+1. Click the **Start button**.
+1. Click the checkbox to choose an asset.
+1. Viewable loads and geometry appears in the graphics window.
+
+*You now have access to all Creo View Lite functions.*
 
 
 ## View Part Properties
