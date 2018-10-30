@@ -23,9 +23,26 @@ The asterisk is a 'wildcard' character, which means that any search will match a
 
 ## View Drawing  
 
-Use the search function to access component drawings directly. As with *View Design Files* use wildcard characters to ensure your search results contain all possible matches.
+Use the search function to retrieve PDF renderings of CAD files. As with *View Design Files* use wildcard characters to ensure your search results contain all possible applicable results.
+    
+    
+    EXAMPLE IMAGE GOES HERE
+    
 
-## View & Measure in 3D  
+You may search for a component, or parent part / assembly.
+
+ 
+## View & Measure in 3D
+
+**View & Measure in 3D** launches [Creo View][3] in a new browser window. Using the Creo View application, users can view and manipulate the 3D representation of the model. This does not make changes to the original.   
+
+    
+    Example users of the Creo View application:
+    
+    * Reliability Engineer - view and manipulate the 3D representation using Creo View to show wetted parts. Screenshot exploded view and annotate for listing packet.
+    * Customer Quality (CQI) / Call Center - open to view / rotate / explode product as needed when troubleshooting an install or potential problem.
+    *  
+
 
 ## View Part Properties
 
@@ -45,3 +62,6 @@ Use the search function to access component drawings directly. As with *View Des
 
 [1]: http://www.google.com
 [2]: http://www.google.com
+[3]: http://www.google.com
+
+
