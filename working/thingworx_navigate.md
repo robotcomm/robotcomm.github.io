@@ -1,4 +1,3 @@
-
 # ThingWorx Navigate  
 
 ThingWorx Navigate enables users to quickly and easily access specific Windchill information from approved devices that support a Web browser.
@@ -8,8 +7,7 @@ ThingWorx Navigate enables users to quickly and easily access specific Windchill
 * PC running X or higher
 * Internet Explorer version x or higher
 * Chrome emulation extension for IE [(installation instructions)][1]
-* License X or X - obtain from [(IT self-service)][2]
-
+* License X or X - obtain from [IT self-service][2]
 
 ## View Design Files  
 
@@ -35,23 +33,23 @@ You may search for a component, or parent part / assembly.
  
 ## View & Measure in 3D
 
-**View & Measure in 3D** launches [Creo View][3] in a new browser window. Using the Creo View application, users can view and manipulate the 3D representation of the model. This does not make changes to the original.   
+**View & Measure in 3D** launches [Creo View Lite][3] in a new browser window. Using the Creo View Lite application, users can view and manipulate the 3D representation of the model. This does not make changes to the original.   
 
     
-    Example users of the Creo View application:
+### Example users of the Creo View Lite application:
     
-    * Reliability Engineer - view and manipulate the 3D representation using Creo View to show wetted parts. Screenshot exploded view and annotate for listing packet.
-    * Customer Quality (CQI) / Call Center - open to view / rotate / explode product as needed when troubleshooting an install or potential problem.
-    *  
+* Reliability Engineer - view and manipulate the 3D representation using Creo View to show wetted parts. Screenshot exploded view and annotate for listing packet.
+* Customer Quality (CQI) / Call Center - open to view / rotate / explode product as needed when troubleshooting an install or potential problem.
+*  
 
 ### How-To  
 
 1. Click **View & Measure** task > **Lifecycle state**.
 1. Choose **Released** from the dropdown list.
 1. Type search term with wildcards into the *Search field*.
-1. Press <kbd>ENTER</kbd>.
+1. Press <kbd>ENTER</kbd>
 1. Click the **Start button**.
-1. Click the checkbox to choose an asset.
+1. Click the **checkbox** to choose an asset.
 1. Viewable loads and geometry appears in the graphics window.
 
 *You now have access to all Creo View Lite functions.*
@@ -59,7 +57,13 @@ You may search for a component, or parent part / assembly.
 
 ## View Part Properties
 
+The **View Part Properties** task displays the CAD document and parametric attribtutes. 
+
 ## View Parts List  
+
+The **View Part Structure** task displays the CAD document, parametric attributes, and the parts list (BOM) in tabular form. Each row in the table contains the part parametric data, and a link to CAD data and / or PDF viewable(s).  
+
+To review the parts list in Excel, click the **Export All** button.
 
 ## View Part Structure
 
