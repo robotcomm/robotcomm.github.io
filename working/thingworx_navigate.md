@@ -19,6 +19,7 @@ Partial matching uses 'wildcard' characters to allow users to find multiple Wind
 
 The most effective strategy when the base part / assembly number is known is to combine leading and trailing wildcards (example, '*1234*') 
 
+When the exact name of an asset is known, simply use that name without wildcards. This search should return only 1 result.
 
 ## View Design Files  
 
