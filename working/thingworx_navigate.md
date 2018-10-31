@@ -92,8 +92,10 @@ The **View Part Structure** task displays the parts list (BOM) in a hierarchical
 
 ## View Document
 
+The **View Document** task displays the document thumbnail along with the document attributes. There are two important functions:
 
-
+1. **View in Windchill** - Open the document information page in Windchill
+1. **Open** - Open the document in PDF viewer
 
 ## View Document Structure  
 
