@@ -94,8 +94,18 @@ The **View Part Structure** task displays the parts list (BOM) in a hierarchical
 
 The **View Document** task displays the document thumbnail along with the document attributes. There are two important functions:
 
-1. **View in Windchill** - Open the document information page in Windchill
-1. **Open** - Open the document in PDF viewer
+* **View in Windchill** - Open the document information page in Windchill
+* **Open** - Open the document in PDF viewer
+
+### How-to  
+
+1. Click **View document** > **Lifecycle state**.
+1. Choose **In Work** from the dropdown list.
+1. Type search term with wildcards into the **Search field**.
+1. Press <kbd>ENTER</kbf>
+1. Click the thumbnail image.
+1. Click **OK** to open the document in PDF viewer.
+
 
 ## View Document Structure  
 
