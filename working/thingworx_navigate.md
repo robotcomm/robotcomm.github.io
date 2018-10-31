@@ -9,6 +9,17 @@ ThingWorx Navigate enables users to quickly and easily access specific Windchill
 * Chrome emulation extension for IE [(installation instructions)][1]
 * License X or X - obtain from [IT self-service][2]
 
+#### Partial and Exact Match Search
+
+Partial matching uses 'wildcard' characters to allow users to find multiple Windchill resources that share a common name or 'root' (example, a 'base' part number). The wildcard character, an asterisk, may be placed at the beginning, middle, or end of a search string.
+
+    Leading (*1234) matches resources with a name ending in '1234'
+    Trailing (1234*) matches resources with a name beginning with '1234'
+    Middle (12*34) matches resources with a name that begins with '12' and ends with '34'
+
+The most effective strategy when the base part / assembly number is known is to combine leading and trailing wildcards (example, '*1234*') 
+
+
 ## View Design Files  
 
 Use the search function to retrieve ASM and PRT files. To ensure you are returning a result set that contains all applicable files, enter the base part or assembly number with an asterisk before and after the search term.
