@@ -1,3 +1,4 @@
+
 # ThingWorx Navigate  
 
 ThingWorx Navigate enables users to quickly and easily access specific Windchill information from approved devices that support a Web browser.
